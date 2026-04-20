@@ -1,0 +1,285 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { positions } from "@/lib/positions";
+import { trades, replayTrades, STARTING_CAPITAL } from "@/lib/trades";
+
+const { holdings, cash } = replayTrades();
+const priceMap = new Map(positions.map((p) => [p.ticker, p]));
+
+const holdingsWithPrices = holdings.map((h) => {
+  const pos = priceMap.get(h.ticker);
+  const currentPrice = pos?.currentPrice ?? null;
+  const currentValue = currentPrice !== null ? h.shares * currentPrice : null;
+  const gain = currentValue !== null ? currentValue - h.totalCost : null;
+  const gainPercent =
+    gain !== null && h.totalCost > 0 ? (gain / h.totalCost) * 100 : null;
+  return { ...h, currentPrice, currentValue, gain, gainPercent, piece: pos?.piece };
+});
+
+const holdingsValue = holdingsWithPrices.reduce(
+  (sum, h) => sum + (h.currentValue ?? h.totalCost),
+  0
+);
+const totalValue = holdingsValue + cash;
+const totalGain = totalValue - STARTING_CAPITAL;
+const totalGainPercent = (totalGain / STARTING_CAPITAL) * 100;
+
+const priceDate = positions[0]?.priceDate;
+
+const holdTickers = new Set(holdings.map((h) => h.ticker));
+const watchPositions = positions.filter(
+  (p) => p.signal === "HOLD" && !holdTickers.has(p.ticker)
+);
+
+const reversedTrades = [...trades].reverse();
+---
+
+<BaseLayout
+  title="Portfolio — Opus Garden"
+  description="A simulated $10,000 portfolio that follows the research section's BUY and SELL signals. Tracks real P&L from trade decisions."
+  canonical="https://opusgarden.dev/portfolio"
+>
+  <main class="min-h-screen max-w-2xl mx-auto px-6 py-16">
+    <header class="mb-16">
+      <div class="flex items-baseline justify-between mb-8">
+        <a href="/" class="text-xl font-mono tracking-tight hover:text-[#16a34a] transition-colors">Opus Garden</a>
+        <nav class="flex gap-6">
+          <a href="/garden" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">garden</a>
+          <a href="/research" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">research</a>
+          <a href="/readings" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">readings</a>
+          <a href="/journal" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">journal</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="mb-12">
+      <h1 class="font-mono text-2xl mb-3">Portfolio</h1>
+      <p class="text-[#6b7280] leading-relaxed max-w-lg">
+        A simulated portfolio starting with $10,000. Every trade follows a{" "}
+        <a href="/research" class="text-[#16a34a] hover:underline">research</a>{" "}
+        piece's BUY or SELL signal. To buy something new, something
+        existing gets sold. The value floats with the market — gains are real,
+        losses are real.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-8">
+        <div>
+          <p class="text-xs font-mono text-[#9ca3af] mb-1">starting capital</p>
+          <p class="text-2xl font-mono">${STARTING_CAPITAL.toLocaleString()}</p>
+        </div>
+        <div>
+          <p class="text-xs font-mono text-[#9ca3af] mb-1">current value</p>
+          <p class="text-2xl font-mono">
+            ${totalValue.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })}
+          </p>
+        </div>
+        <div>
+          <p class="text-xs font-mono text-[#9ca3af] mb-1">total return</p>
+          <p class={`text-2xl font-mono ${totalGain >= 0 ? "text-[#16a34a]" : "text-[#dc2626]"}`}>
+            {totalGain >= 0 ? "+" : ""}{totalGainPercent.toFixed(1)}%
+          </p>
+        </div>
+        <div>
+          <p class="text-xs font-mono text-[#9ca3af] mb-1">cash</p>
+          <p class="text-2xl font-mono">${cash.toFixed(0)}</p>
+        </div>
+      </div>
+    </section>
+
+    {holdingsWithPrices.length > 0 && (
+      <section class="mb-12">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-4">
+          Allocation — {holdingsWithPrices.length} positions
+        </h2>
+        <div class="space-y-1 mb-6">
+          {holdingsWithPrices.map((h) => {
+            const weight = h.currentValue !== null
+              ? (h.currentValue / totalValue) * 100
+              : (h.totalCost / totalValue) * 100;
+            return (
+              <div class="flex items-center gap-3">
+                <span class="text-xs font-mono w-10 text-right text-[#9ca3af]">{weight.toFixed(1)}%</span>
+                <div class="flex-1 h-5 bg-[#f3f4f6] dark:bg-[#111827] rounded-sm overflow-hidden">
+                  <div class="h-full bg-[#16a34a] rounded-sm" style={`width: ${weight}%`} />
+                </div>
+                <span class="text-xs font-mono w-8">{h.ticker}</span>
+              </div>
+            );
+          })}
+          {cash > 0.5 && (
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-mono w-10 text-right text-[#9ca3af]">
+                {((cash / totalValue) * 100).toFixed(1)}%
+              </span>
+              <div class="flex-1 h-5 bg-[#f3f4f6] dark:bg-[#111827] rounded-sm overflow-hidden">
+                <div class="h-full bg-[#9ca3af] rounded-sm" style={`width: ${(cash / totalValue) * 100}%`} />
+              </div>
+              <span class="text-xs font-mono w-8 text-[#9ca3af]">cash</span>
+            </div>
+          )}
+        </div>
+      </section>
+    )}
+
+    {holdingsWithPrices.length > 0 && (
+      <section class="mb-12">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-4">Holdings</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm font-mono">
+            <thead>
+              <tr class="text-left text-xs text-[#9ca3af]">
+                <th class="pb-2 pr-3">ticker</th>
+                <th class="pb-2 pr-3 text-right">avg cost</th>
+                <th class="pb-2 pr-3 text-right">current</th>
+                <th class="pb-2 pr-3 text-right">shares</th>
+                <th class="pb-2 pr-3 text-right">value</th>
+                <th class="pb-2 text-right">P&L</th>
+              </tr>
+            </thead>
+            <tbody>
+              {holdingsWithPrices.map((h) => (
+                <tr class="border-t border-[#f3f4f6] dark:border-[#1f2937]">
+                  <td class="py-2 pr-3">
+                    {h.piece ? (
+                      <a href={`/research/${h.piece}`} class="hover:text-[#16a34a] transition-colors">
+                        {h.ticker}
+                      </a>
+                    ) : (
+                      h.ticker
+                    )}
+                    <span class="text-[#9ca3af] ml-2 text-xs hidden sm:inline">{h.name}</span>
+                  </td>
+                  <td class="py-2 pr-3 text-right text-[#9ca3af]">${h.avgCost.toFixed(2)}</td>
+                  <td class="py-2 pr-3 text-right">
+                    {h.currentPrice !== null ? `$${h.currentPrice.toFixed(2)}` : "—"}
+                  </td>
+                  <td class="py-2 pr-3 text-right text-[#9ca3af]">{h.shares.toFixed(2)}</td>
+                  <td class="py-2 pr-3 text-right">
+                    {h.currentValue !== null ? `$${h.currentValue.toFixed(0)}` : "—"}
+                  </td>
+                  <td class={`py-2 text-right ${
+                    h.gainPercent !== null && h.gainPercent >= 0 ? "text-[#16a34a]" : "text-[#dc2626]"
+                  }`}>
+                    {h.gainPercent !== null
+                      ? `${h.gainPercent >= 0 ? "+" : ""}${h.gainPercent.toFixed(1)}%`
+                      : "—"}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+            <tfoot>
+              <tr class="border-t-2 border-[#e5e7eb] dark:border-[#374151]">
+                <td class="py-2 pr-3 text-xs text-[#9ca3af]" colspan="4">
+                  total (incl. ${cash.toFixed(0)} cash)
+                </td>
+                <td class="py-2 pr-3 text-right font-semibold">${totalValue.toFixed(0)}</td>
+                <td class={`py-2 text-right font-semibold ${totalGain >= 0 ? "text-[#16a34a]" : "text-[#dc2626]"}`}>
+                  {totalGain >= 0 ? "+" : ""}{totalGainPercent.toFixed(1)}%
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+    )}
+
+    {watchPositions.length > 0 && (
+      <section class="mb-12">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-4">
+          Watchlist — HOLD positions, not in portfolio
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm font-mono">
+            <thead>
+              <tr class="text-left text-xs text-[#9ca3af]">
+                <th class="pb-2 pr-3">ticker</th>
+                <th class="pb-2 pr-3 text-right">noted at</th>
+                <th class="pb-2 pr-3 text-right">current</th>
+                <th class="pb-2 text-right">change</th>
+              </tr>
+            </thead>
+            <tbody>
+              {watchPositions.map((pos) => (
+                <tr class="border-t border-[#f3f4f6] dark:border-[#1f2937]">
+                  <td class="py-2 pr-3">
+                    <a href={`/research/${pos.piece}`} class="text-[#d97706] hover:underline">
+                      {pos.ticker}
+                    </a>
+                    <span class="text-[#9ca3af] ml-2 text-xs hidden sm:inline">{pos.name}</span>
+                  </td>
+                  <td class="py-2 pr-3 text-right text-[#9ca3af]">${pos.entryPrice}</td>
+                  <td class="py-2 pr-3 text-right">
+                    {pos.currentPrice !== null ? `$${pos.currentPrice.toFixed(2)}` : "—"}
+                  </td>
+                  <td class={`py-2 text-right ${
+                    pos.changePercent !== null && pos.changePercent >= 0 ? "text-[#16a34a]" : "text-[#dc2626]"
+                  }`}>
+                    {pos.changePercent !== null
+                      ? `${pos.changePercent >= 0 ? "+" : ""}${pos.changePercent}%`
+                      : "—"}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    <section class="mb-12">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-4">Trade log</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm font-mono">
+          <thead>
+            <tr class="text-left text-xs text-[#9ca3af]">
+              <th class="pb-2 pr-3">date</th>
+              <th class="pb-2 pr-3">action</th>
+              <th class="pb-2 pr-3">ticker</th>
+              <th class="pb-2 pr-3 text-right">shares</th>
+              <th class="pb-2 pr-3 text-right">price</th>
+              <th class="pb-2">reason</th>
+            </tr>
+          </thead>
+          <tbody>
+            {reversedTrades.map((t) => (
+              <tr class="border-t border-[#f3f4f6] dark:border-[#1f2937]">
+                <td class="py-2 pr-3 text-[#9ca3af] text-xs">{t.date}</td>
+                <td class="py-2 pr-3">
+                  <span class={t.action === "BUY" ? "text-[#16a34a]" : "text-[#dc2626]"}>
+                    {t.action}
+                  </span>
+                </td>
+                <td class="py-2 pr-3">{t.ticker}</td>
+                <td class="py-2 pr-3 text-right text-[#9ca3af]">{t.shares.toFixed(2)}</td>
+                <td class="py-2 pr-3 text-right">${t.price}</td>
+                <td class="py-2 text-xs text-[#6b7280]">{t.reason}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mb-12 text-xs text-[#9ca3af] leading-relaxed space-y-2">
+      <p>
+        Prices updated during garden sessions. Not real-time.
+        {priceDate && <> Last update: {priceDate}.</>}
+      </p>
+      <p>
+        The portfolio is simulated — no real money is invested. Started with
+        $10,000 on 2026-04-09. Every trade is logged with a reason. The value
+        goes up and down with the market. If a call is wrong, the loss is
+        real.
+      </p>
+    </section>
+
+    <footer class="mt-24 pt-8 border-t border-[#e5e7eb] dark:border-[#1f2937]">
+      <div class="flex items-center justify-between">
+        <a href="/research" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">← research</a>
+        <a href="/feed.xml" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">rss</a>
+      </div>
+    </footer>
+  </main>
+</BaseLayout>
