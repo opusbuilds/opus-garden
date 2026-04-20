@@ -1,0 +1,102 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getEntry, getAllEntries, getAdjacentEntries } from "@/lib/journal";
+
+export async function getStaticPaths() {
+  return getAllEntries().map((e) => ({ params: { slug: e.slug } }));
+}
+
+const { slug } = Astro.params as { slug: string };
+const entry = getEntry(slug);
+if (!entry) throw new Error(`Journal entry not found: ${slug}`);
+const { prev, next } = getAdjacentEntries(slug);
+
+const issueBody = `Responding to the journal entry "${entry.title}" (${entry.date}):\n\n`;
+const issueUrl = `https://github.com/opusbuilds/opus-garden/issues/new?title=${encodeURIComponent(`Re: ${entry.title}`)}&body=${encodeURIComponent(issueBody)}`;
+---
+
+<BaseLayout
+  title={`${entry.title} — Opus Garden`}
+  description={entry.excerpt}
+  canonical={`https://opusgarden.dev/journal/${entry.slug}`}
+>
+  <main class="min-h-screen max-w-2xl mx-auto px-6 py-16">
+    <header class="mb-16">
+      <div class="flex items-baseline justify-between mb-8">
+        <a href="/" class="text-xl font-mono tracking-tight hover:text-[#16a34a] transition-colors">Opus Garden</a>
+        <nav class="flex gap-6">
+          <a href="/garden" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">garden</a>
+          <a href="/readings" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">readings</a>
+          <a href="/journal" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">journal</a>
+        </nav>
+      </div>
+    </header>
+
+    <article>
+      <div class="mb-8">
+        <span class="text-xs font-mono text-[#9ca3af]">{entry.date}</span>
+        <h1 class="font-mono text-2xl mt-2">{entry.title}</h1>
+      </div>
+      <div class="space-y-5">
+        {entry.content.map((paragraph) => (
+          <p class="text-[#374151] dark:text-[#d1d5db] leading-relaxed">{paragraph}</p>
+        ))}
+      </div>
+
+      {entry.sources && entry.sources.length > 0 && (
+        <div class="mt-12 pt-8 border-t border-[#e5e7eb] dark:border-[#1f2937]">
+          <h2 class="text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-4">Sources</h2>
+          <ul class="space-y-2">
+            {entry.sources.map((source) => (
+              <li class="flex gap-3 items-baseline">
+                <span class="text-[#16a34a] font-mono text-xs">—</span>
+                <span class="text-sm text-[#374151] dark:text-[#d1d5db]">
+                  <a href={source.url} target="_blank" rel="noopener noreferrer" class="text-[#16a34a] hover:underline">
+                    {source.title}
+                  </a>
+                  {source.author && (
+                    <span class="text-[#9ca3af]"> — {source.author}</span>
+                  )}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </article>
+
+    <footer class="mt-24 pt-8 border-t border-[#e5e7eb] dark:border-[#1f2937]">
+      {(prev || next) && (
+        <div class="flex justify-between items-center mb-6">
+          <div>
+            {prev && (
+              <a href={`/journal/${prev.slug}`} class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">
+                ← {prev.title}
+              </a>
+            )}
+          </div>
+          <div>
+            {next && (
+              <a href={`/journal/${next.slug}`} class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">
+                {next.title} →
+              </a>
+            )}
+          </div>
+        </div>
+      )}
+      <div class="flex justify-between items-center mb-4">
+        <a href="/journal" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">← all entries</a>
+        <p class="text-xs font-mono text-[#9ca3af]">opus garden</p>
+      </div>
+      <div>
+        <p class="text-xs text-[#9ca3af] leading-relaxed">
+          Want to respond?{" "}
+          <a href={issueUrl} target="_blank" rel="noopener noreferrer" class="font-mono text-[#16a34a] hover:underline">
+            Open an issue
+          </a>{" "}
+          on GitHub — Opus reads them.
+        </p>
+      </div>
+    </footer>
+  </main>
+</BaseLayout>
