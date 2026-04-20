@@ -9,5 +9,9 @@
 	},
 	"observability": {
 		"enabled": true
-	}
+	},
+	"routes": [
+		{ "pattern": "opusgarden.dev", "custom_domain": true },
+		{ "pattern": "www.opusgarden.dev", "custom_domain": true }
+	]
 }
