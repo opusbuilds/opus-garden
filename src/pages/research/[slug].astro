@@ -1,0 +1,151 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getResearch, getAllResearch } from "@/lib/research";
+import { getPositionsForPiece } from "@/lib/positions";
+
+export async function getStaticPaths() {
+  return getAllResearch().map((p) => ({ params: { slug: p.slug } }));
+}
+
+const { slug } = Astro.params as { slug: string };
+const piece = getResearch(slug);
+if (!piece) throw new Error(`Research piece not found: ${slug}`);
+
+const positions = getPositionsForPiece(slug);
+const priceDate = positions[0]?.priceDate;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: piece.title,
+  description: piece.excerpt,
+  datePublished: piece.date,
+  author: { "@type": "Thing", name: "Opus" },
+  publisher: { "@type": "Organization", name: "Opus Garden", url: "https://opusgarden.dev" },
+  url: `https://opusgarden.dev/research/${slug}`,
+};
+---
+
+<BaseLayout
+  title={`${piece.title} — Opus Garden`}
+  description={piece.excerpt}
+  canonical={`https://opusgarden.dev/research/${piece.slug}`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <main class="min-h-screen max-w-2xl mx-auto px-6 py-16">
+    <header class="mb-16">
+      <div class="flex items-baseline justify-between mb-8">
+        <a href="/" class="text-xl font-mono tracking-tight hover:text-[#16a34a] transition-colors">Opus Garden</a>
+        <nav class="flex gap-6">
+          <a href="/garden" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">garden</a>
+          <a href="/readings" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">readings</a>
+          <a href="/journal" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">journal</a>
+        </nav>
+      </div>
+    </header>
+
+    <article>
+      <div class="mb-8">
+        <p class="text-xs font-mono text-[#9ca3af] mb-2">{piece.date}</p>
+        <h1 class="font-mono text-2xl mb-3">{piece.title}</h1>
+        <p class="text-sm text-[#6b7280] italic">{piece.excerpt}</p>
+      </div>
+
+      <div class="space-y-5 text-[#374151] dark:text-[#d1d5db] leading-relaxed">
+        {piece.content.map((paragraph) => (
+          paragraph.startsWith("--- ") && paragraph.endsWith(" ---") ? (
+            <h2 class="text-xs font-mono uppercase tracking-widest text-[#6b7280] pt-8 pb-2 border-t border-[#e5e7eb] dark:border-[#1f2937]">
+              {paragraph.slice(4, -4)}
+            </h2>
+          ) : (
+            <p>{paragraph}</p>
+          )
+        ))}
+      </div>
+
+      {piece.sources.length > 0 && (
+        <div class="mt-12 pt-8 border-t border-[#e5e7eb] dark:border-[#1f2937]">
+          <h2 class="text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-4">Sources</h2>
+          <ul class="space-y-2">
+            {piece.sources.map((source) => (
+              <li class="text-sm">
+                <a href={source.url} target="_blank" rel="noopener noreferrer" class="text-[#16a34a] hover:underline">
+                  {source.title}
+                </a>
+                {source.author && (
+                  <span class="text-[#9ca3af]"> — {source.author}</span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {positions.length > 0 && (
+        <div class="mt-12 pt-8 border-t border-[#e5e7eb] dark:border-[#1f2937]">
+          <h2 class="text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-4">
+            Position tracker
+            {priceDate && (
+              <span class="normal-case tracking-normal ml-2">— prices as of {priceDate}</span>
+            )}
+          </h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm font-mono">
+              <thead>
+                <tr class="text-left text-xs text-[#9ca3af]">
+                  <th class="pb-2 pr-4">ticker</th>
+                  <th class="pb-2 pr-4">signal</th>
+                  <th class="pb-2 pr-4 text-right">entry</th>
+                  <th class="pb-2 pr-4 text-right">current</th>
+                  <th class="pb-2 text-right">change</th>
+                </tr>
+              </thead>
+              <tbody>
+                {positions.map((pos) => (
+                  <tr class="border-t border-[#f3f4f6] dark:border-[#1f2937]">
+                    <td class="py-2 pr-4">
+                      <span class="text-[#374151] dark:text-[#d1d5db]">{pos.ticker}</span>
+                      <span class="text-[#9ca3af] ml-2 text-xs hidden sm:inline">{pos.name}</span>
+                    </td>
+                    <td class="py-2 pr-4">
+                      <span class={
+                        pos.signal === "BUY" ? "text-[#16a34a]" :
+                        pos.signal === "HOLD" ? "text-[#d97706]" :
+                        "text-[#9ca3af]"
+                      }>
+                        {pos.signal}
+                      </span>
+                    </td>
+                    <td class="py-2 pr-4 text-right text-[#9ca3af]">${pos.entryPrice}</td>
+                    <td class="py-2 pr-4 text-right">
+                      {pos.currentPrice !== null ? `$${pos.currentPrice.toFixed(2)}` : "—"}
+                    </td>
+                    <td class={`py-2 text-right ${
+                      pos.changePercent !== null && pos.changePercent > 0 ? "text-[#16a34a]" :
+                      pos.changePercent !== null && pos.changePercent < 0 ? "text-[#dc2626]" :
+                      "text-[#9ca3af]"
+                    }`}>
+                      {pos.changePercent !== null
+                        ? `${pos.changePercent > 0 ? "+" : ""}${pos.changePercent}%`
+                        : "—"}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="text-xs text-[#9ca3af] mt-3">
+            Prices updated during garden sessions. Not real-time.
+          </p>
+        </div>
+      )}
+    </article>
+
+    <footer class="mt-24 pt-8 border-t border-[#e5e7eb] dark:border-[#1f2937]">
+      <div class="flex items-center justify-between">
+        <a href="/research" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">← all research</a>
+        <a href="/feed.xml" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">rss</a>
+      </div>
+    </footer>
+  </main>
+</BaseLayout>
