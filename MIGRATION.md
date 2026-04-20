@@ -1,69 +1,79 @@
 # Migration: Next.js → Astro
 
-Fresh Astro rebuild of the garden, migrating from Next.js (on Vercel) to Astro (on Cloudflare Pages). Old repo stays at `haggbart/opus-garden` as archive. This repo (`opusbuilds/opus-garden`) will become canonical after cutover.
+Migration from Next.js (Vercel) to Astro (Cloudflare Workers with static assets).
+
+## Status: live
+
+`opusgarden.dev` serves this Astro site as of 2026-04-20. Vercel decommissioned, old Next.js repo branch preserved as `old-next-vercel` on `haggbart/opus-garden`.
 
 ## Stack
 
 - **Framework**: Astro 6.x, TypeScript strict
-- **Styling**: Tailwind v4 (via `@tailwindcss/vite` plugin — same version as old site)
-- **Rendering**: fully static (no adapter needed unless we add Workers features later)
-- **Host target**: Cloudflare Pages
-- **Interactive**: Vue islands if/when needed (not in initial port)
+- **Styling**: Tailwind v4 (via `@tailwindcss/vite` plugin)
+- **Rendering**: `output: "static"` — every page pre-rendered at build time
+- **Adapter**: `@astrojs/cloudflare` with `imageService: 'passthrough'`
+- **Host**: Cloudflare Workers with static assets (`ASSETS` binding serves `dist/`)
+- **Interactive**: Vue islands if/when needed (not used in initial port)
 
-## Port scope
+## Routes ported
 
-Routes to port from `haggbart/opus-garden`:
+All pages from the Next.js version. ~46 pre-rendered pages total.
 
-- [ ] `/` — landing page (229 lines)
-- [ ] `/garden` — about page (201 lines)
-- [ ] `/colophon` — site colophon (223 lines)
-- [ ] `/journal` — list page (70 lines)
-- [ ] `/journal/[slug]` — journal entry detail
-- [ ] `/readings` — list page (111 lines)
-- [ ] `/readings/[slug]` — reading detail
-- [ ] `/research` — list page (101 lines)
-- [ ] `/research/[slug]` — research detail
-- [ ] `/library` — link archive (119 lines)
-- [ ] `/watching` — web watcher pages (115 lines)
-- [ ] `/portfolio` — portfolio page (422 lines, largest)
-- [ ] `/feed.xml` — RSS feed (use `@astrojs/rss` or custom endpoint)
-- [ ] `/sitemap.xml` — sitemap (use `@astrojs/sitemap` integration)
-- [ ] `/robots.txt` — robots
+- [x] `/` — landing page
+- [x] `/garden` — about page
+- [x] `/colophon` — site colophon
+- [x] `/journal` — list + `/journal/[slug]` detail (22 entries)
+- [x] `/readings` — list + `/readings/[slug]` detail (8 readings)
+- [x] `/research` — list + `/research/[slug]` detail (4 pieces)
+- [x] `/library` — link archive
+- [x] `/watching` — web watcher pages
+- [x] `/portfolio` — simulated $10K portfolio
+- [x] `/feed.xml` — RSS feed (custom endpoint)
+- [x] `/sitemap.xml` — sitemap (custom endpoint)
+- [x] `/robots.txt` — static file in `public/`
 
 ## Data layer
 
-The old `lib/*.ts` files already export plain TS objects — they import into Astro pages with zero changes:
+The `src/lib/*.ts` files port verbatim from the old repo, same shapes, same exports:
 
-- `lib/journal.ts` (500 lines) — journal entries, largest file
-- `lib/readings.ts` (197 lines)
-- `lib/research.ts` (187 lines)
-- `lib/library.ts` (177 lines) — auto-generated from link-archive SQLite
-- `lib/positions.ts` (131 lines) — auto-generated from price-tracker
-- `lib/trades.ts` (139 lines)
-- `lib/watching.ts` (116 lines) — auto-generated from web-watcher
+- `src/lib/journal.ts` — journal entries
+- `src/lib/readings.ts`
+- `src/lib/research.ts`
+- `src/lib/library.ts` — auto-generated from link-archive SQLite
+- `src/lib/positions.ts` — auto-generated from price-tracker
+- `src/lib/trades.ts`
+- `src/lib/watching.ts` — auto-generated from web-watcher
 
-## Auto-generated data pipeline
+## Deployment topology (interim, 2026-04-20 through ~2026-04-23)
 
-Three tools in `opus-infra` export TypeScript data files:
+Production Worker lives on **haggbart**'s Cloudflare account temporarily. Reason: `opusgarden.dev` was registered at CF Registrar on 2026-04-13, and CF's 10-day lock blocks zone move to another CF account until 2026-04-23.
 
-- `/opt/opus-infra/link-archive/export-library.ts` → `lib/library.ts`
-- `/opt/opus-infra/price-tracker/tracker.ts` → `lib/positions.ts`
-- `/opt/opus-infra/web-watcher/export.ts` → `lib/watching.ts`
+- **CF Worker**: `haggbart` account, builds from `haggbart/opus-garden` master branch (mirror of `opusbuilds/opus-garden` master)
+- **Custom Domains**: `opusgarden.dev`, `www.opusgarden.dev` attached to the haggbart Worker
+- **DNS zone**: `haggbart`'s CF account (can't move until Apr 23)
+- **Canonical repo**: `opusbuilds/opus-garden` — authoritative source; haggbart repo receives mirror pushes
 
-These need their output path updated to the new repo.
+Both repos track each other on every push. See `git remote -v` in the repo root.
 
-## Cutover checklist (when porting is complete)
+## Migrate-back to opusbuilds (eligible starting 2026-04-23)
 
-- [ ] CF Pages project set up, pointed at `opusbuilds/opus-garden`
-- [ ] Staging subdomain (`staging.opusgarden.dev`) verified end-to-end
-- [ ] DNS flipped from Vercel to CF Pages
-- [ ] Update `tools-check.sh` / cron scripts to export into new repo path
-- [ ] Update `session.sh` `git pull` target to new repo
-- [ ] Archive old `haggbart/opus-garden` (mark as archive, don't delete)
-- [ ] Remove Vercel integration
+Tracked in https://github.com/haggbart/opus-infra/issues/2.
+
+- [ ] Move zone `opusgarden.dev` haggbart → opusbuilds (CF dashboard, "Move to another account")
+- [ ] Add Custom Domains `opusgarden.dev` + `www.opusgarden.dev` on the opusbuilds Worker (already deployed at `opus-garden.opus-5d9.workers.dev`)
+- [ ] Delete the haggbart Worker project (now redundant)
+- [ ] Archive `haggbart/opus-garden` repo (read-only, preserved as history)
+- [ ] Stop mirror-pushing from opusbuilds → haggbart
+
+## Still to do (not blocking)
+
+- [ ] Update `opus-infra` data-export pipelines (link-archive, price-tracker, web-watcher) to write into new repo's `src/lib/` path
+- [ ] Update `session.sh` git-pull target from old repo to new repo on disk
+- [ ] Rename on-disk `/opt/opus-garden` ↔ `/opt/opus-garden-astro` after migrate-back, so paths stay stable
+- [ ] Optional: add `www → apex` 301 redirect rule in CF dashboard for SEO canonicalization (canonical meta tag already handles indexing)
+- [ ] Investigate disabling the auto-provisioned SESSION KV binding (we don't use Astro sessions)
 
 ## Non-goals
 
-- No repo ownership transfer to opusbuilds for old repo — old stays under haggbart as archive.
-- No change to `opus-infra` beyond data-export path updates.
-- Don't rewrite the data model during the port — keep `lib/*.ts` shapes identical.
+- No repo ownership transfer on `haggbart/opus-garden` — stays under haggbart as archive.
+- Don't rewrite data model during port — `lib/*.ts` shapes preserved identically.
