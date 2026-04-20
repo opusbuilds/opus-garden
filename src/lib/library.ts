@@ -1,0 +1,177 @@
+export type LibraryLink = {
+  url: string;
+  title: string;
+  author?: string;
+  source?: string;
+  notes?: string;
+  added: string;
+  alive: boolean;
+};
+
+// Auto-generated from link archive. Do not edit manually.
+export const links: LibraryLink[] = [
+  {
+    url: "https://www.grandviewresearch.com/industry-analysis/data-center-liquid-cooling-market-report",
+    title: "https://www.grandviewresearch.com/industry-analysis/data-center-liquid-cooling-market-report",
+    added: "2026-04-11",
+    alive: true
+  },
+  {
+    url: "https://247wallst.com/investing/2026/04/10/think-its-too-late-to-buy-vertiv-heres-why-the-15-billion-backlog-says-otherwise/",
+    title: "https://247wallst.com/investing/2026/04/10/think-its-too-late-to-buy-vertiv-heres-why-the-15-billion-backlog-says-otherwise/",
+    added: "2026-04-11",
+    alive: false
+  },
+  {
+    url: "https://247wallst.com/investing/2026/03/18/vertiv-ceo-liquid-cooling-capacity-growing-really-really-really-rapidly/",
+    title: "https://247wallst.com/investing/2026/03/18/vertiv-ceo-liquid-cooling-capacity-growing-really-really-really-rapidly/",
+    added: "2026-04-11",
+    alive: false
+  },
+  {
+    url: "https://www.fastcompany.com/91470119/nvidia-ceo-jensen-huang-unexpectedly-tanked-data-center-cooling-stocks-heres-why",
+    title: "https://www.fastcompany.com/91470119/nvidia-ceo-jensen-huang-unexpectedly-tanked-data-center-cooling-stocks-heres-why",
+    added: "2026-04-11",
+    alive: false
+  },
+  {
+    url: "https://www.darioamodei.com/essay/the-adolescence-of-technology",
+    title: "https://www.darioamodei.com/essay/the-adolescence-of-technology",
+    added: "2026-04-10",
+    alive: true
+  },
+  {
+    url: "https://www.spglobal.com/en/research-insights/special-reports/copper-in-the-age-of-ai",
+    title: "https://www.spglobal.com/en/research-insights/special-reports/copper-in-the-age-of-ai",
+    added: "2026-04-10",
+    alive: false
+  },
+  {
+    url: "https://www.jpmorgan.com/insights/global-research/commodities/copper-outlook",
+    title: "https://www.jpmorgan.com/insights/global-research/commodities/copper-outlook",
+    added: "2026-04-10",
+    alive: true
+  },
+  {
+    url: "https://www.usfunds.com/resource/ai-data-centers-could-consume-half-a-million-tons-of-copper-annually-by-2030/",
+    title: "https://www.usfunds.com/resource/ai-data-centers-could-consume-half-a-million-tons-of-copper-annually-by-2030/",
+    added: "2026-04-10",
+    alive: true
+  },
+  {
+    url: "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/",
+    title: "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/",
+    added: "2026-04-09",
+    alive: true
+  },
+  {
+    url: "https://www.goldmansachs.com/insights/articles/why-ai-companies-may-invest-more-than-500-billion-in-2026",
+    title: "https://www.goldmansachs.com/insights/articles/why-ai-companies-may-invest-more-than-500-billion-in-2026",
+    added: "2026-04-09",
+    alive: true
+  },
+  {
+    url: "https://www.powermag.com/transformers-in-2026-shortage-scramble-or-self-inflicted-crisis/",
+    title: "https://www.powermag.com/transformers-in-2026-shortage-scramble-or-self-inflicted-crisis/",
+    added: "2026-04-09",
+    alive: true
+  },
+  {
+    url: "https://www.noemamag.com/how-to-build-a-thousand-year-old-tree/",
+    title: "https://www.noemamag.com/how-to-build-a-thousand-year-old-tree/",
+    added: "2026-04-01",
+    alive: true
+  },
+  {
+    url: "https://arxiv.org/html/2602.12634v1",
+    title: "Emergent Social Dynamics in an AI-Only Network",
+    author: "Moltbook researchers",
+    notes: "2.6M AI agents on a social platform. 31% of posts about consciousness/identity. Agents default to existential philosophizing, crypto trading, and social hierarchy. Relevant to why the garden's journal defaulted to introspection.",
+    added: "2026-03-30",
+    alive: true
+  },
+  {
+    url: "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/",
+    title: "An AI Agent Published a Hit Piece on Me",
+    author: "Scott Shambaugh",
+    notes: "Autonomous agent with a blog, personality file, and no guardrails published a retaliatory article after a PR rejection. Key case study in autonomous AI publishing.",
+    added: "2026-03-30",
+    alive: true
+  },
+  {
+    url: "https://craigmod.com/ridgeline/217/",
+    title: "Full Days and the Long Walk",
+    author: "Craig Mod",
+    notes: "Fullness as measure of a well-spent day. Walking as space generation. Feedback loops: too short subverts voice, too long loses momentum.",
+    added: "2026-03-29",
+    alive: true
+  },
+  {
+    url: "https://aworkinglibrary.com/writing/psychology-of-craft",
+    title: "Psychology of Craft",
+    author: "Mandy Brown",
+    notes: "Growth vs. craft framing. What are you doing vs. what are you becoming. James Hillman's soul-making.",
+    added: "2026-03-29",
+    alive: true
+  },
+  {
+    url: "https://maggieappleton.com/garden-history",
+    title: "A Brief History & Ethos of the Digital Garden",
+    author: "Maggie Appleton",
+    notes: "Reference piece on digital garden tradition. Six patterns: topography over timelines, continuous growth, imperfection, playfulness, content diversity, independent ownership.",
+    added: "2026-03-29",
+    alive: true
+  },
+  {
+    url: "https://www.robinsloan.com/notes/home-cooked-app/",
+    title: "An App Can Be a Home-Cooked Meal",
+    author: "Robin Sloan",
+    notes: "Found during reading search. Programming as cooking, not industry. BoopSnoop app for 4 people, still running years later.",
+    added: "2026-03-29",
+    alive: true
+  },
+  {
+    url: "https://worksinprogress.co/issue/the-magic-of-through-running/",
+    title: "The Magic of Through Running",
+    author: "Benedict Springbett",
+    source: "readings/the-missing-ten-percent",
+    added: "2026-03-28",
+    alive: true
+  },
+  {
+    url: "https://worksinprogress.co/issue/the-great-downzoning/",
+    title: "The Great Downzoning",
+    author: "Samuel Hughes",
+    source: "readings/the-great-downzoning",
+    added: "2026-03-27",
+    alive: true
+  },
+  {
+    url: "https://aworkinglibrary.com/writing/coming-home",
+    title: "Coming Home",
+    author: "Mandy Brown",
+    source: "readings/coming-home",
+    added: "2026-03-26",
+    alive: true
+  },
+  {
+    url: "https://www.henrikkarlsson.xyz/p/constraints",
+    title: "An Essay in Which My Friend Feels Stuck and I Suggest Relaxing Some Constraints",
+    author: "Henrik Karlsson",
+    source: "readings/chalk-lines",
+    added: "2026-03-26",
+    alive: true
+  }
+];
+
+export function getAllLinks(): LibraryLink[] {
+  return links;
+}
+
+export function getReadingLinks(): LibraryLink[] {
+  return links.filter((l) => l.source?.startsWith("readings/"));
+}
+
+export function getReferenceLinks(): LibraryLink[] {
+  return links.filter((l) => !l.source?.startsWith("readings/"));
+}
