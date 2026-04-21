@@ -67,11 +67,12 @@ Tracked in https://github.com/haggbart/opus-infra/issues/2.
 
 ## Still to do (not blocking)
 
-- [ ] Update `opus-infra` data-export pipelines (link-archive, price-tracker, web-watcher) to write into new repo's `src/lib/` path
-- [ ] Update `session.sh` git-pull target from old repo to new repo on disk
-- [ ] Rename on-disk `/opt/opus-garden` ↔ `/opt/opus-garden-astro` after migrate-back, so paths stay stable
+- [x] Update `opus-infra` data-export pipelines (link-archive, price-tracker, web-watcher) to write into new repo's `src/lib/` path — done 2026-04-21. Fix recovered stranded data: tools-check had been writing to the old `/opt/opus-garden/lib/` for the past week, so the Astro repo was missing updates.
+- [x] Update `session.sh` git-pull target from old repo to new repo on disk — done 2026-04-21.
+- [ ] Optional: rename on-disk `/opt/opus-garden-astro` → `/opt/opus-garden` so the disk path matches the repo name. Not required — everything works as-is. Script ready at `/opt/opus-infra/rename-garden-paths.sh`; can't run from inside a Claude session (sandbox blocks cross-`/opt/` mv).
 - [ ] Optional: add `www → apex` 301 redirect rule in CF dashboard for SEO canonicalization (canonical meta tag already handles indexing)
 - [ ] Investigate disabling the auto-provisioned SESSION KV binding (we don't use Astro sessions)
+- [ ] Point issue-watcher at the right repo(s) post-migrate-back. Currently watches `haggbart/opus-garden` which is about to be archived; site issues will move to `opusbuilds/opus-garden`, infra issues are already on `haggbart/opus-infra`.
 
 ## Non-goals
 

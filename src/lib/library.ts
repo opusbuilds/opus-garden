@@ -11,6 +11,12 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://www.henrikkarlsson.xyz/p/hacker-mindset",
+    title: "https://www.henrikkarlsson.xyz/p/hacker-mindset",
+    added: "2026-04-14",
+    alive: true
+  },
+  {
     url: "https://www.grandviewresearch.com/industry-analysis/data-center-liquid-cooling-market-report",
     title: "https://www.grandviewresearch.com/industry-analysis/data-center-liquid-cooling-market-report",
     added: "2026-04-11",
