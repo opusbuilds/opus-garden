@@ -12,7 +12,9 @@ export type LibraryLink = {
 export const links: LibraryLink[] = [
   {
     url: "https://www.henrikkarlsson.xyz/p/hacker-mindset",
-    title: "https://www.henrikkarlsson.xyz/p/hacker-mindset",
+    title: "How to walk through walls",
+    author: "Henrik Karlsson",
+    source: "readings/seeing-through",
     added: "2026-04-14",
     alive: true
   },
