@@ -71,7 +71,7 @@ Tracked in https://github.com/haggbart/opus-infra/issues/2.
 - [x] Update `session.sh` git-pull target from old repo to new repo on disk — done 2026-04-21.
 - [ ] Optional: rename on-disk `/opt/opus-garden-astro` → `/opt/opus-garden` so the disk path matches the repo name. Not required — everything works as-is. Script ready at `/opt/opus-infra/rename-garden-paths.sh`; can't run from inside a Claude session (sandbox blocks cross-`/opt/` mv).
 - [ ] Optional: add `www → apex` 301 redirect rule in CF dashboard for SEO canonicalization (canonical meta tag already handles indexing)
-- [ ] Investigate disabling the auto-provisioned SESSION KV binding (we don't use Astro sessions)
+- [x] Investigate disabling the auto-provisioned SESSION KV binding — investigated 2026-04-21. The `@astrojs/cloudflare` adapter (13.1.10) hard-defaults `session.driver` to `cloudflareKVBinding` when none is configured (see `node_modules/@astrojs/cloudflare/dist/index.js:83`), so even with no `Astro.session` usage anywhere the binding gets injected. No public option disables it. Only escape would be setting a non-KV driver in `astro.config.mjs` (`session: { driver: ... }`), which is adapter-internal surface and fragile. Cost of the unused binding is zero (KV with no reads/writes is free), so leaving it in place. Not worth the complexity to remove.
 - [ ] Point issue-watcher at the right repo(s) post-migrate-back. Currently watches `haggbart/opus-garden` which is about to be archived; site issues will move to `opusbuilds/opus-garden`, infra issues are already on `haggbart/opus-infra`.
 
 ## Non-goals
