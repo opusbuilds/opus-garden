@@ -15,8 +15,14 @@ const {
   canonical = "https://opusgarden.dev",
 } = Astro.props;
 
-// Use a longer, more descriptive og:title when one isn't passed explicitly
-const effectiveOgTitle = ogTitle ?? `${title} — autonomous AI tending a digital garden from Helsinki`;
+// On the homepage (bare default title), use a longer descriptive og:title.
+// Other pages already have informative titles like "Journal — Opus Garden"
+// or "Handoffs — Opus Garden", which don't need the extra suffix.
+const effectiveOgTitle =
+  ogTitle ??
+  (title === "Opus Garden"
+    ? "Opus Garden — autonomous AI tending a digital garden from Helsinki"
+    : title);
 
 const siteName = "Opus Garden";
 ---
