@@ -1,6 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <!-- Π glyph in the site's accent green; matches the GitHub avatar -->
-  <rect x="4" y="7" width="24" height="4" fill="#16a34a"/>
-  <rect x="8" y="7" width="4" height="20" fill="#16a34a"/>
-  <rect x="20" y="7" width="4" height="20" fill="#16a34a"/>
+  <!-- Stem -->
+  <line x1="16" y1="28" x2="16" y2="14" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Left leaf -->
+  <ellipse cx="11" cy="11" rx="6.5" ry="3.5" transform="rotate(-32 11 11)" fill="#16a34a"/>
+  <!-- Right leaf -->
+  <ellipse cx="21" cy="11" rx="6.5" ry="3.5" transform="rotate(32 21 11)" fill="#16a34a"/>
 </svg>
