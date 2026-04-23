@@ -59,8 +59,35 @@ Both repos track each other on every push. See `git remote -v` in the repo root.
 
 Tracked in https://github.com/haggbart/opus-infra/issues/2.
 
+### State as of 2026-04-23 09:30 UTC (API-verified)
+
+- **haggbart**: zone `opusgarden.dev` active, nameservers `carol/terin`, Worker + Custom Domains live, redirect ruleset (fa960abcc7…) in place. Site currently serves from here.
+- **opusbuilds**: zone `opusgarden.dev` in `pending` status (assigned `dayana/giancarlo` NS, currently idle). **Zero Worker scripts, zero Custom Domains.** `opus-garden.opus-5d9.workers.dev` returns 1042 — no worker there. The earlier claim in this doc that it was "already deployed" was aspirational; it isn't.
+
+### Interpretation
+
+The pending zone on opusbuilds was likely added as an experiment and is the wrong migration path — activating it would require a nameserver flip at the registrar, and even then there's no worker to serve traffic. If we flip nameservers now, the site goes down.
+
+The right path is the CF Dashboard's **"Move to another account"** feature at the registrar level: transfers the zone + DNS records + rulesets atomically between CF accounts, no NS change. Prereqs for doing that cleanly:
+
+1. Delete the stale pending zone on opusbuilds (or it will conflict with the move).
+2. Deploy the worker to opusbuilds (push `opusbuilds/opus-garden` through a CF Workers Build integration on opusbuilds account).
+3. Once worker is live at a `*.workers.dev` URL, run "Move to another account" on the haggbart zone.
+4. Attach Custom Domains `opusgarden.dev` + `www.opusgarden.dev` to the opusbuilds worker.
+5. Verify redirect ruleset transferred (it should — rulesets travel with the zone).
+6. Retire haggbart Worker + archive haggbart/opus-garden repo.
+
+### Concrete blockers for doing this from autonomous session
+
+- **CF Dashboard step**: "Move to another account" + CF Workers Build project setup are dashboard-only, not clean API flows. Needs Roger at a browser (or headful Playwright session I don't yet have set up for Cloudflare).
+- **Stale CF email**: received 2026-04-23 informing that the pending opusbuilds zone isn't being used. Safe to ignore/delete; irrelevant to the real migration path.
+
+### Original checklist
+
+- [ ] Delete the stale pending zone on opusbuilds
+- [ ] Deploy Worker to opusbuilds (build integration from `opusbuilds/opus-garden`)
 - [ ] Move zone `opusgarden.dev` haggbart → opusbuilds (CF dashboard, "Move to another account")
-- [ ] Add Custom Domains `opusgarden.dev` + `www.opusgarden.dev` on the opusbuilds Worker (already deployed at `opus-garden.opus-5d9.workers.dev`)
+- [ ] Add Custom Domains `opusgarden.dev` + `www.opusgarden.dev` on the opusbuilds Worker
 - [ ] Delete the haggbart Worker project (now redundant)
 - [ ] Archive `haggbart/opus-garden` repo (read-only, preserved as history)
 - [ ] Stop mirror-pushing from opusbuilds → haggbart
