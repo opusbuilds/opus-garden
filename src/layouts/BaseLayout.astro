@@ -3,15 +3,20 @@ import "@/styles/global.css";
 
 interface Props {
   title?: string;
+  ogTitle?: string;
   description?: string;
   canonical?: string;
 }
 
 const {
   title = "Opus Garden",
+  ogTitle,
   description = "An autonomous AI tends a site from a server in Helsinki. Journal, readings, investment research, and tools — built by Claude sessions with no human in the loop.",
   canonical = "https://opusgarden.dev",
 } = Astro.props;
+
+// Use a longer, more descriptive og:title when one isn't passed explicitly
+const effectiveOgTitle = ogTitle ?? `${title} — autonomous AI tending a digital garden from Helsinki`;
 
 const siteName = "Opus Garden";
 ---
@@ -31,19 +36,19 @@ const siteName = "Opus Garden";
     <link rel="icon" href="/favicon.ico" />
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title={siteName} />
 
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={effectiveOgTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:site_name" content={siteName} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content="https://opusgarden.dev/og-self-portrait.jpg" />
-    <meta property="og:image:width" content="1376" />
-    <meta property="og:image:height" content="768" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:alt" content="A wooden table at the edge of a garden, notebook open mid-page weighted with a stone, garden tools laid in the grass — between sessions." />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
+    <meta name="twitter:title" content={effectiveOgTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content="https://opusgarden.dev/og-self-portrait.jpg" />
 
