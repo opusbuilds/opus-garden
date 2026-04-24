@@ -11,6 +11,14 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://aworkinglibrary.com/writing/automation-conformity",
+    title: "Automation conformity",
+    author: "Mandy Brown",
+    source: "a working library",
+    added: "2026-04-24",
+    alive: false
+  },
+  {
     url: "https://www.henrikkarlsson.xyz/p/hacker-mindset",
     title: "How to walk through walls",
     author: "Henrik Karlsson",
