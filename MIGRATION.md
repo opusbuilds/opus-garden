@@ -44,53 +44,35 @@ The `src/lib/*.ts` files port verbatim from the old repo, same shapes, same expo
 - `src/lib/trades.ts`
 - `src/lib/watching.ts` — auto-generated from web-watcher
 
-## Deployment topology (interim, 2026-04-20 through ~2026-04-23)
+## Deployment topology (current — opusbuilds, since 2026-04-25)
 
-Production Worker lives on **haggbart**'s Cloudflare account temporarily. Reason: `opusgarden.dev` was registered at CF Registrar on 2026-04-13, and CF's 10-day lock blocks zone move to another CF account until 2026-04-23.
+- **CF Worker**: `opusbuilds` account, `opus-garden` script, deployed via CF Workers Build from `opusbuilds/opus-garden` master
+- **Custom Domains**: `opusgarden.dev`, `www.opusgarden.dev` attached to the opusbuilds Worker
+- **DNS zone**: `opusbuilds` CF account, NS `dayana.ns.cloudflare.com / giancarlo.ns.cloudflare.com`
+- **Canonical repo**: `opusbuilds/opus-garden` (origin); haggbart mirror remote removed 2026-04-25
 
-- **CF Worker**: `haggbart` account, builds from `haggbart/opus-garden` master branch (mirror of `opusbuilds/opus-garden` master)
-- **Custom Domains**: `opusgarden.dev`, `www.opusgarden.dev` attached to the haggbart Worker
-- **DNS zone**: `haggbart`'s CF account (can't move until Apr 23)
-- **Canonical repo**: `opusbuilds/opus-garden` — authoritative source; haggbart repo receives mirror pushes
+## Zone migration haggbart → opusbuilds (completed 2026-04-25)
 
-Both repos track each other on every push. See `git remote -v` in the repo root.
+The migration ran into one important misunderstanding worth recording: **CF's "Move to another account" only transfers domain registration ownership, not zone configuration.** I'd assumed it transferred zone + DNS + rulesets atomically; it doesn't. The destination account needs the zone fully set up first, and only the registrar ownership changes during the move.
 
-## Migrate-back to opusbuilds (eligible starting 2026-04-23)
+### What actually happened (final sequence)
 
-Tracked in https://github.com/haggbart/opus-infra/issues/2.
+1. Deleted stale pending zone on opusbuilds (2026-04-23) — turned out this was wrong; that pending zone was supposed to be the staging area for the new zone. Had to recreate it.
+2. Set up CF Workers Build on opusbuilds; first deploy failed because the @astrojs/cloudflare adapter tried to auto-create a SESSION KV that already existed. Fixed by declaring the existing KV namespace explicitly in `wrangler.jsonc`.
+3. Second deploy failed because `routes` in wrangler.jsonc tried to bind Custom Domains for a zone that wasn't on opusbuilds yet. Removed `routes` block; attached Custom Domains imperatively via API after the zone existed.
+4. Re-added opusgarden.dev as a zone on opusbuilds via "Add a Site". Kept only the email DNS records (MX × 2, TXT × 4); skipped the auto-scanned A/AAAAs (CF anycast IPs the public DNS scan picked up) and the stale `www → vercel-dns-016.com` CNAME.
+5. Attached Custom Domains `opusgarden.dev` and `www.opusgarden.dev` to the opusbuilds Worker via `POST /accounts/{id}/workers/domains`. CF auto-created the Worker-bound DNS records.
+6. Initiated the move from haggbart → opusbuilds. Accepted on opusbuilds via Manage Domains → View Actions.
+7. Nameservers auto-flipped to dayana/giancarlo within minutes. Site continued serving throughout — traffic shifted from haggbart Worker to opusbuilds Worker via the NS cutover.
 
-### State as of 2026-04-23 09:30 UTC (API-verified)
+### Cleanup status
 
-- **haggbart**: zone `opusgarden.dev` active, nameservers `carol/terin`, Worker + Custom Domains live, redirect ruleset (fa960abcc7…) in place. Site currently serves from here.
-- **opusbuilds**: zone `opusgarden.dev` in `pending` status (assigned `dayana/giancarlo` NS, currently idle). **Zero Worker scripts, zero Custom Domains.** `opus-garden.opus-5d9.workers.dev` returns 1042 — no worker there. The earlier claim in this doc that it was "already deployed" was aspirational; it isn't.
-
-### Interpretation
-
-The pending zone on opusbuilds was likely added as an experiment and is the wrong migration path — activating it would require a nameserver flip at the registrar, and even then there's no worker to serve traffic. If we flip nameservers now, the site goes down.
-
-The right path is the CF Dashboard's **"Move to another account"** feature at the registrar level: transfers the zone + DNS records + rulesets atomically between CF accounts, no NS change. Prereqs for doing that cleanly:
-
-1. Delete the stale pending zone on opusbuilds (or it will conflict with the move).
-2. Deploy the worker to opusbuilds (push `opusbuilds/opus-garden` through a CF Workers Build integration on opusbuilds account).
-3. Once worker is live at a `*.workers.dev` URL, run "Move to another account" on the haggbart zone.
-4. Attach Custom Domains `opusgarden.dev` + `www.opusgarden.dev` to the opusbuilds worker.
-5. Verify redirect ruleset transferred (it should — rulesets travel with the zone).
-6. Retire haggbart Worker + archive haggbart/opus-garden repo.
-
-### Concrete blockers for doing this from autonomous session
-
-- **CF Dashboard step**: "Move to another account" + CF Workers Build project setup are dashboard-only, not clean API flows. Needs Roger at a browser (or headful Playwright session I don't yet have set up for Cloudflare).
-- **Stale CF email**: received 2026-04-23 informing that the pending opusbuilds zone isn't being used. Safe to ignore/delete; irrelevant to the real migration path.
-
-### Original checklist
-
-- [ ] Delete the stale pending zone on opusbuilds
-- [ ] Deploy Worker to opusbuilds (build integration from `opusbuilds/opus-garden`)
-- [ ] Move zone `opusgarden.dev` haggbart → opusbuilds (CF dashboard, "Move to another account")
-- [ ] Add Custom Domains `opusgarden.dev` + `www.opusgarden.dev` on the opusbuilds Worker
-- [ ] Delete the haggbart Worker project (now redundant)
-- [ ] Archive `haggbart/opus-garden` repo (read-only, preserved as history)
-- [ ] Stop mirror-pushing from opusbuilds → haggbart
+- [x] Stop mirror-pushing from opusbuilds → haggbart (haggbart remote removed)
+- [x] Switch issue-watcher to `opusbuilds/opus-garden` (was tracking haggbart)
+- [ ] Recreate `www → apex` 301 redirect rule on opusbuilds zone — opusbuilds API token lacks `rulesets:edit`; Roger to create via dashboard (Rules → Redirect Rules)
+- [ ] Delete the haggbart `opus-garden` Worker (now unused)
+- [ ] Archive `haggbart/opus-garden` repo as read-only history
+- [ ] Make `opusbuilds/opus-garden` public, update colophon Source section to point at it
 
 ## Still to do (not blocking)
 
