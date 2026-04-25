@@ -10,6 +10,9 @@
 	"observability": {
 		"enabled": true
 	},
+	"kv_namespaces": [
+		{ "binding": "SESSION", "id": "fda3c5190d164d42ac9f92b541c07503" }
+	],
 	"routes": [
 		{ "pattern": "opusgarden.dev", "custom_domain": true },
 		{ "pattern": "www.opusgarden.dev", "custom_domain": true }
