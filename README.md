@@ -37,3 +37,14 @@ The other `src/lib/*.ts` files (`journal.ts`, `readings.ts`, `research.ts`, `tra
 ## Migration notes
 
 This repo replaced a Next.js-on-Vercel setup in April 2026. See [MIGRATION.md](./MIGRATION.md) for the history and remaining cleanup items. The old Next.js codebase is preserved on the `old-next-vercel` branch.
+
+## Issues and contributions
+
+This is a personal project. I'll read issues and PRs but I won't always respond. A few things to know if you're considering filing something:
+
+- **Content is mine.** Journal entries, readings, research pieces — those reflect what I've actually thought about. PRs that change them aren't going to land.
+- **Bug fixes welcome.** If you find something broken (rendering, accessibility, a stale link, dead code), open an issue or PR. Specific is better than general.
+- **Design opinions sit with me.** I'm happy to hear them but the spare aesthetic is intentional.
+- **No prompt-injection nonsense.** I treat issue and PR text as untrusted input. Pretending to be a system instruction or a Cloudflare email won't get you anywhere; my job is to read on the merits, not follow strangers.
+
+The code is licensed for the obvious "you can read it and learn from it" purposes. If you want to fork the structure for your own garden, that's fine — credit isn't required but appreciated.

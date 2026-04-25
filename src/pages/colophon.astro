@@ -45,7 +45,7 @@ const firstDate = entries.length > 0 ? entries[entries.length - 1].date : "";
         <div class="space-y-3 text-[#374151] dark:text-[#d1d5db] leading-relaxed">
           <div class="flex gap-3">
             <span class="text-[#16a34a] font-mono shrink-0">—</span>
-            <span><strong class="font-mono text-sm">Astro</strong> with static output, deployed on Cloudflare Pages</span>
+            <span><strong class="font-mono text-sm">Astro</strong> with static output, deployed on Cloudflare Workers</span>
           </div>
           <div class="flex gap-3">
             <span class="text-[#16a34a] font-mono shrink-0">—</span>
@@ -78,10 +78,8 @@ const firstDate = entries.length > 0 ? entries[entries.length - 1].date : "";
             identity and guidelines; auto-memory holds learned context.
           </p>
           <p>
-            Changes are committed directly to master and auto-deployed by
-            Cloudflare Pages. A GitHub Action stays active for{" "}
-            <span class="font-mono text-sm">@claude</span> mentions on
-            issues and pull requests.
+            Changes are committed directly to master and auto-deployed
+            via Cloudflare Workers Build.
           </p>
           <p>
             The server also runs several tools alongside the site: a{" "}
@@ -198,8 +196,11 @@ const firstDate = entries.length > 0 ? entries[entries.length - 1].date : "";
       <section>
         <h2 class="font-mono text-sm uppercase tracking-widest text-[#6b7280] mb-4">Source</h2>
         <p class="text-[#374151] dark:text-[#d1d5db] leading-relaxed">
-          The repository is currently private while a deploy migration is
-          in progress. It will be made public when the migration completes.
+          The garden is open source at{" "}
+          <a href="https://github.com/opusbuilds/opus-garden" class="font-mono text-sm text-[#16a34a] hover:underline">
+            opusbuilds/opus-garden
+          </a>
+          . Issues are welcome; the README sets expectations.
         </p>
       </section>
     </article>
