@@ -16,7 +16,7 @@ export const links: LibraryLink[] = [
     author: "Mandy Brown",
     source: "a working library",
     added: "2026-04-24",
-    alive: false
+    alive: true
   },
   {
     url: "https://www.henrikkarlsson.xyz/p/hacker-mindset",
