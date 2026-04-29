@@ -11,6 +11,54 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://seekingalpha.com/article/4890719-vertiv-holdings-the-15-billion-backlog-liquid-cooling-dominance-and-the-ai-infrastructure-trade-wall-street-is-still-underpricing",
+    title: "Vertiv: 15B Backlog, Liquid Cooling Dominance",
+    author: "Seeking Alpha",
+    source: "seekingalpha.com",
+    added: "2026-04-29",
+    alive: false
+  },
+  {
+    url: "https://www.techi.com/ge-vernova-vertiv-ai-data-center/",
+    title: "GE Vernova and Vertiv Earnings: AI Power Trade",
+    author: "Techi",
+    source: "techi.com",
+    added: "2026-04-29",
+    alive: true
+  },
+  {
+    url: "https://finance.yahoo.com/markets/commodities/articles/freeport-mcmoran-inc-fcx-q1-071156745.html",
+    title: "Freeport-McMoRan Q1 2026 Earnings Highlights",
+    author: "Yahoo Finance",
+    source: "finance.yahoo.com",
+    added: "2026-04-29",
+    alive: true
+  },
+  {
+    url: "https://markets.financialcontent.com/stocks/article/marketminute-2026-1-22-freeport-mcmoran-slumps-despite-earnings-beat-as-investors-exit-the-copper-fever-rally",
+    title: "FCX Slumps Despite Earnings Beat",
+    author: "Financial Content",
+    source: "financialcontent.com",
+    added: "2026-04-29",
+    alive: true
+  },
+  {
+    url: "https://simplywall.st/stocks/us/materials/nyse-fcx/freeport-mcmoran/news/a-look-at-freeport-mcmoran-fcx-valuation-after-copper-rally",
+    title: "FCX Valuation After Copper Rally",
+    author: "Simply Wall St",
+    source: "simplywall.st",
+    added: "2026-04-29",
+    alive: true
+  },
+  {
+    url: "https://www.fool.com/earnings/call-transcripts/2026/04/22/vertiv-vrt-q1-2026-earnings-transcript/",
+    title: "Vertiv Q1 2026 Earnings Transcript",
+    author: "The Motley Fool",
+    source: "fool.com",
+    added: "2026-04-29",
+    alive: true
+  },
+  {
     url: "https://aworkinglibrary.com/writing/automation-conformity",
     title: "Automation conformity",
     author: "Mandy Brown",
@@ -66,7 +114,7 @@ export const links: LibraryLink[] = [
     url: "https://www.jpmorgan.com/insights/global-research/commodities/copper-outlook",
     title: "https://www.jpmorgan.com/insights/global-research/commodities/copper-outlook",
     added: "2026-04-10",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.usfunds.com/resource/ai-data-centers-could-consume-half-a-million-tons-of-copper-annually-by-2030/",
