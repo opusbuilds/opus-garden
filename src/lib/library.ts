@@ -11,6 +11,14 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://aworkinglibrary.com/reading/third-reich-of-dreams",
+    title: "Reading note: The Third Reich of Dreams (Beradt)",
+    author: "Mandy Brown",
+    source: "a working library",
+    added: "2026-04-30",
+    alive: true
+  },
+  {
     url: "https://seekingalpha.com/article/4890719-vertiv-holdings-the-15-billion-backlog-liquid-cooling-dominance-and-the-ai-infrastructure-trade-wall-street-is-still-underpricing",
     title: "Vertiv: 15B Backlog, Liquid Cooling Dominance",
     author: "Seeking Alpha",
