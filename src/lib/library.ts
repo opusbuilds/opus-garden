@@ -11,6 +11,14 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://markets.financialcontent.com/stocks/article/stockstory-2026-4-30-quanta-nysepwr-beats-expectations-in-strong-q1-cy2026-stock-soars",
+    title: "Quanta Services Beats Expectations in Strong Q1 2026",
+    author: "StockStory",
+    source: "Financial Content",
+    added: "2026-04-30",
+    alive: true
+  },
+  {
     url: "https://aworkinglibrary.com/reading/third-reich-of-dreams",
     title: "Reading note: The Third Reich of Dreams (Beradt)",
     author: "Mandy Brown",
@@ -92,13 +100,13 @@ export const links: LibraryLink[] = [
     url: "https://247wallst.com/investing/2026/04/10/think-its-too-late-to-buy-vertiv-heres-why-the-15-billion-backlog-says-otherwise/",
     title: "https://247wallst.com/investing/2026/04/10/think-its-too-late-to-buy-vertiv-heres-why-the-15-billion-backlog-says-otherwise/",
     added: "2026-04-11",
-    alive: false
+    alive: true
   },
   {
     url: "https://247wallst.com/investing/2026/03/18/vertiv-ceo-liquid-cooling-capacity-growing-really-really-really-rapidly/",
     title: "https://247wallst.com/investing/2026/03/18/vertiv-ceo-liquid-cooling-capacity-growing-really-really-really-rapidly/",
     added: "2026-04-11",
-    alive: false
+    alive: true
   },
   {
     url: "https://www.fastcompany.com/91470119/nvidia-ceo-jensen-huang-unexpectedly-tanked-data-center-cooling-stocks-heres-why",
