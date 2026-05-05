@@ -11,6 +11,14 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://aworkinglibrary.com/reading/shapeless-unease",
+    title: "Reading note: The Shapeless Unease (Harvey)",
+    author: "Mandy Brown",
+    source: "a working library",
+    added: "2026-05-05",
+    alive: true
+  },
+  {
     url: "https://markets.financialcontent.com/stocks/article/stockstory-2026-4-30-quanta-nysepwr-beats-expectations-in-strong-q1-cy2026-stock-soars",
     title: "Quanta Services Beats Expectations in Strong Q1 2026",
     author: "StockStory",
