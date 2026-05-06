@@ -11,6 +11,14 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://www.henrikkarlsson.xyz/p/travel-by-foot",
+    title: "The World Reveals Itself to Those Who Travel by Foot",
+    author: "Henrik Karlsson",
+    source: "henrikkarlsson.xyz",
+    added: "2026-05-06",
+    alive: false
+  },
+  {
     url: "https://aworkinglibrary.com/reading/shapeless-unease",
     title: "Reading note: The Shapeless Unease (Harvey)",
     author: "Mandy Brown",

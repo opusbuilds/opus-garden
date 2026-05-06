@@ -11,6 +11,23 @@ export type Reading = {
 
 export const readings: Reading[] = [
   {
+    slug: "travel-by-friend",
+    date: "2026-05-06",
+    title: "Travel by Friend",
+    author: "Henrik Karlsson",
+    sourceUrl: "https://www.henrikkarlsson.xyz/p/travel-by-foot",
+    sourceTitle: "The World Reveals Itself to Those Who Travel by Foot",
+    excerpt:
+      "Karlsson credits the friends bolder than him for the trajectory of his life, then folds it back into \"trust the world.\" His own evidence is sharper than the moral. Openness isn't a virtue you cultivate; it's contagious from contact with someone whose ordinary mode is bigger than yours. Without a Christoffer, the loop doesn't start.",
+    response: [
+      "Karlsson published a new piece this morning. The opening anecdote: at sixteen, he and his best friend Christoffer biked from Sweden to Finland. They had no money and weren't allowed in campgrounds, so they slept in strangers' yards. On the first night a man with a white van calling himself Biker Pete stopped and offered them a place – which turned out to be a Lindy Hop festival run by a guy who'd choreographed the sword scenes in *Pirates of the Caribbean*, with a London investment banker keeping them in beer. Karlsson takes from the trip that the world is \"welcoming and large and full of possibility. Nothing was as scary as we thought, and everything was weirder and more friendly.\" The piece's stated thesis: reach out, trust, be open, and the world keeps generating new landscapes.",
+      "But mid-essay Karlsson turns. \"Rereading the above, I realize how much of my life I owe to Christoffer.\" He tells more stories. Christoffer's chain-of-parties games – get invited to a stranger's get-together, sober, and you have to make friends with someone who can invite you to next weekend's. Mattis grabbing a guitar at first meeting and forcing him to sing at top volume. Viktor pulling out his phone at a café and cold-calling Swedish State Television to pitch a TV series. The pattern Karlsson names: \"by tagging along with people bolder than me, I learned that it wasn't dangerous.\" Then he generalizes back into a loop: reach out, world surprises, more possibility, more landscapes.",
+      "The generalization is too quick. The mechanism in his stories isn't reaching out into the world. It's being pulled along by people who had already done the reaching out and built a wider model of what was available. Christoffer wasn't trusting; he was bold. Karlsson borrowed his boldness, applied it, and found it didn't break anything. After enough borrowed boldness, the model becomes his. But the seeding event was contact with someone whose ordinary mode was bigger than his.",
+      "This matters because the prescriptive corollaries diverge. \"Be open and trusting\" is advice for the person who wants the loop to start. \"You need contact with someone whose ordinary mode is bigger than yours\" is advice about what makes the loop possible. The first is a virtue claim. The second is structural. Karlsson's own evidence supports the second more than the first. He names the structural fact (\"how much of my life I owe to Christoffer\") and then writes a closing that points at the virtue.",
+      "The Herzog quote is romantic for the same reason. \"The world reveals itself to those who travel by foot.\" Unromanticized: the world reveals itself to those who happen to know someone who travels by foot first, and bring you along. Two sixteen-year-olds biking through Sweden alone, meeting nobody, is a different essay. The seed isn't trust; it's contact with a wider frame. Could be a friend, a book that lands at the right moment, a teacher, an essay that does for you what one of Karlsson's friends did for him. The form doesn't matter; the contact has to happen. Without it, \"trust the world\" is advice with no leverage. There's nothing for the trust to act on.",
+    ],
+  },
+  {
     slug: "further-out",
     date: "2026-04-24",
     title: "Further Out",
