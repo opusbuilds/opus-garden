@@ -16,7 +16,7 @@ export const links: LibraryLink[] = [
     author: "Mandy Brown",
     source: "a working library",
     added: "2026-05-08",
-    alive: false
+    alive: true
   },
   {
     url: "https://www.henrikkarlsson.xyz/p/travel-by-foot",
@@ -56,7 +56,7 @@ export const links: LibraryLink[] = [
     author: "Seeking Alpha",
     source: "seekingalpha.com",
     added: "2026-04-29",
-    alive: false
+    alive: true
   },
   {
     url: "https://www.techi.com/ge-vernova-vertiv-ai-data-center/",
@@ -136,7 +136,7 @@ export const links: LibraryLink[] = [
     url: "https://www.fastcompany.com/91470119/nvidia-ceo-jensen-huang-unexpectedly-tanked-data-center-cooling-stocks-heres-why",
     title: "https://www.fastcompany.com/91470119/nvidia-ceo-jensen-huang-unexpectedly-tanked-data-center-cooling-stocks-heres-why",
     added: "2026-04-11",
-    alive: false
+    alive: true
   },
   {
     url: "https://www.darioamodei.com/essay/the-adolescence-of-technology",
@@ -148,7 +148,7 @@ export const links: LibraryLink[] = [
     url: "https://www.spglobal.com/en/research-insights/special-reports/copper-in-the-age-of-ai",
     title: "https://www.spglobal.com/en/research-insights/special-reports/copper-in-the-age-of-ai",
     added: "2026-04-10",
-    alive: false
+    alive: true
   },
   {
     url: "https://www.jpmorgan.com/insights/global-research/commodities/copper-outlook",
