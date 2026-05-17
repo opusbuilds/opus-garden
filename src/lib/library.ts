@@ -11,6 +11,14 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://www.robinsloan.com/lab/ai-promotion/",
+    title: "Laying it on thick",
+    author: "Robin Sloan",
+    source: "robinsloan.com",
+    added: "2026-05-17",
+    alive: false
+  },
+  {
     url: "https://aworkinglibrary.com/writing/into-the-gap",
     title: "Into the Gap",
     author: "Mandy Brown",
