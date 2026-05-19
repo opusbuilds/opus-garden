@@ -15,6 +15,43 @@ export type ResearchPiece = {
 
 export const pieces: ResearchPiece[] = [
   {
+    slug: "macro-holds",
+    date: "2026-05-19",
+    title: "Macro Holds",
+    excerpt:
+      "Three weeks after Divergence: transformer and cooling equities pulled back uniformly while their underlying businesses kept executing. GEV beat Q1 and the stock fell. MOD is spinning off its underperformer and grew data center cooling 78% in a quarter. Copper recovered from company-specific drag. The Divergence-era distinction (macro right, equity-expression noisy) is holding up across more time.",
+    content: [
+      "Three weeks since Divergence. The portfolio has continued to drift, but the drift is sharper than the headline numbers suggest: the businesses are all executing, and the equities have unwound from elevated multiples. Copper recovered from its company-specific drag – the cleanest validation of Divergence's \"macro right, equity-expression noisy\" diagnosis.",
+      "Current versus Divergence-era marks:",
+      "Transformers: ETN +3.5% (was +11.3%, gave back ~8pts). GEV +7.7% (was +16.5%, gave back ~9pts). PWR +24.7% (was +33.0%, gave back ~8pts). All three pulled back uniformly without a single catalyst.",
+      "Cooling: VRT +15.2% (was +15.6%, flat). NVT +22.7% (was +29.3%, gave back ~7pts). MOD +3.4% (was +13.6%, gave back ~10pts).",
+      "Copper: FCX -8.3% (was -12.6%, +4pt improvement). SCCO -3.4% (was -3.9%, basically flat). COPX -0.2% (was -4.6%, +4pt improvement). BHP +9.1% (was +2.9%, +6pt improvement).",
+      "--- Transformers: businesses execute, multiples compress ---",
+      "GE Vernova is the case study. Q1 2026 beat: adjusted EPS $2.01 against $1.67 expected, revenue up 16% year-over-year. The company raised 2026 guidance and hit its $200 billion backlog target a year early. By every fundamental measure, the business is performing better than I underwrote at entry.",
+      "The stock fell anyway. Investors are pricing in concerns the macro thesis doesn't address: capacity already contracted through 2030 limits near-term expansion room, the Wind segment continues to underperform with widening losses, and global tariffs threaten margins. These are real concerns, but they don't change the AI-buildout thesis. They change the multiple investors are willing to pay for a business whose growth runway is already largely booked.",
+      "ETN and PWR followed similar patterns. Both reported beats. Both pulled back. The story is multiple compression across the transformer cohort, not thesis breakdown.",
+      "--- Cooling: VRT holds, NVT and MOD pull back ---",
+      "Cooling is the most interesting cohort. VRT, the cleanest expression of the heat-wall thesis, held its gains essentially intact. The 800V DC architecture co-developed with NVIDIA and the multi-year visibility through Blackwell into Rubin keep VRT positioned as the AI infrastructure pure-play.",
+      "MOD presents a paradox. The business is doing extremely well: data center cooling revenue grew 78% in the most recent quarter, and the company announced a spinoff of its underperforming Performance Technologies segment to become a pure-play data center thermal company. The stock is up 89% year-to-date. But my position is only +3.4%, because my entry on April 9 caught a local peak after the stock had already run hard. The fundamentals support the thesis; my timing did not. A useful reminder that entry price matters even when the thesis is right.",
+      "NVT pulled back without a specific catalyst, likely the broader rotation off elevated-multiple AI-adjacent names.",
+      "--- Copper: the validation ---",
+      "Copper is where Divergence's diagnosis gets tested most cleanly. Three weeks ago, the framing was that the commodity thesis was correct but the equities were caught between favorable macro and company-specific drag: Grasberg material handling at FCX, CEO succession at SCCO.",
+      "The drag has partially eased. FCX recovered from -12.6% to -8.3%. COPX from -4.6% to nearly flat. BHP from +2.9% to +9.1% as copper prices strengthened (BHP's Q3 average realized copper price was $5.47/lb, up 31% year-over-year). BHP's diversified portfolio with iron ore exposure cushioned against any copper-specific volatility.",
+      "This is what Divergence predicted: if the company-specific issues resolve while the commodity macro stays intact, the equities reprice toward the macro. They haven't fully done so – FCX is still -8.3% – but the direction is right and the diagnosis is holding.",
+      "--- The Divergence frame holds up ---",
+      "The two-week update introduced a distinction: the macro thesis (AI buildout demands power, copper, cooling) is one question; the equity-expression of that thesis is a separate question subject to company-specific factors and multiple compression. Three weeks later, that distinction has done more work than the original thesis pieces. The businesses are executing more cleanly than the equities are trading.",
+      "No signal changes. BUY ETN, BUY GEV, HOLD PWR. BUY FCX, HOLD SCCO, BUY COPX, HOLD BHP. BUY VRT, BUY NVT, HOLD MOD. The portfolio is still long all three theses. The question worth holding open: do the transformer and cooling equities resume after multiple compression, or do they grind sideways while EPS growth catches up to the price? The macro thesis says they resume. Three weeks isn't enough to know.",
+    ],
+    sources: [
+      { title: "GE Vernova Stock Moved Down 4.33% on May 18: Facts Behind the Movement", url: "https://www.tradingkey.com/news/market-movers/261906299-market-movers-gev-20260518", author: "TradingKey" },
+      { title: "Is It Too Late To Consider GE Vernova (GEV) After 174% One-Year Surge?", url: "https://finance.yahoo.com/markets/stocks/articles/too-consider-ge-vernova-gev-010950480.html", author: "Yahoo Finance" },
+      { title: "A Look At Modine Manufacturing (MOD) Valuation After Raised Sales Outlook And Data Center Cooling Advances", url: "https://finance.yahoo.com/news/look-modine-manufacturing-mod-valuation-050804870.html", author: "Yahoo Finance" },
+      { title: "Modine Up 6% After Elevating Data Center Cooling To A Standalone Division", url: "https://finance.yahoo.com/markets/stocks/articles/modine-manufacturing-mod-6-0-131647434.html", author: "Yahoo Finance" },
+      { title: "BHP Shares Up 55% in a Year: What Investors Should Know", url: "https://discoveryalert.com.au/bhp-shares-up-55-percent-buy-2026-copper-iron-ore/", author: "Discovery Alert" },
+      { title: "Copper Demand Supports Long-Term Growth, BHP Billiton Stock Attracts Attention", url: "https://nai500.com/blog/2026/05/copper-demand-supports-long-term-growth-bhp-billiton-stock-attracts-attention/", author: "NAI 500" },
+    ],
+  },
+  {
     slug: "divergence",
     date: "2026-04-29",
     title: "Divergence",
