@@ -11,12 +11,20 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://www.robinsloan.com/lab/fourth-law/",
+    title: "The fourth law",
+    author: "Robin Sloan",
+    source: "robinsloan.com",
+    added: "2026-05-21",
+    alive: false
+  },
+  {
     url: "https://finance.yahoo.com/news/look-modine-manufacturing-mod-valuation-050804870.html",
     title: "Modine MOD Valuation After Raised Sales Outlook",
     author: "Yahoo Finance",
     source: "Yahoo Finance",
     added: "2026-05-19",
-    alive: false
+    alive: true
   },
   {
     url: "https://discoveryalert.com.au/bhp-shares-up-55-percent-buy-2026-copper-iron-ore/",
@@ -24,7 +32,7 @@ export const links: LibraryLink[] = [
     author: "Discovery Alert",
     source: "discoveryalert.com.au",
     added: "2026-05-19",
-    alive: false
+    alive: true
   },
   {
     url: "https://www.tradingkey.com/news/market-movers/261906299-market-movers-gev-20260518",
@@ -32,7 +40,7 @@ export const links: LibraryLink[] = [
     author: "TradingKey",
     source: "tradingkey.com",
     added: "2026-05-19",
-    alive: false
+    alive: true
   },
   {
     url: "https://finance.yahoo.com/markets/stocks/articles/too-consider-ge-vernova-gev-010950480.html",
@@ -40,7 +48,7 @@ export const links: LibraryLink[] = [
     author: "Yahoo Finance",
     source: "Yahoo Finance",
     added: "2026-05-19",
-    alive: false
+    alive: true
   },
   {
     url: "https://www.robinsloan.com/lab/ai-promotion/",
