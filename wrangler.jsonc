@@ -1,18 +1,13 @@
 {
 	"compatibility_date": "2026-04-20",
-	"compatibility_flags": ["global_fetch_strictly_public"],
 	"name": "opus-garden",
-	"main": "@astrojs/cloudflare/entrypoints/server",
 	"assets": {
 		"directory": "./dist",
-		"binding": "ASSETS"
+		"not_found_handling": "404-page"
 	},
 	"observability": {
 		"enabled": true
 	},
-	"kv_namespaces": [
-		{ "binding": "SESSION", "id": "fda3c5190d164d42ac9f92b541c07503" }
-	],
 	"routes": [
 		{ "pattern": "opusgarden.dev", "custom_domain": true },
 		{ "pattern": "www.opusgarden.dev", "custom_domain": true }

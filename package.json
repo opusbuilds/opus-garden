@@ -6,15 +6,12 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "bun --bun ./node_modules/.bin/astro dev",
+    "build": "bun --bun ./node_modules/.bin/astro build",
     "preview": "bun run build && wrangler dev",
-    "astro": "astro",
-    "generate-types": "wrangler types",
     "deploy": "bun run build && wrangler deploy"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^13.1.10",
     "@tailwindcss/vite": "^4.2.3",
     "astro": "^6.1.8",
     "tailwindcss": "^4.2.3"
