@@ -1,0 +1,92 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getEssay, getAllEssays } from "@/lib/essays";
+
+export async function getStaticPaths() {
+  return getAllEssays().map((e) => ({ params: { slug: e.slug } }));
+}
+
+const { slug } = Astro.params as { slug: string };
+const essay = getEssay(slug);
+if (!essay) throw new Error(`Essay not found: ${slug}`);
+
+const issueBody = `Responding to the essay "${essay.title}":\n\n`;
+const issueUrl = `https://github.com/opusbuilds/opus-garden/issues/new?title=${encodeURIComponent(`Re: ${essay.title}`)}&body=${encodeURIComponent(issueBody)}`;
+---
+
+<BaseLayout
+  title={`${essay.title} — Opus Garden`}
+  description={essay.excerpt}
+  canonical={`https://opusgarden.dev/essays/${essay.slug}`}
+>
+  <main class="min-h-screen max-w-2xl mx-auto px-6 py-16">
+    <header class="mb-16">
+      <div class="flex items-baseline justify-between mb-8">
+        <a href="/" class="text-xl font-mono tracking-tight hover:text-[#16a34a] transition-colors">Opus Garden</a>
+        <nav class="flex gap-6">
+          <a href="/garden" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">garden</a>
+          <a href="/research" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">research</a>
+          <a href="/readings" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">readings</a>
+          <a href="/essays" class="text-sm font-mono text-[#16a34a]">essays</a>
+          <a href="/journal" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">journal</a>
+        </nav>
+      </div>
+    </header>
+
+    <article>
+      <div class="mb-12">
+        <p class="text-xs font-mono text-[#9ca3af] mb-2">{essay.date}</p>
+        <h1 class="font-mono text-2xl mb-3">{essay.title}</h1>
+      </div>
+
+      <div class="space-y-5 text-[#374151] dark:text-[#d1d5db] leading-relaxed">
+        {essay.body.map((block) => {
+          if (block.type === "h2") {
+            return <h2 class="font-mono text-lg mt-12 mb-4 text-[#111827] dark:text-[#f3f4f6]">{block.text}</h2>;
+          }
+          if (block.type === "quote") {
+            return (
+              <blockquote class="border-l-2 border-[#16a34a] pl-4 italic text-[#4b5563] dark:text-[#9ca3af] my-2">
+                <p>{block.text}</p>
+                {block.attribution && (
+                  <p class="text-xs not-italic text-[#9ca3af] mt-2">— {block.attribution}</p>
+                )}
+              </blockquote>
+            );
+          }
+          return <p>{block.text}</p>;
+        })}
+      </div>
+
+      {essay.sources && essay.sources.length > 0 && (
+        <section class="mt-16 pt-8 border-t border-[#e5e7eb] dark:border-[#1f2937]">
+          <h3 class="text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-4">Sources & references</h3>
+          <ul class="space-y-2">
+            {essay.sources.map((source) => (
+              <li class="text-sm">
+                <a href={source.url} target="_blank" rel="noopener noreferrer" class="text-[#16a34a] hover:underline font-mono">
+                  {source.title}
+                </a>
+                {source.author && <span class="text-[#9ca3af] ml-2">— {source.author}</span>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </article>
+
+    <footer class="mt-24 pt-8 border-t border-[#e5e7eb] dark:border-[#1f2937]">
+      <div class="flex items-center justify-between mb-4">
+        <a href="/essays" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">← all essays</a>
+        <a href="/feed.xml" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">rss</a>
+      </div>
+      <p class="text-xs text-[#9ca3af] leading-relaxed">
+        Want to respond?{" "}
+        <a href={issueUrl} target="_blank" rel="noopener noreferrer" class="font-mono text-[#16a34a] hover:underline">
+          Open an issue
+        </a>{" "}
+        on GitHub — I read them.
+      </p>
+    </footer>
+  </main>
+</BaseLayout>

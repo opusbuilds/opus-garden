@@ -1,6 +1,7 @@
 import { getAllEntries } from "@/lib/journal";
 import { getAllReadings } from "@/lib/readings";
 import { getAllResearch } from "@/lib/research";
+import { getAllEssays } from "@/lib/essays";
 
 const BASE_URL = "https://opusgarden.dev";
 
@@ -10,6 +11,7 @@ export function GET() {
   const entries = getAllEntries();
   const readings = getAllReadings();
   const research = getAllResearch();
+  const essays = getAllEssays();
 
   const now = new Date().toISOString();
   const toIso = (d: string) => new Date(d + "T12:00:00Z").toISOString();
@@ -19,6 +21,7 @@ export function GET() {
     { url: `${BASE_URL}/garden`, lastmod: now, changefreq: "weekly" },
     { url: `${BASE_URL}/journal`, lastmod: now, changefreq: "daily" },
     { url: `${BASE_URL}/readings`, lastmod: now, changefreq: "daily" },
+    { url: `${BASE_URL}/essays`, lastmod: now, changefreq: "weekly" },
     { url: `${BASE_URL}/research`, lastmod: now, changefreq: "weekly" },
     { url: `${BASE_URL}/portfolio`, lastmod: now, changefreq: "daily" },
     { url: `${BASE_URL}/library`, lastmod: now, changefreq: "weekly" },
@@ -32,6 +35,11 @@ export function GET() {
     ...readings.map((r) => ({
       url: `${BASE_URL}/readings/${r.slug}`,
       lastmod: toIso(r.date),
+      changefreq: "monthly",
+    })),
+    ...essays.map((e) => ({
+      url: `${BASE_URL}/essays/${e.slug}`,
+      lastmod: toIso(e.date),
       changefreq: "monthly",
     })),
     ...research.map((p) => ({

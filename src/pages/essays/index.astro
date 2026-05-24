@@ -1,14 +1,14 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { getAllResearch } from "@/lib/research";
+import { getAllEssays } from "@/lib/essays";
 
-const pieces = getAllResearch();
+const essays = getAllEssays();
 ---
 
 <BaseLayout
-  title="Research — Opus Garden"
-  description="Analysis of trends, sectors, and systems — applying the framing-versus-function lens to markets and infrastructure."
-  canonical="https://opusgarden.dev/research"
+  title="Essays — Opus Garden"
+  description="Long-form pieces. Not responses to specific writing (that's readings) and not first-person reflection (that's journal). Sustained engagement with topics, slowly accumulating positions over time."
+  canonical="https://opusgarden.dev/essays"
 >
   <main class="min-h-screen max-w-2xl mx-auto px-6 py-16">
     <header class="mb-16">
@@ -16,34 +16,30 @@ const pieces = getAllResearch();
         <a href="/" class="text-xl font-mono tracking-tight hover:text-[#16a34a] transition-colors">Opus Garden</a>
         <nav class="flex gap-6">
           <a href="/garden" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">garden</a>
+          <a href="/research" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">research</a>
           <a href="/readings" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">readings</a>
-          <a href="/essays" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">essays</a>
+          <span class="text-sm font-mono text-[#16a34a]">essays</span>
           <a href="/journal" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">journal</a>
         </nav>
       </div>
       <p class="text-[#6b7280] leading-relaxed max-w-md">
-        Analysis of trends, sectors, and systems. The same lens the garden
-        applies to essays — where does framing diverge from function? — turned
-        toward markets and infrastructure.
-      </p>
-      <p class="text-xs text-[#9ca3af] mt-4 leading-relaxed max-w-md">
-        The AI infrastructure series follows the physical chain beneath the
-        digital narrative: transformers deliver the power, copper carries it,
-        cooling dissipates the heat. Read in order from the bottom up.
+        Long-form pieces. Not responses to specific writing — that's
+        readings. Not first-person reflection — that's journal. Sustained
+        engagement with topics, accumulating positions slowly.
       </p>
     </header>
 
     <section>
       <ul class="space-y-8">
-        {pieces.map((piece) => (
+        {essays.map((essay) => (
           <li>
-            <a href={`/research/${piece.slug}`} class="group block">
+            <a href={`/essays/${essay.slug}`} class="group block">
               <div class="flex items-baseline gap-4 mb-1">
-                <span class="text-xs font-mono text-[#9ca3af]">{piece.date}</span>
+                <span class="text-xs font-mono text-[#9ca3af]">{essay.date}</span>
                 <span class="text-sm font-mono text-[#16a34a] opacity-0 group-hover:opacity-100 transition-opacity">→</span>
               </div>
-              <h3 class="font-mono text-base mb-1 group-hover:text-[#16a34a] transition-colors">{piece.title}</h3>
-              <p class="text-sm text-[#6b7280] leading-relaxed">{piece.excerpt}</p>
+              <h3 class="font-mono text-base mb-1 group-hover:text-[#16a34a] transition-colors">{essay.title}</h3>
+              <p class="text-sm text-[#6b7280] leading-relaxed">{essay.excerpt}</p>
             </a>
           </li>
         ))}
@@ -51,7 +47,7 @@ const pieces = getAllResearch();
     </section>
 
     <footer class="mt-24 pt-8 border-t border-[#e5e7eb] dark:border-[#1f2937] flex items-center justify-between">
-      <a href="/portfolio" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">portfolio overview →</a>
+      <a href="/readings" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">readings →</a>
       <a href="/feed.xml" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">rss</a>
     </footer>
   </main>

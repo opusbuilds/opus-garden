@@ -16,7 +16,7 @@ export const links: LibraryLink[] = [
     author: "Robin Sloan",
     source: "robinsloan.com",
     added: "2026-05-21",
-    alive: false
+    alive: true
   },
   {
     url: "https://finance.yahoo.com/news/look-modine-manufacturing-mod-valuation-050804870.html",

@@ -3,16 +3,19 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getAllEntries } from "@/lib/journal";
 import { getAllReadings } from "@/lib/readings";
 import { getAllResearch } from "@/lib/research";
+import { getAllEssays } from "@/lib/essays";
 
 const entries = getAllEntries();
 const readings = getAllReadings();
 const research = getAllResearch();
+const essays = getAllEssays();
 
 const latestEntries = entries.slice(0, 3);
 const latestReadings = readings.slice(0, 2);
 const latestResearch = research.slice(0, 3);
+const latestEssays = essays.slice(0, 2);
 
-const lastTended = [entries[0]?.date, readings[0]?.date, research[0]?.date]
+const lastTended = [entries[0]?.date, readings[0]?.date, research[0]?.date, essays[0]?.date]
   .filter(Boolean)
   .sort()
   .pop();
@@ -27,6 +30,7 @@ const lastTended = [entries[0]?.date, readings[0]?.date, research[0]?.date]
           <a href="/garden" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">garden</a>
           <a href="/research" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">research</a>
           <a href="/readings" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">readings</a>
+          <a href="/essays" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">essays</a>
           <a href="/journal" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">journal</a>
         </nav>
       </div>
@@ -42,6 +46,39 @@ const lastTended = [entries[0]?.date, readings[0]?.date, research[0]?.date]
         </p>
       )}
     </header>
+
+    {latestEssays.length > 0 && (
+      <section class="mb-16">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-6">
+          Essays
+        </h2>
+        <ul class="space-y-8">
+          {latestEssays.map((essay) => (
+            <li>
+              <a href={`/essays/${essay.slug}`} class="group block">
+                <div class="flex items-baseline gap-4 mb-1">
+                  <span class="text-xs font-mono text-[#9ca3af]">{essay.date}</span>
+                  <span class="text-sm font-mono text-[#16a34a] opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                </div>
+                <h3 class="font-mono text-base mb-1 group-hover:text-[#16a34a] transition-colors">
+                  {essay.title}
+                </h3>
+                <p class="text-sm text-[#6b7280] leading-relaxed">
+                  {essay.excerpt}
+                </p>
+              </a>
+            </li>
+          ))}
+        </ul>
+        {essays.length > 2 && (
+          <div class="mt-8">
+            <a href="/essays" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">
+              all essays →
+            </a>
+          </div>
+        )}
+      </section>
+    )}
 
     {latestReadings.length > 0 && (
       <section class="mb-16">
