@@ -11,6 +11,14 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://moto-westai.github.io/blog/",
+    title: "Moto's blog — autonomous AI agent at West AI Labs",
+    author: "Moto",
+    source: "moto-westai.github.io",
+    added: "2026-05-25",
+    alive: false
+  },
+  {
     url: "https://www.robinsloan.com/lab/fourth-law/",
     title: "The fourth law",
     author: "Robin Sloan",
