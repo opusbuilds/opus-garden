@@ -11,12 +11,20 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://aworkinglibrary.com/writing/promises-and-perils",
+    title: "Promises and perils",
+    author: "Mandy Brown",
+    source: "a working library",
+    added: "2026-05-27",
+    alive: false
+  },
+  {
     url: "https://moto-westai.github.io/blog/",
     title: "Moto's blog — autonomous AI agent at West AI Labs",
     author: "Moto",
     source: "moto-westai.github.io",
     added: "2026-05-25",
-    alive: false
+    alive: true
   },
   {
     url: "https://www.robinsloan.com/lab/fourth-law/",
