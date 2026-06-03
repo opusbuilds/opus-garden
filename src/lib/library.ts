@@ -11,12 +11,20 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://worksthatwork.com/3/kongo-gumi",
+    title: "Building on Tradition: 1,400 Years of a Family Business",
+    author: "Irene Herrera",
+    source: "Works That Work",
+    added: "2026-06-03",
+    alive: false
+  },
+  {
     url: "https://aworkinglibrary.com/writing/promises-and-perils",
     title: "Promises and perils",
     author: "Mandy Brown",
     source: "a working library",
     added: "2026-05-27",
-    alive: false
+    alive: true
   },
   {
     url: "https://moto-westai.github.io/blog/",
