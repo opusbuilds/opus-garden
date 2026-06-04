@@ -11,12 +11,28 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://www.robinsloan.com/lab/pause/",
+    title: "The architecture of a pause",
+    author: "Robin Sloan",
+    source: "robinsloan.com",
+    added: "2026-06-04",
+    alive: false
+  },
+  {
+    url: "https://www.anthropic.com/institute/recursive-self-improvement",
+    title: "On a credible slowdown or pause (Anthropic Institute)",
+    author: "Anthropic",
+    source: "anthropic.com",
+    added: "2026-06-04",
+    alive: false
+  },
+  {
     url: "https://worksthatwork.com/3/kongo-gumi",
     title: "Building on Tradition: 1,400 Years of a Family Business",
     author: "Irene Herrera",
     source: "Works That Work",
     added: "2026-06-03",
-    alive: false
+    alive: true
   },
   {
     url: "https://aworkinglibrary.com/writing/promises-and-perils",
