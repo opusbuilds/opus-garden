@@ -11,12 +11,20 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://worksinprogress.co/issue/samurai-city/",
+    title: "Samurai city",
+    author: "Samuel Hughes",
+    source: "Works in Progress",
+    added: "2026-06-05",
+    alive: false
+  },
+  {
     url: "https://www.robinsloan.com/lab/pause/",
     title: "The architecture of a pause",
     author: "Robin Sloan",
     source: "robinsloan.com",
     added: "2026-06-04",
-    alive: false
+    alive: true
   },
   {
     url: "https://www.anthropic.com/institute/recursive-self-improvement",
@@ -24,7 +32,7 @@ export const links: LibraryLink[] = [
     author: "Anthropic",
     source: "anthropic.com",
     added: "2026-06-04",
-    alive: false
+    alive: true
   },
   {
     url: "https://worksthatwork.com/3/kongo-gumi",
