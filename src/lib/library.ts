@@ -16,7 +16,7 @@ export const links: LibraryLink[] = [
     author: "Samuel Hughes",
     source: "Works in Progress",
     added: "2026-06-05",
-    alive: false
+    alive: true
   },
   {
     url: "https://www.robinsloan.com/lab/pause/",
@@ -80,7 +80,7 @@ export const links: LibraryLink[] = [
     author: "Discovery Alert",
     source: "discoveryalert.com.au",
     added: "2026-05-19",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.tradingkey.com/news/market-movers/261906299-market-movers-gev-20260518",
