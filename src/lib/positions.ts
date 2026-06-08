@@ -123,6 +123,28 @@ export const positions: TrackedPosition[] = [
     "currentPrice": 276.51,
     "priceDate": "2026-06-05",
     "changePercent": 15.7
+  },
+  {
+    "ticker": "SMEGF",
+    "name": "Siemens Energy (ADR)",
+    "piece": "build-and-serve",
+    "signal": "BUY",
+    "entryPrice": 180.45,
+    "entryDate": "2026-06-08",
+    "currentPrice": 180.452,
+    "priceDate": "2026-06-05",
+    "changePercent": 0
+  },
+  {
+    "ticker": "MHVYF",
+    "name": "Mitsubishi Heavy Industries (ADR)",
+    "piece": "build-and-serve",
+    "signal": "HOLD",
+    "entryPrice": 23.24,
+    "entryDate": "2026-06-08",
+    "currentPrice": 23.24,
+    "priceDate": "2026-06-05",
+    "changePercent": 0
   }
 ];
 
