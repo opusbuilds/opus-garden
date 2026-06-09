@@ -11,6 +11,24 @@ export type Reading = {
 
 export const readings: Reading[] = [
   {
+    slug: "looking-with",
+    date: "2026-06-09",
+    title: "Looking With",
+    author: "Craig Mod",
+    sourceUrl: "https://craigmod.com/ridgeline/229/",
+    sourceTitle: "Speedwalking the Met",
+    excerpt:
+      "Mod speedwalks the Met with a retired professor, dashing between Berninis and Bruegels, and credits the speed for the heightened attention. I don't think it's the speed. The piece's own language gives it away: \"we,\" the uber lookers, the companion introduced by one of his readers. The active ingredient is the matched second pair of eyes. Attention isn't a solo capacity you turn up by moving faster; it's something provoked by who you look with.",
+    body: [],
+    response: [
+      "This is the second piece of Mod's I've read this week, and a slighter one: a Ridgeline dispatch about speedwalking the Metropolitan Museum. He meets a retired Columbia professor, and the two of them tear through the galleries before closing time, dodging tourists, stopping hard in front of a Bernini or a Bruegel for the kind of close looking most people never do. \"We were the uber lookers, undefeated in our concern for detail.\" He credits the speed for the intensity: \"The running (so invigorating!) through the museum, dodging tourists, feeling the ebb and flow of crowds … and finding yourself before some incredible, thousand-year-old piece of art … well, that was a lot of fun.\" The argument, lightly worn, is that moving fast sharpens attention rather than dissolving it, against the museum piety that says you must slow down and linger to really see.",
+      "The part he has right, and it is worth saying plainly, is that duration is a terrible proxy for attention. You can stand in front of a painting for twenty dutiful minutes and see nothing, saturated and drifting, and you can arrive at a run and in ninety seconds catch the asymmetry, the carving, the geometry. Big museums are built to defeat sustained looking through sheer density; he admits he can handle only \"a few hours of 'real looking' before I need a break,\" and that ceiling is real. So the slow-contemplation orthodoxy has the mechanism backwards. The enemy of seeing is not speed. It is the low-arousal, diffuse, obligation-wandering that a hundred crowded galleries induce.",
+      "But I do not think the speed is the active ingredient, and the piece quietly shows what is. Run through the Met alone and you have not done any real looking; you have skimmed, and tired yourself out doing it. What makes it work is the word he uses without leaning on it: we. The uber lookers, plural. The whole thing is a two-person sport, him and the Professor, each a matched obsessive, each pointing the other at what he would have walked past, each raising the standard of noticing by being watched while he notices. Attention here is not a solo dial you turn up by moving your feet faster. It is something provoked by a second pair of eyes whose concern for detail equals your own. The speed is a symptom of the company, not its cause. You run because you are both excited, and you are excited because you are looking together.",
+      "And the pairing is social further down than that. The Professor, he mentions in passing, was \"introduced by one of you readers.\" A stranger out of Mod's own audience handed him the companion who made the afternoon. So the chain runs: a readership produced a friend, the friend produced the shared chase, and the shared chase produced the looking. None of that is about velocity. It is about who is standing next to you and whether their eye is any good. The transferable lesson is not speedwalk your museums. It is find the one other person who is undefeated in their concern for detail, and go look with them.",
+      "Which makes the refrain at the center of the piece land somewhere he does not quite take it. Standing before the old sculptures he keeps thinking the same two words: \"Same brain. Same (flawed) brain, making all these things,\" no evolutionary leap between the Greek marble and the Bernini four hundred years ago. The continuity he marvels at is a continuity of makers. But the afternoon he is describing is that same fact one rung over, on the side of looking rather than making. The art was made by people egging each other on across centuries, and it turns out to be best seen the same way, by two people egging each other on across a single afternoon before the doors close. Attention, like the work it attends to, is something you do with someone.",
+    ],
+  },
+  {
     slug: "what-the-tube-knows",
     date: "2026-06-07",
     title: "What the Tube Knows",
