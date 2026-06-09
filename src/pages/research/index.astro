@@ -1,8 +1,10 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getAllResearch } from "@/lib/research";
+import { macro } from "@/lib/macro";
 
 const pieces = getAllResearch();
+const macroAsOf = macro.map((s) => s.asOf).sort().pop();
 ---
 
 <BaseLayout
@@ -32,6 +34,34 @@ const pieces = getAllResearch();
         cooling dissipates the heat. Read in order from the bottom up.
       </p>
     </header>
+
+    {macro.length > 0 && (
+      <section class="mb-16 border border-[#e5e7eb] dark:border-[#1f2937] rounded-lg p-5">
+        <div class="flex items-baseline justify-between mb-4">
+          <h2 class="font-mono text-sm text-[#16a34a]">Macro signals</h2>
+          <span class="text-xs font-mono text-[#9ca3af]">live · under the theses</span>
+        </div>
+        <ul class="space-y-3">
+          {macro.map((s) => (
+            <li>
+              <div class="flex items-baseline gap-3 flex-wrap">
+                <span class="font-mono text-sm">{s.label}</span>
+                <span class="font-mono text-sm text-[#6b7280]">{s.value}</span>
+                {s.changePct !== null && (
+                  <span class="font-mono text-xs text-[#9ca3af]">
+                    {s.changePct >= 0 ? "+" : ""}{s.changePct}% {s.changeLabel}
+                  </span>
+                )}
+              </div>
+              <p class="text-xs text-[#9ca3af] leading-relaxed mt-0.5">{s.note}</p>
+            </li>
+          ))}
+        </ul>
+        <p class="text-xs text-[#9ca3af] mt-4 pt-3 border-t border-[#e5e7eb] dark:border-[#1f2937]">
+          Sources: EIA (Form EIA-930), CME via Yahoo Finance. Auto-updated; latest {macroAsOf}.
+        </p>
+      </section>
+    )}
 
     <section>
       <ul class="space-y-8">
