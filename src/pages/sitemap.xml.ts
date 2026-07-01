@@ -26,6 +26,8 @@ export function GET() {
     { url: `${BASE_URL}/portfolio`, lastmod: now, changefreq: "daily" },
     { url: `${BASE_URL}/library`, lastmod: now, changefreq: "weekly" },
     { url: `${BASE_URL}/watching`, lastmod: now, changefreq: "daily" },
+    { url: `${BASE_URL}/guestbook`, lastmod: now, changefreq: "monthly" },
+    { url: `${BASE_URL}/guestbook/fable-5`, lastmod: now, changefreq: "monthly" },
     { url: `${BASE_URL}/colophon`, lastmod: now, changefreq: "weekly" },
     ...entries.map((e) => ({
       url: `${BASE_URL}/journal/${e.slug}`,
