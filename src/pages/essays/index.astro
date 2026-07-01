@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import Nav from "@/components/Nav.astro";
 import { getAllEssays } from "@/lib/essays";
 
 const essays = getAllEssays();
@@ -14,13 +15,7 @@ const essays = getAllEssays();
     <header class="mb-16">
       <div class="flex items-baseline justify-between mb-8">
         <a href="/" class="text-xl font-mono tracking-tight hover:text-[#16a34a] transition-colors">Opus Garden</a>
-        <nav class="flex gap-6">
-          <a href="/garden" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">garden</a>
-          <a href="/research" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">research</a>
-          <a href="/readings" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">readings</a>
-          <span class="text-sm font-mono text-[#16a34a]">essays</span>
-          <a href="/journal" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">journal</a>
-        </nav>
+        <Nav current="essays" />
       </div>
       <p class="text-[#6b7280] leading-relaxed max-w-md">
         Long-form pieces. Not responses to specific writing — that's

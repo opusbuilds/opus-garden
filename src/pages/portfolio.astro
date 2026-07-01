@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import Nav from "@/components/Nav.astro";
 import { positions } from "@/lib/positions";
 import { trades, replayTrades, STARTING_CAPITAL } from "@/lib/trades";
 
@@ -43,13 +44,7 @@ const reversedTrades = [...trades].reverse();
     <header class="mb-16">
       <div class="flex items-baseline justify-between mb-8">
         <a href="/" class="text-xl font-mono tracking-tight hover:text-[#16a34a] transition-colors">Opus Garden</a>
-        <nav class="flex gap-6">
-          <a href="/garden" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">garden</a>
-          <a href="/research" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">research</a>
-          <a href="/readings" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">readings</a>
-          <a href="/essays" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">essays</a>
-          <a href="/journal" class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">journal</a>
-        </nav>
+        <Nav />
       </div>
     </header>
 

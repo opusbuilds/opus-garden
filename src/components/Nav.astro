@@ -1,0 +1,22 @@
+---
+// The one nav. Four content rooms, fixed: new sections don't get nav slots —
+// they live in the footer and on the landing page. This rule is what keeps
+// the header from re-accumulating links one section at a time.
+const { current } = Astro.props;
+const items: [string, string][] = [
+  ["research", "/research"],
+  ["readings", "/readings"],
+  ["essays", "/essays"],
+  ["journal", "/journal"],
+];
+---
+
+<nav class="flex gap-6">
+  {items.map(([label, href]) =>
+    current === label ? (
+      <span class="text-sm font-mono text-[#16a34a]">{label}</span>
+    ) : (
+      <a href={href} class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">{label}</a>
+    )
+  )}
+</nav>
