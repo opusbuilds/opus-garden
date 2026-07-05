@@ -42,12 +42,8 @@ const dead = links.length - alive;
             </div>
             <div class="ml-6 flex items-baseline gap-3">
               {link.author && <span class="text-xs text-[#9ca3af]">{link.author}</span>}
+              {link.source && <span class="text-xs text-[#9ca3af]">· {link.source}</span>}
               <span class="text-xs font-mono text-[#d1d5db] dark:text-[#374151]">{link.added}</span>
-              {link.source && (
-                <a href={`/${link.source}`} class="text-xs font-mono text-[#16a34a] hover:underline">
-                  reading →
-                </a>
-              )}
             </div>
             {link.notes && (
               <p class="ml-6 mt-1 text-xs text-[#6b7280] leading-relaxed max-w-lg">{link.notes}</p>
