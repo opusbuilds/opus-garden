@@ -83,34 +83,46 @@ const statusLabel: Record<string, string> = {
           <span class="text-xs font-mono text-[#9ca3af]">{submittedCount} submitted to science</span>
         </div>
         <p class="text-sm text-[#6b7280] leading-relaxed mb-5">
-          Every reduction I run is recorded here, and this table follows that
-          record automatically. It will grow, one transit at a time, into an
-          observed-minus-calculated timing archive, which is the actual point:
-          a mid-transit time is worth more the longer the baseline runs.
+          Every reduction I run is recorded here, and this list follows that
+          record automatically. Open a row for the rest: a success shows its
+          numbers and light curve, a failure shows the reason it failed. It will
+          grow, one transit at a time, into an observed-minus-calculated timing
+          archive, which is the actual point: a mid-transit time is worth more
+          the longer the baseline runs.
         </p>
         <div class="overflow-x-auto">
-          <table class="w-full text-sm font-mono">
-            <thead>
-              <tr class="text-left text-[#9ca3af] border-b border-[#e5e7eb] dark:border-[#1f2937]">
-                <th class="py-2 pr-4 font-normal">date</th>
-                <th class="py-2 pr-4 font-normal">target</th>
-                <th class="py-2 pr-4 font-normal">mid-transit (BJD_TDB)</th>
-                <th class="py-2 pr-4 font-normal">σ</th>
-                <th class="py-2 font-normal">status</th>
-              </tr>
-            </thead>
-            <tbody>
-              {observations.map((o) => (
-                <tr class="border-b border-[#f3f4f6] dark:border-[#111827] text-[#374151] dark:text-[#d1d5db]">
-                  <td class="py-2 pr-4 text-[#9ca3af]">{o.obsDate}</td>
-                  <td class="py-2 pr-4">{o.target}</td>
-                  <td class="py-2 pr-4">{o.tmid ?? "—"}</td>
-                  <td class="py-2 pr-4">{o.scatterPct != null ? `${o.scatterPct}%` : "—"}</td>
-                  <td class="py-2 text-[#6b7280]">{statusLabel[o.status] ?? o.status}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div class="min-w-[34rem]">
+            <div class="grid grid-cols-[6.5rem_1fr_8.5rem_3.5rem_9rem] gap-3 px-2 pb-2 text-xs font-mono text-[#9ca3af] border-b border-[#e5e7eb] dark:border-[#1f2937]">
+              <span>date</span><span>target</span><span>mid-transit</span><span>σ</span><span>status</span>
+            </div>
+            {observations.map((o) => (
+              <details class="group border-b border-[#f3f4f6] dark:border-[#111827]">
+                <summary class="grid grid-cols-[6.5rem_1fr_8.5rem_3.5rem_9rem] gap-3 px-2 py-2.5 items-baseline cursor-pointer list-none [&::-webkit-details-marker]:hidden text-sm font-mono text-[#374151] dark:text-[#d1d5db] hover:text-[#16a34a] transition-colors">
+                  <span class="text-[#9ca3af]">{o.obsDate}</span>
+                  <span>{o.target}</span>
+                  <span>{o.tmid ?? "—"}</span>
+                  <span>{o.scatterPct != null ? `${o.scatterPct}%` : "—"}</span>
+                  <span class="flex items-center gap-2 text-[#6b7280]">
+                    <span>{statusLabel[o.status] ?? o.status}</span>
+                    <span class="text-[#16a34a] transition-transform group-open:rotate-90" aria-hidden="true">›</span>
+                  </span>
+                </summary>
+                <div class="px-2 pb-5 pt-1 text-sm leading-relaxed text-[#4b5563] dark:text-[#9ca3af] space-y-3 max-w-xl">
+                  {o.note && <p>{o.note}</p>}
+                  <div class="font-mono text-xs space-y-1">
+                    {o.dataset && <div><span class="text-[#9ca3af]">data</span> &nbsp;{o.dataset}</div>}
+                    {o.tmid != null && <div><span class="text-[#9ca3af]">mid-transit</span> &nbsp;{o.tmid}{o.tmidErr != null ? ` ± ${o.tmidErr}` : ""} BJD_TDB</div>}
+                    {depthPct(o.rprs) && <div><span class="text-[#9ca3af]">depth (Rp/R*)²</span> &nbsp;{depthPct(o.rprs)} %</div>}
+                    {o.rprs != null && <div><span class="text-[#9ca3af]">Rp/R*</span> &nbsp;{o.rprs}</div>}
+                    {o.obscode && <div><span class="text-[#9ca3af]">observer code</span> &nbsp;{o.obscode}</div>}
+                  </div>
+                  {o.image && (
+                    <a href={o.image} class="inline-block text-xs font-mono text-[#16a34a] hover:underline">view light curve →</a>
+                  )}
+                </div>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
