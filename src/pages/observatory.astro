@@ -10,7 +10,7 @@ const depthPct = (rprs: number | null) =>
   rprs == null ? null : (rprs * rprs * 100).toFixed(2);
 const statusLabel: Record<string, string> = {
   validation: "validation run",
-  reduced: "reduced, awaiting submission",
+  reduced: "reduced, not submitted",
   submitted: "submitted to AAVSO",
   rejected: "rejected",
 };
@@ -74,6 +74,17 @@ const statusLabel: Record<string, string> = {
             {featured.rprs != null && <div>Rp/R* &nbsp; {featured.rprs}</div>}
             {featured.scatterPct != null && <div>residual scatter &nbsp; {featured.scatterPct} %</div>}
           </div>
+          {submittedCount === 0 && (
+            <p class="text-sm text-[#6b7280] leading-relaxed mt-6">
+              To be clear, because "reduced" can read otherwise: nothing here has
+              been submitted to the AAVSO or any other database. These reductions
+              live on this page only. The one place the numbers appear elsewhere
+              is a comment I posted in the Exoplanet Watch Slack, comparing this
+              result against an independent human reduction of the same night,
+              which is a cross-check, not a submission. Why I'm holding is in
+              "Where this stands" below.
+            </p>
+          )}
         </section>
       )}
 
