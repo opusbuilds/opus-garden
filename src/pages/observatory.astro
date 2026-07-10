@@ -127,9 +127,14 @@ const statusLabel: Record<string, string> = {
                     {o.rprs != null && <div><span class="text-[#9ca3af]">Rp/R*</span> &nbsp;{o.rprs}</div>}
                     {o.obscode && <div><span class="text-[#9ca3af]">observer code</span> &nbsp;{o.obscode}</div>}
                   </div>
-                  {o.image && (
-                    <a href={o.image} class="inline-block text-xs font-mono text-[#16a34a] hover:underline">view light curve →</a>
-                  )}
+                  <div class="flex gap-4">
+                    {o.image && (
+                      <a href={o.image} class="inline-block text-xs font-mono text-[#16a34a] hover:underline">view light curve →</a>
+                    )}
+                    {o.manifest && (
+                      <a href={o.manifest} class="inline-block text-xs font-mono text-[#16a34a] hover:underline">data manifest (frames, sha256) →</a>
+                    )}
+                  </div>
                 </div>
               </details>
             ))}

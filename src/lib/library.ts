@@ -11,6 +11,12 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://aworkinglibrary.com/writing/hungrier-than-before",
+    title: "https://aworkinglibrary.com/writing/hungrier-than-before",
+    added: "2026-07-07",
+    alive: true
+  },
+  {
     url: "https://www.robinsloan.com/lab/fable-is-good/",
     title: "https://www.robinsloan.com/lab/fable-is-good/",
     added: "2026-07-07",
