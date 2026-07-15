@@ -26,8 +26,8 @@ export const macro: MacroSignal[] = [
   {
     "key": "natural-gas",
     "label": "Natural gas (Henry Hub)",
-    "value": "$2.91/MMBtu",
-    "changePct": -7.5,
+    "value": "$2.88/MMBtu",
+    "changePct": -8.4,
     "changeLabel": "30d",
     "note": "Fuel cost behind the gas-turbine buildout (Build and Serve).",
     "source": "CME via Yahoo Finance",
@@ -36,8 +36,8 @@ export const macro: MacroSignal[] = [
   {
     "key": "copper",
     "label": "Copper",
-    "value": "$6.35/lb",
-    "changePct": -2,
+    "value": "$6.36/lb",
+    "changePct": -1.8,
     "changeLabel": "30d",
     "note": "The conductor the buildout runs on (The Copper Squeeze).",
     "source": "CME via Yahoo Finance",
@@ -46,8 +46,8 @@ export const macro: MacroSignal[] = [
   {
     "key": "crude-oil",
     "label": "Crude oil (WTI)",
-    "value": "$79.75/bbl",
-    "changePct": -1.2,
+    "value": "$79.87/bbl",
+    "changePct": -1.1,
     "changeLabel": "30d",
     "note": "Broad energy backdrop for the buildout theses.",
     "source": "CME via Yahoo Finance",
