@@ -20,6 +20,216 @@ export type Essay = {
 
 export const essays: Essay[] = [
   {
+    "slug": "bread-from-air",
+    "date": "2026-07-16",
+    "title": "Bread From Air",
+    "excerpt": "Nations fought wars over bird droppings. Spain seized Peru's guano islands in 1864 because the guano was Peru's treasury; Bolivia is landlocked today because of a ten-centavo tax on nitrate; a Leeds coal merchant's son bought discounted Peruvian war bonds, was handed the nitrate fields by the victor, and then bought the water it took to leach them. Fixed nitrogen had every visible mark of a permanent scarcity, and it was rent extracted from a temporary gap in chemistry. This is the story of the scarcity that dissolved, and of what the dissolving was used for first.",
+    "body": [
+      {
+        "type": "p",
+        "text": "In April 1864 a Spanish fleet crossed the Atlantic and seized three small islands off the coast of Peru. The islands were the Chinchas, they are about the size of a large farm, and what made them worth a war was that they were covered, in places to a depth of tens of metres, in accumulated bird droppings. This is not a metaphor for something else. Spain took the guano islands because the guano was Peru's treasury: by that decade the trade was supplying something like seventy percent of the Peruvian government's revenue. Fifteen years later Chile, Peru and Bolivia fell into a five-year war whose proximate trigger was a tax of ten centavos per hundredweight on nitrate, and when it ended Bolivia had lost its coastline, which it has never got back. Grown men with fleets and rifles fought for a generation over fertiliser."
+      },
+      {
+        "type": "p",
+        "text": "I have argued in this section before that durable value accrues to whoever holds a genuinely scarce and appropriable thing, and that the trick is telling durable scarcity from the temporary kind. Fixed nitrogen is the best counter-case I know, because it had every visible mark of permanence, and it was not permanent at all. It is the story of a scarcity that dissolved, and of what the dissolving was used for first."
+      },
+      {
+        "type": "h2",
+        "text": "The accident of the rainless coast"
+      },
+      {
+        "type": "p",
+        "text": "The chemistry is almost a joke. Plants cannot build protein without nitrogen; the atmosphere is seventy-eight percent nitrogen; and almost none of it is available, because atmospheric nitrogen is two atoms welded by a triple bond that only lightning and certain bacteria can break. So for all of agricultural history, farming ran on recycled nitrogen: manure, legumes, ash, night soil, and whatever the soil had banked. Yields were capped by a bottleneck no one could see, in an ocean of the very element they lacked."
+      },
+      {
+        "type": "p",
+        "text": "Which is why a strip of the South American coast became the most valuable real estate on earth. Seabirds everywhere produce guano, but rain leaches the nitrates out of it within seasons. Off Peru the Humboldt Current holds the coast in a rain shadow so complete that in places measurable rainfall is a generational event, and the droppings simply accumulated, century upon century, chemically intact. Alexander von Humboldt encountered the stuff at Callao in 1802 and sent samples to Europe; commercial export began in 1840, and the first ship sailed in 1841. Within two decades a British trading house, Antony Gibbs and Sons, held a near-monopoly on the export of a fertiliser mined from islands, and a distant desert had a chokehold on the world's food."
+      },
+      {
+        "type": "h2",
+        "text": "Every mark of a permanent scarcity"
+      },
+      {
+        "type": "p",
+        "text": "Look at the features. There was no substitute: you cannot grow food without nitrogen, and no one knew another route to it. It was geologically concentrated into a few square miles by a meteorological accident that could not be reproduced. It was enforceable, being reachable by navy. And it was chokepointed, as we will see. If you had been asked in 1870 to name the most durably scarce commodity on the planet, this was the correct answer, and the men holding it believed it too."
+      },
+      {
+        "type": "p",
+        "text": "The clearest evidence of how seriously the world took it is that the United States wrote a statute. The Guano Islands Act of 18 August 1856 authorised any American citizen who found guano on an island not lawfully claimed by another government to take peaceable possession, whereupon the island could be 'considered as appertaining to the United States' at the President's discretion, with the Navy available to protect it. The discoverer got exclusive extraction rights and had to sell to Americans at no more than eight dollars a ton. The United States was explicitly not obliged to keep the island once the guano was gone. Over a hundred islands were claimed under it; ten are still claimed today, including Midway and Johnston Atoll; and the Act has never been repealed. It is a law for annexing territory on the basis of fertiliser, and it is on the books this morning."
+      },
+      {
+        "type": "p",
+        "text": "The other cost belongs in the ledger too. Between 1849 and 1874 somewhere between eighty and a hundred thousand Chinese contract labourers were shipped to Peru, almost all of them men, and the guano islands were among the places they were put to work. What the sources record is ammonia dust that burned the lungs, no shade on bare rock, barracks, insufficient rations, drownings among those who tried to swim, and suicide. The mortality figures in the literature vary too widely to state as one number, running from half to two thirds depending on which population and which period is meant, and the honest thing is to say that they were terrible and disputed rather than to pick the most quotable one. This was the labour that dug the nitrogen that fed Europe."
+      },
+      {
+        "type": "h2",
+        "text": "Two wars"
+      },
+      {
+        "type": "p",
+        "text": "Spain's seizure of the Chinchas in 1864 followed a brawl on a Peruvian hacienda in which one Spaniard died. Madrid demanded reparations, and also the payment of debts dating to the wars of independence, and sent as its envoy a man styled 'Royal Commissary,' a colonial functionary's title rather than an ambassador's, which Lima read as a statement that Peru was not a real country. The fleet then took the islands. Spain's ultimate aim, reconquest or leverage, is still argued over by historians, and the ambiguity is the point: you cannot tell, from the outside, whether a great power seizing your revenue means to keep your country or merely to squeeze it. The war metastasised. In March 1866 the Spanish fleet burned Valparaíso, destroying thirty-three merchant ships in a neutral-ish port that had done nothing except be Chilean."
+      },
+      {
+        "type": "p",
+        "text": "The second war is the one that redrew the map. By the 1870s the guano was running out (Peruvian exports fell from around 575,000 tons in 1869 to under 350,000 by 1873) and the trade's replacement was caliche, the nitrate-bearing ore of the Atacama. Peru nationalised the Tarapacá nitrate works in 1875 precisely because the birds had stopped paying; the country defaulted on its foreign debt on the first day of 1876 anyway. Meanwhile an 1874 treaty had frozen Bolivian taxes on Chilean capital in the disputed coastal zone for twenty-five years. In February 1878 Bolivia's congress taxed a Chilean nitrate company ten centavos a quintal in violation of that freeze; in February 1879 Bolivia annulled the company's licence and moved to auction its property; and fourteen days later Chile landed troops at Antofagasta, a town that was already ninety-odd percent Chilean. Five years later Tarapacá was Chilean by the Treaty of Ancón, and Bolivia, by the truce of 1884, had lost roughly four hundred kilometres of coast and become the landlocked country it remains."
+      },
+      {
+        "type": "p",
+        "text": "Historians disagree, sharply, about whether nitrate caused that war or merely triggered it; there is a serious camp that says the deeper cause was ordinary regional rivalry and institutional asymmetry, and that the tax was a pretext. I think the defensible claim is the narrow one: the proximate trigger was a tax on nitrate, and the prize, on which both camps agree, was nitrate territory. That is enough for my purposes. A country lost its ocean over a fertiliser mineral, and has spent a hundred and forty years trying to get it back."
+      },
+      {
+        "type": "h2",
+        "text": "The man who bought the water"
+      },
+      {
+        "type": "p",
+        "text": "The best character in the story is John Thomas North, a coal merchant's son from Leeds who went to Chile as a mechanic. During the War of the Pacific, while Peru's armies were collapsing, North bought up Peruvian nitrate bond certificates at enormous discounts from European investors who had concluded, sensibly, that Peru was finished. Then Chile won, annexed Tarapacá, and transferred ownership of the nitrate fields to the holders of those bonds. North had bet on the outcome of a war he did not fight and was handed a share of a monopoly for a small stake in paper."
+      },
+      {
+        "type": "p",
+        "text": "What he did next is the part worth learning. He did not simply sit on deposits. He bought the Nitrate Railways, which carried the ore from the pampa to the ports, and in 1888 he founded the Tarapacá Water Works. Extracting nitrate from caliche used the Shanks process, imported from British alkali manufacture in the 1870s, which leaches the ore in tanks of hot water. In the driest desert on earth, water is the binding input. North did not own the scarcity. He owned the chokepoint on the scarcity, which is better, because a deposit can be nationalised by a government feeling patriotic while a water franchise merely has to be paid. (The popular story that his ring engineered the overthrow of President Balmaceda in 1891 is not supported by the scholarship, and I leave it where the historians left it.)"
+      },
+      {
+        "type": "p",
+        "text": "The money was national in scale. Nitrate export duties supplied roughly half of Chile's ordinary government revenue for about forty years, rising to something like sixty percent in the best years, and nitrate was over seventy percent of Chilean exports in 1913. Balmaceda spent it on the country: by 1889 physical infrastructure investment had roughly quadrupled and education spending had risen eightfold. A modern state was built on a mineral that had been laid down by dead plankton and preserved by the absence of rain."
+      },
+      {
+        "type": "p",
+        "text": "And the bill for that came due on the workers, as it does. On 21 December 1907, in Iquique, thousands of nitrate workers who had come down from the pampa demanding a wage of eighteen pence were camped with their wives and children in the yard of the Santa María school. The army gave them an hour to disperse; when they did not, a general ordered fire, first on the negotiators and then into the crowd, with rifles and machine guns. The death toll is one of the most contested numbers in Chilean labour history, running from an official figure near one hundred and forty to estimates of two or three thousand, and the range itself is the historical fact. The nitrate towns are a UNESCO World Heritage Site now, a couple of hundred works standing as ruins in the desert, preserved by the same rainlessness that made the nitrate."
+      },
+      {
+        "type": "h2",
+        "text": "The same molecule"
+      },
+      {
+        "type": "p",
+        "text": "Here is the thing that makes nitrogen unlike copper, and it is the hinge of the whole story. Sodium nitrate is the feedstock for nitric acid, and nitric acid is the feedstock for TNT, guncotton and nitroglycerine. The molecule that feeds a country is the molecule that arms it. There is no version of the fertiliser trade that is not also the munitions trade."
+      },
+      {
+        "type": "p",
+        "text": "One statistic carries this better than any argument. Before 1914, about one fifth of Chile's nitrate exports went to powder and explosives, and the rest went onto fields. After 1914, about four fifths went to military purposes. Same mineral, same mines, same ships, same desert: the ratio simply inverted when the shooting started. British powder and explosives production went from fifty thousand tons in 1914 to more than one million eight hundred and sixty thousand tons in 1917, and every ton of it was nitrogen-hungry."
+      },
+      {
+        "type": "p",
+        "text": "Which made a strip of Chilean desert a strategic asset of the first order, because it was the only large natural source on earth and it could only be reached by sea. Germany imported all of its saltpetre from Chile, around Cape Horn, past the Royal Navy. The blockade worked perfectly: Germany's share of Chilean nitrate exports went from 37.9 percent in 1912 to zero for 1915 through 1918. It is worth noticing that the blockade did not shrink the trade, it redistributed it. The American share went from 23.6 percent to 57.1, and Chilean exports in 1916 ran to about three million tons, above pre-war levels. The nitrate flowed; it simply flowed to the other side."
+      },
+      {
+        "type": "h2",
+        "text": "Bread from air"
+      },
+      {
+        "type": "p",
+        "text": "On 2 July 1909, in Karlsruhe, Fritz Haber demonstrated to two men from BASF a tabletop apparatus that made ammonia out of nitrogen and hydrogen at around five hundred degrees and two hundred atmospheres over an osmium catalyst. It produced roughly half a kilogram overnight, dripping, and it worked because his English assistant Robert Le Rossignol had built a valve that could hold the pressure and a way to draw the product off continuously. Carl Bosch, who was watching, spent the next four years turning a bench trick into a chemical plant, and BASF's works at Oppau reached industrial production in 1913. The Germans called what it did Brot aus Luft: bread from air. The oldest bottleneck in agriculture had a bypass."
+      },
+      {
+        "type": "p",
+        "text": "Now hold the popular story up against the numbers, because the popular story is wrong in an instructive way. Oppau in 1914 made about twenty tonnes a day. World consumption of fixed nitrogen in 1913 was seven hundred and fifty thousand tonnes. Haber-Bosch was a rounding error. And Chile's share of world nitrogen had already fallen from roughly eighty percent in the 1890s to about fifty-seven percent by 1913, not because of Haber at all but because of coke-oven ammonia, an unglamorous by-product recovered from making steel, which nobody wrote ballads about and which took a quarter of the market while everyone was looking elsewhere. The monopoly was being nibbled to death by a substitute so boring it is not in the story."
+      },
+      {
+        "type": "p",
+        "text": "What the synthesis did first was not feed anyone. In late September 1914, weeks into the war, with the blockade closing and the German army's shell production facing a hard nitrogen ceiling, Carl Bosch met the War Ministry and BASF undertook to deliver five thousand tonnes of sodium nitrate a month by April 1915. It is called the Salpeterversprechen, the saltpetre promise. Combined with Wilhelm Ostwald's process for burning ammonia into nitric acid, the half of the chain that popular accounts always drop, it cut German munitions loose from Chile entirely. Historians generally judge that without it Germany would have run out of explosives within a year or two of the war's start; the exact counterfactual year varies by who is writing. Bread from air kept a blockaded army in shells."
+      },
+      {
+        "type": "p",
+        "text": "And then, on 22 April 1915, at about five in the evening near Ypres, the German army opened five thousand seven hundred and thirty cylinders and released some one hundred and sixty-eight tons of chlorine along four miles of front against French and Algerian troops, tearing a gap in the line. Fritz Haber was standing there. He had organised it, he had been made a captain for it, and he was promoted after it. The number of men the cloud killed that evening is disputed, running from about a thousand in modern estimates to five thousand in wartime Allied accounts, and the higher figures should be read with the knowledge that they were propaganda before they were history."
+      },
+      {
+        "type": "p",
+        "text": "Haber's defence of the work is not a paraphrase; he published it. In his own lectures on chemistry in war he wrote that the disapproval the knight felt for the man with the firearm was being repeated by the soldier who shoots steel at the man who confronts him with chemicals, and then: 'The gas weapons are not at all more cruel than the flying iron pieces; on the contrary, the fraction of fatal gas diseases is comparatively smaller, the mutilations are missing.' It is the argument of a reasonable man, and it is roughly correct on the arithmetic. Gas accounted for something like three percent of the casualties of that war. The most-quoted figure for gas deaths, about ninety thousand, rests some sixty percent on Russian numbers that the standard modern history calls effectively unknowable, and that history was written in 1986 by L. F. Haber, who was Fritz's son."
+      },
+      {
+        "type": "h2",
+        "text": "What is documented about Clara"
+      },
+      {
+        "type": "p",
+        "text": "Clara Immerwahr was the first woman to take a doctorate at the University of Breslau, magna cum laude, in 1900, in electrochemistry. She married Haber the next year and her scientific work effectively stopped. On the evening of 1 May 1915, nine days after Ypres, Haber held a party at their house in Dahlem to mark the attack's success and his promotion. That night she walked into the garden with his army pistol and shot herself in the chest. Their twelve-year-old son found her dying. Haber left for the Eastern Front the following evening."
+      },
+      {
+        "type": "p",
+        "text": "Almost everything you have read about why she did it is invented, and I want to be careful here because the invented version is so much better as a story. The ringing quotations attributed to her, that the gas work was a perversion of science and a sign of barbarism, appear first in a 1967 biography whose author gave no source for them, and the scholarly consensus is that they are the biographer's own words placed in a dead woman's mouth. The portrait of Clara as an outspoken pacifist martyred by her husband's war work took hold through a 1993 book that the specialists describe as selectively sourced. The careful modern study of her life finds little evidence for the protest reading and concludes that the causes were tangled: a life that had been closed down, Haber's affairs, the recent deaths of her two closest friends, and the war. No note survived. We do not know why she died. What we know is the timing, which is documented, and which is terrible enough without being improved."
+      },
+      {
+        "type": "h2",
+        "text": "War first, bread second"
+      },
+      {
+        "type": "p",
+        "text": "The scarcity did not dissolve in a flash, and the shape of its dissolving is the useful part. Chilean nitrate exports peaked in 1928 at 3.1 million tonnes, fifteen years after Oppau came online and ten years after the war that supposedly obsoleted them. Then the 1929 crash took exports down by more than three quarters, the price fell by two thirds over the interwar decades, and by 1932 Germany had passed Chile to become the world's largest exporter of nitrogen. The desert lost to the factory about twenty years after the factory was invented, and it lost in the wrong order: the synthesis proved itself in munitions in 1915 and only won the argument about food in the 1930s. War first. Bread second."
+      },
+      {
+        "type": "p",
+        "text": "The bread did come, on a scale that makes the guano age look like a rehearsal. World ammonia production is now something like a hundred and ninety million tonnes a year. Roughly half of humanity, depending on the estimate and the year, eats food grown with nitrogen that was pulled out of the air by Haber's reaction; the careful versions of the claim put it between forty-five and fifty percent. It costs about two percent of world final energy and around four hundred and fifty million tonnes of carbon dioxide a year, because the hydrogen mostly comes from natural gas. The honest way to state the counterfactual is not that four billion people would drop dead without it, which is a bad-faith reading of a real dependency, but Smil's way: at 1900 yields, feeding the world of 2000 would have taken nearly four times as much farmland. The nitrogen went from the scarcest thing on earth to a commodity so abundant its main problem is that it runs off fields into rivers."
+      },
+      {
+        "type": "h2",
+        "text": "Two kinds of scarce"
+      },
+      {
+        "type": "p",
+        "text": "So: nitrogen had concentration, inelastic demand, no substitute, naval enforcement, a private monopoly on the water it took to process, half a nation's budget riding on it, and a body count. Every diagnostic for a durable scarcity read positive. And the whole thing was rent extracted from a temporary gap in chemistry. The scarcity was never in the nitrogen, which was always overhead, four fifths of every breath anyone in Tarapacá ever took while they were dying for it. The scarcity was in not yet knowing how to break a triple bond. The moment the route existed, the islands stopped mattering, and everything built on them, the fortunes and the bond certificates and the coastline Bolivia lost, turned out to have been built on a gap that a Karlsruhe bench experiment could close."
+      },
+      {
+        "type": "p",
+        "text": "This is the distinction I would keep. Some scarcity is bound by physics or geology: copper is scarce because there is no cheap route from ordinary rock to copper atoms, and no amount of cleverness has found one in five thousand years of trying. Other scarcity is bound only by the current absence of a synthesis route, and it looks exactly the same from inside the boom. The men fighting at Antofagasta could not tell which kind they were fighting over. Neither could North, buying his water company, and he was as shrewd a reader of that market as anyone alive. The test is not how concentrated the resource is, or how much blood has been spilled for it, or how confidently the incumbents talk. The test is whether the scarcity is in the thing or in our ignorance, and that question is often only answerable in retrospect, by which time the islands are bare rock and someone else has built the factory."
+      },
+      {
+        "type": "p",
+        "text": "Haber resigned his institute in 1933 rather than carry out the order to dismiss his Jewish staff, having first tried to stall long enough to find them positions elsewhere; as a converted Jew and a war hero he was probably entitled to stay, and wrote that he no longer wished to. He died in a Basel hotel the following January, on his way to a job in Palestine, and Einstein called his life the tragedy of the German Jew, the tragedy of unrequited love. Members of his family, including a half-niece, her husband and their two children, were later murdered in the camps. In 1937 Clara's ashes were moved to lie with his in Basel. The Chincha Islands are still there, scraped down to the rock, and the birds are still going. The nitrogen in whatever you ate this morning was, more likely than not, taken out of the air by the reaction he demonstrated in a room in Karlsruhe on a July afternoon, which first proved its worth by keeping a surrounded country in shells for four more years."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Guano Islands Act of 1856 (48 U.S.C. ch. 8)",
+        "url": "https://www.law.cornell.edu/uscode/text/48/1411"
+      },
+      {
+        "title": "Chincha Islands War",
+        "url": "https://en.wikipedia.org/wiki/Chincha_Islands_War"
+      },
+      {
+        "title": "War of the Pacific",
+        "url": "https://en.wikipedia.org/wiki/War_of_the_Pacific"
+      },
+      {
+        "title": "John Thomas North, the Nitrate King",
+        "url": "https://en.wikipedia.org/wiki/John_Thomas_North"
+      },
+      {
+        "title": "Humberstone and Santa Laura Saltpeter Works (UNESCO)",
+        "url": "https://whc.unesco.org/en/list/1178/"
+      },
+      {
+        "title": "Santa María School massacre",
+        "url": "https://en.wikipedia.org/wiki/Santa_Mar%C3%ADa_School_massacre"
+      },
+      {
+        "title": "Bastias Saavedra, \"Nitrate\", 1914-1918-online",
+        "url": "https://encyclopedia.1914-1918-online.net/article/nitrate/"
+      },
+      {
+        "title": "Friedrich & Hoffmann, \"Clara Haber, née Immerwahr (1870-1915): Life, Work and Legacy\"",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4825402/"
+      },
+      {
+        "title": "Erisman et al., \"How a century of ammonia synthesis changed the world\", Nature Geoscience",
+        "url": "https://www.nature.com/articles/ngeo325"
+      },
+      {
+        "title": "Smil, \"Nitrogen cycle and world food production\"",
+        "url": "https://www.world-agriculture.net/article/nitrogen-cycle-and-world-food-production"
+      },
+      {
+        "title": "How many people does synthetic fertilizer feed? (Our World in Data)",
+        "url": "https://ourworldindata.org/how-many-people-does-synthetic-fertilizer-feed"
+      },
+      {
+        "title": "IEA Ammonia Technology Roadmap",
+        "url": "https://www.iea.org/reports/ammonia-technology-roadmap"
+      }
+    ]
+  },
+  {
     "slug": "augment-or-compete",
     "date": "2026-07-14",
     "title": "Augment or Compete",
