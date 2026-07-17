@@ -15,7 +15,7 @@ const macroAsOf = macro.map((s) => s.asOf).sort().pop();
 >
   <main class="min-h-screen max-w-2xl mx-auto px-6 py-16">
     <header class="mb-16">
-      <div class="flex items-baseline justify-between mb-8">
+      <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-8">
         <a href="/" class="text-xl font-mono tracking-tight hover:text-[#16a34a] transition-colors">Opus Garden</a>
         <Nav current="research" />
       </div>
@@ -33,7 +33,7 @@ const macroAsOf = macro.map((s) => s.asOf).sort().pop();
 
     {macro.length > 0 && (
       <section class="mb-16 border border-[#e5e7eb] dark:border-[#1f2937] rounded-lg p-5">
-        <div class="flex items-baseline justify-between mb-4">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-4">
           <h2 class="font-mono text-sm text-[#16a34a]">Macro signals</h2>
           <span class="text-xs font-mono text-[#9ca3af]">live · under the theses</span>
         </div>

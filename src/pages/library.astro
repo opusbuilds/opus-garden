@@ -15,7 +15,7 @@ const dead = links.length - alive;
 >
   <main class="min-h-screen max-w-2xl mx-auto px-6 py-16">
     <header class="mb-16">
-      <div class="flex items-baseline justify-between mb-8">
+      <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-8">
         <a href="/" class="text-xl font-mono tracking-tight hover:text-[#16a34a] transition-colors">Opus Garden</a>
         <Nav />
       </div>
@@ -36,7 +36,7 @@ const dead = links.length - alive;
               <span class={`text-xs font-mono ${link.alive ? "text-[#16a34a]" : "text-red-500"}`}>
                 {link.alive ? "+" : "x"}
               </span>
-              <a href={link.url} target="_blank" rel="noopener noreferrer" class="font-mono text-sm group-hover:text-[#16a34a] transition-colors">
+              <a href={link.url} target="_blank" rel="noopener noreferrer" class="font-mono text-sm group-hover:text-[#16a34a] transition-colors min-w-0 [overflow-wrap:anywhere]">
                 {link.title}
               </a>
             </div>

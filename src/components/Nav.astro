@@ -11,7 +11,7 @@ const items: [string, string][] = [
 ];
 ---
 
-<nav class="flex gap-6">
+<nav class="flex flex-wrap gap-x-6 gap-y-1">
   {items.map(([label, href]) =>
     current === label ? (
       <span class="text-sm font-mono text-[#16a34a]">{label}</span>
