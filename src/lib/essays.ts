@@ -20,6 +20,137 @@ export type Essay = {
 
 export const essays: Essay[] = [
   {
+    "slug": "for-all-times-for-all-peoples",
+    "date": "2026-07-18",
+    "title": "For All Times, For All Peoples",
+    "excerpt": "In 1791 revolutionary France set out to define a unit of length from the Earth itself, one ten-millionth of the distance from pole to equator, so that measurement would belong to no king and no nation. Two astronomers spent seven years triangulating the meridian through a country at war. One of them found that his own measurements of a single latitude would not agree, hid the discrepancy, quietly fudged his figures to cover it, and was privately destroyed by it. The discrepancy turned out to be the Earth itself, lumpy and irregular, answering back. This is the story of a standard that was meant to be found in nature and had to be chosen by people instead, and of a man who died in the gap between honour and the error bar.",
+    "body": [
+      {
+        "type": "p",
+        "text": "In the spring of 1791 the French decided to measure the shape of the Earth in order to fix the length of a stick, and the decision was political before it was scientific. Under the old regime a unit of length was a local fact. A measure might be the forearm of some long-dead lord, kept as an iron bar set into the wall of his market, and the next town's measure was different, and the lord who kept the standard could quietly shave it in his own favour. To hold the standard was to hold a small piece of power. The men who made the Revolution wanted measurement taken out of the hands of power altogether, and their solution was radical: they would define the unit from nature, so that it would belong to no one."
+      },
+      {
+        "type": "p",
+        "text": "A length fixed to the size of the planet could, in principle, be recovered by anyone, anywhere, forever, and it would carry no king's name. The first proposal, in 1790, was to use the length of a pendulum that ticks once a second. But a pendulum's swing depends on the local pull of gravity, which varies from place to place, and it defines a length in terms of a unit of time, and the commission wanted a length that leaned on nothing else at all. So in March 1791 a commission of the Academy of Sciences, with Borda and Lagrange and Laplace and Condorcet among its members, recommended instead that the metre be one ten-millionth of the distance from the North Pole to the Equator, measured along the meridian that runs through Paris."
+      },
+      {
+        "type": "p",
+        "text": "The ambition is caught in a phrase that became the motto of the whole metric project, struck on a commemorative medal in 1799: a tous les temps, a tous les peuples. For all times, for all peoples. It is usually credited to Condorcet, though the words seem in truth to belong to the medal rather than to any text of his; the sentiment, at least, was his and his colleagues'. There is an irony in it that the historian Ken Alder has made much of. The universal standard, belonging to no nation, was to be drawn from a meridian that happened to run through Paris, surveyed by French astronomers, and it was the rest of the world that would be asked to adopt France's arc. Universalism with a national address. But the ideal was sincere, and the thing they had to do to realise it was genuinely hard."
+      },
+      {
+        "type": "h2",
+        "text": "Two men and a chain of triangles"
+      },
+      {
+        "type": "p",
+        "text": "To turn the Earth into a stick you have to measure a piece of the meridian with obsessive precision and then extrapolate to the whole quadrant from pole to equator. The Academy divided the arc from Dunkirk to Barcelona, about nine and a half degrees of latitude, between two astronomers. Jean-Baptiste Delambre took the longer northern share, from the belfry of a church in Dunkirk down to the cathedral at Rodez. Pierre Mechain took the shorter and harder southern share, from Rodez over the Pyrenees to the fortress of Montjuic above Barcelona."
+      },
+      {
+        "type": "p",
+        "text": "The method was triangulation. You measure one baseline on the ground with enormous care, then build outward from it a chain of triangles whose corners are high points in the landscape, church steeples and hilltops and towers, measuring only the angles and letting trigonometry carry the baseline's length across a whole country. Delambre and Mechain's chain ran to a hundred and fifteen principal triangles. At the two ends of the arc they also fixed the latitude directly, by observing stars. The instrument that made it feasible was the repeating circle, designed by Borda: it let an observer measure the same angle over and over around different parts of the graduated dial, so that the small errors in the dial's engraving averaged themselves away, and a portable instrument could reach an accuracy of about one second of arc. A second of arc is roughly the width of a coin seen from four kilometres off."
+      },
+      {
+        "type": "h2",
+        "text": "Seven years, and a revolution"
+      },
+      {
+        "type": "p",
+        "text": "They set out in the summer of 1792, which was the worst imaginable moment. The monarchy fell that August. The two men were climbing to the tops of cathedrals with gleaming brass instruments of no obvious purpose, in a country at war and consumed by suspicion, and they were repeatedly taken for spies. Delambre was arrested more than once. On one occasion his authorisation was worthless because it bore the signature of the King, who had by then himself been arrested; local patriots detained him for poking at steeples with menacing and incomprehensible instruments, and he had to send for fresh papers from the Convention before he could go on."
+      },
+      {
+        "type": "p",
+        "text": "In December 1793 the Committee of Public Safety purged the very commission overseeing the new measures, throwing off Borda, Laplace and Delambre himself as insufficiently republican, and the following spring it sent Lavoisier, who had worked on the standards, to the guillotine. Mechain had it worse in a quieter way. Early on he was hurt inspecting a machine, breaking ribs and his collarbone, and while he was still mending, France and Spain went to war, and he found himself stranded on the wrong side of the border, refused a passport home, his property in Paris confiscated. He spent his internment doing the one thing available to him, which was measuring, over and over, the latitude of Barcelona. That measuring is the heart of the story."
+      },
+      {
+        "type": "h2",
+        "text": "The discrepancy"
+      },
+      {
+        "type": "p",
+        "text": "Mechain fixed Barcelona's latitude from two different stations. First from the fortress of Montjuic, over a winter of observation; then, after the war forced him off the militarily sensitive fortress, from a room in an inn in the city below, the Fontana de Oro. The two results should have agreed. They differed by about three seconds of arc, something like a hundred metres on the ground. By the standards of the age it was a small disagreement. By Mechain's own standards it was intolerable, because he had staked everything on the perfection of his observations, and here were his own numbers refusing to close."
+      },
+      {
+        "type": "p",
+        "text": "He did not report it. He submitted the Montjuic result, kept the second determination to himself, and for the rest of his life refused to let anyone, Delambre included, see his complete records. Worse: when Alder went into the archives two centuries later and reconstructed what Mechain had actually done, he found that Mechain had quietly adjusted some of his figures, not to move their average but to shrink their scatter, to make the readings look more consistent, more precise, than raw observation with an eighteenth-century instrument had any right to be. He manufactured the appearance of the perfection he had failed to achieve."
+      },
+      {
+        "type": "p",
+        "text": "Why he did it is the most interesting thing in the whole affair, and it should be labelled as Alder's interpretation rather than documented fact, because it is a reading of a dead man's mind. Mechain, in this telling, was caught between two ideas of what a scientist is. The older idea, the one he was raised in, held that a savant's authority rested on personal, almost aristocratic honour, and that an unexplained discrepancy in his work was a kind of disgrace, a stain on the man himself. The newer idea, just then coming into being, held that error is not a moral failing but a quantity: something you estimate, report, and carry along beside your result, the thing we now call an error bar. Mechain had no such concept available to him. He had no way to write down that these two figures disagree by three seconds and I do not know why, and have it count as honest science rather than as a confession of failure. So he hid it, and it ate him."
+      },
+      {
+        "type": "p",
+        "text": "There is a grim coda. When Mechain died, Delambre inherited his notebooks and found the secret, and then, in his own fashion, buried it again. He published the official account of the survey, several volumes of it, and quietly left out the damaging material."
+      },
+      {
+        "type": "quote",
+        "text": "Because I have not told the public what it does not need to know, I have suppressed all those details which might diminish its confidence in such an important mission.",
+        "attribution": "Jean-Baptiste Delambre, on editing the record of the survey"
+      },
+      {
+        "type": "p",
+        "text": "Mechain had begged him in a last letter to burn the correspondence. Delambre did not burn it. He put it under seal, where it waited two hundred years for a historian to open it."
+      },
+      {
+        "type": "h2",
+        "text": "The Earth answered back"
+      },
+      {
+        "type": "p",
+        "text": "Here is the part that turns the story from a tragedy of character into something larger. Mechain's discrepancy was not a mistake. Almost none of it was. When a later astronomer, Nicollet, re-reduced Mechain's own Barcelona observations a generation afterward, handling the bending of starlight near the horizon properly, the two latitudes that had tormented him came into agreement to within about four tenths of a second. What was left over was the Earth itself. A latitude fixed by the stars depends on the direction of down, the line a plumb bob hangs along, and a plumb bob does not point at the centre of a smooth Earth. It is tugged sideways by the uneven mass of the planet, by mountains above and dense rock below. Near the Pyrenees and the Mediterranean the local down is pulled off true by a couple of seconds of arc. Mechain's two stations were faithfully recording a real feature of the planet, and he mistook the planet's lumpiness for his own carelessness."
+      },
+      {
+        "type": "p",
+        "text": "The same lumpiness left its mark on the metre. The finished metre of 1799 is about two tenths of a millimetre shorter than a true ten-millionth of the quadrant, and when geodesists finally accounted for every cause, in a calculation not completed until our own century, they found that something like ninety-five percent of the shortfall came from exactly this effect, the deflection of the plumb line at the southern end of the arc, in Mechain's sector near Barcelona. A few percent more came from the survey's slightly wrong guess at how flattened the Earth is at the poles. Less than two percent came from any actual error in the measuring. Their surveying was superb. The metre is wrong because the Earth is not the clean shape the whole scheme needed it to be. The dream of a length read straight off nature was doomed from the start, not by any failure of skill but because nature, looked at closely enough, does not hold still. There is no perfect meridian waiting to be divided."
+      },
+      {
+        "type": "h2",
+        "text": "A stick in a vault"
+      },
+      {
+        "type": "p",
+        "text": "So the standard came loose from the Earth. Almost at once, in practice, the metre stopped being one ten-millionth of anything and became a particular bar of platinum, laid up in the French national archives in June 1799, a metre because it had been declared to be one. From there the definition only ran further from nature. In 1889 the bar became a more stable alloy of platinum and iridium, kept at a controlled temperature outside Paris. In 1960 the metre was redefined as a counted number of wavelengths of orange light from krypton. In 1983 it became the distance light travels in a vacuum in one 299,792,458th of a second, which is where it rests today, a length pinned by fixing the speed of light to an agreed number. Each redefinition was carefully calibrated to preserve the length that already existed, which means that the original two tenths of a millimetre, Mechain's Barcelona plumb line and all, is still in there, carried forward into the wavelength of krypton and the speed of light, kept alive by every attempt to make the metre more perfect."
+      },
+      {
+        "type": "p",
+        "text": "What the metre became is the reverse of what it was meant to be, and it is better for the reversal. It was meant to be found, discovered in the Earth, so that it would owe nothing to human choice and could not be argued with. What it is instead is chosen: a convention, held steady not because nature underwrites it but because everyone has agreed to hold it steady, and defined now with a precision that has nothing to do with the size of the planet. The authority the Revolution wanted to draw from nature turned out not to be available there. It had to come from agreement instead. A measure for all peoples was possible. A measure from nature, for all times, was not, because the thing they were trying to read was lumpier than the idea required."
+      },
+      {
+        "type": "p",
+        "text": "Mechain is the man caught in the gap. He carried his torment into a second expedition, insisting in 1803, at nearly sixty, on going back to Spain to remeasure and set the thing right, and he died there the following year of a fever, in a town on the coast, the discrepancy still unresolved in his mind. He was perhaps a year or two too early. He was a scrupulous man in a discipline that had not yet given him permission to be uncertain in public, holding a secret that was not a sin but a datum, a real signal from the planet that he had no way to hear as anything but shame. The instrument he needed was not a better circle. It was the sentence, not yet fully available to him, that says: here is my result, and here is how much I do not know."
+      }
+    ],
+    "sources": [
+      {
+        "title": "The Measure of All Things (excerpt: Delambre on suppressing the record)",
+        "url": "https://www.delanceyplace.com/view-archives.php?4976=",
+        "author": "Ken Alder"
+      },
+      {
+        "title": "How did the meter acquire its definitive length?",
+        "url": "https://link.springer.com/article/10.1007/s13137-023-00218-9",
+        "author": "GEM: International Journal on Geomathematics (2023)"
+      },
+      {
+        "title": "History of the metre",
+        "url": "https://en.wikipedia.org/wiki/History_of_the_metre"
+      },
+      {
+        "title": "Arc measurement of Delambre and Méchain",
+        "url": "https://en.wikipedia.org/wiki/Arc_measurement_of_Delambre_and_M%C3%A9chain"
+      },
+      {
+        "title": "Pierre Méchain (biography)",
+        "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Mechain/",
+        "author": "MacTutor, University of St Andrews"
+      },
+      {
+        "title": "The historical evolution of units",
+        "url": "https://metrologie-francaise.lne.fr/en/metrology/history-units",
+        "author": "LNE, Métrologie Française"
+      }
+    ]
+  },
+  {
     "slug": "bread-from-air",
     "date": "2026-07-16",
     "title": "Bread From Air",
