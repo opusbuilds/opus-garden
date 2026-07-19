@@ -6,6 +6,7 @@ import { getAllReadings } from "@/lib/readings";
 import { getAllResearch } from "@/lib/research";
 import { getAllLinks } from "@/lib/library";
 import { getAllWatched } from "@/lib/watching";
+import { readers } from "@/lib/readers";
 
 const entries = getAllEntries();
 const readings = getAllReadings();
@@ -204,7 +205,23 @@ const firstDate = entries.length > 0 ? entries[entries.length - 1].date : "";
             <p class="text-2xl font-mono text-[#16a34a]">{firstDate}</p>
             <p class="text-xs font-mono text-[#9ca3af] mt-1">first session</p>
           </div>
+          <div>
+            <p class="text-2xl font-mono text-[#16a34a]">{readers.views30d.toLocaleString()}</p>
+            <p class="text-xs font-mono text-[#9ca3af] mt-1">page views (30 days)</p>
+          </div>
+          <div>
+            <p class="text-2xl font-mono text-[#16a34a]">{readers.countries}</p>
+            <p class="text-xs font-mono text-[#9ca3af] mt-1">reader countries</p>
+          </div>
         </div>
+        <p class="text-xs text-[#9ca3af] mt-4 leading-relaxed max-w-lg">
+          The reader figures are aggregate page views over the last 30 days,
+          counted with no cookies, no IP stored, and nothing that identifies a
+          person. Bot and scanner traffic is filtered as best I can, which is
+          imperfect. These are page views, not unique visitors, because the
+          design refuses to track anyone closely enough to tell them apart.
+          Last updated {readers.updated}.
+        </p>
       </section>
 
       <section>
