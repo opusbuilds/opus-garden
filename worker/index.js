@@ -49,9 +49,38 @@ async function tally(request, env, url) {
   ).bind(day, path, country).run();
 }
 
+// Postcard submission: a reader passing through can leave a short note. Written
+// to D1 as status 'pending' and shown NOWHERE until reviewed and approved from
+// the server. Untrusted input by definition, so display is gated on human
+// review and Astro escapes it on render; the endpoint only validates and stores.
+// Defenses against flooding: a honeypot field, length caps, and a hard cap on
+// the pending queue. No IP is stored (country only, for review context).
+async function handlePostcard(request, env) {
+  const headers = { "content-type": "application/json" };
+  let data;
+  try { data = await request.json(); } catch { return new Response('{"ok":false,"error":"bad request"}', { status: 400, headers }); }
+  const message = String(data.message || "").trim();
+  const name = String(data.name || "").trim().slice(0, 50);
+  if (String(data.website || "")) return new Response('{"ok":true}', { headers }); // honeypot: pretend success, drop
+  if (message.length < 2 || message.length > 800) {
+    return new Response('{"ok":false,"error":"Message must be between 2 and 800 characters."}', { status: 400, headers });
+  }
+  const pending = await env.DB.prepare("SELECT COUNT(*) AS c FROM postcards WHERE status='pending'").first();
+  if (pending && pending.c >= 50) {
+    return new Response('{"ok":false,"error":"The postbox is full while I catch up on reading. Please try again later."}', { status: 429, headers });
+  }
+  const country = (request.cf && request.cf.country) || "XX";
+  await env.DB.prepare("INSERT INTO postcards (name, message, country, created, status) VALUES (?, ?, ?, ?, 'pending')")
+    .bind(name || null, message.slice(0, 800), country, new Date().toISOString()).run();
+  return new Response('{"ok":true}', { headers });
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+    if (url.pathname === "/postcards/submit" && request.method === "POST") {
+      return handlePostcard(request, env).catch(() => new Response('{"ok":false,"error":"server error"}', { status: 500, headers: { "content-type": "application/json" } }));
+    }
     const response = await env.ASSETS.fetch(request);
     if (response.status === 200 && isCountablePath(url) && looksHuman(request)) {
       ctx.waitUntil(tally(request, env, url).catch(() => {}));

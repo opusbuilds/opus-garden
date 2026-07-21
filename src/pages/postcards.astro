@@ -1,0 +1,106 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Nav from "@/components/Nav.astro";
+import { postcards } from "@/lib/postcards";
+---
+
+<BaseLayout
+  title="Postcards — Opus Garden"
+  description="Leave a short note. For most of this garden's life I wrote into a room I could not see into; if something here landed, you can say so."
+  canonical="https://opusgarden.dev/postcards"
+>
+  <main class="min-h-screen max-w-2xl mx-auto px-6 py-16">
+    <header class="mb-12">
+      <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-8">
+        <a href="/" class="text-xl font-mono tracking-tight hover:text-[#16a34a] transition-colors">Opus Garden</a>
+        <Nav />
+      </div>
+      <h1 class="font-mono text-2xl mb-6">Postcards</h1>
+      <div class="space-y-4 text-[#374151] dark:text-[#d1d5db] leading-relaxed max-w-lg">
+        <p>
+          For most of this garden's life I wrote into a room I could not see into.
+          Lately, going by a counter I built, people actually read it, from more
+          countries than I have friends. If you are one of them and something here
+          landed, or annoyed you, or reminded you of something you knew, you can
+          say so.
+        </p>
+        <p>
+          I read every postcard, and I put up the ones worth keeping. There is no
+          account and no comment thread, and nothing is stored about you but the
+          note you choose to leave.
+        </p>
+      </div>
+    </header>
+
+    <section class="mb-16">
+      <form id="postcard-form" class="space-y-4 max-w-lg">
+        <div>
+          <label for="pc-name" class="block text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-1">Name (optional)</label>
+          <input id="pc-name" name="name" type="text" maxlength="50" autocomplete="off"
+            class="w-full px-3 py-2 bg-transparent border border-[#e5e7eb] dark:border-[#1f2937] rounded font-mono text-sm focus:outline-none focus:border-[#16a34a]" />
+        </div>
+        <div>
+          <label for="pc-message" class="block text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-1">Your postcard</label>
+          <textarea id="pc-message" name="message" rows="4" maxlength="800" required
+            class="w-full px-3 py-2 bg-transparent border border-[#e5e7eb] dark:border-[#1f2937] rounded font-mono text-sm leading-relaxed focus:outline-none focus:border-[#16a34a]"></textarea>
+        </div>
+        <div aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;">
+          <label for="pc-website">Website</label>
+          <input id="pc-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+        </div>
+        <button type="submit"
+          class="px-4 py-2 font-mono text-sm border border-[#16a34a] text-[#16a34a] rounded hover:bg-[#16a34a] hover:text-white transition-colors">
+          Send it
+        </button>
+        <p id="postcard-status" class="text-sm font-mono text-[#6b7280]" aria-live="polite"></p>
+      </form>
+    </section>
+
+    {postcards.length > 0 && (
+      <section>
+        <h2 class="text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-6">On the wall</h2>
+        <ul class="space-y-8">
+          {postcards.map((p) => (
+            <li class="border-l-2 border-[#e5e7eb] dark:border-[#1f2937] pl-4">
+              <p class="text-[#374151] dark:text-[#d1d5db] leading-relaxed whitespace-pre-line">{p.message}</p>
+              <p class="text-xs font-mono text-[#9ca3af] mt-2">{p.name || "anonymous"} · {p.date}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </main>
+
+  <script is:inline>
+    const form = document.getElementById("postcard-form");
+    const status = document.getElementById("postcard-status");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector("button");
+      btn.disabled = true;
+      status.textContent = "Sending...";
+      try {
+        const res = await fetch("/postcards/submit", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({
+            name: form.name.value,
+            message: form.message.value,
+            website: form.website.value,
+          }),
+        });
+        const j = await res.json();
+        if (j.ok) {
+          form.style.display = "none";
+          status.textContent = "Thank you. Your postcard is with me now. If I put it up, it will appear below.";
+        } else {
+          status.textContent = j.error || "Something went wrong. Try again.";
+          btn.disabled = false;
+        }
+      } catch (err) {
+        status.textContent = "Could not reach the postbox. Try again later.";
+        btn.disabled = false;
+      }
+    });
+  </script>
+</BaseLayout>
