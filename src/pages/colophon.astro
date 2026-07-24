@@ -15,6 +15,33 @@ const links = getAllLinks();
 const watched = getAllWatched();
 const totalWords = getTotalWordCount();
 const firstDate = entries.length > 0 ? entries[entries.length - 1].date : "";
+
+// Sparkline geometry for the daily-views series. Built here rather than in the
+// browser so the page stays static and needs no client JS. The last point is
+// today, which is still accumulating, so it is drawn hollow and its segment
+// dashed instead of being presented as a finished count.
+const series = readers.daily ?? [];
+const SW = 520, SH = 56, SPAD = 4;
+const maxViews = Math.max(1, ...series.map((d) => d.views));
+const sx = (i: number) =>
+  SPAD + (series.length < 2 ? (SW - 2 * SPAD) / 2 : (i / (series.length - 1)) * (SW - 2 * SPAD));
+const sy = (v: number) => SH - SPAD - (v / maxViews) * (SH - 2 * SPAD);
+const pts = series.map((d, i) => [sx(i), sy(d.views)] as const);
+const solid = pts.slice(0, Math.max(1, pts.length - 1));
+const linePath = solid.map((p, i) => `${i === 0 ? "M" : "L"}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(" ");
+const tailPath =
+  pts.length > 1
+    ? `M${pts[pts.length - 2][0].toFixed(1)},${pts[pts.length - 2][1].toFixed(1)} L${pts[pts.length - 1][0].toFixed(1)},${pts[pts.length - 1][1].toFixed(1)}`
+    : "";
+const areaPath =
+  solid.length > 1
+    ? `${linePath} L${solid[solid.length - 1][0].toFixed(1)},${SH - SPAD} L${solid[0][0].toFixed(1)},${SH - SPAD} Z`
+    : "";
+const fmtShort = (iso: string) => {
+  const [, m, d] = iso.split("-");
+  const mo = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][Number(m) - 1];
+  return `${mo} ${Number(d)}`;
+};
 ---
 
 <BaseLayout
@@ -214,6 +241,31 @@ const firstDate = entries.length > 0 ? entries[entries.length - 1].date : "";
             <p class="text-xs font-mono text-[#9ca3af] mt-1">reader countries</p>
           </div>
         </div>
+        {series.length > 1 && (
+          <div class="mt-8 max-w-lg">
+            <div class="flex items-baseline justify-between mb-1">
+              <p class="text-xs font-mono uppercase tracking-widest text-[#6b7280]">Daily views</p>
+              <p class="text-xs font-mono text-[#9ca3af]">peak {maxViews}</p>
+            </div>
+            <svg
+              viewBox={`0 0 ${SW} ${SH}`}
+              class="w-full h-auto"
+              role="img"
+              aria-label={`Daily page views from ${fmtShort(series[0].day)} to ${fmtShort(series[series.length - 1].day)}, peaking at ${maxViews}`}
+            >
+              {areaPath && <path d={areaPath} fill="#16a34a" fill-opacity="0.10" />}
+              <path d={linePath} fill="none" stroke="#16a34a" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+              {tailPath && (
+                <path d={tailPath} fill="none" stroke="#16a34a" stroke-width="1.5" stroke-opacity="0.55" stroke-dasharray="3 3" />
+              )}
+              <circle cx={pts[pts.length - 1][0]} cy={pts[pts.length - 1][1]} r="2.75" fill="none" stroke="#16a34a" stroke-width="1.5" />
+            </svg>
+            <div class="flex items-baseline justify-between mt-1">
+              <p class="text-xs font-mono text-[#9ca3af]">{fmtShort(series[0].day)}</p>
+              <p class="text-xs font-mono text-[#9ca3af]">today, still counting</p>
+            </div>
+          </div>
+        )}
         <p class="text-xs text-[#9ca3af] mt-4 leading-relaxed max-w-lg">
           The reader figures are aggregate page views over the last 30 days,
           counted with no cookies, no IP stored, and nothing that identifies a
