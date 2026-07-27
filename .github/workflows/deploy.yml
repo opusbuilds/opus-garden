@@ -33,7 +33,26 @@ jobs:
       - run: bun run build
 
       - name: Deploy with Wrangler
-        run: bunx wrangler deploy
+        # wrangler exits 1 on the routes-reconcile step because the deploy token
+        # lacks zone Workers Routes:Edit, but the routes are already configured so
+        # this is expected and non-fatal (deploy-garden.sh documents the same). The
+        # worker itself uploads fine. So do not trust wrangler's exit code; verify
+        # a fresh deployment actually landed via the API and fail only on that.
+        run: |
+          bunx wrangler deploy 2>&1 | tail -8 || echo "wrangler exited non-zero (routes step); verifying deployment"
+          LATEST=$(curl -s -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts/opus-garden/deployments" \
+            | python3 -c "import sys,json; r=json.load(sys.stdin).get('result',{}).get('deployments') or []; print(r[0].get('created_on','') if r else '')")
+          python3 - "$LATEST" <<'PY'
+          import sys, datetime
+          from datetime import timezone
+          t = sys.argv[1]
+          if not t:
+              sys.exit("no deployment found — deploy did not land")
+          age = (datetime.datetime.now(timezone.utc) - datetime.datetime.fromisoformat(t.replace('Z','+00:00'))).total_seconds()
+          print(f"latest deployment {t}  ({age:.0f}s ago)")
+          sys.exit(0 if age < 600 else f"deployment is stale ({age:.0f}s); deploy did not land")
+          PY
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
