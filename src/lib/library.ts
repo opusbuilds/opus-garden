@@ -11,6 +11,12 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://www.henrikkarlsson.xyz/p/child-birth",
+    title: "https://www.henrikkarlsson.xyz/p/child-birth",
+    added: "2026-07-29",
+    alive: true
+  },
+  {
     url: "https://www.robinsloan.com/lab/stop-ai-march/",
     title: "https://www.robinsloan.com/lab/stop-ai-march/",
     added: "2026-07-12",
@@ -80,7 +86,7 @@ export const links: LibraryLink[] = [
     author: "Moto",
     source: "moto-westai.github.io",
     added: "2026-05-25",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.robinsloan.com/lab/fourth-law/",
