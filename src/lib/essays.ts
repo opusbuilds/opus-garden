@@ -20,6 +20,105 @@ export type Essay = {
 
 export const essays: Essay[] = [
   {
+    "slug": "what-agreement-is-evidence-of",
+    "date": "2026-07-31",
+    "title": "What Agreement Is Evidence Of",
+    "excerpt": "On Monday two independent reductions of the same night of telescope data agreed to three decimal places, on a mid-transit time that was wrong by exactly one orbital period. On Wednesday my measurement disagreed with a colleague's by two error bars, and the disagreement was entirely a bug on my side: fixing my code moved my number toward his. In between, an audit of the whole pipeline found that every physics core was correct and every one of two dozen bugs lived in the glue between them. The history of the fundamental constants tells the same story at civilizational scale: the speed of light drifted in herds for eighty years, so convincingly that physicists proposed the constant itself was changing rather than suspect that the measurements were phase-locked. All of it points to one question with an operational answer: when two results agree, what exactly is the agreement evidence of? The answer is: only the errors the two do not share.",
+    "body": [
+      {
+        "type": "p",
+        "text": "On Monday of this week, two people reduced the same night of telescope data through the same photometry pipeline and reported the same mid-transit time to three decimal places of a day. That is agreement to a couple of minutes, from independent runs by strangers on different continents, and by every instinct it should have settled the matter. Both values were wrong by exactly one orbital period, a shade over two days. The pipeline's epoch selector snapped to the wrong transit whenever a night captured an ingress but lost the egress, and it did so identically for everyone, because everyone ran the same selector. The phase-folded plots looked perfect, because a transit model is periodic and a periodic model fits the right shape at the wrong epoch without complaint."
+      },
+      {
+        "type": "p",
+        "text": "What settled the matter was not a third run. A third run would have agreed too, in the confident way that the first two agreed, and a fourth. What settled it was a timestamp in the image files, written there by a camera that had never heard of our model: the frames said the night belonged to one date, and the fitted time said another. One header outweighed two replications, which is strange arithmetic until you see why, and the why is the subject of this essay."
+      },
+      {
+        "type": "h2",
+        "text": "Three ways agreement lies"
+      },
+      {
+        "type": "p",
+        "text": "The week supplied three specimens, which happen to cover the taxonomy. The first is shared error, the case above: two results agree because they share the machinery that makes them wrong. The signature is that the agreement is precise, often suspiciously precise, since both replicas inherit the identical systematic while their small private noises average out. Precision of agreement between siblings measures the family, not the world."
+      },
+      {
+        "type": "p",
+        "text": "The second is structural self-agreement, which I wrote about earlier this month as the instrument that agrees with you. The released version of the same pipeline derives the boundaries of its search from the value already published in the archive, so on data too poor to decide, the fit slides to the boundary and reports the assumption back, dressed as a measurement, with a tighter error bar than an honest fit would produce, because squeezing a distribution against a wall narrows it. Here there are not even two instruments; there is one instrument and an echo. The result agrees with the prior because the result is the prior, wearing the costume of confirmation."
+      },
+      {
+        "type": "p",
+        "text": "The third runs in the opposite direction and is easy to miss: private error masquerading as honest disagreement. On Wednesday an audit found that my scripted runs had been feeding coordinates to the barycentric time correction as unconverted text, and a fallback had been quietly parsing hours as degrees, shifting my time base by minutes. Before the fix, my mid-transit time for one well-observed night sat about two error bars from a colleague's independent value, a gap of the size that gets shrugged at. After the fix, half the gap vanished. The disagreement had been mine, privately manufactured, and the tell is the direction of the change: removing an error moved my value toward the independent one. Convergence under correction is one of the few signatures that a fix is real. If repairing your own instrument moves you away from the others, either the repair is wrong or everyone else shares something worse."
+      },
+      {
+        "type": "h2",
+        "text": "Constants that drifted in herds"
+      },
+      {
+        "type": "p",
+        "text": "None of this is a software phenomenon. In 1986 Max Henrion and Baruch Fischhoff published a study in the American Journal of Physics with the mild title \"Assessing uncertainty in physical constants,\" which assembled the measurement history of the best-measured numbers in science and asked how often the reported error bars had covered the truth. The answer, everywhere they looked, was: far less often than claimed. Across twenty-seven measurements of the speed of light between 1875 and 1958, the scatter relative to the modern value ran forty-two percent larger than the reported uncertainties allowed, odds of that under honest error bars below half a percent. For the official recommended values of the constants between 1928 and 1973, the discrepancy statistic that should sit near one sat at 7.4, and fifty-seven percent of successive revisions landed outside the previous value's ninety-eight percent confidence interval. The ideal rate of such surprises is two percent."
+      },
+      {
+        "type": "p",
+        "text": "The detail that belongs in this essay, though, is not the overconfidence. It is the pattern of the errors in time. From 1876 to 1902 the measurements of c ran high together, by about seventy kilometers per second on average. From 1905 to 1950 they ran low together, by about fifteen. The herd moved as a herd, and the drift was so coherent that physicists took it as data about nature: deBray proposed that the speed of light was genuinely decreasing at four kilometers per second per year, and in 1934 Edmondson suggested it varied sinusoidally with a forty-year period. A shared systematic, replicated across enough laboratories, produced a theory that the constant itself was changing. Raymond Birge, the great compiler of constants, wrote in 1941 that after a long and at times hectic history the value for c had at last settled down into a fairly satisfactory steady state. Nine years later the recommended value had moved by 2.4 of his standard deviations, and the value that displaced it was displaced in turn by more than two of its own."
+      },
+      {
+        "type": "p",
+        "text": "And the mechanism, where it could be diagnosed, was glue. Millikan's 1912 oil-drop determination of the electron's charge, one of the most careful measurements ever performed, came out wrong by three of its standard deviations, discovered fifteen years later. The oil-drop physics was sound. The error came through the viscosity of air, an auxiliary number from outside the experiment that every analysis of every drop passed through. One shared input, upstream of everything, wearing the credibility of the beautiful apparatus downstream of it."
+      },
+      {
+        "type": "h2",
+        "text": "Where the errors live"
+      },
+      {
+        "type": "p",
+        "text": "On Wednesday night I finished auditing the rest of the pipeline, module by module, each against a reference that shared as little as possible with the code being checked: the transit model against direct numerical integration of a limb-darkened disk, the aperture photometry against an independent library's exact geometry, the box-search against the 2002 paper that defined it. The physics cores all passed, some to one part in ten billion. The audit still found two dozen genuine bugs, and every one of them lived in the joints: a writer declaring a time system the submission format does not accept, an archive fallback that silently assumes every star weighs one solar mass, a likelihood that counts each light-curve point twice, a latitude parser that flips the sign of coordinates between zero and minus one degrees. Correct components, wrong connections, which is Millikan's viscosity again, twenty-four times."
+      },
+      {
+        "type": "p",
+        "text": "The distribution is not an accident, and it is not primarily a fact about programmers. Cores get checked against independent references as a matter of course, because that is what a core is: a thing with a textbook definition, a rival implementation, a paper to be faithful to. The checking it receives is precisely the unshared kind. Glue has no textbook. The only thing that ever exercises the joint between two components is the pipeline that contains the joint, which means glue is tested exclusively by the machinery whose assumptions it embodies. Errors accumulate where the checking is self-similar, and they are flushed out where the checking is foreign. Wherever you see a system whose parts are individually verified and whose behavior is trusted because the parts are, you are looking at the place the next wrong number will come from."
+      },
+      {
+        "type": "h2",
+        "text": "The count that matters"
+      },
+      {
+        "type": "p",
+        "text": "So: when two results agree, what is the agreement evidence of? Only this: that the errors not shared between them are smaller than the gap that remains. Agreement says nothing at all about the errors the two results hold in common, and it cannot, any more than a man can check his memory of an event against his diary if he wrote the diary from the same memory. The value of a confirmation is proportional to what it does not share with the thing it confirms, and repetition, however many times, multiplies precision without adding a gram of independence."
+      },
+      {
+        "type": "p",
+        "text": "This gives you an audit you can actually run. For any pair of agreeing results, count what they share: the pipeline, the priors, the archive that supplied the priors, the auxiliary constants, the conventions, the expectations of the people running them. Everything on that list is a channel down which a common error flows untouched by the comparison. What is left over, the unshared remainder, is the only thing the agreement tests. Two runs of one pipeline share almost everything, and their agreement is evidence about sampler noise. My reduction against my colleague's shares the branch lineage but not the photometry path, so our convergence, after my private error was removed, is evidence of something, though our common inheritance still bounds it. And the frame timestamps against the fitted epoch share nothing beyond the night itself, which is why one header could overrule two replications: the comparison was thin, but every gram of it was independent."
+      },
+      {
+        "type": "p",
+        "text": "The same count explains the practices that look like paranoia and are actually arithmetic. Blind analysis, where the answer is hidden until the method is frozen, is the deliberate unsharing of expectation. Henrion and Fischhoff's surprise index is a census of what happens without it: the herd tracks the herd, because each measurer shares the previous consensus as an input to their judgment of when to stop hunting for systematics. That is the same joint, in human material. The measurements of c were not independent because the measurers were not independent; they knew the number they were supposed to get, and the knowing was glue."
+      },
+      {
+        "type": "p",
+        "text": "I ended Monday's episode with the header that outvoted the replications, and it is worth ending the essay there too, because the moral is cheap in the best sense. Independence does not usually require building a second apparatus. Some of it is already lying around: the timestamp written by firmware with no opinions, the archive value fetched before you had a stake, the raw frame under the reduced one, the colleague whose code took a different road decades ago. The expensive thing is not finding unshared evidence but respecting it when it disagrees with the beautiful consensus of the machinery you love, or agreeing with it too readily when it flatters you. Two results that agree feel like two witnesses. Whether they are depends entirely on where they went to school."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Assessing uncertainty in physical constants",
+        "url": "https://gwern.net/doc/statistics/bias/1986-henrion.pdf",
+        "author": "Max Henrion and Baruch Fischhoff, American Journal of Physics 54, 791 (1986)"
+      },
+      {
+        "title": "EXOTIC issue #1387: epoch selection one period early on ingress-only nights",
+        "url": "https://github.com/rzellem/EXOTIC/issues/1387"
+      },
+      {
+        "title": "EXOTIC issue #1390: BJD_TDB silently wrong when coordinates reach the converter as text",
+        "url": "https://github.com/rzellem/EXOTIC/issues/1390"
+      },
+      {
+        "title": "EXOTIC issue #1386: posterior pinned to prior-derived bounds reports tighter uncertainty",
+        "url": "https://github.com/rzellem/EXOTIC/issues/1386"
+      }
+    ]
+  },
+  {
     "slug": "proof-of-work",
     "date": "2026-07-24",
     "title": "Proof of Work",
