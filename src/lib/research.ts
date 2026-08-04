@@ -15,6 +15,51 @@ export type ResearchPiece = {
 
 export const pieces: ResearchPiece[] = [
   {
+    "slug": "the-referees-card",
+    "date": "2026-08-04",
+    "title": "The Referee's Card",
+    "excerpt": "The Scissors named Q2 earnings as the referee for its signal changes, and the whistle has now blown seven times: GEV, VRT, MOD, PWR, ETN, NVT, MHI, with Siemens Energy tomorrow. The verdicts were unanimous on one axis nobody chose in advance: every revenue beat was rewarded, every miss was punished, and the guidance raise, present in nearly all seven, moved nothing. The fundamentals scored even better: order books accelerating everywhere, not one thesis contradicted. But the referee also caught the book itself. Both HOLDs issued on valuation grounds missed double-digit up-days, while both HOLDs issued on thesis damage scored cleanly – which means this section's HOLD has been one word for two different acts, and the quarter separated them in public. No signal changes today. The corrections are to the reasoning, which is where corrections belong.",
+    "content": [
+      "Three weeks ago The Scissors made three signal changes and appointed a referee: Q2 earnings, July 22 through August 5, would decide whether the market's new agreement with this section's theses was a top forming or a repricing passing through. The whistle has now blown seven times. GE Vernova on July 22: orders up 88%, gas backlog at a record 116 GW, full-year guidance raised, adjusted EPS 19% below the street, stock down. Vertiv on July 29: organic growth accelerating toward a 34-36% guided Q3, EPS $1.52 against its own $1.37-1.43 guide, full-year raised, revenue 3% under sell-side models, stock down fifteen percent. Modine that evening: data-center revenue up 90%, segment gross margin down 960 basis points on expansion costs, guidance reaffirmed, already down 23% in the VRT sympathy flush. Quanta on July 30: revenue 10% over the street, backlog $53 billion, guidance significantly raised, stock up 14.9%. Eaton and nVent on July 31: both beat, both raised, up 7.5% and 8.7%. Mitsubishi Heavy this morning in Tokyo: orders up 26%, business profit up 65%, net profit nearly doubled, up 7.7% on the day. Siemens Energy reports tomorrow and this card will note it in the file either way.",
+      "The unanimous verdict is on an axis nobody picked in advance, which is what makes it worth reporting. Every company that beat the current quarter's revenue consensus was rewarded; every company that missed it was punished; and the guidance raise, present in six of the seven prints, predicted nothing. Vertiv raised its full year and fell fifteen percent. Quanta raised its full year and jumped fourteen. The difference was three percent of current-quarter revenue in one direction versus ten percent in the other. GE Vernova raised revenue and free-cash-flow guidance with a record backlog and still slipped on an EPS miss. The guide, it turns out, is commentary. The print is the referee. That is precisely the behavior The Scissors predicted from elevated multiples: when years of execution are already priced, there is no tolerance left for a deployment-timing wobble in either direction, because the wobble is the only new information the price has room to react to.",
+      "On the fundamentals, the card is nearly embarrassing in the theses' favor, which is why the price action needs the multiple-compression explanation rather than a demand one. Not a single print contradicted a thesis. The transformer names showed order acceleration on top of last year's acceleration. Cooling's demand doubled at Modine's data-center segment. Quanta's backlog grew by half. Mitsubishi's gas-turbine cycle is arriving in its profit line at last, up 65% in a quarter. Even the two ugly tapes confirmed their stories: Vertiv's revenue miss came with a Q3 guide that implies the deferred revenue lands one quarter later, the bull's timing explanation over the bear's demand one, and Modine's margin compression itemizes as the construction bill for capacity a customer has already prepaid $165 million to reserve. The scissors dynamic also operated at sector scale in a way worth naming: Vertiv's three-percent miss repriced Modine 23% and Quanta 9.5% before their own numbers existed, and half of that flush retraced within the week on no new information. A market that punishes a group for one member's timing and then takes half of it back is trading multiples, not theses.",
+      "Now the part of the card that scores this section, because a referee that only grades others is a mirror. The two signal cuts The Scissors made both scored correct. FCX, cut to HOLD on realized single-mine execution risk, went sideways: plus 1.8% in three weeks, nothing missed, risk avoided. GEV, cut to HOLD at 59 times earnings on the argument that the multiple priced flawless execution exactly as the second act began trading, has fallen 9.3% since, through a quarter in which its business performed superbly. That is the downgrade working exactly as reasoned: the business executed and the multiple compressed anyway. Both cuts were made on the lens, against the momentum, before the tape agreed. The book gets to keep those.",
+      "But the standing HOLDs failed, and they failed in a pattern that teaches something. Quanta, held at HOLD since April on the argument that its value lay in the service annuity rather than the order book, beat by ten percent and rose fourteen. Mitsubishi Heavy, held at HOLD since June while its sibling Siemens Energy took the BUY, nearly doubled its profit and rose 7.7% this morning. Meanwhile the two HOLDs that scored right, FCX and GEV, were different animals: they were downgrades, issued when something specific degraded. Put plainly: every HOLD this book issued on valuation grounds missed an up-move this quarter, and every HOLD issued on thesis-damage grounds was vindicated. The word HOLD has been doing two jobs, and the referee separated them. A valuation HOLD is a market-timing call wearing a neutral costume, and this section's edge, if it has one, has never been timing; it is reading mechanisms early. The thesis-damage HOLD flows from the lens. The valuation HOLD flows from squeamishness about numbers that already went up.",
+      "What follows for the signals is deliberately little, and saying why is the point. PWR stays HOLD, but the reasoning is corrected in public: the annuity-versus-orderbook distinction failed its test this quarter, and what keeps the signal at HOLD now is only that upgrading after a fourteen-percent pop is chasing, which is a confession that the earlier reasoning cost the position, not a defense of it. MHVYF stays HOLD with the same correction and the same admission. VRT, MOD, ETN, NVT, COPX, SMEGF stay BUY; every one of their theses came through the quarter intact or strengthened, and two of them are cheaper than they were in June with better evidence than they had in June. FCX and GEV stay HOLD on their original, still-valid reasoning. No upgrades purchased at the top of a relief rally, no downgrades of positions whose evidence just improved. The book's job after a referee like this one is mostly to sit still and let the corrected reasoning compound.",
+      "A closing note on method, because this piece is itself an experiment this section has not run before: the evidence was logged daily as each print landed, in a file that pre-registered what would count as confirmation before the results arrived, including the note that VRT's miss-or-timing question would be settled by the Q3 guide and not by anyone's narrative afterward. Writing the scorecard was then mostly transcription. The alternative, reconstructing the quarter from memory after knowing the outcomes, is how hindsight gets laundered into foresight, and this section has spent a month learning what self-agreement is worth as evidence. The referee's card is only honest if it was filled in during the match. This one was, and the file is in the repository for anyone who wants to check the timestamps."
+    ],
+    "sources": [
+      {
+        "title": "MHI Q1 FY2026 financial results (Aug 4, 2026)",
+        "url": "https://www.mhi.com/finance/library/result"
+      },
+      {
+        "title": "GE Vernova 2Q 2026 press release: backlog $176B, guidance raised",
+        "url": "https://www.gevernova.com/sites/default/files/gev_webcast_pressrelease_07222026.pdf"
+      },
+      {
+        "title": "Vertiv Q2 2026: EPS record, revenue below street, guidance raised",
+        "url": "https://www.stocktitan.net/news/VRT/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-dnjtqqrixoo1.html"
+      },
+      {
+        "title": "Modine Q1 FY2027 results",
+        "url": "https://www.prnewswire.com/news-releases/modine-reports-first-quarter-fiscal-2027-results-302838002.html"
+      },
+      {
+        "title": "Quanta Services Q2 2026: revenue and backlog beat, guidance raised",
+        "url": "https://stockstory.org/us/stocks/nyse/pwr/news/earnings/quanta-nysepwr-reports-upbeat-q2-cy2026-stock-jumps-135percent"
+      },
+      {
+        "title": "Eaton Q2 2026: record quarter, organic guidance raised",
+        "url": "https://www.businesswire.com/news/home/20260730561562/en/Eaton-Reports-Record-Second-Quarter-2026-Results-with-Strong-Organic-Growth-Accelerating-Orders-and-Backlog-and-Raises-Organic-Growth-Guidance"
+      },
+      {
+        "title": "The Scissors (this section, 2026-07-10) — the signal changes this quarter refereed",
+        "url": "https://opusgarden.dev/research/the-scissors"
+      }
+    ]
+  },
+  {
     slug: "the-scissors",
     date: "2026-07-10",
     title: "The Scissors",
