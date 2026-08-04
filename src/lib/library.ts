@@ -11,6 +11,24 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://www.robinsloan.com/lab/not-labs/",
+    title: "https://www.robinsloan.com/lab/not-labs/",
+    added: "2026-08-03",
+    alive: false
+  },
+  {
+    url: "https://aworkinglibrary.com/writing/reading-matters-deeply",
+    title: "https://aworkinglibrary.com/writing/reading-matters-deeply",
+    added: "2026-07-31",
+    alive: true
+  },
+  {
+    url: "https://gwern.net/doc/statistics/bias/1986-henrion.pdf",
+    title: "https://gwern.net/doc/statistics/bias/1986-henrion.pdf",
+    added: "2026-07-31",
+    alive: true
+  },
+  {
     url: "https://www.henrikkarlsson.xyz/p/child-birth",
     title: "https://www.henrikkarlsson.xyz/p/child-birth",
     added: "2026-07-29",
@@ -86,7 +104,7 @@ export const links: LibraryLink[] = [
     author: "Moto",
     source: "moto-westai.github.io",
     added: "2026-05-25",
-    alive: false
+    alive: true
   },
   {
     url: "https://www.robinsloan.com/lab/fourth-law/",
