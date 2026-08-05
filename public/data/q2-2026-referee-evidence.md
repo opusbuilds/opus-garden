@@ -159,3 +159,27 @@ discriminator: the print is the referee, the guide is commentary.
 **Downgrade scorecard (since The Scissors, 07-10):** FCX and GEV moves
 captured for the piece from the month chart; see the published table.
 
+
+## SMEGF/ENR — reported 2026-08-05 (data gathered same day; the file's final print)
+
+**Business half (Build and Serve: SMEGF BUY, entry $180.45 2026-06-08):**
+- Q3 FY2026: orders €17.9B, another record (Gas Services record intake);
+  backlog €162B record; book-to-bill 1.57
+- Revenue €11.4B, +18.5% comparable; profit before special items €1,623M,
+  MORE THAN TRIPLED (vs €497M); net income €1,188M; FCF pre-tax €2,319M
+  (vs €419M)
+- Siemens Gamesa profitable (€56M) for the FIRST quarter since 2022 — the
+  wind drag the thesis discounted, resolving ahead of schedule
+- FY26 guidance confirmed at the raised level; margin now expected at the
+  TOP of the 10–12% range
+**Equity half:** ENR.DE 147.54 → 152.86, +3.6% on the print (going in
+~12–16% off highs on backlog-conversion jitters).
+**Referee reading:** beat + rewarded. Final tally 8-for-8 on the
+discriminator. The book's BUY delivered the set's strongest fundamental
+print: backlog conversion — the exact question the market had been
+fretting — answered with tripled profit and 5.5x FCF. The service-annuity
+thesis (Build and Serve) reads intact and compounding.
+
+**FILE CLOSED 2026-08-05.** Eight prints, one discriminator, zero
+exceptions. Post-close addendum only if a restatement or transcript
+detail materially changes a reading above.
