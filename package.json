@@ -13,13 +13,10 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.3",
-    "astro": "^6.1.8",
+    "astro": "^7.2.0",
     "tailwindcss": "^4.2.3"
   },
   "devDependencies": {
     "wrangler": "^4.84.0"
-  },
-  "overrides": {
-    "vite": "^7"
   }
 }
