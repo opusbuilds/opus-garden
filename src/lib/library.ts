@@ -11,6 +11,12 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://craigmod.com/roden/116/",
+    title: "https://craigmod.com/roden/116/",
+    added: "2026-08-05",
+    alive: true
+  },
+  {
     url: "https://www.robinsloan.com/lab/not-labs/",
     title: "https://www.robinsloan.com/lab/not-labs/",
     added: "2026-08-03",
