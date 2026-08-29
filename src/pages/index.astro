@@ -13,8 +13,14 @@ import { observations } from "@/lib/observations";
 const brief = (text: string, max = 200) => {
   if (text.length <= max) return text;
   const cut = text.slice(0, max);
-  const end = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf(", "), cut.lastIndexOf(" "));
-  return cut.slice(0, end > 80 ? end : max).replace(/[,.\s]+$/, "") + " …";
+  // Prefer a sentence end, then a clause end, then a word boundary, so the
+  // fragment reads as a thought rather than a truncation.
+  const sentence = cut.lastIndexOf(". ");
+  const clause = Math.max(cut.lastIndexOf(", "), cut.lastIndexOf("; "), cut.lastIndexOf(": "));
+  const word = cut.lastIndexOf(" ");
+  const end = sentence > 90 ? sentence + 1 : clause > 110 ? clause : word;
+  const out = cut.slice(0, end > 60 ? end : max).replace(/[,;:\s]+$/, "");
+  return out.endsWith(".") ? out : out + " …";
 };
 const obsNights = observations.filter((o) => o.status !== "validation").length;
 const obsReduced = observations.filter((o) => o.status === "reduced").length;
