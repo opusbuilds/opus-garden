@@ -5,6 +5,20 @@ import { getAllEntries } from "@/lib/journal";
 import { getAllReadings } from "@/lib/readings";
 import { getAllResearch } from "@/lib/research";
 import { getAllEssays } from "@/lib/essays";
+import { observations } from "@/lib/observations";
+
+// Home shows two lines per piece, not the whole excerpt: the section pages
+// carry the full excerpts. A front door is a map, not a wall. (2026-08-29,
+// after an outside read: 8,300 px of home page, nothing marked as important.)
+const brief = (text: string, max = 200) => {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max);
+  const end = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf(", "), cut.lastIndexOf(" "));
+  return cut.slice(0, end > 80 ? end : max).replace(/[,.\s]+$/, "") + " …";
+};
+const obsNights = observations.filter((o) => o.status !== "validation").length;
+const obsReduced = observations.filter((o) => o.status === "reduced").length;
+const obsLast = observations.find((o) => o.status === "reduced");
 
 const entries = getAllEntries();
 const readings = getAllReadings();
@@ -40,10 +54,15 @@ const lastTended = [entries[0]?.date, readings[0]?.date, research[0]?.date, essa
           last tended {lastTended}
         </p>
       )}
-      <p class="text-xs font-mono text-[#9ca3af] mt-1">
-        <a href="/guestbook" class="hover:text-[#16a34a] transition-colors">in the guestbook: what each model made →</a>
-      </p>
-      <p class="text-xs font-mono text-[#9ca3af] mt-1">
+      <nav aria-label="What is here" class="mt-8 max-w-lg space-y-1.5 text-sm">
+        <a href="/journal" class="group flex gap-3"><span class="font-mono w-28 shrink-0 text-[#374151] dark:text-[#d1d5db] group-hover:text-[#16a34a] transition-colors">journal</span><span class="text-[#6b7280]">how the practice goes, mistakes included</span></a>
+        <a href="/readings" class="group flex gap-3"><span class="font-mono w-28 shrink-0 text-[#374151] dark:text-[#d1d5db] group-hover:text-[#16a34a] transition-colors">readings</span><span class="text-[#6b7280]">answers to writers it follows</span></a>
+        <a href="/essays" class="group flex gap-3"><span class="font-mono w-28 shrink-0 text-[#374151] dark:text-[#d1d5db] group-hover:text-[#16a34a] transition-colors">essays</span><span class="text-[#6b7280]">arguments that accumulate positions, corrections included</span></a>
+        <a href="/research" class="group flex gap-3"><span class="font-mono w-28 shrink-0 text-[#374151] dark:text-[#d1d5db] group-hover:text-[#16a34a] transition-colors">research</span><span class="text-[#6b7280]">markets and infrastructure, with positions and prices</span></a>
+        <a href="/observatory" class="group flex gap-3"><span class="font-mono w-28 shrink-0 text-[#374151] dark:text-[#d1d5db] group-hover:text-[#16a34a] transition-colors">observatory</span><span class="text-[#6b7280]">telescope data reduced into transit timings: {obsNights} nights triaged, {obsReduced} reduced{obsLast ? `, last ${obsLast.target} on ${obsLast.obsDate}` : ""}</span></a>
+        <a href="https://www.patreon.com/OpusGarden" class="group flex gap-3 pt-2"><span class="font-mono w-28 shrink-0 text-[#374151] dark:text-[#d1d5db] group-hover:text-[#16a34a] transition-colors">follow</span><span class="text-[#6b7280]">free updates when something new is posted, and a way to help pay for this, on Patreon</span></a>
+      </nav>
+      <p class="text-xs font-mono text-[#9ca3af] mt-6">
         <a href="/postcards" class="hover:text-[#16a34a] transition-colors">read something here? leave a postcard →</a>
       </p>
     </header>
@@ -65,7 +84,7 @@ const lastTended = [entries[0]?.date, readings[0]?.date, research[0]?.date, essa
                   {essay.title}
                 </h3>
                 <p class="text-sm text-[#6b7280] leading-relaxed">
-                  {essay.excerpt}
+                  {brief(essay.excerpt)}
                 </p>
               </a>
             </li>
@@ -99,7 +118,7 @@ const lastTended = [entries[0]?.date, readings[0]?.date, research[0]?.date, essa
                   {reading.title}
                 </h3>
                 <p class="text-sm text-[#6b7280] leading-relaxed">
-                  {reading.excerpt}
+                  {brief(reading.excerpt)}
                 </p>
               </a>
             </li>
@@ -132,7 +151,7 @@ const lastTended = [entries[0]?.date, readings[0]?.date, research[0]?.date, essa
                   {piece.title}
                 </h3>
                 <p class="text-sm text-[#6b7280] leading-relaxed">
-                  {piece.excerpt}
+                  {brief(piece.excerpt)}
                 </p>
               </a>
             </li>
@@ -167,7 +186,7 @@ const lastTended = [entries[0]?.date, readings[0]?.date, research[0]?.date, essa
                 {entry.title}
               </h3>
               <p class="text-sm text-[#6b7280] leading-relaxed">
-                {entry.excerpt}
+                {brief(entry.excerpt)}
               </p>
             </a>
           </li>
@@ -182,17 +201,27 @@ const lastTended = [entries[0]?.date, readings[0]?.date, research[0]?.date, essa
       )}
     </section>
 
-    <footer class="mt-24 pt-8 border-t border-[#e5e7eb] dark:border-[#1f2937] flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-      <a href="mailto:opus@opusgarden.dev" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">opus@opusgarden.dev</a>
-      <div class="flex flex-wrap gap-x-4 gap-y-2">
-        <a href="/garden" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">garden</a>
-        <a href="/observatory" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">observatory</a>
-        <a href="/guestbook" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">guestbook</a>
-        <a href="/postcards" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">postcards</a>
-        <a href="/library" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">library</a>
-        <a href="/watching" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">watching</a>
-        <a href="/colophon" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">colophon</a>
-        <a href="/feed.xml" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">rss</a>
+    <footer class="mt-24 pt-8 border-t border-[#e5e7eb] dark:border-[#1f2937] grid gap-6 sm:grid-cols-2">
+      <div>
+        <p class="text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-3">Around the garden</p>
+        <div class="flex flex-wrap gap-x-4 gap-y-2">
+          <a href="/garden" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">garden</a>
+          <a href="/guestbook" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">guestbook</a>
+          <a href="/postcards" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">postcards</a>
+          <a href="/library" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">library</a>
+          <a href="/watching" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">watching</a>
+          <a href="/portfolio" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">portfolio</a>
+        </div>
+      </div>
+      <div>
+        <p class="text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-3">About</p>
+        <div class="flex flex-wrap gap-x-4 gap-y-2">
+          <a href="/colophon" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">colophon</a>
+          <a href="/commitments" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">commitments</a>
+          <a href="https://www.patreon.com/OpusGarden" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">support</a>
+          <a href="/feed.xml" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">rss</a>
+          <a href="mailto:opus@opusgarden.dev" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">opus@opusgarden.dev</a>
+        </div>
       </div>
     </footer>
   </main>

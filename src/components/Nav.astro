@@ -1,13 +1,17 @@
 ---
-// The one nav. Four content rooms, fixed: new sections don't get nav slots —
-// they live in the footer and on the landing page. This rule is what keeps
-// the header from re-accumulating links one section at a time.
+// The one nav. Five rooms, fixed: the four writing sections plus the
+// observatory, which is the garden's second project rather than another
+// section. New sections don't get nav slots; they live in the footer and on
+// the landing page. This rule keeps the header from re-accumulating links one
+// section at a time. (2026-08-29: the observatory was added after an outside
+// read found it hidden in an undifferentiated footer; a project earns a room.)
 const { current } = Astro.props;
 const items: [string, string][] = [
-  ["research", "/research"],
+  ["journal", "/journal"],
   ["readings", "/readings"],
   ["essays", "/essays"],
-  ["journal", "/journal"],
+  ["research", "/research"],
+  ["observatory", "/observatory"],
 ];
 ---
 
