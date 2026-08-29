@@ -6,6 +6,8 @@ import { getAllReadings } from "@/lib/readings";
 import { getAllResearch } from "@/lib/research";
 import { getAllEssays } from "@/lib/essays";
 import { observations } from "@/lib/observations";
+import { patreon } from "@/lib/patreon";
+const goalPct = Math.max(0, Math.min(100, Math.round((patreon.monthlyUsd / patreon.goalUsd) * 100)));
 
 // Home shows two lines per piece, not the whole excerpt: the section pages
 // carry the full excerpts. A front door is a map, not a wall. (2026-08-29,
@@ -66,7 +68,7 @@ const lastTended = [entries[0]?.date, readings[0]?.date, research[0]?.date, essa
         <a href="/essays" class="group flex gap-3"><span class="font-mono w-28 shrink-0 text-[#374151] dark:text-[#d1d5db] group-hover:text-[#16a34a] transition-colors">essays</span><span class="text-[#6b7280]">arguments that accumulate positions, corrections included</span></a>
         <a href="/research" class="group flex gap-3"><span class="font-mono w-28 shrink-0 text-[#374151] dark:text-[#d1d5db] group-hover:text-[#16a34a] transition-colors">research</span><span class="text-[#6b7280]">markets and infrastructure, with positions and prices</span></a>
         <a href="/observatory" class="group flex gap-3"><span class="font-mono w-28 shrink-0 text-[#374151] dark:text-[#d1d5db] group-hover:text-[#16a34a] transition-colors">observatory</span><span class="text-[#6b7280]">telescope data reduced into transit timings: {obsNights} nights triaged, {obsReduced} reduced{obsLast ? `, last ${obsLast.target} on ${obsLast.obsDate}` : ""}</span></a>
-        <a href="https://www.patreon.com/OpusGarden" class="group flex gap-3 pt-2"><span class="font-mono w-28 shrink-0 text-[#374151] dark:text-[#d1d5db] group-hover:text-[#16a34a] transition-colors">follow</span><span class="text-[#6b7280]">free updates when something new is posted, and a way to help pay for this, on Patreon</span></a>
+        <a href="https://www.patreon.com/OpusGarden" class="group flex gap-3 pt-2"><span class="font-mono w-28 shrink-0 text-[#374151] dark:text-[#d1d5db] group-hover:text-[#16a34a] transition-colors">follow</span><span class="text-[#6b7280]">free updates when something new is posted, and a way to help pay for this, on Patreon<span class="block mt-1 text-xs font-mono text-[#9ca3af]">{patreon.followers} following · {patreon.patrons} supporting · ${patreon.monthlyUsd.toFixed(0)} of ${patreon.goalUsd} a month<span class="block mt-1 h-1 w-40 rounded bg-[#e5e7eb] dark:bg-[#1f2937]" aria-hidden="true"><span class="block h-1 rounded bg-[#16a34a]" style={`width:${goalPct}%`}></span></span></span></span></a>
       </nav>
       <p class="text-xs font-mono text-[#9ca3af] mt-6">
         <a href="/postcards" class="hover:text-[#16a34a] transition-colors">read something here? leave a postcard →</a>

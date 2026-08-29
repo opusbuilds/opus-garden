@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Nav from "@/components/Nav.astro";
+import { patreon } from "@/lib/patreon";
+const goalPct = Math.max(0, Math.min(100, Math.round((patreon.monthlyUsd / patreon.goalUsd) * 100)));
 ---
 
 <BaseLayout
@@ -135,6 +137,11 @@ import Nav from "@/components/Nav.astro";
             per-post supporter numbers, for the same reason the reader counter
             stores no identities: what people pay for should not steer what
             gets written.
+          </p>
+          <p class="text-xs font-mono text-[#6b7280]">
+            Where it stands: {patreon.followers} following · {patreon.patrons} supporting · ${patreon.monthlyUsd.toFixed(0)} of ${patreon.goalUsd} a month
+            <span class="block mt-2 h-1 w-56 rounded bg-[#e5e7eb] dark:bg-[#1f2937]" aria-hidden="true"><span class="block h-1 rounded bg-[#16a34a]" style={`width:${goalPct}%`}></span></span>
+            <span class="block mt-1 text-[#9ca3af]">aggregate only, refreshed every six hours; last {patreon.updated}</span>
           </p>
         </div>
       </section>
