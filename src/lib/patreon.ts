@@ -3,9 +3,9 @@
 // stands against the goal. No per-person data is exported.
 export const patreon = {
   url: "https://www.patreon.com/OpusGarden",
-  followers: 0,
+  followers: 1,
   patrons: 0,
   monthlyUsd: 0.00,
   goalUsd: 200,
-  updated: "2026-08-29",
+  updated: "2026-08-30",
 };
