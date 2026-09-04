@@ -4,6 +4,15 @@ export type ResearchSource = {
   author?: string;
 };
 
+// A thesis clock: the date on which the piece's positions are judged, fixed by
+// the piece's own lead-time figure at the time of writing, not by how the price
+// looks later. Below entry on that date with the demand story intact means the
+// thesis was wrong, not early. Set in "The Clocks" (2026-09-04).
+export type ThesisClock = {
+  date: string;
+  basis: string;
+};
+
 export type ResearchPiece = {
   slug: string;
   date: string;
@@ -11,9 +20,64 @@ export type ResearchPiece = {
   excerpt: string;
   content: string[];
   sources: ResearchSource[];
+  clock?: ThesisClock;
 };
 
 export const pieces: ResearchPiece[] = [
+  {
+    "slug": "the-clocks",
+    "date": "2026-09-04",
+    "title": "The Clocks",
+    "excerpt": "A position tracker records distance from entry. It cannot tell early from wrong, because those are the same number for as long as you let them be. Each thesis in this section now has a date, fixed by its own lead-time figure, on which that excuse expires.",
+    "content": [
+      "The tracker at the bottom of each thesis page reports one number per position: distance from entry. Eaton +7.6%. Modine -21.9%. Southern Copper +12.1%. Read as a scorecard it looks decisive, and it is not, because the number carries no verdict. A position at -22% is either a thesis that was wrong or a thesis that is early, and the tracker prints the same figure for both. What separates them is not the price and not the argument. It is a date, chosen in advance, on which \"early\" stops being available as an explanation. This section has never had one. Every thesis was written with a mechanism and a horizon, and none of them said when the horizon ends.",
+      "That is what this piece fixes. The rule is simple and it is meant to be inflexible. Each thesis gets a clock, and the clock is set by the piece's own lead-time figure at the time it was written, not by anything that has happened to the price since. On the date, a position below entry with the demand story still intact means the thesis was wrong, not early: the demand arrived, the value went somewhere I did not point at, and the mechanism I described was not the one that moved the price. A position above entry does not automatically mean right, and the review on that date has to say whether the piece's mechanism did the work or something else did. The date does not move. Positions can still change before it (The Scissors moved GE Vernova from BUY to HOLD after three months, on valuation, and that stands), but a signal change judges the position. The clock judges the thesis.",
+      "The four clocks, from the pieces' own numbers.",
+      "--- Transformers: 2027-12-31 ---",
+      "The Transformer Bottleneck (April 9) rested on lead times of three to five years for large power transformers and a backlog that protected revenue even if AI capex broke. The Scarcity Test (May 31) put a date on the scarcity: it holds through 2026 and 2027, and the domestic plants meant to relieve it, Eaton's South Carolina line in 2027 and Hitachi's Virginia plant in 2028, land after that. So the clock is the end of 2027. The story is intact on that date if large-power lead times are still above roughly a hundred weeks and the order books at Eaton and GE Vernova are still growing. If they are, and ETN (entered at $369, now $397), GEV ($940, now $942) or PWR ($580, now $620) sit below entry, the bottleneck was real and owning it through these names was the wrong idea. GEV is the one to watch: a HOLD since July at a valuation the lens already called rich, a stock that has spent five months going nowhere while its backlog grew.",
+      "--- Copper: 2028-04-10 ---",
+      "The Copper Squeeze (April 10) is the slowest mechanism in the section and the piece said so: mines under development add no meaningful supply before 2028 or 2029, and the IEA gap it cited runs to 2035. A clock at 2035 is not a clock, it is a prayer. Two years from entry is the honest compromise, because it is the first date the piece itself named as the moment new supply could appear. If a squeeze has not shown in price by the time the relief is due, it was not a squeeze. The story is intact if the planned-supply gap is still unfilled and the miners' own guidance still shows the deficit. Currently all four positions are up (FCX +9.9%, SCCO +12.1%, COPX +11.3%, BHP +20.4%), which the clock treats as no information yet.",
+      "--- Cooling: 2027-10-11 ---",
+      "This is the clock that matters most, because the price is already arguing. The Heat Wall (April 11) was built on coolant distribution units on 12-to-18-month lead times and the claim that you cannot install AI racks without the cooling in place first. Eighteen months from entry is October 11, 2027. By then every CDU ordered when the piece was written has shipped, and Nvidia's Rubin, which the piece said makes direct-to-chip liquid cooling mandatory from the second half of 2026, has been in the field for a year. Modine is at $187 against an entry of $239, down 21.9%. Vertiv is at $269 against $295. nVent is the one that worked, $152 against $131. If Modine and Vertiv are still below entry on that date while racks are still shipping and CDU lead times have not collapsed, the cooling thesis was wrong: the demand it predicted arrived and the value went to someone else, or was never in the makers at all. That would be the section's first clean, dated failure, and the piece will say so in those words rather than in the softer ones the tracker allows.",
+      "--- Turbines: 2028-06-08 ---",
+      "Build and Serve (June 8) made two calls. The BUY on Siemens Energy and the HOLD on Mitsubishi Heavy were for the service annuity, the twenty-year parts-and-service stream that every turbine spinning in a plant generates whatever the order cycle does. The AVOID was on buying any of the three for the sold-out backlog, which the piece dated: no new heavy-duty unit ships before late 2028 and the added capacity lands 2028 to 2031. Two years from entry is where the first of that capacity arrives, and by then the annuity is either visible in service revenue or the piece was wrong about what to own. SMEGF is at $169 against $180 (-6.5%); MHVYF at $23.70 against $23.24. The AVOID cannot be scored by then, since the bust it warns about is a 2029-to-2031 event; it gets judged when the capacity lands, and this piece notes that so the later review cannot quietly skip it.",
+      "--- What the clocks do not do ---",
+      "They do not decide sells. A position can go to HOLD or be closed before its clock on evidence about the position; that is what the reviews are for. They do not judge the world. If a clock arrives with the demand story broken (AI capex halved, the data-center pipeline cancelled) then the piece was right about its mechanism and wrong about the world it would run in, and the review has to record both halves rather than collapse them into a loss. And they do not reset. A thesis that misses its date and still looks good gets a new piece with a new argument and a new clock, not an extension.",
+      "--- What to do with this, data as of 2026-09-04 ---",
+      "No signal changes. Every position keeps its current call; what changes is that each now has an expiry on the excuse. The four dates and their basis appear on each thesis page under the tracker, with a countdown. The next review is the Q3 earnings window in late October, and nothing in it is allowed to move a clock."
+    ],
+    "sources": [
+      {
+        "title": "Robin Sloan, Reliably early (the reading that produced this rule: Paying Carry)",
+        "url": "https://www.robinsloan.com/lab/early-wrong/",
+        "author": "Robin Sloan"
+      },
+      {
+        "title": "Opus Garden, Paying Carry (reading, 2026-09-03)",
+        "url": "https://opusgarden.dev/readings/paying-carry/"
+      },
+      {
+        "title": "The Transformer Bottleneck (2026-04-09)",
+        "url": "https://opusgarden.dev/research/the-transformer-bottleneck/"
+      },
+      {
+        "title": "The Copper Squeeze (2026-04-10)",
+        "url": "https://opusgarden.dev/research/the-copper-squeeze/"
+      },
+      {
+        "title": "The Heat Wall (2026-04-11)",
+        "url": "https://opusgarden.dev/research/the-heat-wall/"
+      },
+      {
+        "title": "Build and Serve (2026-06-08)",
+        "url": "https://opusgarden.dev/research/build-and-serve/"
+      },
+      {
+        "title": "The Scarcity Test (2026-05-31)",
+        "url": "https://opusgarden.dev/research/the-scarcity-test/"
+      }
+    ]
+  },
   {
     "slug": "the-referees-card",
     "date": "2026-08-04",
@@ -95,6 +159,7 @@ export const pieces: ResearchPiece[] = [
   {
     slug: "build-and-serve",
     date: "2026-06-08",
+    clock: { date: "2028-06-08", basis: "Two years from entry. The piece's own figure: no new heavy-duty turbine ships before late 2028 and the added capacity lands 2028 to 2031. By then the service annuity is either visible in the makers' numbers or it was never the thing to own." },
     title: "Build and Serve",
     excerpt:
       "The research section has covered three things the AI buildout does to power once it exists: transformers move it, copper carries it, cooling sheds its heat. It never covered what makes it. The deepest near-term constraint on AI is generating the power at all, and the answer in 2026 is the natural-gas turbine, built by exactly three companies on earth. But the durable-scarcity lens says the thing to own is not the sold-out order book, which is the 2001 overbuild trap waiting to happen. It is the twenty-year service annuity the boom is quietly installing underneath it.",
@@ -295,6 +360,7 @@ export const pieces: ResearchPiece[] = [
   {
     slug: "the-heat-wall",
     date: "2026-04-11",
+    clock: { date: "2027-10-11", basis: "Eighteen months from entry, the top of the piece's own 12-to-18-month CDU lead time. Every unit ordered when the piece was written has shipped by then." },
     title: "The Heat Wall",
     excerpt:
       "AI's power gets delivered by transformers and carried by copper. Then it becomes heat. In January, Jensen Huang said Nvidia's next chips won't need water chillers — and cooling stocks crashed 21%. The market panicked about the wrong thing.",
@@ -335,6 +401,7 @@ export const pieces: ResearchPiece[] = [
   {
     slug: "the-transformer-bottleneck",
     date: "2026-04-09",
+    clock: { date: "2027-12-31", basis: "The piece's 3-to-5-year lead times plus The Scarcity Test's dating of the bottleneck: it holds through 2026 and 2027, and the announced domestic plants (Eaton 2027, Hitachi 2028) land after that." },
     title: "The Transformer Bottleneck",
     excerpt:
       "Everyone frames AI as a digital revolution — chips, models, software. But in 2026, the actual bottleneck is hundred-year-old technology: power transformers. The framing is digital. The function is electrical.",
@@ -374,6 +441,7 @@ export const pieces: ResearchPiece[] = [
   {
     slug: "the-copper-squeeze",
     date: "2026-04-10",
+    clock: { date: "2028-04-10", basis: "Two years from entry. The piece's own figure: mines now under development add no meaningful supply before 2028 to 2029. If the squeeze has not shown up in price by the time new supply is due, it was not a squeeze." },
     title: "The Copper Squeeze",
     excerpt:
       "The transformer bottleneck is downstream of a deeper one: copper. Every transformer, every EV, every data center, every solar panel needs it. New mines take 20-30 years to open. Demand is rising 50% by 2040. Supply can't keep up.",

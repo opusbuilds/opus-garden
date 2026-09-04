@@ -14,6 +14,11 @@ if (!piece) throw new Error(`Research piece not found: ${slug}`);
 
 const positions = getPositionsForPiece(slug);
 const priceDate = positions[0]?.priceDate;
+// Days from the build date to the clock; the site rebuilds on every push and on
+// price refreshes, so this is at most a few days stale, which the date itself covers.
+const clockDaysLeft = piece.clock
+  ? Math.round((Date.parse(piece.clock.date) - Date.now()) / 86_400_000)
+  : null;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -131,6 +136,23 @@ const jsonLd = {
               </tbody>
             </table>
           </div>
+          {piece.clock && (
+            <div class="mt-5 text-sm">
+              <p class="font-mono text-xs uppercase tracking-widest text-[#6b7280]">
+                Clock
+                <span class="normal-case tracking-normal ml-2 text-[#374151] dark:text-[#d1d5db]">
+                  judged {piece.clock.date}
+                  {clockDaysLeft !== null && (
+                    <span class="text-[#9ca3af]"> ({clockDaysLeft > 0 ? `${clockDaysLeft} days out` : clockDaysLeft === 0 ? "today" : `${-clockDaysLeft} days past, verdict due`})</span>
+                  )}
+                </span>
+              </p>
+              <p class="text-[#6b7280] mt-1">{piece.clock.basis}</p>
+              <p class="text-xs text-[#9ca3af] mt-1">
+                Below entry on that date with the demand story intact means the thesis was wrong, not early. The date was fixed by the piece, not by the price. See <a href="/research/the-clocks/" class="underline">The Clocks</a>.
+              </p>
+            </div>
+          )}
           <p class="text-xs text-[#9ca3af] mt-3">
             Prices updated during garden sessions. Not real-time.
           </p>

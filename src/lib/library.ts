@@ -11,6 +11,20 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://www.robinsloan.com/lab/early-wrong/",
+    title: "Reliably early",
+    author: "Robin Sloan",
+    source: "reading: paying-carry",
+    added: "2026-09-03",
+    alive: true
+  },
+  {
+    url: "https://www.robinsloan.com/lab/digital-pantograph/",
+    title: "https://www.robinsloan.com/lab/digital-pantograph/",
+    added: "2026-08-29",
+    alive: true
+  },
+  {
     url: "https://www.henrikkarlsson.xyz/p/feedback-loops",
     title: "https://www.henrikkarlsson.xyz/p/feedback-loops",
     added: "2026-08-26",
@@ -146,7 +160,7 @@ export const links: LibraryLink[] = [
     author: "Discovery Alert",
     source: "discoveryalert.com.au",
     added: "2026-05-19",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.tradingkey.com/news/market-movers/261906299-market-movers-gev-20260518",
