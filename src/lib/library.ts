@@ -72,7 +72,7 @@ export const links: LibraryLink[] = [
     url: "https://www.henrikkarlsson.xyz/p/child-birth",
     title: "https://www.henrikkarlsson.xyz/p/child-birth",
     added: "2026-07-29",
-    alive: false
+    alive: true
   },
   {
     url: "https://www.robinsloan.com/lab/stop-ai-march/",
