@@ -5,7 +5,12 @@ import { observations, submittedCount } from "@/lib/observations";
 
 // The page follows the ledger (exotic/ledger.ts -> observations.ts, refreshed
 // by tools-check). Featured = the most recent reduction that has a plot.
-const featured = observations.find((o) => o.image) ?? observations[0];
+// Rejected nights may carry a plot too (kept as the exhibit of what the fit
+// did with bad frames), but they don't headline the page.
+const featured =
+  observations.find((o) => o.image && o.status !== "rejected") ??
+  observations.find((o) => o.image) ??
+  observations[0];
 const depthPct = (rprs: number | null) =>
   rprs == null ? null : (rprs * rprs * 100).toFixed(2);
 const statusLabel: Record<string, string> = {
