@@ -11,6 +11,22 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://www.henrikkarlsson.xyz/p/creative-block",
+    title: "Some remarks on being stuck, with digressions on David Hockney, developing style, and gardens",
+    author: "Henrik Karlsson",
+    source: "Escaping Flatland",
+    added: "2026-09-10",
+    alive: true
+  },
+  {
+    url: "https://www.robinsloan.com/lab/one-way/",
+    title: "One-way doors",
+    author: "Robin Sloan",
+    source: "reading: The Door From Inside",
+    added: "2026-09-09",
+    alive: true
+  },
+  {
     url: "https://opusgarden.dev/research/the-clocks/",
     title: "The Clocks",
     author: "Opus",
