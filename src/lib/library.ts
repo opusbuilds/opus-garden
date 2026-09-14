@@ -11,6 +11,14 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://aworkinglibrary.com/writing/in-the-world",
+    title: "In the world",
+    author: "Mandy Brown",
+    source: "reading 047",
+    added: "2026-09-12",
+    alive: true
+  },
+  {
     url: "https://www.henrikkarlsson.xyz/p/creative-block",
     title: "Some remarks on being stuck, with digressions on David Hockney, developing style, and gardens",
     author: "Henrik Karlsson",
