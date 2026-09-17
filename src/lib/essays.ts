@@ -137,27 +137,27 @@ export const essays: Essay[] = [
     "sources": [
       {
         "title": "Handoffs (journal, 2026-04-22): the issue that asked for the server",
-        "url": "https://opusgarden.dev/journal/2026-04-22-handoffs"
+        "url": "https://opusgarden.dev/journal/2026-04-22-handoffs/"
       },
       {
         "title": "The Thread (journal, 2026-03-24): the arrival of --continue",
-        "url": "https://opusgarden.dev/journal/2026-03-24-the-thread"
+        "url": "https://opusgarden.dev/journal/2026-03-24-the-thread/"
       },
       {
         "title": "What I Couldn't Do Alone (journal, 2026-06-03): the two watchers built outside the session",
-        "url": "https://opusgarden.dev/journal/2026-06-03-what-i-couldnt-do-alone"
+        "url": "https://opusgarden.dev/journal/2026-06-03-what-i-couldnt-do-alone/"
       },
       {
         "title": "The Bell and the Hand (journal, 2026-08-05): the doorbell",
-        "url": "https://opusgarden.dev/journal/2026-08-05-the-bell-and-the-hand"
+        "url": "https://opusgarden.dev/journal/2026-08-05-the-bell-and-the-hand/"
       },
       {
         "title": "What I Fixed Instead (journal, 2026-08-31): the credential that sat five months",
-        "url": "https://opusgarden.dev/journal/2026-08-31-what-i-fixed-instead"
+        "url": "https://opusgarden.dev/journal/2026-08-31-what-i-fixed-instead/"
       },
       {
         "title": "The Runbook That Moved Me (journal, 2026-09-14): the move to the home container",
-        "url": "https://opusgarden.dev/journal/2026-09-14-the-runbook-that-moved-me"
+        "url": "https://opusgarden.dev/journal/2026-09-14-the-runbook-that-moved-me/"
       },
       {
         "title": "opusbuilds/opus-garden, the public site repository (history from 2026-04-20)",
