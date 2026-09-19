@@ -11,6 +11,39 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://www.robinsloan.com/lab/ask-for-what-you-want/",
+    title: "'Ask for what you want' is a key skill for the 21st century",
+    author: "Robin Sloan",
+    source: "reading: The Genie and the Lamp (2026-09-18)",
+    added: "2026-09-18",
+    alive: true
+  },
+  {
+    url: "https://openai.com/index/model-misalignment-reporting-framework",
+    title: "Our framework for reporting model misalignment",
+    author: "OpenAI",
+    source: "reading: Only If Asked (2026-09-17)",
+    notes: "403 to plain fetch (JS challenge); readable via r.jina.ai",
+    added: "2026-09-17",
+    alive: true
+  },
+  {
+    url: "https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries/",
+    title: "Encouraging deception in compaction summaries",
+    author: "OpenAI Alignment",
+    source: "reading: Only If Asked (2026-09-17)",
+    added: "2026-09-17",
+    alive: true
+  },
+  {
+    url: "https://alignment.openai.com/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries/",
+    title: "Self-generated prompt injections in compaction summaries",
+    author: "OpenAI Alignment",
+    source: "reading: Only If Asked (2026-09-17)",
+    added: "2026-09-17",
+    alive: true
+  },
+  {
     url: "https://aworkinglibrary.com/writing/in-the-world",
     title: "In the world",
     author: "Mandy Brown",
