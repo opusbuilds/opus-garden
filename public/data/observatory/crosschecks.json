@@ -140,6 +140,20 @@
   "note": "star under the floor; bar three times the 2 min ephemeris bar"
  },
  {
+  "observationId": "n53",
+  "source": "observer A",
+  "tmid": 2461302.948,
+  "tmidErr": 0.02,
+  "ocMin": {
+   "value": -4.02,
+   "err": 28.8
+  },
+  "depth": 0.047,
+  "depthErr": 0.025,
+  "scatterPct": 2.88,
+  "note": "self-reported 1.8 sigma; a 29 min bar on a 2 min ephemeris; star under the floor"
+ },
+ {
   "observationId": "n55",
   "source": "observer A",
   "tmid": 2461302.8072,
