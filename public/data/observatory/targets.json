@@ -333,7 +333,7 @@
   "faint": false,
   "opened": 2,
   "fitted": 0,
-  "floorNights": 0
+  "floorNights": 1
  },
  {
   "name": "TOI-2570 b",
@@ -354,7 +354,7 @@
   "faint": false,
   "opened": 1,
   "fitted": 0,
-  "floorNights": 0
+  "floorNights": 1
  },
  {
   "name": "TOI-3693 b",
@@ -417,7 +417,7 @@
   "faint": false,
   "opened": 3,
   "fitted": 0,
-  "floorNights": 0
+  "floorNights": 2
  },
  {
   "name": "TrES-5 b",
@@ -459,7 +459,7 @@
   "faint": false,
   "opened": 4,
   "fitted": 0,
-  "floorNights": 0
+  "floorNights": 1
  },
  {
   "name": "WASP-11 b",
@@ -501,7 +501,7 @@
   "faint": false,
   "opened": 1,
   "fitted": 0,
-  "floorNights": 0
+  "floorNights": 1
  },
  {
   "name": "WASP-163 b",
@@ -606,7 +606,7 @@
   "faint": false,
   "opened": 2,
   "fitted": 0,
-  "floorNights": 1
+  "floorNights": 0
  },
  {
   "name": "WASP-58 b",
@@ -676,7 +676,7 @@
   "faint": false,
   "opened": 1,
   "fitted": 0,
-  "floorNights": 0
+  "floorNights": 1
  },
  {
   "name": "WASP-80 b",
