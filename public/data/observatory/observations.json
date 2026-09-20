@@ -4,7 +4,7 @@
   "target": "WASP-52 b",
   "obsDate": "2026-09-20",
   "dataset": "MObs WASP-52 260920, 78 frames 03:46-07:37 UT, 60 s Clear",
-  "status": "pass",
+  "status": "marginal",
   "reason": null,
   "ocMin": {
    "value": 12.79,
@@ -790,7 +790,7 @@
   "target": "CoRoT-2 b",
   "obsDate": "2026-08-16",
   "dataset": "",
-  "status": "marginal",
+  "status": "pass",
   "reason": null,
   "ocMin": {
    "value": 28.46,
@@ -935,7 +935,7 @@
   "target": "WASP-58 b",
   "obsDate": "2026-08-07",
   "dataset": "",
-  "status": "marginal",
+  "status": "pass",
   "reason": null,
   "ocMin": {
    "value": 30.6,
@@ -976,7 +976,7 @@
   "target": "WASP-163 b",
   "obsDate": "2026-07-31",
   "dataset": "mobs",
-  "status": "marginal",
+  "status": "pass",
   "reason": null,
   "ocMin": {
    "value": -3.26,
@@ -1080,7 +1080,7 @@
   "target": "CoRoT-2 b",
   "obsDate": "2026-06-30",
   "dataset": "MicroObservatory/Cecilia (public Image Directory)",
-  "status": "marginal",
+  "status": "pass",
   "reason": null,
   "ocMin": {
    "value": -1.6,
