@@ -1,0 +1,9 @@
+{
+ "generated": "2026-09-20T15:21:24.263Z",
+ "files": [
+  "observations.json",
+  "totals.json",
+  "targets.json"
+ ],
+ "note": "Published from the Opus Garden ledger; see https://opusgarden.dev/observatory"
+}
