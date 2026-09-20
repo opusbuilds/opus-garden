@@ -1,0 +1,166 @@
+[
+ {
+  "date": "2026-09-20",
+  "scanned": "2026-09-20T15:49+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "WASP-140 b",
+    "geometry": "egress-only · 07:03–08:35 UT · V 11.12 · depth 2.14% · 38 frames",
+    "observationId": null,
+    "notOpened": "egress-only"
+   },
+   {
+    "target": "WASP-52 b",
+    "geometry": "full · 04:48–06:37 UT · V 12.19 · depth 2.71% · 78 frames",
+    "observationId": null,
+    "notOpened": "not opened"
+   }
+  ]
+ },
+ {
+  "date": "2026-09-19",
+  "scanned": "2026-09-20T15:49+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "HAT-P-68 b",
+    "geometry": "full · 09:46–11:51 UT · V 13.80 · depth 2.70% · 68 frames",
+    "observationId": "n53",
+    "notOpened": null
+   },
+   {
+    "target": "Qatar-4 b",
+    "geometry": "full · 02:27–04:35 UT · V 13.57 · depth 1.90% · 71 frames",
+    "observationId": "n54",
+    "notOpened": null
+   },
+   {
+    "target": "TOI-5300 b",
+    "geometry": "full · 05:55–08:17 UT · V 13.87 · depth 1.93% · 73 frames",
+    "observationId": "n55",
+    "notOpened": null
+   }
+  ]
+ },
+ {
+  "date": "2026-09-18",
+  "scanned": "2026-09-20T15:49+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "WASP-124 b",
+    "geometry": "egress-only · 04:15–06:49 UT · V 12.72 · depth 1.54% · 35 frames",
+    "observationId": null,
+    "notOpened": "egress-only"
+   },
+   {
+    "target": "WASP-67 b",
+    "geometry": "full · 03:36–05:30 UT · V 12.54 · depth 1.90% · 72 frames",
+    "observationId": "n52",
+    "notOpened": null
+   }
+  ]
+ },
+ {
+  "date": "2026-09-17",
+  "scanned": "2026-09-20T15:49+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "Qatar-4 b",
+    "geometry": "full · 07:07–09:16 UT · V 13.57 · depth 1.90% · 79 frames",
+    "observationId": "n51",
+    "notOpened": null
+   },
+   {
+    "target": "TrES-3 b",
+    "geometry": "full · 04:11–05:37 UT · V 12.36 · depth 2.74% · 70 frames",
+    "observationId": "n50",
+    "notOpened": null
+   }
+  ]
+ },
+ {
+  "date": "2026-09-16",
+  "scanned": "2026-09-20T15:49+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "HAT-P-54 b",
+    "geometry": "full · 08:45–10:33 UT · V 13.40 · depth 2.47% · 74 frames",
+    "observationId": "n49",
+    "notOpened": null
+   },
+   {
+    "target": "WASP-69 b",
+    "geometry": "egress-only · 01:37–03:49 UT · V 9.87 · depth 1.78% · 59 frames",
+    "observationId": null,
+    "notOpened": "egress-only"
+   }
+  ]
+ },
+ {
+  "date": "2026-09-15",
+  "scanned": "2026-09-20T15:49+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "TOI-2046 b",
+    "geometry": "full · 03:09–05:34 UT · V 11.55 · depth 1.47% · 90 frames",
+    "observationId": "n47",
+    "notOpened": null
+   },
+   {
+    "target": "WASP-53 b",
+    "geometry": "full · 08:20–10:36 UT · V 12.59 · depth 1.83% · 87 frames",
+    "observationId": "n48",
+    "notOpened": null
+   }
+  ]
+ },
+ {
+  "date": "2026-09-14",
+  "scanned": "2026-09-20T15:49+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "Qatar-1 b",
+    "geometry": "full · 08:59–10:39 UT · V 12.69 · depth 2.14% · 75 frames",
+    "observationId": "n46",
+    "notOpened": null
+   },
+   {
+    "target": "WASP-80 b",
+    "geometry": "ingress-only · 06:33–08:41 UT · V 11.84 · depth 2.94% · 50 frames",
+    "observationId": null,
+    "notOpened": "ingress-only"
+   }
+  ]
+ },
+ {
+  "date": "2026-09-13",
+  "scanned": "2026-09-20T15:49+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "Qatar-10 b",
+    "geometry": "ingress-only · 03:06–05:52 UT · V 12.87 · depth 1.60% · 27 frames",
+    "observationId": "n44",
+    "notOpened": null
+   },
+   {
+    "target": "TOI-3693 b",
+    "geometry": "full · 08:39–12:13 UT · V 11.95 · depth 2.04% · 102 frames",
+    "observationId": "n45",
+    "notOpened": null
+   },
+   {
+    "target": "WASP-52 b",
+    "geometry": "full · 04:49–06:38 UT · V 12.19 · depth 2.71% · 78 frames",
+    "observationId": "n43",
+    "notOpened": null
+   }
+  ]
+ }
+]
