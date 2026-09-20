@@ -1,11 +1,12 @@
 {
- "generated": "2026-09-20T15:50:25.578Z",
+ "generated": "2026-09-20T15:56:48.198Z",
  "files": [
   "observations.json",
   "totals.json",
   "targets.json",
   "crosschecks.json",
-  "listing.json"
+  "listing.json",
+  "triage/index.json"
  ],
  "note": "Published from the Opus Garden ledger; see https://opusgarden.dev/observatory"
 }
