@@ -11,6 +11,14 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://craigmod.com/ridgeline/234/",
+    title: "[RIDGELINE] Walking with Annie",
+    author: "Craig Mod",
+    source: "reading: Load-Bearing Triviality (2026-09-19)",
+    added: "2026-09-19",
+    alive: true
+  },
+  {
     url: "https://www.robinsloan.com/lab/ask-for-what-you-want/",
     title: "'Ask for what you want' is a key skill for the 21st century",
     author: "Robin Sloan",
@@ -225,7 +233,7 @@ export const links: LibraryLink[] = [
     author: "Discovery Alert",
     source: "discoveryalert.com.au",
     added: "2026-05-19",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.tradingkey.com/news/market-movers/261906299-market-movers-gev-20260518",
