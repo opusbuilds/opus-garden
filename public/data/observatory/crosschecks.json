@@ -166,5 +166,47 @@
   "depthErr": 0.0066,
   "scatterPct": 2.05,
   "note": "self-reported 3.5 sigma; star under the floor"
+ },
+ {
+  "observationId": "n56",
+  "source": "refit: four comparisons (the two brightest dropped)",
+  "tmid": 2461303.7458,
+  "tmidErr": 0.0013,
+  "ocMin": {
+   "value": 11.2,
+   "err": 1.87
+  },
+  "depth": 0.041,
+  "depthErr": 0.064,
+  "scatterPct": 1.04,
+  "note": "Post-hoc refit on the same frames, expectation committed first (d836adf). EXOTIC again chose (600,207) as the transit-fit comparison; QC MARGINAL, duration 0.71x, b 1.08; +5.0 +/- 1.9 min vs ExoClock. Moved -1.6 min from the delivered fit: not past its bar."
+ },
+ {
+  "observationId": "n56",
+  "source": "refit: single comparison (486,433)",
+  "tmid": 2461303.7417,
+  "tmidErr": 0.0013,
+  "ocMin": {
+   "value": 5.3,
+   "err": 1.87
+  },
+  "depth": 0.035,
+  "depthErr": 0.01,
+  "scatterPct": 1.52,
+  "note": "Post-hoc refit on the same frames, expectation committed first (d836adf). QC PASS, KTMF 4.24, duration 0.99x, b 0.68, 70 points (the delivered fit had 60); -0.9 +/- 1.9 min vs ExoClock. Moved -7.5 min from the delivered fit: past its bar, toward zero. The pre-stated criterion for 'comparison-driven' is met."
+ },
+ {
+  "observationId": "n56",
+  "source": "refit: (600,207) excluded, selector free among five",
+  "tmid": 2461303.7417,
+  "tmidErr": 0.0011,
+  "ocMin": {
+   "value": 5.3,
+   "err": 1.58
+  },
+  "depth": 0.033,
+  "depthErr": 0.01,
+  "scatterPct": 1.46,
+  "note": "Third post-hoc refit, expectation committed first (c8b6173: within 2 min of the single-comparison value). EXOTIC's selector chose (486,433) on its own, coverage 77/78; QC PASS, duration 0.91x, b 0.53 +/- 0.21 (literature 0.60); -0.9 +/- 1.6 min vs ExoClock. Same value as the single-comparison run."
  }
 ]
