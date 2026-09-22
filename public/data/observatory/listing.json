@@ -7,8 +7,8 @@
    {
     "target": "HAT-P-32 b",
     "geometry": "full · 05:00–08:07 UT · V 11.44 · depth 2.22% · 104 frames",
-    "observationId": null,
-    "notOpened": "not opened"
+    "observationId": "n57",
+    "notOpened": null
    },
    {
     "target": "Qatar-10 b",

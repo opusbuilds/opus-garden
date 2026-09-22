@@ -12,7 +12,14 @@
    "source": "NASA Exoplanet Archive pscomppars",
    "fetched": "2026-09-20"
   },
-  "exoclock": null,
+  "exoclock": {
+   "t0": 2458363.21037,
+   "t0Err": 0.00012,
+   "period": 1.742997,
+   "periodErr": 1.1e-7,
+   "source": "ExoClock, Kokori et al. 2025",
+   "fetched": "2026-09-22"
+  },
   "derived": "archive values",
   "note": null,
   "faint": false,
@@ -96,12 +103,19 @@
    "source": "NASA Exoplanet Archive pscomppars",
    "fetched": "2026-09-20"
   },
-  "exoclock": null,
+  "exoclock": {
+   "t0": 2456819.856194,
+   "t0Err": 0.000035,
+   "period": 2.150008096,
+   "periodErr": 4.8e-8,
+   "source": "ExoClock, Kokori et al. 2025",
+   "fetched": "2026-09-22"
+  },
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 1,
-  "fitted": 1,
+  "opened": 2,
+  "fitted": 2,
   "floorNights": 0
  },
  {
@@ -180,7 +194,14 @@
    "source": "NASA Exoplanet Archive pscomppars",
    "fetched": "2026-09-20"
   },
-  "exoclock": null,
+  "exoclock": {
+   "t0": 2459292.838984,
+   "t0Err": 0.000018,
+   "period": 2.25528757,
+   "periodErr": 1e-7,
+   "source": "ExoClock, Kokori et al. 2025",
+   "fetched": "2026-09-22"
+  },
   "derived": "archive values",
   "note": null,
   "faint": false,
@@ -474,7 +495,14 @@
    "source": "NASA Exoplanet Archive pscomppars",
    "fetched": "2026-09-20"
   },
-  "exoclock": null,
+  "exoclock": {
+   "t0": 2457376.590254,
+   "t0Err": 0.000085,
+   "period": 3.72247915,
+   "periodErr": 1.7e-7,
+   "source": "ExoClock, Kokori et al. 2025",
+   "fetched": "2026-09-22"
+  },
   "derived": "archive values",
   "note": null,
   "faint": false,
@@ -628,7 +656,14 @@
    "source": "NASA Exoplanet Archive pscomppars",
    "fetched": "2026-09-20"
   },
-  "exoclock": null,
+  "exoclock": {
+   "t0": 2459298.04882,
+   "t0Err": 0.00012,
+   "period": 5.01721382,
+   "periodErr": 8.4e-7,
+   "source": "ExoClock, Kokori et al. 2025",
+   "fetched": "2026-09-22"
+  },
   "derived": "archive values",
   "note": null,
   "faint": false,
