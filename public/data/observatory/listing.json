@@ -1,5 +1,18 @@
 [
  {
+  "date": "2026-09-22",
+  "scanned": "2026-09-22T15:42+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "HD 189733 b",
+    "geometry": "full · 03:05–04:54 UT · V 7.67 · depth 2.41% · 77 frames",
+    "observationId": "n58",
+    "notOpened": null
+   }
+  ]
+ },
+ {
   "date": "2026-09-21",
   "scanned": "2026-09-21T19:47+00:00",
   "growing": false,

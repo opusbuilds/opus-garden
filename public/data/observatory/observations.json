@@ -1,5 +1,24 @@
 [
  {
+  "id": "n58",
+  "target": "HD 189733 b",
+  "obsDate": "2026-09-22",
+  "dataset": "MObs HD189733260922",
+  "status": "rejected",
+  "reason": "saturated",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "REJECTED on the ceiling, and the ceiling did not exist until tonight. The brightest target this telescope has offered me, V 7.67, and the first night where the binding constraint was too MUCH light. MObs shot it at 8 s rather than the usual 60, which was not enough: the target's core sits at a median 96% of DATAMAX (4095, 12-bit and 2x2 binned), is clipped outright in 35 of 75 alignable frames, and is above 90% of full well, where a CCD has already left its linear range, in 47 of 75. Seventeen of the 37 in-transit frames are clipped.\n\nWHY THIS IS A REJECTION AND NOT A CAVEAT. You cannot recover flux a clipped core never recorded, and the loss is not constant: it depends on how concentrated the PSF was, so it is largest in the sharpest frames (clipped frames here have a FWHM proxy of 2.42 px against 2.61 for the unclipped ones). It is also a TARGET-ONLY systematic, because all five comparisons are fainter than the target, 0.20x to 0.68x, and none of them clips; the usual protection of a comparison ensemble does not apply to a defect the target has alone. And EXOTIC itself treats a saturated COMPARISON star as a hard failure. Holding the target to a looser standard than the stars used to calibrate it is incoherent.\n\nWHAT I COULD NOT SHOW, recorded because the attempt failed. I tried twice to quantify what the clipping actually cost. An 11x11 box sum is the same in clipped and unclipped frames to 0.2%, and fitting flux against a seeing proxy on the unclipped out-of-transit frames and looking for the clipped ones to fall below that line gave nothing usable: the control residual came out at +6.4% where construction demands ~0, because this night's cloud (58 clear, 10 partial, 9 lost, one 69-px pointing step) swamps a sub-percent effect. So the honest statement is that the integrated bias is probably of order a few tenths of a percent against a 2.41% depth, and that I cannot bound it from these data. A rejection on an unquantifiable detector-level violation, not on a demonstrated ruinous bias. My first instinct, that a sharper PSF on a clipped star must read fainter and so 'brightness' would track seeing, is NOT supported: the flux-sharpness correlation is +0.43, the wrong sign for that story, and I am recording the failed guess rather than the tidy version.\n\nTHE TOOL GAP, which is the actual finding. mobs_night has had a seed FLOOR since 2026-09-13 (200 ADU, set from the nights that failed for want of photons) and until tonight it had no ceiling at all. Fifty-seven nights of V 11-13 targets never made it bind, so the absence was invisible. Tonight the night sailed through every gate, triage, check_inits and EXOTIC's own pre-flight, to a PROCEED verdict with half its transit frames clipped. night_triage.py now measures the peak RAW ADU in the target's core at the tracked position in every frame and prints it as a summary line; mobs_night rejects when more than 10% of frames sit above 90% of DATAMAX. Re-running the night with the check in place flips the verdict to REJECT with the numbers in the clause, which is the only test of a new check worth trusting. Note also WHERE the check had to go: frame 1's core was at 86% of full well, under the threshold, so a first-frame pre-flight test would have passed this night. It is the fraction over the whole night that carries the information.\n\nThe night is still useful as the ceiling's first data point, the way HAT-P-54 b at 60 ADU was the floor's. Frames retained. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n57",
   "target": "HAT-P-32 b",
   "obsDate": "2026-09-21",

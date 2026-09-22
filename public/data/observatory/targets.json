@@ -161,6 +161,27 @@
   "floorNights": 1
  },
  {
+  "name": "HD 189733 b",
+  "slug": "hd-189733-b",
+  "vmag": 7.67,
+  "periodDays": 2.21857567,
+  "archive": {
+   "t0": null,
+   "period": null,
+   "t0Err": null,
+   "periodErr": null,
+   "source": "NASA Exoplanet Archive",
+   "fetched": null
+  },
+  "exoclock": null,
+  "derived": "Rp/Rs derived when the archive row lacks it; a/Rs by Kepler III when it lacks that",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 0
+ },
+ {
   "name": "KELT-20 b",
   "slug": "kelt-20-b",
   "vmag": 7.59,
