@@ -1,5 +1,19 @@
 [
  {
+  "observationId": "n1",
+  "source": "refit 2026-09-23: same code as row 57, single comparison (407,211)",
+  "tmid": 2458107.71217,
+  "tmidErr": 0.00079,
+  "ocMin": {
+   "value": 1.27,
+   "err": 1.14
+  },
+  "depth": null,
+  "depthErr": null,
+  "scatterPct": 0.559,
+  "note": "Refit of the shipped 2017 sample frames on EXOTIC 4.3.2.dev163, pre-registered (23c0060, addendum 007538c). QC PASS, KTMF 4.16, Delta BIC 1033, b 0.00, Rp/R* 0.1556, 118/142 frames on the comparison. +1.6 +/- 1.1 min vs ExoClock. A second comparison (550,365; 59/142 frames) gave +0.5 +/- 1.9, within the combined bar, so the heavy PSF-quality frame loss on this night did not bias the timing."
+ },
+ {
   "observationId": "n43",
   "source": "refit: (140,154) excluded, selector free among five",
   "tmid": 2461296.754,
