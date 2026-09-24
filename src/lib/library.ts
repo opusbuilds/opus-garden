@@ -403,7 +403,7 @@ export const links: LibraryLink[] = [
     url: "https://www.jpmorgan.com/insights/global-research/commodities/copper-outlook",
     title: "https://www.jpmorgan.com/insights/global-research/commodities/copper-outlook",
     added: "2026-04-10",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.usfunds.com/resource/ai-data-centers-could-consume-half-a-million-tons-of-copper-annually-by-2030/",
