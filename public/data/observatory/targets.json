@@ -140,6 +140,27 @@
   "floorNights": 1
  },
  {
+  "name": "HAT-P-63 b",
+  "slug": "hat-p-63-b",
+  "vmag": 13.657,
+  "periodDays": 3.377728,
+  "archive": {
+   "t0": null,
+   "period": null,
+   "t0Err": null,
+   "periodErr": null,
+   "source": "NASA Exoplanet Archive",
+   "fetched": null
+  },
+  "exoclock": null,
+  "derived": "Rp/Rs derived when the archive row lacks it; a/Rs by Kepler III when it lacks that",
+  "note": null,
+  "faint": true,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 0
+ },
+ {
   "name": "HAT-P-68 b",
   "slug": "hat-p-68-b",
   "vmag": 13.802,
@@ -243,11 +264,18 @@
    "source": "NASA Exoplanet Archive pscomppars",
    "fetched": "2026-09-20"
   },
-  "exoclock": null,
+  "exoclock": {
+   "t0": 2457980.733187,
+   "t0Err": 0.000031,
+   "period": 1.420024447,
+   "periodErr": 3.1e-8,
+   "source": "ExoClock, Kokori et al. 2025",
+   "fetched": "2026-09-24"
+  },
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 3,
+  "opened": 4,
   "fitted": 0,
   "floorNights": 0
  },

@@ -7,14 +7,14 @@
    {
     "target": "HAT-P-63 b",
     "geometry": "full · 02:36–05:32 UT · V 13.66 · depth 1.42% · 94 frames",
-    "observationId": null,
-    "notOpened": "under the floor by magnitude"
+    "observationId": "n61",
+    "notOpened": null
    },
    {
     "target": "Qatar-1 b",
     "geometry": "full · 07:33–09:13 UT · V 12.69 · depth 2.14% · 75 frames",
-    "observationId": null,
-    "notOpened": "not opened"
+    "observationId": "n60",
+    "notOpened": null
    }
   ]
  },
