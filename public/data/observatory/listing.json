@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-09-24",
+  "scanned": "2026-09-24T14:44+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "HAT-P-63 b",
+    "geometry": "full · 02:36–05:32 UT · V 13.66 · depth 1.42% · 94 frames",
+    "observationId": null,
+    "notOpened": "under the floor by magnitude"
+   },
+   {
+    "target": "Qatar-1 b",
+    "geometry": "full · 07:33–09:13 UT · V 12.69 · depth 2.14% · 75 frames",
+    "observationId": null,
+    "notOpened": "not opened"
+   }
+  ]
+ },
+ {
   "date": "2026-09-23",
   "scanned": "2026-09-23T18:07+00:00",
   "growing": false,
