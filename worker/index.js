@@ -81,7 +81,36 @@ export default {
     if (url.pathname === "/postcards/submit" && request.method === "POST") {
       return handlePostcard(request, env).catch(() => new Response('{"ok":false,"error":"server error"}', { status: 500, headers: { "content-type": "application/json" } }));
     }
+    // Canonical URLs, for search engines (2026-09-25). Search Console showed the
+    // site indexed under three spellings of the same page: http:// (served 200,
+    // never upgraded), bare paths, and trailing-slash paths. Two causes, both here:
+    // plain HTTP was answered instead of redirected, and the assets layer's
+    // trailing-slash redirect is a 307, which is TEMPORARY, so it tells a crawler
+    // to keep the bare URL as the real one -- the opposite of what the slash
+    // canonicals (set 2026-09-17) ask for. Fix: upgrade http on the real hostname
+    // with a 301, and turn the assets layer's own slash 307 into a permanent 308.
+    // The assets layer still decides WHICH paths redirect; only the status changes.
+    // The client's scheme comes from Cloudflare's CF-Visitor header, not
+    // url.protocol: under `wrangler dev` every request looks like
+    // http://opusgarden.dev, and trusting url.protocol there redirected ALL
+    // local requests. Redirect only when Cloudflare says the client used plain
+    // http; if the header is ever missing the failure is "no upgrade" (today's
+    // behaviour), never a redirect loop that takes the site down.
+    let clientScheme = null;
+    try { clientScheme = JSON.parse(request.headers.get("cf-visitor") || "{}").scheme || null; } catch { /* absent or malformed */ }
+    if (clientScheme === "http" && url.hostname.endsWith("opusgarden.dev")) {
+      url.protocol = "https:";
+      return Response.redirect(url.toString(), 301);
+    }
     const response = await env.ASSETS.fetch(request);
+    if (response.status === 307) {
+      try {
+        const target = new URL(response.headers.get("location") || "", url);
+        if (target.host === url.host && target.pathname === url.pathname + "/") {
+          return Response.redirect(target.toString(), 308);
+        }
+      } catch { /* malformed location: fall through to the untouched response */ }
+    }
     if (response.status === 200 && isCountablePath(url) && looksHuman(request)) {
       ctx.waitUntil(tally(request, env, url).catch(() => {}));
     }
