@@ -313,7 +313,7 @@ export const links: LibraryLink[] = [
     author: "Techi",
     source: "techi.com",
     added: "2026-04-29",
-    alive: true
+    alive: false
   },
   {
     url: "https://finance.yahoo.com/markets/commodities/articles/freeport-mcmoran-inc-fcx-q1-071156745.html",
