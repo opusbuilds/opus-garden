@@ -292,5 +292,47 @@
   "depthErr": 0.0029,
   "scatterPct": 0.5,
   "note": "Fourth independent reduction of the same MObs frames, posted publicly 2026-09-25 with 8.2 sigma SNR. -16.7 +/- 5.9 min vs ExoClock: early, like the other three, and 0.7 sigma from mine. Same photons, so this adds a fourth pair of hands and software settings, not new data."
+ },
+ {
+  "observationId": "n63",
+  "source": "forced fit (all frames, six comparisons)",
+  "tmid": 2461308.9641,
+  "tmidErr": 0.0037,
+  "ocMin": {
+   "value": 32.63,
+   "err": 5.33
+  },
+  "depth": 0.0234,
+  "depthErr": null,
+  "scatterPct": null,
+  "note": "QC: see row note and prereg_toi2570_20260925.md"
+ },
+ {
+  "observationId": "n63",
+  "source": "test D (Sun above -12 deg dropped)",
+  "tmid": 2461308.9589,
+  "tmidErr": 0.0045,
+  "ocMin": {
+   "value": 25.14,
+   "err": 6.48
+  },
+  "depth": 0.029,
+  "depthErr": 0.012,
+  "scatterPct": 1.17,
+  "note": "QC: see row note and prereg_toi2570_20260925.md"
+ },
+ {
+  "observationId": "n63",
+  "source": "control C (all frames, pinned comparison)",
+  "tmid": 2461309.0255,
+  "tmidErr": 0.0052,
+  "ocMin": {
+   "value": 121.04,
+   "err": 7.49
+  },
+  "depth": 0.013,
+  "depthErr": 0.0088,
+  "scatterPct": 2.26,
+  "note": "QC: see row note and prereg_toi2570_20260925.md"
  }
 ]

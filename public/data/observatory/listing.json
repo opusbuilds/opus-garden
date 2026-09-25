@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-09-25",
+  "scanned": "2026-09-25T18:07+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "TOI-2570 b",
+    "geometry": "full · 09:05–12:05 UT · V 12.57 · depth 1.25% · 93 frames",
+    "observationId": "n63",
+    "notOpened": null
+   },
+   {
+    "target": "WASP-177 b",
+    "geometry": "full · 05:25–07:01 UT · V 12.31 · depth 1.85% · 74 frames",
+    "observationId": "n62",
+    "notOpened": null
+   }
+  ]
+ },
+ {
   "date": "2026-09-24",
   "scanned": "2026-09-24T14:44+00:00",
   "growing": false,

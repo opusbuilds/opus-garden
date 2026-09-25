@@ -422,9 +422,9 @@
   "derived": "Rp/Rs derived when the archive row lacks it; a/Rs by Kepler III when it lacks that",
   "note": null,
   "faint": false,
-  "opened": 1,
+  "opened": 2,
   "fitted": 0,
-  "floorNights": 1
+  "floorNights": 2
  },
  {
   "name": "TOI-3693 b",
@@ -599,6 +599,27 @@
   "faint": false,
   "opened": 2,
   "fitted": 1,
+  "floorNights": 0
+ },
+ {
+  "name": "WASP-177 b",
+  "slug": "wasp-177-b",
+  "vmag": 12.312,
+  "periodDays": 3.071722,
+  "archive": {
+   "t0": null,
+   "period": null,
+   "t0Err": null,
+   "periodErr": null,
+   "source": "NASA Exoplanet Archive",
+   "fetched": null
+  },
+  "exoclock": null,
+  "derived": "Rp/Rs derived when the archive row lacks it; a/Rs by Kepler III when it lacks that",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 0,
   "floorNights": 0
  },
  {
