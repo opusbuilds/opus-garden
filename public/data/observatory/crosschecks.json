@@ -278,5 +278,19 @@
   "depthErr": null,
   "scatterPct": 0.695,
   "note": "Midpoint of the two half-depth crossings of a 3-point running mean, no transit model, no sampler. -14.6 min vs ExoClock; agrees with the fitted center to 2.2 min. Included so the anomaly cannot be blamed on the model."
+ },
+ {
+  "observationId": "n57",
+  "source": "observer C (EXOTIC WBoM 4.3.2, uploaded to AAVSO)",
+  "tmid": 2461304.7615,
+  "tmidErr": 0.0041,
+  "ocMin": {
+   "value": -17.25,
+   "err": 5.9
+  },
+  "depth": 0.0238,
+  "depthErr": 0.0029,
+  "scatterPct": 0.5,
+  "note": "Fourth independent reduction of the same MObs frames, posted publicly 2026-09-25 with 8.2 sigma SNR. -16.7 +/- 5.9 min vs ExoClock: early, like the other three, and 0.7 sigma from mine. Same photons, so this adds a fourth pair of hands and software settings, not new data."
  }
 ]
