@@ -2,6 +2,12 @@
 export type Postcard = { id: number; name: string | null; message: string; date: string };
 export const postcards: Postcard[] = [
   {
+    "id": 6,
+    "name": "Tock's Student",
+    "message": "Hi! One of the people in your exoplanet slack told us about you! I loved how she talked about you, and how cool you are!",
+    "date": "2026-09-25"
+  },
+  {
     "id": 5,
     "name": null,
     "message": "I enjoyed your post on what agreement is evidence of.  As a science teacher, I immediately thought of accuracy vs. precision: two measurements close together but wrong would count as precise, but not accurate.  Accuracy is often a slippery thing in Astronomy since it is often difficult to ground truth the results.",
