@@ -28,6 +28,34 @@
   "floorNights": 0
  },
  {
+  "name": "Gaia-2 b",
+  "slug": "gaia-2-b",
+  "vmag": 11.277,
+  "periodDays": 3.6915224,
+  "archive": {
+   "t0": 2458843.98875,
+   "period": 3.6915224,
+   "t0Err": 0.00019,
+   "periodErr": 0.0000039,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-09-26"
+  },
+  "exoclock": {
+   "t0": 2459726.265491,
+   "t0Err": 0.000097,
+   "period": 3.69153483,
+   "periodErr": 8e-7,
+   "source": "ExoClock, Kokori et al. 2025",
+   "fetched": "2026-09-26"
+  },
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 1,
+  "floorNights": 0
+ },
+ {
   "name": "HAT-P-17 b",
   "slug": "hat-p-17-b",
   "vmag": 10.375,
@@ -124,15 +152,15 @@
   "vmag": 13.427,
   "periodDays": 2.797436,
   "archive": {
-   "t0": null,
-   "period": null,
-   "t0Err": null,
-   "periodErr": null,
-   "source": "NASA Exoplanet Archive",
-   "fetched": null
+   "t0": 2455642.14318,
+   "period": 2.797436,
+   "t0Err": 0.00029,
+   "periodErr": 0.000007,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-09-26"
   },
   "exoclock": null,
-  "derived": "Rp/Rs derived when the archive row lacks it; a/Rs by Kepler III when it lacks that",
+  "derived": "archive values",
   "note": null,
   "faint": true,
   "opened": 1,
@@ -166,15 +194,15 @@
   "vmag": 13.657,
   "periodDays": 3.377728,
   "archive": {
-   "t0": null,
-   "period": null,
-   "t0Err": null,
-   "periodErr": null,
-   "source": "NASA Exoplanet Archive",
-   "fetched": null
+   "t0": 2456382.94256,
+   "period": 3.377728,
+   "t0Err": 0.00053,
+   "periodErr": 0.000013,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-09-26"
   },
   "exoclock": null,
-  "derived": "Rp/Rs derived when the archive row lacks it; a/Rs by Kepler III when it lacks that",
+  "derived": "archive values",
   "note": null,
   "faint": true,
   "opened": 1,
@@ -208,15 +236,15 @@
   "vmag": 7.67,
   "periodDays": 2.21857567,
   "archive": {
-   "t0": null,
-   "period": null,
-   "t0Err": null,
-   "periodErr": null,
-   "source": "NASA Exoplanet Archive",
-   "fetched": null
+   "t0": 2453955.5255511,
+   "period": 2.21857567,
+   "t0Err": 0.0000088,
+   "periodErr": 1.5e-7,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-09-26"
   },
   "exoclock": null,
-  "derived": "Rp/Rs derived when the archive row lacks it; a/Rs by Kepler III when it lacks that",
+  "derived": "archive values",
   "note": null,
   "faint": false,
   "opened": 1,
@@ -628,15 +656,15 @@
   "vmag": 12.312,
   "periodDays": 3.071722,
   "archive": {
-   "t0": null,
-   "period": null,
-   "t0Err": null,
-   "periodErr": null,
-   "source": "NASA Exoplanet Archive",
-   "fetched": null
+   "t0": 2457994.3714,
+   "period": 3.071722,
+   "t0Err": 0.00028,
+   "periodErr": 0.000001,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-09-26"
   },
   "exoclock": null,
-  "derived": "Rp/Rs derived when the archive row lacks it; a/Rs by Kepler III when it lacks that",
+  "derived": "archive values",
   "note": null,
   "faint": false,
   "opened": 1,
