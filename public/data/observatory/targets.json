@@ -119,6 +119,27 @@
   "floorNights": 0
  },
  {
+  "name": "HAT-P-37 b",
+  "slug": "hat-p-37-b",
+  "vmag": 13.427,
+  "periodDays": 2.797436,
+  "archive": {
+   "t0": null,
+   "period": null,
+   "t0Err": null,
+   "periodErr": null,
+   "source": "NASA Exoplanet Archive",
+   "fetched": null
+  },
+  "exoclock": null,
+  "derived": "Rp/Rs derived when the archive row lacks it; a/Rs by Kepler III when it lacks that",
+  "note": null,
+  "faint": true,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 1
+ },
+ {
   "name": "HAT-P-54 b",
   "slug": "hat-p-54-b",
   "vmag": 13.398,

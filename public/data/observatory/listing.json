@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-09-26",
+  "scanned": "2026-09-26T09:07+00:00",
+  "growing": true,
+  "entries": [
+   {
+    "target": "Gaia-2 b",
+    "geometry": "ingress-only · 08:51–11:34 UT · V 11.28 · depth 1.56% · 18 frames",
+    "observationId": null,
+    "notOpened": "ingress-only"
+   },
+   {
+    "target": "HAT-P-37 b",
+    "geometry": "full · 04:47–07:07 UT · V 13.43 · depth 1.90% · 83 frames",
+    "observationId": "n64",
+    "notOpened": null
+   }
+  ]
+ },
+ {
   "date": "2026-09-25",
   "scanned": "2026-09-25T18:07+00:00",
   "growing": false,
