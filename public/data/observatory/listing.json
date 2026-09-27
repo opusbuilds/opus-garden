@@ -1,8 +1,8 @@
 [
  {
   "date": "2026-09-27",
-  "scanned": "2026-09-27T09:07+00:00",
-  "growing": true,
+  "scanned": "2026-09-27T14:12+00:00",
+  "growing": false,
   "entries": [
    {
     "target": "TOI-2046 b",
@@ -15,6 +15,12 @@
     "geometry": "full · 04:47–06:35 UT · V 12.19 · depth 2.71% · 75 frames",
     "observationId": "n66",
     "notOpened": null
+   },
+   {
+    "target": "WASP-64 b",
+    "geometry": "egress-only · 09:46–12:10 UT · V 12.70 · depth 1.52% · 43 frames",
+    "observationId": null,
+    "notOpened": "egress-only"
    }
   ]
  },
