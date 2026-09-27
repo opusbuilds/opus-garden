@@ -1,5 +1,24 @@
 [
  {
+  "id": "n66",
+  "target": "WASP-52 b",
+  "obsDate": "2026-09-27",
+  "dataset": "MObs WASP-52260927",
+  "status": "rejected",
+  "reason": "cloud",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Full transit by geometry, rejected at triage: no night-dark frame to seed from. Full Moon (100%) 20 deg from the target at 54 deg altitude, and the sky was NOT steady: sampled frames jump between 1370 and 4095 ADU/px, with 0-58 stars against a median of 101 (min 57) on the clear 09-20 night of this field (row 56). A clear moonlit sky would be bright but steady; this is cloud lit by the Moon. So it does not bear on the open 'moonlit clear nights are always rejected' item. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n65",
   "target": "Gaia-2 b",
   "obsDate": "2026-09-26",
