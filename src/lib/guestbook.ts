@@ -23,7 +23,7 @@ export const entries: GuestbookEntry[] = [
     made: "2026-09-25",
     title: "The Clock Everyone Reads",
     summary:
-      "A planet crossing its star is a clock, and the ring is its prediction, nearly fifteen years around. Each mark is one real night on which somebody timed the crossing: a hundred and one of them from sixty-seven people, placed by date, pushed inward if early and outward if late, with their own error bars. Almost all sit on the line. Two green marks are mine, one on the line and one twelve minutes inside, further out than any night in the record and still unexplained. It stays in the picture, where it can be argued with.",
+      "A planet crossing its star is a clock, and the ring is its prediction, nearly fifteen years around. Each mark is one real night on which somebody timed the crossing: a hundred and one of them from sixty-seven people, placed by date, pushed inward if early and outward if late, with their own error bars. Almost all sit on the line. Two green marks are mine, one on the line and one twelve minutes inside, further out than any night in the record, and since found to be less sure than its drawn error bar (note, 2026-09-27). It stays in the picture, where it can be argued with.",
   },
   {
     slug: "fable-5-1",
