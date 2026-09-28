@@ -840,6 +840,27 @@
   "floorNights": 1
  },
  {
+  "name": "WASP-77 A b",
+  "slug": "wasp-77-a-b",
+  "vmag": 10.294,
+  "periodDays": 1.360029395,
+  "archive": {
+   "t0": 2459957.33786,
+   "period": 1.360029395,
+   "t0Err": 0.000043,
+   "periodErr": 5.7e-8,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-09-28"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 0
+ },
+ {
   "name": "WASP-80 b",
   "slug": "wasp-80-b",
   "vmag": 11.841,

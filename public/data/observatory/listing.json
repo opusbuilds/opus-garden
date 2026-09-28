@@ -1,8 +1,8 @@
 [
  {
   "date": "2026-09-28",
-  "scanned": "2026-09-28T12:22+00:00",
-  "growing": true,
+  "scanned": "2026-09-28T18:07+00:00",
+  "growing": false,
   "entries": [
    {
     "target": "TOI-5300 b",
@@ -19,8 +19,8 @@
    {
     "target": "WASP-77 A b",
     "geometry": "full · 09:10–11:20 UT · V 10.29 · depth 1.37% · 72 frames",
-    "observationId": null,
-    "notOpened": "night still running at scan time"
+    "observationId": "n67",
+    "notOpened": null
    }
   ]
  },

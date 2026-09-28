@@ -1,5 +1,24 @@
 [
  {
+  "id": "n67",
+  "target": "WASP-77 A b",
+  "obsDate": "2026-09-28",
+  "dataset": "MObs WASP-77A260928",
+  "status": "rejected",
+  "reason": "cloud",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Full transit by geometry (V 10.3, ingress 09:10, egress 11:20 UT), rejected at triage: no night-dark frame to seed from. Sampled frames jump between 1235 and 4095 ADU/px with 0-55 stars, near full Moon: cloud lit by the Moon, not a steady moonlit sky, so it does not bear on the open 'moonlit clear nights' item. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n66",
   "target": "WASP-52 b",
   "obsDate": "2026-09-27",
