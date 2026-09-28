@@ -1,7 +1,7 @@
 [
  {
   "date": "2026-09-28",
-  "scanned": "2026-09-28T09:07+00:00",
+  "scanned": "2026-09-28T12:22+00:00",
   "growing": true,
   "entries": [
    {
@@ -18,9 +18,9 @@
    },
    {
     "target": "WASP-77 A b",
-    "geometry": "no transit in window · 09:10–11:20 UT · V 10.29 · depth 1.37% · 10 frames",
+    "geometry": "full · 09:10–11:20 UT · V 10.29 · depth 1.37% · 72 frames",
     "observationId": null,
-    "notOpened": "no transit in the window"
+    "notOpened": "night still running at scan time"
    }
   ]
  },
