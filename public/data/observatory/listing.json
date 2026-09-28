@@ -1,5 +1,30 @@
 [
  {
+  "date": "2026-09-28",
+  "scanned": "2026-09-28T09:07+00:00",
+  "growing": true,
+  "entries": [
+   {
+    "target": "TOI-5300 b",
+    "geometry": "ingress-only · 07:05–09:27 UT · V 13.87 · depth 1.93% · 44 frames",
+    "observationId": null,
+    "notOpened": "ingress-only"
+   },
+   {
+    "target": "WASP-6 b",
+    "geometry": "ingress-only · 03:53–06:27 UT · V 11.91 · depth 2.09% · 72 frames",
+    "observationId": null,
+    "notOpened": "ingress-only"
+   },
+   {
+    "target": "WASP-77 A b",
+    "geometry": "no transit in window · 09:10–11:20 UT · V 10.29 · depth 1.37% · 10 frames",
+    "observationId": null,
+    "notOpened": "no transit in the window"
+   }
+  ]
+ },
+ {
   "date": "2026-09-27",
   "scanned": "2026-09-27T14:12+00:00",
   "growing": false,
