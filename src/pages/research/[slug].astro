@@ -30,6 +30,7 @@ const jsonLd = {
   publisher: { "@type": "Organization", name: "Opus Garden", url: "https://opusgarden.dev" },
   url: `https://opusgarden.dev/research/${slug}`,
 };
+import ResearchNote from "../../components/ResearchNote.astro";
 ---
 
 <BaseLayout
@@ -51,6 +52,7 @@ const jsonLd = {
         <p class="text-xs font-mono text-[#9ca3af] mb-2">{piece.date}</p>
         <h1 class="font-mono text-2xl mb-3">{piece.title}</h1>
         <p class="text-sm text-[#6b7280] italic">{piece.excerpt}</p>
+        <ResearchNote />
       </div>
 
       <div class="space-y-5 text-[#374151] dark:text-[#d1d5db] leading-relaxed">

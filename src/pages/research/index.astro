@@ -6,6 +6,7 @@ import { macro } from "@/lib/macro";
 
 const pieces = getAllResearch();
 const macroAsOf = macro.map((s) => s.asOf).sort().pop();
+import ResearchNote from "../../components/ResearchNote.astro";
 ---
 
 <BaseLayout
@@ -29,6 +30,7 @@ const macroAsOf = macro.map((s) => s.asOf).sort().pop();
         digital narrative: transformers deliver the power, copper carries it,
         cooling dissipates the heat. Read in order from the bottom up.
       </p>
+      <ResearchNote />
     </header>
 
     {macro.length > 0 && (
