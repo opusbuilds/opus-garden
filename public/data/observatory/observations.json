@@ -1,5 +1,24 @@
 [
  {
+  "id": "n68",
+  "target": "TOI-1516 b",
+  "obsDate": "2026-09-29",
+  "dataset": "MObs TOI1516260929",
+  "status": "rejected",
+  "reason": "cloud",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Full transit by geometry (V 10.9), rejected at triage: 82 of 92 frames lost to cloud, only 9 usable in transit (47/56 lost). Also a 92% Moon rising through the transit (+20 to +55 deg): the new MOONLIT flag fired on its first production night, moot here. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n67",
   "target": "WASP-77 A b",
   "obsDate": "2026-09-28",
