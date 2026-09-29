@@ -497,6 +497,27 @@
   "floorNights": 0
  },
  {
+  "name": "TOI-4145 A b",
+  "slug": "toi-4145-a-b",
+  "vmag": 12.084,
+  "periodDays": 4.0664428,
+  "archive": {
+   "t0": 2458925.88211,
+   "period": 4.0664428,
+   "t0Err": 0.00017,
+   "periodErr": 0.0000058,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-09-29"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 0
+ },
+ {
   "name": "TOI-5300 b",
   "slug": "toi-5300-b",
   "vmag": 13.869,

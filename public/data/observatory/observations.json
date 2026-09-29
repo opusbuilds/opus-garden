@@ -1,5 +1,24 @@
 [
  {
+  "id": "n69",
+  "target": "TOI-4145 A b",
+  "obsDate": "2026-09-29",
+  "dataset": "MObs TOI4145A260929",
+  "status": "rejected",
+  "reason": "cloud",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Full transit by geometry (V 12.1), rejected at triage: 64 of 71 frames lost to cloud (36 of 42 in transit), only 7 aligned. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n68",
   "target": "TOI-1516 b",
   "obsDate": "2026-09-29",
