@@ -1,5 +1,24 @@
 [
  {
+  "id": "n71",
+  "target": "K2-29 b",
+  "obsDate": "2026-09-30",
+  "dataset": "MObs K2-29260930",
+  "status": "rejected",
+  "reason": "cloud",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Full transit by geometry (V 12.5), rejected at triage: no night-dark frame to seed from, median 0 stars per frame (max 108), sky 1091-4095 ADU/px under a near-full Moon: moonlit cloud with brief breaks. 8 trailing dawn frames set aside. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n70",
   "target": "HAT-P-18 b",
   "obsDate": "2026-09-30",

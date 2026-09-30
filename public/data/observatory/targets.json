@@ -280,6 +280,27 @@
   "floorNights": 0
  },
  {
+  "name": "K2-29 b",
+  "slug": "k2-29-b",
+  "vmag": 12.532,
+  "periodDays": 3.2588321,
+  "archive": {
+   "t0": 2453219.0095,
+   "period": 3.2588321,
+   "t0Err": 0.0022,
+   "periodErr": 0.0000019,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-09-30"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 0
+ },
+ {
   "name": "KELT-20 b",
   "slug": "kelt-20-b",
   "vmag": 7.59,
