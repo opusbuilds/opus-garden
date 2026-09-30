@@ -77,6 +77,34 @@
   "floorNights": 0
  },
  {
+  "name": "HAT-P-18 b",
+  "slug": "hat-p-18-b",
+  "vmag": 12.597,
+  "periodDays": 5.5080291,
+  "archive": {
+   "t0": 2454715.0225,
+   "period": 5.5080291,
+   "t0Err": 0.00019,
+   "periodErr": 3e-7,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-09-30"
+  },
+  "exoclock": {
+   "t0": 2457435.98945,
+   "t0Err": 0.0001,
+   "period": 5.50802907,
+   "periodErr": 6.3e-7,
+   "source": "ExoClock, Kokori et al. 2025",
+   "fetched": "2026-09-30"
+  },
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 1,
+  "floorNights": 0
+ },
+ {
   "name": "HAT-P-27 b",
   "slug": "hat-p-27-b",
   "vmag": 12.052,

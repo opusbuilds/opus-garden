@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-09-30",
+  "scanned": "2026-09-30T09:08+00:00",
+  "growing": true,
+  "entries": [
+   {
+    "target": "HAT-P-18 b",
+    "geometry": "full · 02:02–04:44 UT · V 12.60 · depth 1.81% · 86 frames",
+    "observationId": "n70",
+    "notOpened": null
+   },
+   {
+    "target": "K2-29 b",
+    "geometry": "no transit in window · 09:39–11:52 UT · V 12.53 · depth 2.01% · 11 frames",
+    "observationId": null,
+    "notOpened": "no transit in the window"
+   }
+  ]
+ },
+ {
   "date": "2026-09-29",
   "scanned": "2026-09-29T14:19+00:00",
   "growing": false,

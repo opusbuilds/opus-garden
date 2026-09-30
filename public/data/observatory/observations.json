@@ -1,5 +1,31 @@
 [
  {
+  "id": "n70",
+  "target": "HAT-P-18 b",
+  "obsDate": "2026-09-30",
+  "dataset": "MObs HATP-18260930",
+  "status": "marginal",
+  "reason": null,
+  "ocMin": {
+   "value": 9.05,
+   "err": 7.37,
+   "clockErr": 0.65,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": 9.85
+  },
+  "epoch": 704,
+  "tmid": 2461313.6482,
+  "tmidErr": 0.0051,
+  "depth": null,
+  "scatterPct": 1.3668,
+  "note": "FULL transit, QC MARGINAL (predicted), pre-registered (prereg_hatp18_20260930.md, committed 09:16 before any fit). Tmid 2461313.6482 +/- 0.0051 BJD_TDB (7.3 min bar, posterior summary), +9.0 +/- 7.4 min vs ExoClock's verified ephemeris (Kokori et al. 2025, 82 observations; archive agrees to 0.8 min). Depth 3.1 +/- 1.4% vs 1.81 expected. Scatter 1.37%: partial cloud, 11 of 59 in-transit frames lost, one pre-ingress frame after four dusk frames were set aside. MOONLIT, first night with a RISING Moon (85%, -11 to +20 deg): the required injection test (three constant stars, same frames and configuration) recovered on-time transits at +16.3, -0.0, -2.8 min (mean +4.5, SE 5.9), so no large bias is detected and the Tmid is quotable, with the limit that the test only excludes biases above ~12 min. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n69",
   "target": "TOI-4145 A b",
   "obsDate": "2026-09-29",
