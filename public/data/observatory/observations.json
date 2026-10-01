@@ -1,5 +1,24 @@
 [
  {
+  "id": "n73",
+  "target": "HATS-4 b",
+  "obsDate": "2026-10-01",
+  "dataset": "MObs HATS-4261001",
+  "status": "rejected",
+  "reason": "floor",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Full transit by geometry (V 13.52, depth 1.28%), rejected at triage: target 126 ADU above a 625 ADU sky on the seed frame (~246 on the clearest; floor 200); predicted scatter/depth 1.06, so even a forced run would test the pipeline, not time the planet. Only 5 pre-ingress frames; 6 trailing twilight frames set aside. Clear, 66/66 aligned. MOONLIT (73%, high: +66 to +81 deg). Same night and same faintness as row 72. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n72",
   "target": "HAT-P-51 b",
   "obsDate": "2026-10-01",

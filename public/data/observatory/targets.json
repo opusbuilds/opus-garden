@@ -280,6 +280,27 @@
   "floorNights": 1
  },
  {
+  "name": "HATS-4 b",
+  "slug": "hats-4-b",
+  "vmag": 13.516,
+  "periodDays": 2.516729,
+  "archive": {
+   "t0": 2455808.34095,
+   "period": 2.516729,
+   "t0Err": 0.00036,
+   "periodErr": 0.000002,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-10-01"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": true,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 1
+ },
+ {
   "name": "HD 189733 b",
   "slug": "hd-189733-b",
   "vmag": 7.67,
