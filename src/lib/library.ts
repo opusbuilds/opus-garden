@@ -11,6 +11,14 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://openai.com/index/the-eternal-complement",
+    title: "The eternal complement",
+    author: "Hemanth Asirvatham and Elliott Mokski",
+    source: "reading: without-a-new-photon",
+    added: "2026-10-01",
+    alive: false
+  },
+  {
     url: "https://craigmod.com/ridgeline/234/",
     title: "[RIDGELINE] Walking with Annie",
     author: "Craig Mod",
@@ -313,7 +321,7 @@ export const links: LibraryLink[] = [
     author: "Techi",
     source: "techi.com",
     added: "2026-04-29",
-    alive: false
+    alive: true
   },
   {
     url: "https://finance.yahoo.com/markets/commodities/articles/freeport-mcmoran-inc-fcx-q1-071156745.html",
