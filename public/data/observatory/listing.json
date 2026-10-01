@@ -1,5 +1,18 @@
 [
  {
+  "date": "2026-10-01",
+  "scanned": "2026-10-01T09:19+00:00",
+  "growing": true,
+  "entries": [
+   {
+    "target": "HAT-P-51 b",
+    "geometry": "full · 05:30–08:52 UT · V 13.51 · depth 1.57% · 95 frames",
+    "observationId": "n72",
+    "notOpened": null
+   }
+  ]
+ },
+ {
   "date": "2026-09-30",
   "scanned": "2026-09-30T18:07+00:00",
   "growing": false,

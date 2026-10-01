@@ -196,6 +196,27 @@
   "floorNights": 1
  },
  {
+  "name": "HAT-P-51 b",
+  "slug": "hat-p-51-b",
+  "vmag": 13.51,
+  "periodDays": 4.21802091,
+  "archive": {
+   "t0": 2458349.53123,
+   "period": 4.21802091,
+   "t0Err": 0.00013,
+   "periodErr": 6.6e-7,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-10-01"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": true,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 1
+ },
+ {
   "name": "HAT-P-54 b",
   "slug": "hat-p-54-b",
   "vmag": 13.398,

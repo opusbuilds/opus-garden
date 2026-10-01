@@ -1,5 +1,24 @@
 [
  {
+  "id": "n72",
+  "target": "HAT-P-51 b",
+  "obsDate": "2026-10-01",
+  "dataset": "MObs HATP-51261001",
+  "status": "rejected",
+  "reason": "floor",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Full transit by geometry (V 13.51, depth 1.57%), rejected at triage: target only 113 ADU above a 429 ADU sky on the seed frame (~157 on the clearest; floor 200), so the expected scatter (~1.36%) and Tmid bar (~10 min) could not test anything. Clear sky, 95/95 frames clear, comps fine. Also MOONLIT (Moon 75% lit, rising, +18 to +59 deg), the second rising-Moon night after row 70. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n71",
   "target": "K2-29 b",
   "obsDate": "2026-09-30",
