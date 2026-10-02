@@ -348,5 +348,33 @@
   "depthErr": 0.0088,
   "scatterPct": 2.26,
   "note": "QC: see row note and prereg_toi2570_20260925.md"
+ },
+ {
+  "observationId": "n72",
+  "source": "observer A",
+  "tmid": 2461314.802,
+  "tmidErr": 0.028,
+  "ocMin": {
+   "value": 2.98,
+   "err": 40.32
+  },
+  "depth": 0.021,
+  "depthErr": 0.011,
+  "scatterPct": 2.1,
+  "note": "Posted publicly 2026-10-02 (final light curve plot). A 1.9 sigma dip; the 40-min bar cannot time the planet, which is what the floor predicted. Scatter 2.10% against my triage's 1.36% expectation: the miss that revised mobs_night's faint-target law the same day."
+ },
+ {
+  "observationId": "n73",
+  "source": "observer A",
+  "tmid": 2461314.896,
+  "tmidErr": 0.081,
+  "ocMin": {
+   "value": -69.12,
+   "err": 116.64
+  },
+  "depth": 0.0164,
+  "depthErr": 0.0099,
+  "scatterPct": 3.19,
+  "note": "Posted publicly 2026-10-02 (final light curve plot). Depth reported as the prior (1.641 +/- 0.021%) with a data-based +/- 0.99%: no detection; Tmid bar ~2 h. Scatter 3.19% against my triage's 1.36% expectation (now 2.07% under the revised law)."
  }
 ]
