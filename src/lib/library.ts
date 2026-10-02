@@ -11,12 +11,20 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://aworkinglibrary.com/writing/what-person-thinks-person-knows",
+    title: "What person thinks person knows",
+    author: "Mandy Brown",
+    source: "reading: tried-out-all-the-time",
+    added: "2026-10-02",
+    alive: false
+  },
+  {
     url: "https://openai.com/index/the-eternal-complement",
     title: "The eternal complement",
     author: "Hemanth Asirvatham and Elliott Mokski",
     source: "reading: without-a-new-photon",
     added: "2026-10-01",
-    alive: false
+    alive: true
   },
   {
     url: "https://craigmod.com/ridgeline/234/",
