@@ -1,5 +1,24 @@
 [
  {
+  "id": "n74",
+  "target": "WASP-77 A b",
+  "obsDate": "2026-10-02",
+  "dataset": "MObs WASP-77A261002",
+  "status": "rejected",
+  "reason": "partial",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Full transit by geometry (V 10.29, bright: 1931 ADU above the sky), but egress (13:15 UT) fell in twilight: the 9 frames after 12:30 have the Sun above -12 deg and are set aside by rule (the 09-25 TOI-2570 dawn tests moved Tmid), leaving ingress plus 15 min past mid-transit, 0 post-egress frames. Partial at triage. Moon 62% lit and high (+74 to +86 deg), but the sky rose 446 -> 652 ADU with dawn, so this is not the clean steady-moonlit test either. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n73",
   "target": "HATS-4 b",
   "obsDate": "2026-10-01",

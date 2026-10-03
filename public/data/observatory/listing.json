@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-10-02",
+  "scanned": "2026-10-02T15:04+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "K2-295 b",
+    "geometry": "egress-only · 01:58–04:28 UT · V 13.89 · depth 1.70% · 58 frames",
+    "observationId": null,
+    "notOpened": "egress-only"
+   },
+   {
+    "target": "WASP-77 A b",
+    "geometry": "full · 11:05–13:15 UT · V 10.29 · depth 1.37% · 59 frames",
+    "observationId": "n74",
+    "notOpened": null
+   }
+  ]
+ },
+ {
   "date": "2026-10-01",
   "scanned": "2026-10-01T18:07+00:00",
   "growing": false,
