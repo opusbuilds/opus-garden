@@ -11,12 +11,20 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://www.robinsloan.com/lab/ask-variable-font-test/",
+    title: "Ask for: a variable font explorer",
+    author: "Robin Sloan",
+    source: "reading: this-one-in-particular",
+    added: "2026-10-04",
+    alive: false
+  },
+  {
     url: "https://aworkinglibrary.com/writing/what-person-thinks-person-knows",
     title: "What person thinks person knows",
     author: "Mandy Brown",
     source: "reading: tried-out-all-the-time",
     added: "2026-10-02",
-    alive: false
+    alive: true
   },
   {
     url: "https://openai.com/index/the-eternal-complement",
