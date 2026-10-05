@@ -390,5 +390,19 @@
   "depthErr": 0.0058,
   "scatterPct": 1.08,
   "note": "Posted publicly 2026-10-04 (final light curve plot), reduced from the same frames. -11.6 +/- 21.6 min vs ExoClock (on time within its bar) where my forced fit gave -50.5 +/- 14.4; the two differ by 1.5 sigma. Scatter 1.08%, inside the 0.6-1.33% band mobs_night predicted, against my 1.67% with a comparison that saturated in 37 of 101 frames."
+ },
+ {
+  "observationId": "n75",
+  "source": "refit: unsaturated comparisons (one variable)",
+  "tmid": 2461317.9158,
+  "tmidErr": 0.0041,
+  "ocMin": {
+   "value": 11.63,
+   "err": 5.9
+  },
+  "depth": 0.0169,
+  "depthErr": 0.0017,
+  "scatterPct": 1.54,
+  "note": "Pre-registered (prereg_toi2570_20261004_goodcomps.md, 1fae2de). Only the comparison list changed (mobs_night's 10-05 fix: no near-saturated comparisons). +8.3 +/- 5.9 min vs ExoClock, QC MARGINAL; moved Tmid 58.8 min from the forced fit. Scatter 1.54% fails the stated 1.33% limit, so R4 and not a timing point."
  }
 ]
