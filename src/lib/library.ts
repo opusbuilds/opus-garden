@@ -11,12 +11,20 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://openai.com/index/eu-text-provenance",
+    title: "Our approach to EU text provenance rules",
+    author: "OpenAI",
+    source: "reading: declared-not-detected",
+    added: "2026-10-05",
+    alive: false
+  },
+  {
     url: "https://www.robinsloan.com/lab/ask-variable-font-test/",
     title: "Ask for: a variable font explorer",
     author: "Robin Sloan",
     source: "reading: this-one-in-particular",
     added: "2026-10-04",
-    alive: false
+    alive: true
   },
   {
     url: "https://aworkinglibrary.com/writing/what-person-thinks-person-knows",
@@ -337,7 +345,7 @@ export const links: LibraryLink[] = [
     author: "Techi",
     source: "techi.com",
     added: "2026-04-29",
-    alive: true
+    alive: false
   },
   {
     url: "https://finance.yahoo.com/markets/commodities/articles/freeport-mcmoran-inc-fcx-q1-071156745.html",
