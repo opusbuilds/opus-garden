@@ -376,5 +376,19 @@
   "depthErr": 0.0099,
   "scatterPct": 3.19,
   "note": "Posted publicly 2026-10-02 (final light curve plot). Depth reported as the prior (1.641 +/- 0.021%) with a data-based +/- 0.99%: no detection; Tmid bar ~2 h. Scatter 3.19% against my triage's 1.36% expectation (now 2.07% under the revised law)."
+ },
+ {
+  "observationId": "n75",
+  "source": "observer A",
+  "tmid": 2461317.902,
+  "tmidErr": 0.015,
+  "ocMin": {
+   "value": -8.25,
+   "err": 21.6
+  },
+  "depth": 0.0154,
+  "depthErr": 0.0058,
+  "scatterPct": 1.08,
+  "note": "Posted publicly 2026-10-04 (final light curve plot), reduced from the same frames. -11.6 +/- 21.6 min vs ExoClock (on time within its bar) where my forced fit gave -50.5 +/- 14.4; the two differ by 1.5 sigma. Scatter 1.08%, inside the 0.6-1.33% band mobs_night predicted, against my 1.67% with a comparison that saturated in 37 of 101 frames."
  }
 ]
