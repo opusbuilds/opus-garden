@@ -562,9 +562,9 @@
   "derived": "Rp/Rs derived when the archive row lacks it; a/Rs by Kepler III when it lacks that",
   "note": null,
   "faint": false,
-  "opened": 2,
+  "opened": 3,
   "fitted": 0,
-  "floorNights": 2
+  "floorNights": 3
  },
  {
   "name": "TOI-3693 b",
