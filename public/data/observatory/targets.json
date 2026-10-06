@@ -170,8 +170,8 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 3,
-  "fitted": 2,
+  "opened": 4,
+  "fitted": 3,
   "floorNights": 0
  },
  {
@@ -541,7 +541,7 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 2,
+  "opened": 3,
   "fitted": 0,
   "floorNights": 1
  },

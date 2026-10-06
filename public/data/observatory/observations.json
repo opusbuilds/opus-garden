@@ -1,5 +1,53 @@
 [
  {
+  "id": "n79",
+  "target": "HAT-P-32 b",
+  "obsDate": "2026-10-06",
+  "dataset": "MObs HATP-32261006",
+  "status": "pass",
+  "reason": null,
+  "ocMin": {
+   "value": 2.51,
+   "err": 1.41,
+   "clockErr": 0.15,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": 1.93
+  },
+  "epoch": 2093,
+  "tmid": 2461319.82488,
+  "tmidErr": 0.00097,
+  "depth": {
+   "value": 0.02307,
+   "err": 0
+  },
+  "scatterPct": 0.66,
+  "note": "FULL transit, clear and moonless (104/104 frames), pre-registered (prereg_hatp32_20261006.md, 3a2861e, before any fit). The first fit's comparison (44,313) saturated in 17 frames, so by the stated rule it was refit once without it: QC PASS, Tmid 2461319.82488 +/- 0.00097 BJD_TDB = +2.5 +/- 1.4 min vs ExoClock (the first fit gave +0.2, consistent), depth 2.31 +/- 0.10%, scatter 0.66%. The refit's comparison sat right at the warning lines (94/104 frames, 10 overexposure rejects against 10.4) and passed. The clean counterpart to row 57 (9/21, moonlit, -12.4): this planet keeps time; joins the calibration (now ten points, +2.1 +/- 0.8 min, reduced chi2 0.59). Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
+  "id": "n78",
+  "target": "TOI-2046 b",
+  "obsDate": "2026-10-06",
+  "dataset": "MObs TOI2046261006",
+  "status": "rejected",
+  "reason": "cloud",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Full transit by geometry (V 11.55, ephemeris bar 14 min, so a good timing would have helped), rejected at triage: cloud took all 9 pre-ingress frames and 14 of 48 in transit (8 more partial); the first 10 frames were set aside and the reseeded frame sat at 198 ADU. With no baseline before ingress the window is effectively partial. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n77",
   "target": "HAT-P-54 b",
   "obsDate": "2026-10-05",
