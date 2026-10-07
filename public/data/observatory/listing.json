@@ -1,20 +1,20 @@
 [
  {
   "date": "2026-10-07",
-  "scanned": "2026-10-07T12:24+00:00",
-  "growing": true,
+  "scanned": "2026-10-07T18:07+00:00",
+  "growing": false,
   "entries": [
    {
     "target": "Qatar-4 b",
     "geometry": "full · 03:44–05:53 UT · V 13.57 · depth 1.90% · 83 frames",
-    "observationId": null,
-    "notOpened": "under the floor by magnitude"
+    "observationId": "n80",
+    "notOpened": null
    },
    {
     "target": "TOI-5300 b",
     "geometry": "full · 08:16–10:37 UT · V 13.87 · depth 1.93% · 82 frames",
-    "observationId": null,
-    "notOpened": "night still running at scan time"
+    "observationId": "n81",
+    "notOpened": null
    }
   ]
  },
