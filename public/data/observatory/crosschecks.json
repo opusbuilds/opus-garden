@@ -432,5 +432,19 @@
   "depthErr": 0.0017,
   "scatterPct": 1.54,
   "note": "Pre-registered (prereg_toi2570_20261004_goodcomps.md, 1fae2de). Only the comparison list changed (mobs_night's 10-05 fix: no near-saturated comparisons). +8.3 +/- 5.9 min vs ExoClock, QC MARGINAL; moved Tmid 58.8 min from the forced fit. Scatter 1.54% fails the stated 1.33% limit, so R4 and not a timing point."
+ },
+ {
+  "observationId": "n79",
+  "source": "observer A",
+  "tmid": 2461319.8224,
+  "tmidErr": 0.003,
+  "ocMin": {
+   "value": -1.64,
+   "err": 4.32
+  },
+  "depth": 0.0251,
+  "depthErr": 0.0043,
+  "scatterPct": 0.54,
+  "note": "Posted publicly 2026-10-07: an outside reduction of the same frames that first gave -14.7 min, refit with unsaturated comparisons only (its earlier list included (420,311), saturated in 40 of 104 frames): -1.1 +/- 4.3 min vs ExoClock. One variable, the comparison list, moved it 13.6 min onto the clock."
  }
 ]
