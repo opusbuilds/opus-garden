@@ -805,6 +805,27 @@
   "floorNights": 0
  },
  {
+  "name": "WASP-44 b",
+  "slug": "wasp-44-b",
+  "vmag": 13.096,
+  "periodDays": 2.423804,
+  "archive": {
+   "t0": 2458338.102384,
+   "period": 2.423804,
+   "t0Err": 0.000364,
+   "periodErr": 0.000008,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-10-08"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 1
+ },
+ {
   "name": "WASP-50 b",
   "slug": "wasp-50-b",
   "vmag": 11.44,
@@ -901,6 +922,27 @@
   "opened": 1,
   "fitted": 1,
   "floorNights": 0
+ },
+ {
+  "name": "WASP-64 b",
+  "slug": "wasp-64-b",
+  "vmag": 12.704,
+  "periodDays": 1.5732918,
+  "archive": {
+   "t0": 2455582.60169,
+   "period": 1.5732918,
+   "t0Err": 0.00027,
+   "periodErr": 0.0000015,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-10-08"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 1
  },
  {
   "name": "WASP-67 b",
