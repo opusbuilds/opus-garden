@@ -364,6 +364,27 @@
   "floorNights": 0
  },
  {
+  "name": "K2-295 b",
+  "slug": "k2-295-b",
+  "vmag": 13.8941,
+  "periodDays": 4.024867,
+  "archive": {
+   "t0": 2457395.4140498,
+   "period": 4.024867,
+   "t0Err": 0.0000012,
+   "periodErr": 0.000015,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-10-10"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": true,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 0
+ },
+ {
   "name": "KELT-20 b",
   "slug": "kelt-20-b",
   "vmag": 7.59,
@@ -583,7 +604,7 @@
   "derived": "Rp/Rs derived when the archive row lacks it; a/Rs by Kepler III when it lacks that",
   "note": null,
   "faint": false,
-  "opened": 3,
+  "opened": 4,
   "fitted": 0,
   "floorNights": 3
  },
@@ -761,6 +782,27 @@
   "opened": 1,
   "fitted": 0,
   "floorNights": 1
+ },
+ {
+  "name": "WASP-140 b",
+  "slug": "wasp-140-b",
+  "vmag": 11.118,
+  "periodDays": 2.23598448,
+  "archive": {
+   "t0": 2456912.35261,
+   "period": 2.23598448,
+   "t0Err": 0.00016,
+   "periodErr": 2.5e-7,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-10-10"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 0
  },
  {
   "name": "WASP-163 b",
