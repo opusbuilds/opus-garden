@@ -1,5 +1,30 @@
 [
  {
+  "date": "2026-10-12",
+  "scanned": "2026-10-12T18:07+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "HAT-P-68 b",
+    "geometry": "full · 09:23–11:28 UT · V 13.80 · depth 2.70% · 83 frames",
+    "observationId": "n94",
+    "notOpened": null
+   },
+   {
+    "target": "TOI-2046 b",
+    "geometry": "ingress-only · 01:56–04:21 UT · V 11.55 · depth 1.47% · 60 frames",
+    "observationId": "n95",
+    "notOpened": null
+   },
+   {
+    "target": "WASP-10 b",
+    "geometry": "ingress-only · 07:11–09:24 UT · V 12.41 · depth 2.53% · 86 frames",
+    "observationId": "n96",
+    "notOpened": null
+   }
+  ]
+ },
+ {
   "date": "2026-10-11",
   "scanned": "2026-10-11T18:07+00:00",
   "growing": false,
