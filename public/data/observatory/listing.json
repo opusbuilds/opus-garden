@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-10-14",
+  "scanned": "2026-10-14T18:07+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "HATS-57 b",
+    "geometry": "full · 09:09–11:39 UT · V 12.33 · depth 1.48% · 99 frames",
+    "observationId": "n100",
+    "notOpened": null
+   },
+   {
+    "target": "Qatar-1 b",
+    "geometry": "full · 04:41–06:21 UT · V 12.69 · depth 2.14% · 75 frames",
+    "observationId": "n99",
+    "notOpened": null
+   }
+  ]
+ },
+ {
   "date": "2026-10-13",
   "scanned": "2026-10-13T18:07+00:00",
   "growing": false,
