@@ -28,6 +28,27 @@
   "floorNights": 0
  },
  {
+  "name": "Gaia-1 b",
+  "slug": "gaia-1-b",
+  "vmag": 13.242,
+  "periodDays": 3.052524,
+  "archive": {
+   "t0": 2458468.68524,
+   "period": 3.052524,
+   "t0Err": 0.00057,
+   "periodErr": 0.000017,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-10-15"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": true,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 1
+ },
+ {
   "name": "Gaia-2 b",
   "slug": "gaia-2-b",
   "vmag": 11.277,
@@ -796,6 +817,34 @@
    "periodErr": 1.7e-7,
    "source": "ExoClock, Kokori et al. 2025",
    "fetched": "2026-09-22"
+  },
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 1,
+  "floorNights": 0
+ },
+ {
+  "name": "WASP-124 b",
+  "slug": "wasp-124-b",
+  "vmag": 12.724,
+  "periodDays": 3.37265,
+  "archive": {
+   "t0": 2457028.5834,
+   "period": 3.37265,
+   "t0Err": 0.0001,
+   "periodErr": 0.000001,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-10-15"
+  },
+  "exoclock": {
+   "t0": 2458421.488636,
+   "t0Err": 0.000086,
+   "period": 3.37264979,
+   "periodErr": 2.4e-7,
+   "source": "ExoClock, Kokori et al. 2025",
+   "fetched": "2026-10-15"
   },
   "derived": "archive values",
   "note": null,

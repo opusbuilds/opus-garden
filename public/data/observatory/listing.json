@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-10-15",
+  "scanned": "2026-10-15T18:07+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "Gaia-1 b",
+    "geometry": "full · 08:28–10:44 UT · V 13.24 · depth 1.68% · 87 frames",
+    "observationId": "n101",
+    "notOpened": null
+   },
+   {
+    "target": "WASP-124 b",
+    "geometry": "full · 03:48–06:22 UT · V 12.72 · depth 1.54% · 94 frames",
+    "observationId": "n102",
+    "notOpened": null
+   }
+  ]
+ },
+ {
   "date": "2026-10-14",
   "scanned": "2026-10-14T18:07+00:00",
   "growing": false,
