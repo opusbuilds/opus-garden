@@ -541,9 +541,9 @@
   "derived": "archive values",
   "note": null,
   "faint": true,
-  "opened": 3,
+  "opened": 4,
   "fitted": 0,
-  "floorNights": 2
+  "floorNights": 3
  },
  {
   "name": "Qatar-6 b",
@@ -565,6 +565,27 @@
   "opened": 2,
   "fitted": 0,
   "floorNights": 0
+ },
+ {
+  "name": "TOI-1259 A b",
+  "slug": "toi-1259-a-b",
+  "vmag": 12.079,
+  "periodDays": 3.4779792,
+  "archive": {
+   "t0": 2458686.70048,
+   "period": 3.4779792,
+   "t0Err": 0.00004,
+   "periodErr": 1e-7,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-10-16"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 1
  },
  {
   "name": "TOI-1516 b",
@@ -821,8 +842,8 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 1,
-  "fitted": 1,
+  "opened": 2,
+  "fitted": 2,
   "floorNights": 0
  },
  {

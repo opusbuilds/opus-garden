@@ -1,5 +1,30 @@
 [
  {
+  "date": "2026-10-16",
+  "scanned": "2026-10-16T18:07+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "Qatar-4 b",
+    "geometry": "ingress-only · 04:23–06:31 UT · V 13.57 · depth 1.90% · 52 frames",
+    "observationId": "n103",
+    "notOpened": null
+   },
+   {
+    "target": "TOI-1259 A b",
+    "geometry": "egress-only · 09:53–12:24 UT · V 12.08 · depth 2.10% · 43 frames",
+    "observationId": "n104",
+    "notOpened": null
+   },
+   {
+    "target": "WASP-11 b",
+    "geometry": "full · 07:10–09:44 UT · V 11.57 · depth 1.72% · 92 frames",
+    "observationId": "n105",
+    "notOpened": null
+   }
+  ]
+ },
+ {
   "date": "2026-10-15",
   "scanned": "2026-10-15T18:07+00:00",
   "growing": false,
