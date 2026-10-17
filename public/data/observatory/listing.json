@@ -1,13 +1,19 @@
 [
  {
   "date": "2026-10-17",
-  "scanned": "2026-10-17T09:07+00:00",
-  "growing": true,
+  "scanned": "2026-10-17T16:07+00:00",
+  "growing": false,
   "entries": [
    {
     "target": "TrES-5 b",
     "geometry": "full · 04:54–06:30 UT · V 13.68 · depth 2.04% · 74 frames",
     "observationId": "n106",
+    "notOpened": null
+   },
+   {
+    "target": "WASP-77 A b",
+    "geometry": "full · 10:08–12:18 UT · V 10.29 · depth 1.37% · 80 frames",
+    "observationId": "n107",
     "notOpened": null
    }
   ]

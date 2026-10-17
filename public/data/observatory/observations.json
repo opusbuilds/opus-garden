@@ -1,5 +1,26 @@
 [
  {
+  "id": "n107",
+  "target": "WASP-77 A b",
+  "obsDate": "2026-10-17",
+  "dataset": "MObs WASP-77A261017",
+  "status": "rejected",
+  "reason": "cloud",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "tmidErrRaw": null,
+  "barScale": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Full transit by geometry (V 10.29, bright and unsaturated): cloud took 42 of 43 in-transit frames, leaving one usable frame inside the transit. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n106",
   "target": "TrES-5 b",
   "obsDate": "2026-10-17",
