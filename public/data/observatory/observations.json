@@ -1,5 +1,26 @@
 [
  {
+  "id": "n106",
+  "target": "TrES-5 b",
+  "obsDate": "2026-10-17",
+  "dataset": "MObs TRES-5261017",
+  "status": "rejected",
+  "reason": "cloud",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "tmidErrRaw": null,
+  "barScale": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Full transit by geometry (V 13.68): cloud took 29 of 31 in-transit frames and all 20 after egress; the target was also below the floor on its clearest frames (~91 ADU above the sky, floor 200). Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n105",
   "target": "WASP-11 b",
   "obsDate": "2026-10-16",
