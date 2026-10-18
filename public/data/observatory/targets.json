@@ -1045,8 +1045,8 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 4,
-  "fitted": 3,
+  "opened": 5,
+  "fitted": 4,
   "floorNights": 0
  },
  {
@@ -1206,7 +1206,7 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 1,
+  "opened": 2,
   "fitted": 0,
   "floorNights": 0
  }

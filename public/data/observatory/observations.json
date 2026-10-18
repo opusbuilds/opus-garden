@@ -1,5 +1,57 @@
 [
  {
+  "id": "n109",
+  "target": "WASP-52 b",
+  "obsDate": "2026-10-18",
+  "dataset": "MObs WASP-52261018",
+  "status": "marginal",
+  "reason": null,
+  "ocMin": {
+   "value": -3.02,
+   "err": 3.09,
+   "clockErr": 0.31,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": 3.17
+  },
+  "epoch": 2442,
+  "tmid": 2461331.7367,
+  "tmidErr": 0.0021374999999999996,
+  "tmidErrRaw": 0.00225,
+  "barScale": 0.95,
+  "depth": {
+   "value": 0.03422,
+   "err": null
+  },
+  "scatterPct": 0.896,
+  "note": "FULL transit by geometry (V 12.19), but cloud took 17 of 22 pre-ingress frames; clear through the transit (27 of 35 in-transit clear) and after it. Moon 45% lit, setting through the transit (+12/+3/-7 deg), under the 50% MOONLIT threshold. Pre-registered (prereg_wasp52_20261018.md, c78e063). QC MARGINAL, scatter 0.90%, Rp/Rs 0.185 +/- 0.017 (published 0.165, 1.2 sigma). The comparison lost the same cloudy frames (52/69), so post_run_check's partial-coverage WARN stands and this night is NOT a calibration-bet point, decided before the O-C was computed. O-C vs ExoClock -3.0 +/- 3.1 min (scaled bar), consistent with on time. The pre-committed injection test was inconclusive: the cloud left too few injectable stars (prereg_wasp52_20261018_inject.md). Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
+  "id": "n108",
+  "target": "WASP-80 b",
+  "obsDate": "2026-10-18",
+  "dataset": "MObs WASP-80261018",
+  "status": "rejected",
+  "reason": "cloud",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "tmidErrRaw": null,
+  "barScale": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Egress-only by geometry (V 11.84; frames start 01:25 UT, after mid-transit at 01:31): cloud took 17 of the 22 in-transit frames, leaving 5. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n107",
   "target": "WASP-77 A b",
   "obsDate": "2026-10-17",
