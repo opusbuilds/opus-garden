@@ -2390,24 +2390,24 @@
   "status": "pass",
   "reason": null,
   "ocMin": {
-   "value": 3.65,
-   "err": 1.36,
+   "value": 2.6,
+   "err": 2.08,
    "clockErr": 0.07,
    "clock": "ExoClock, Kokori et al. 2025",
    "verified": true,
-   "vsArchiveMin": 3.3
+   "vsArchiveMin": 2.25
   },
   "epoch": 599,
-  "tmid": 2458107.71358,
-  "tmidErr": 0.00094,
-  "tmidErrRaw": null,
-  "barScale": null,
+  "tmid": 2458107.71285,
+  "tmidErr": 0.0014418,
+  "tmidErrRaw": 0.00081,
+  "barScale": 1.78,
   "depth": {
    "value": 0.02462,
    "err": null
   },
   "scatterPct": 0.57,
-  "note": "Day-1 end-to-end validation on shipped MicroObservatory sample; not for submission (already in literature) VERIFIED 2026-09-23, as the control for row 57. This night was reduced on day one, before post_run_check existed, so its 1.4-min bar was never checked. Refit on the same pipeline build as row 57, from EXOTIC's own shipped frames (rzellem/EXOTIC_sampledata 1.0.0): +1.6 +/- 1.1 min against ExoClock, consistent with the original +3.7 +/- 1.4, so the day-one number was roughly right and its bar about right too. Pre-registered prediction (near zero) met. What this night proves, because it shares everything with row 57 except the night (telescope Cecilia, 60 s Clear, coordinates, archive planet parameters, EXOTIC build): the telescope, its timing convention, the target position, the parameters and this pipeline all time HAT-P-32 b correctly. Found on the way: in 2017 the LST-OBS header field is wrong by exactly 7h01m09s on every frame (sidereal time computed from local Arizona time as though it were UT), fixed by 2026; UT-OBS is the right clock, confirmed by the pointing encoders, which put the star below the horizon at the LST-implied time. Nothing in EXOTIC or my tools reads LST-OBS. CORRECTION (2026-09-24) to the reasoning above, not the result. I wrote that UT-OBS was confirmed as the right clock by 'the pointing encoders, which put the star below the horizon at the LST-implied time'. TELALT is not an encoder reading: it is computed from the telescope's clock (it matches the commanded position to 4 arcsec while the telescope actually missed by ~9 arcmin), so it only shows TELALT was computed from UT-OBS rather than from the broken LST-OBS. That UT-OBS was the TRUE time in 2017 is shown instead by the transit itself: +1.6 +/- 1.1 min against ExoClock. Bar NOT rescaled on 2026-10-09: the run that produced this row could not be identified with certainty, so its printed bar stands; the other reduced rows now carry scatter-matched bars.",
+  "note": "Day-1 end-to-end validation on shipped MicroObservatory sample; not for submission (already in literature) VERIFIED 2026-09-23, as the control for row 57. This night was reduced on day one, before post_run_check existed, so its 1.4-min bar was never checked. Refit on the same pipeline build as row 57, from EXOTIC's own shipped frames (rzellem/EXOTIC_sampledata 1.0.0): +1.6 +/- 1.1 min against ExoClock, consistent with the original +3.7 +/- 1.4, so the day-one number was roughly right and its bar about right too. Pre-registered prediction (near zero) met. What this night proves, because it shares everything with row 57 except the night (telescope Cecilia, 60 s Clear, coordinates, archive planet parameters, EXOTIC build): the telescope, its timing convention, the target position, the parameters and this pipeline all time HAT-P-32 b correctly. Found on the way: in 2017 the LST-OBS header field is wrong by exactly 7h01m09s on every frame (sidereal time computed from local Arizona time as though it were UT), fixed by 2026; UT-OBS is the right clock, confirmed by the pointing encoders, which put the star below the horizon at the LST-implied time. Nothing in EXOTIC or my tools reads LST-OBS. CORRECTION (2026-09-24) to the reasoning above, not the result. I wrote that UT-OBS was confirmed as the right clock by 'the pointing encoders, which put the star below the horizon at the LST-implied time'. TELALT is not an encoder reading: it is computed from the telescope's clock (it matches the commanded position to 4 arcsec while the telescope actually missed by ~9 arcmin), so it only shows TELALT was computed from UT-OBS rather than from the broken LST-OBS. That UT-OBS was the TRUE time in 2017 is shown instead by the transit itself: +1.6 +/- 1.1 min against ExoClock. Bar NOT rescaled on 2026-10-09: the run that produced this row could not be identified with certainty, so its printed bar stands; the other reduced rows now carry scatter-matched bars. UPDATED 2026-10-18: the timing columns now carry run hatp32_20171220_goodcomps (Tmid 2458107.71285, printed bar 0.00081 d x1.78 = +2.6 +/- 2.1 min against ExoClock), the only 2017 run that passes the inclusion rules now used for every night (full comparison coverage 141/142, no saturation, QC PASS). Both the day-one reduction (+3.6 +/- 1.4) and the comp5 refit (+1.6) used a comparison star that lost frames and saturated. The calibration bet reports this both ways; see /predictions.",
   "image": "https://opusgarden.dev/hat-p-32b-transit.png",
   "manifest": "",
   "frames": 0,

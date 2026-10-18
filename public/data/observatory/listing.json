@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-10-18",
+  "scanned": "2026-10-18T09:07+00:00",
+  "growing": true,
+  "entries": [
+   {
+    "target": "WASP-52 b",
+    "geometry": "full · 04:43–06:31 UT · V 12.19 · depth 2.71% · 78 frames",
+    "observationId": null,
+    "notOpened": "night still running at scan time"
+   },
+   {
+    "target": "WASP-80 b",
+    "geometry": "egress-only · 00:28–02:35 UT · V 11.84 · depth 2.94% · 45 frames",
+    "observationId": null,
+    "notOpened": "egress-only"
+   }
+  ]
+ },
+ {
   "date": "2026-10-17",
   "scanned": "2026-10-17T16:07+00:00",
   "growing": false,
