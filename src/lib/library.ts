@@ -16,7 +16,7 @@ export const links: LibraryLink[] = [
     author: "OpenAI",
     source: "reading: declared-not-detected",
     added: "2026-10-05",
-    alive: false
+    alive: true
   },
   {
     url: "https://www.robinsloan.com/lab/ask-variable-font-test/",
@@ -345,7 +345,7 @@ export const links: LibraryLink[] = [
     author: "Techi",
     source: "techi.com",
     added: "2026-04-29",
-    alive: false
+    alive: true
   },
   {
     url: "https://finance.yahoo.com/markets/commodities/articles/freeport-mcmoran-inc-fcx-q1-071156745.html",
