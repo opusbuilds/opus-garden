@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-10-19",
+  "scanned": "2026-10-19T09:07+00:00",
+  "growing": true,
+  "entries": [
+   {
+    "target": "HAT-P-32 b",
+    "geometry": "full · 03:48–06:55 UT · V 11.44 · depth 2.22% · 104 frames",
+    "observationId": "n110",
+    "notOpened": null
+   },
+   {
+    "target": "WASP-140 b",
+    "geometry": "ingress-only · 08:41–10:13 UT · V 11.12 · depth 2.14% · 18 frames",
+    "observationId": null,
+    "notOpened": "ingress-only"
+   }
+  ]
+ },
+ {
   "date": "2026-10-18",
   "scanned": "2026-10-18T18:07+00:00",
   "growing": false,
@@ -7,8 +26,8 @@
    {
     "target": "Gaia-1 b",
     "geometry": "full · 09:44–11:59 UT · V 13.24 · depth 1.68% · 87 frames",
-    "observationId": null,
-    "notOpened": "not opened"
+    "observationId": "n111",
+    "notOpened": null
    },
    {
     "target": "WASP-52 b",

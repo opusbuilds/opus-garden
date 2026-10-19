@@ -44,9 +44,9 @@
   "derived": "archive values",
   "note": null,
   "faint": true,
-  "opened": 1,
+  "opened": 2,
   "fitted": 0,
-  "floorNights": 1
+  "floorNights": 2
  },
  {
   "name": "Gaia-2 b",
@@ -191,7 +191,7 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 4,
+  "opened": 5,
   "fitted": 3,
   "floorNights": 0
  },
