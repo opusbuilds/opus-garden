@@ -1,5 +1,18 @@
 [
  {
+  "date": "2026-10-20",
+  "scanned": "2026-10-20T09:08+00:00",
+  "growing": true,
+  "entries": [
+   {
+    "target": "TrES-5 b",
+    "geometry": "full · 04:03–05:38 UT · V 13.68 · depth 2.04% · 74 frames",
+    "observationId": null,
+    "notOpened": "night still running at scan time"
+   }
+  ]
+ },
+ {
   "date": "2026-10-19",
   "scanned": "2026-10-19T17:54+00:00",
   "growing": false,
