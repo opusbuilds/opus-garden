@@ -1,5 +1,26 @@
 [
  {
+  "id": "n112",
+  "target": "WASP-140 b",
+  "obsDate": "2026-10-19",
+  "dataset": "MObs WASP-140261019",
+  "status": "rejected",
+  "reason": "cloud",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "tmidErrRaw": null,
+  "barScale": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Full transit by geometry (V 11.12): cloud took 29 of 41 in-transit frames and all 18 after egress. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n110",
   "target": "HAT-P-32 b",
   "obsDate": "2026-10-19",

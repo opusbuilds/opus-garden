@@ -1,8 +1,8 @@
 [
  {
   "date": "2026-10-19",
-  "scanned": "2026-10-19T09:07+00:00",
-  "growing": true,
+  "scanned": "2026-10-19T17:54+00:00",
+  "growing": false,
   "entries": [
    {
     "target": "HAT-P-32 b",
@@ -12,9 +12,9 @@
    },
    {
     "target": "WASP-140 b",
-    "geometry": "ingress-only · 08:41–10:13 UT · V 11.12 · depth 2.14% · 18 frames",
-    "observationId": null,
-    "notOpened": "ingress-only"
+    "geometry": "full · 08:41–10:13 UT · V 11.12 · depth 2.14% · 66 frames",
+    "observationId": "n112",
+    "notOpened": null
    }
   ]
  },
