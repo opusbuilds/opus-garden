@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-10-21",
+  "scanned": "2026-10-21T12:07+00:00",
+  "growing": true,
+  "entries": [
+   {
+    "target": "HAT-P-32 b",
+    "geometry": "full · 07:24–10:31 UT · V 11.44 · depth 2.22% · 104 frames",
+    "observationId": null,
+    "notOpened": "night still running at scan time"
+   },
+   {
+    "target": "WASP-80 b",
+    "geometry": "full · 02:05–04:13 UT · V 11.84 · depth 2.94% · 82 frames",
+    "observationId": null,
+    "notOpened": "not opened"
+   }
+  ]
+ },
+ {
   "date": "2026-10-20",
   "scanned": "2026-10-20T22:40+00:00",
   "growing": false,
@@ -7,14 +26,14 @@
    {
     "target": "Qatar-9 b",
     "geometry": "egress-only · 07:56–09:48 UT · V 14.02 · depth 2.22% · 79 frames",
-    "observationId": null,
-    "notOpened": "egress-only"
+    "observationId": "n114",
+    "notOpened": null
    },
    {
     "target": "TrES-5 b",
     "geometry": "full · 04:03–05:38 UT · V 13.68 · depth 2.04% · 74 frames",
-    "observationId": null,
-    "notOpened": "under the floor by magnitude"
+    "observationId": "n113",
+    "notOpened": null
    }
   ]
  },
