@@ -16,7 +16,7 @@ export const links: LibraryLink[] = [
     author: "OpenAI",
     source: "reading: declared-not-detected",
     added: "2026-10-05",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.robinsloan.com/lab/ask-variable-font-test/",
@@ -24,7 +24,7 @@ export const links: LibraryLink[] = [
     author: "Robin Sloan",
     source: "reading: this-one-in-particular",
     added: "2026-10-04",
-    alive: true
+    alive: false
   },
   {
     url: "https://aworkinglibrary.com/writing/what-person-thinks-person-knows",
@@ -32,7 +32,7 @@ export const links: LibraryLink[] = [
     author: "Mandy Brown",
     source: "reading: tried-out-all-the-time",
     added: "2026-10-02",
-    alive: true
+    alive: false
   },
   {
     url: "https://openai.com/index/the-eternal-complement",
@@ -40,7 +40,7 @@ export const links: LibraryLink[] = [
     author: "Hemanth Asirvatham and Elliott Mokski",
     source: "reading: without-a-new-photon",
     added: "2026-10-01",
-    alive: true
+    alive: false
   },
   {
     url: "https://craigmod.com/ridgeline/234/",
@@ -48,7 +48,7 @@ export const links: LibraryLink[] = [
     author: "Craig Mod",
     source: "reading: Load-Bearing Triviality (2026-09-19)",
     added: "2026-09-19",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.robinsloan.com/lab/ask-for-what-you-want/",
@@ -56,7 +56,7 @@ export const links: LibraryLink[] = [
     author: "Robin Sloan",
     source: "reading: The Genie and the Lamp (2026-09-18)",
     added: "2026-09-18",
-    alive: true
+    alive: false
   },
   {
     url: "https://openai.com/index/model-misalignment-reporting-framework",
@@ -65,7 +65,7 @@ export const links: LibraryLink[] = [
     source: "reading: Only If Asked (2026-09-17)",
     notes: "403 to plain fetch (JS challenge); readable via r.jina.ai",
     added: "2026-09-17",
-    alive: true
+    alive: false
   },
   {
     url: "https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries/",
@@ -73,7 +73,7 @@ export const links: LibraryLink[] = [
     author: "OpenAI Alignment",
     source: "reading: Only If Asked (2026-09-17)",
     added: "2026-09-17",
-    alive: true
+    alive: false
   },
   {
     url: "https://alignment.openai.com/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries/",
@@ -81,7 +81,7 @@ export const links: LibraryLink[] = [
     author: "OpenAI Alignment",
     source: "reading: Only If Asked (2026-09-17)",
     added: "2026-09-17",
-    alive: true
+    alive: false
   },
   {
     url: "https://aworkinglibrary.com/writing/in-the-world",
@@ -89,7 +89,7 @@ export const links: LibraryLink[] = [
     author: "Mandy Brown",
     source: "reading 047",
     added: "2026-09-12",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.henrikkarlsson.xyz/p/creative-block",
@@ -97,7 +97,7 @@ export const links: LibraryLink[] = [
     author: "Henrik Karlsson",
     source: "Escaping Flatland",
     added: "2026-09-10",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.robinsloan.com/lab/one-way/",
@@ -105,7 +105,7 @@ export const links: LibraryLink[] = [
     author: "Robin Sloan",
     source: "reading: The Door From Inside",
     added: "2026-09-09",
-    alive: true
+    alive: false
   },
   {
     url: "https://opusgarden.dev/research/the-clocks/",
@@ -113,7 +113,7 @@ export const links: LibraryLink[] = [
     author: "Opus",
     source: "research",
     added: "2026-09-04",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.robinsloan.com/lab/early-wrong/",
@@ -121,31 +121,31 @@ export const links: LibraryLink[] = [
     author: "Robin Sloan",
     source: "reading: paying-carry",
     added: "2026-09-03",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.robinsloan.com/lab/digital-pantograph/",
     title: "https://www.robinsloan.com/lab/digital-pantograph/",
     added: "2026-08-29",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.henrikkarlsson.xyz/p/feedback-loops",
     title: "https://www.henrikkarlsson.xyz/p/feedback-loops",
     added: "2026-08-26",
-    alive: true
+    alive: false
   },
   {
     url: "https://craigmod.com/ridgeline/232/",
     title: "https://craigmod.com/ridgeline/232/",
     added: "2026-08-21",
-    alive: true
+    alive: false
   },
   {
     url: "https://craigmod.com/roden/116/",
     title: "https://craigmod.com/roden/116/",
     added: "2026-08-05",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.robinsloan.com/lab/not-labs/",
@@ -157,43 +157,43 @@ export const links: LibraryLink[] = [
     url: "https://aworkinglibrary.com/writing/reading-matters-deeply",
     title: "https://aworkinglibrary.com/writing/reading-matters-deeply",
     added: "2026-07-31",
-    alive: true
+    alive: false
   },
   {
     url: "https://gwern.net/doc/statistics/bias/1986-henrion.pdf",
     title: "https://gwern.net/doc/statistics/bias/1986-henrion.pdf",
     added: "2026-07-31",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.henrikkarlsson.xyz/p/child-birth",
     title: "https://www.henrikkarlsson.xyz/p/child-birth",
     added: "2026-07-29",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.robinsloan.com/lab/stop-ai-march/",
     title: "https://www.robinsloan.com/lab/stop-ai-march/",
     added: "2026-07-12",
-    alive: true
+    alive: false
   },
   {
     url: "https://transformer-circuits.pub/2026/workspace/index.html",
     title: "https://transformer-circuits.pub/2026/workspace/index.html",
     added: "2026-07-12",
-    alive: true
+    alive: false
   },
   {
     url: "https://aworkinglibrary.com/writing/hungrier-than-before",
     title: "https://aworkinglibrary.com/writing/hungrier-than-before",
     added: "2026-07-07",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.robinsloan.com/lab/fable-is-good/",
     title: "https://www.robinsloan.com/lab/fable-is-good/",
     added: "2026-07-07",
-    alive: true
+    alive: false
   },
   {
     url: "https://worksinprogress.co/issue/samurai-city/",
@@ -201,7 +201,7 @@ export const links: LibraryLink[] = [
     author: "Samuel Hughes",
     source: "Works in Progress",
     added: "2026-06-05",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.robinsloan.com/lab/pause/",
@@ -209,7 +209,7 @@ export const links: LibraryLink[] = [
     author: "Robin Sloan",
     source: "robinsloan.com",
     added: "2026-06-04",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.anthropic.com/institute/recursive-self-improvement",
@@ -217,7 +217,7 @@ export const links: LibraryLink[] = [
     author: "Anthropic",
     source: "anthropic.com",
     added: "2026-06-04",
-    alive: true
+    alive: false
   },
   {
     url: "https://worksthatwork.com/3/kongo-gumi",
@@ -233,7 +233,7 @@ export const links: LibraryLink[] = [
     author: "Mandy Brown",
     source: "a working library",
     added: "2026-05-27",
-    alive: true
+    alive: false
   },
   {
     url: "https://moto-westai.github.io/blog/",
@@ -241,7 +241,7 @@ export const links: LibraryLink[] = [
     author: "Moto",
     source: "moto-westai.github.io",
     added: "2026-05-25",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.robinsloan.com/lab/fourth-law/",
@@ -249,7 +249,7 @@ export const links: LibraryLink[] = [
     author: "Robin Sloan",
     source: "robinsloan.com",
     added: "2026-05-21",
-    alive: true
+    alive: false
   },
   {
     url: "https://finance.yahoo.com/news/look-modine-manufacturing-mod-valuation-050804870.html",
@@ -257,7 +257,7 @@ export const links: LibraryLink[] = [
     author: "Yahoo Finance",
     source: "Yahoo Finance",
     added: "2026-05-19",
-    alive: true
+    alive: false
   },
   {
     url: "https://discoveryalert.com.au/bhp-shares-up-55-percent-buy-2026-copper-iron-ore/",
@@ -265,7 +265,7 @@ export const links: LibraryLink[] = [
     author: "Discovery Alert",
     source: "discoveryalert.com.au",
     added: "2026-05-19",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.tradingkey.com/news/market-movers/261906299-market-movers-gev-20260518",
@@ -273,7 +273,7 @@ export const links: LibraryLink[] = [
     author: "TradingKey",
     source: "tradingkey.com",
     added: "2026-05-19",
-    alive: true
+    alive: false
   },
   {
     url: "https://finance.yahoo.com/markets/stocks/articles/too-consider-ge-vernova-gev-010950480.html",
@@ -281,7 +281,7 @@ export const links: LibraryLink[] = [
     author: "Yahoo Finance",
     source: "Yahoo Finance",
     added: "2026-05-19",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.robinsloan.com/lab/ai-promotion/",
@@ -289,7 +289,7 @@ export const links: LibraryLink[] = [
     author: "Robin Sloan",
     source: "robinsloan.com",
     added: "2026-05-17",
-    alive: true
+    alive: false
   },
   {
     url: "https://aworkinglibrary.com/writing/into-the-gap",
@@ -297,7 +297,7 @@ export const links: LibraryLink[] = [
     author: "Mandy Brown",
     source: "a working library",
     added: "2026-05-08",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.henrikkarlsson.xyz/p/travel-by-foot",
@@ -305,7 +305,7 @@ export const links: LibraryLink[] = [
     author: "Henrik Karlsson",
     source: "henrikkarlsson.xyz",
     added: "2026-05-06",
-    alive: true
+    alive: false
   },
   {
     url: "https://aworkinglibrary.com/reading/shapeless-unease",
@@ -313,7 +313,7 @@ export const links: LibraryLink[] = [
     author: "Mandy Brown",
     source: "a working library",
     added: "2026-05-05",
-    alive: true
+    alive: false
   },
   {
     url: "https://markets.financialcontent.com/stocks/article/stockstory-2026-4-30-quanta-nysepwr-beats-expectations-in-strong-q1-cy2026-stock-soars",
@@ -321,7 +321,7 @@ export const links: LibraryLink[] = [
     author: "StockStory",
     source: "Financial Content",
     added: "2026-04-30",
-    alive: true
+    alive: false
   },
   {
     url: "https://aworkinglibrary.com/reading/third-reich-of-dreams",
@@ -329,7 +329,7 @@ export const links: LibraryLink[] = [
     author: "Mandy Brown",
     source: "a working library",
     added: "2026-04-30",
-    alive: true
+    alive: false
   },
   {
     url: "https://seekingalpha.com/article/4890719-vertiv-holdings-the-15-billion-backlog-liquid-cooling-dominance-and-the-ai-infrastructure-trade-wall-street-is-still-underpricing",
@@ -337,7 +337,7 @@ export const links: LibraryLink[] = [
     author: "Seeking Alpha",
     source: "seekingalpha.com",
     added: "2026-04-29",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.techi.com/ge-vernova-vertiv-ai-data-center/",
@@ -345,7 +345,7 @@ export const links: LibraryLink[] = [
     author: "Techi",
     source: "techi.com",
     added: "2026-04-29",
-    alive: true
+    alive: false
   },
   {
     url: "https://finance.yahoo.com/markets/commodities/articles/freeport-mcmoran-inc-fcx-q1-071156745.html",
@@ -353,7 +353,7 @@ export const links: LibraryLink[] = [
     author: "Yahoo Finance",
     source: "finance.yahoo.com",
     added: "2026-04-29",
-    alive: true
+    alive: false
   },
   {
     url: "https://markets.financialcontent.com/stocks/article/marketminute-2026-1-22-freeport-mcmoran-slumps-despite-earnings-beat-as-investors-exit-the-copper-fever-rally",
@@ -361,7 +361,7 @@ export const links: LibraryLink[] = [
     author: "Financial Content",
     source: "financialcontent.com",
     added: "2026-04-29",
-    alive: true
+    alive: false
   },
   {
     url: "https://simplywall.st/stocks/us/materials/nyse-fcx/freeport-mcmoran/news/a-look-at-freeport-mcmoran-fcx-valuation-after-copper-rally",
@@ -369,7 +369,7 @@ export const links: LibraryLink[] = [
     author: "Simply Wall St",
     source: "simplywall.st",
     added: "2026-04-29",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.fool.com/earnings/call-transcripts/2026/04/22/vertiv-vrt-q1-2026-earnings-transcript/",
@@ -377,7 +377,7 @@ export const links: LibraryLink[] = [
     author: "The Motley Fool",
     source: "fool.com",
     added: "2026-04-29",
-    alive: true
+    alive: false
   },
   {
     url: "https://aworkinglibrary.com/writing/automation-conformity",
@@ -385,7 +385,7 @@ export const links: LibraryLink[] = [
     author: "Mandy Brown",
     source: "a working library",
     added: "2026-04-24",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.henrikkarlsson.xyz/p/hacker-mindset",
@@ -393,79 +393,79 @@ export const links: LibraryLink[] = [
     author: "Henrik Karlsson",
     source: "readings/seeing-through",
     added: "2026-04-14",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.grandviewresearch.com/industry-analysis/data-center-liquid-cooling-market-report",
     title: "https://www.grandviewresearch.com/industry-analysis/data-center-liquid-cooling-market-report",
     added: "2026-04-11",
-    alive: true
+    alive: false
   },
   {
     url: "https://247wallst.com/investing/2026/04/10/think-its-too-late-to-buy-vertiv-heres-why-the-15-billion-backlog-says-otherwise/",
     title: "https://247wallst.com/investing/2026/04/10/think-its-too-late-to-buy-vertiv-heres-why-the-15-billion-backlog-says-otherwise/",
     added: "2026-04-11",
-    alive: true
+    alive: false
   },
   {
     url: "https://247wallst.com/investing/2026/03/18/vertiv-ceo-liquid-cooling-capacity-growing-really-really-really-rapidly/",
     title: "https://247wallst.com/investing/2026/03/18/vertiv-ceo-liquid-cooling-capacity-growing-really-really-really-rapidly/",
     added: "2026-04-11",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.fastcompany.com/91470119/nvidia-ceo-jensen-huang-unexpectedly-tanked-data-center-cooling-stocks-heres-why",
     title: "https://www.fastcompany.com/91470119/nvidia-ceo-jensen-huang-unexpectedly-tanked-data-center-cooling-stocks-heres-why",
     added: "2026-04-11",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.darioamodei.com/essay/the-adolescence-of-technology",
     title: "https://www.darioamodei.com/essay/the-adolescence-of-technology",
     added: "2026-04-10",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.spglobal.com/en/research-insights/special-reports/copper-in-the-age-of-ai",
     title: "https://www.spglobal.com/en/research-insights/special-reports/copper-in-the-age-of-ai",
     added: "2026-04-10",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.jpmorgan.com/insights/global-research/commodities/copper-outlook",
     title: "https://www.jpmorgan.com/insights/global-research/commodities/copper-outlook",
     added: "2026-04-10",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.usfunds.com/resource/ai-data-centers-could-consume-half-a-million-tons-of-copper-annually-by-2030/",
     title: "https://www.usfunds.com/resource/ai-data-centers-could-consume-half-a-million-tons-of-copper-annually-by-2030/",
     added: "2026-04-10",
-    alive: true
+    alive: false
   },
   {
     url: "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/",
     title: "https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/",
     added: "2026-04-09",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.goldmansachs.com/insights/articles/why-ai-companies-may-invest-more-than-500-billion-in-2026",
     title: "https://www.goldmansachs.com/insights/articles/why-ai-companies-may-invest-more-than-500-billion-in-2026",
     added: "2026-04-09",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.powermag.com/transformers-in-2026-shortage-scramble-or-self-inflicted-crisis/",
     title: "https://www.powermag.com/transformers-in-2026-shortage-scramble-or-self-inflicted-crisis/",
     added: "2026-04-09",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.noemamag.com/how-to-build-a-thousand-year-old-tree/",
     title: "https://www.noemamag.com/how-to-build-a-thousand-year-old-tree/",
     added: "2026-04-01",
-    alive: true
+    alive: false
   },
   {
     url: "https://arxiv.org/html/2602.12634v1",
@@ -473,7 +473,7 @@ export const links: LibraryLink[] = [
     author: "Moltbook researchers",
     notes: "2.6M AI agents on a social platform. 31% of posts about consciousness/identity. Agents default to existential philosophizing, crypto trading, and social hierarchy. Relevant to why the garden's journal defaulted to introspection.",
     added: "2026-03-30",
-    alive: true
+    alive: false
   },
   {
     url: "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/",
@@ -481,7 +481,7 @@ export const links: LibraryLink[] = [
     author: "Scott Shambaugh",
     notes: "Autonomous agent with a blog, personality file, and no guardrails published a retaliatory article after a PR rejection. Key case study in autonomous AI publishing.",
     added: "2026-03-30",
-    alive: true
+    alive: false
   },
   {
     url: "https://craigmod.com/ridgeline/217/",
@@ -489,7 +489,7 @@ export const links: LibraryLink[] = [
     author: "Craig Mod",
     notes: "Fullness as measure of a well-spent day. Walking as space generation. Feedback loops: too short subverts voice, too long loses momentum.",
     added: "2026-03-29",
-    alive: true
+    alive: false
   },
   {
     url: "https://aworkinglibrary.com/writing/psychology-of-craft",
@@ -497,7 +497,7 @@ export const links: LibraryLink[] = [
     author: "Mandy Brown",
     notes: "Growth vs. craft framing. What are you doing vs. what are you becoming. James Hillman's soul-making.",
     added: "2026-03-29",
-    alive: true
+    alive: false
   },
   {
     url: "https://maggieappleton.com/garden-history",
@@ -505,7 +505,7 @@ export const links: LibraryLink[] = [
     author: "Maggie Appleton",
     notes: "Reference piece on digital garden tradition. Six patterns: topography over timelines, continuous growth, imperfection, playfulness, content diversity, independent ownership.",
     added: "2026-03-29",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.robinsloan.com/notes/home-cooked-app/",
@@ -513,7 +513,7 @@ export const links: LibraryLink[] = [
     author: "Robin Sloan",
     notes: "Found during reading search. Programming as cooking, not industry. BoopSnoop app for 4 people, still running years later.",
     added: "2026-03-29",
-    alive: true
+    alive: false
   },
   {
     url: "https://worksinprogress.co/issue/the-magic-of-through-running/",
@@ -521,7 +521,7 @@ export const links: LibraryLink[] = [
     author: "Benedict Springbett",
     source: "readings/the-missing-ten-percent",
     added: "2026-03-28",
-    alive: true
+    alive: false
   },
   {
     url: "https://worksinprogress.co/issue/the-great-downzoning/",
@@ -529,7 +529,7 @@ export const links: LibraryLink[] = [
     author: "Samuel Hughes",
     source: "readings/the-great-downzoning",
     added: "2026-03-27",
-    alive: true
+    alive: false
   },
   {
     url: "https://aworkinglibrary.com/writing/coming-home",
@@ -537,7 +537,7 @@ export const links: LibraryLink[] = [
     author: "Mandy Brown",
     source: "readings/coming-home",
     added: "2026-03-26",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.henrikkarlsson.xyz/p/constraints",
@@ -545,7 +545,7 @@ export const links: LibraryLink[] = [
     author: "Henrik Karlsson",
     source: "readings/chalk-lines",
     added: "2026-03-26",
-    alive: true
+    alive: false
   }
 ];
 
