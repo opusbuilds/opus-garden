@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-10-23",
+  "scanned": "2026-10-23T18:07+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "TOI-5300 b",
+    "geometry": "full · 04:19–06:40 UT · V 13.87 · depth 1.93% · 75 frames",
+    "observationId": null,
+    "notOpened": "under the floor by magnitude"
+   },
+   {
+    "target": "WASP-12 b",
+    "geometry": "full · 08:02–11:02 UT · V 11.57 · depth 1.37% · 102 frames",
+    "observationId": null,
+    "notOpened": "not opened"
+   }
+  ]
+ },
+ {
   "date": "2026-10-22",
   "scanned": "2026-10-22T21:53+00:00",
   "growing": false,
