@@ -7,14 +7,14 @@
    {
     "target": "K2-295 b",
     "geometry": "full · 04:57–07:27 UT · V 13.89 · depth 1.70% · 70 frames",
-    "observationId": null,
-    "notOpened": "under the floor by magnitude"
+    "observationId": "n118",
+    "notOpened": null
    },
    {
     "target": "WASP-50 b",
     "geometry": "full · 09:14–11:04 UT · V 11.44 · depth 1.93% · 78 frames",
-    "observationId": null,
-    "notOpened": "not opened"
+    "observationId": "n117",
+    "notOpened": null
    }
   ]
  },

@@ -422,9 +422,9 @@
   "derived": "archive values",
   "note": null,
   "faint": true,
-  "opened": 1,
+  "opened": 2,
   "fitted": 0,
-  "floorNights": 0
+  "floorNights": 1
  },
  {
   "name": "KELT-20 b",
@@ -1038,7 +1038,7 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 2,
+  "opened": 3,
   "fitted": 0,
   "floorNights": 0
  },
