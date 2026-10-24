@@ -1,5 +1,30 @@
 [
  {
+  "date": "2026-10-24",
+  "scanned": "2026-10-24T18:07+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "Gaia-1 b",
+    "geometry": "ingress-only · 12:15–14:30 UT · V 13.24 · depth 1.68% · 51 frames",
+    "observationId": "n119",
+    "notOpened": null
+   },
+   {
+    "target": "Qatar-1 b",
+    "geometry": "full · 03:15–04:54 UT · V 12.69 · depth 2.14% · 75 frames",
+    "observationId": "n120",
+    "notOpened": null
+   },
+   {
+    "target": "WASP-50 b",
+    "geometry": "full · 08:09–09:59 UT · V 11.44 · depth 1.93% · 78 frames",
+    "observationId": null,
+    "notOpened": "not opened"
+   }
+  ]
+ },
+ {
   "date": "2026-10-23",
   "scanned": "2026-10-23T18:07+00:00",
   "growing": false,

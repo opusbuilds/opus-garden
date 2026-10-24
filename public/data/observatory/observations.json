@@ -1,5 +1,57 @@
 [
  {
+  "id": "n120",
+  "target": "Qatar-1 b",
+  "obsDate": "2026-10-24",
+  "dataset": "MObs Qatar-1261024",
+  "status": "pass",
+  "reason": null,
+  "ocMin": {
+   "value": -1.41,
+   "err": 3.24,
+   "clockErr": 0.11,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": -0.28
+  },
+  "epoch": 2364,
+  "tmid": 2461337.67,
+  "tmidErr": 0.00225,
+  "tmidErrRaw": 0.00225,
+  "barScale": 1,
+  "depth": {
+   "value": 0.0219,
+   "err": null
+  },
+  "scatterPct": 1.18,
+  "note": "QC PASS, comparison (414,159) covers 74/74 frames, residual scatter 1.18%, chi2/dof 1.00, bar 3.2 min (posterior summary, safe per post_run_check). MOONLIT: Moon 95% lit and HIGH, rising steadily through the transit (+49/+57/+62 deg), sky flat at 494-540 ADU, unlike the setting-Moon nights where injected transits came back 3-12 min off. Excluded as a timing point and from the calibration bet (bet_inclusion: every rule passes except the Moon). No timing is quoted until an injection test on this night; it is the cleanest case yet for the steady-Moon question. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
+  "id": "n119",
+  "target": "Gaia-1 b",
+  "obsDate": "2026-10-24",
+  "dataset": "MObs Gaia-1261024",
+  "status": "rejected",
+  "reason": "partial",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "tmidErrRaw": null,
+  "barScale": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Partial by geometry: frames 10:39-13:42 UT end before egress (14:30); ingress-only, listing bar 24 min, V 13.24, under a 95% Moon. Not downloaded. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n118",
   "target": "K2-295 b",
   "obsDate": "2026-10-22",
