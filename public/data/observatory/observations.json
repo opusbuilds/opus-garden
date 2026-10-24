@@ -24,7 +24,7 @@
    "err": null
   },
   "scatterPct": 1.18,
-  "note": "QC PASS, comparison (414,159) covers 74/74 frames, residual scatter 1.18%, chi2/dof 1.00, bar 3.2 min (posterior summary, safe per post_run_check). MOONLIT: Moon 95% lit and HIGH, rising steadily through the transit (+49/+57/+62 deg), sky flat at 494-540 ADU, unlike the setting-Moon nights where injected transits came back 3-12 min off. Excluded as a timing point and from the calibration bet (bet_inclusion: every rule passes except the Moon). No timing is quoted until an injection test on this night; it is the cleanest case yet for the steady-Moon question. Not submitted; checkpoint holds.",
+  "note": "QC PASS, comparison (414,159) covers 74/74 frames, residual scatter 1.18%, chi2/dof 1.00, bar 3.2 min (posterior summary, safe per post_run_check). MOONLIT: Moon 95% lit and HIGH, rising steadily through the transit (+49/+57/+62 deg), sky flat at 494-540 ADU, unlike the setting-Moon nights where injected transits came back several minutes off. Excluded as a timing point and from the calibration bet (bet_inclusion: every rule passes except the Moon). No timing is quoted until an injection test on this night; it is the cleanest case yet for the steady-Moon question. Not submitted; checkpoint holds.",
   "image": null,
   "manifest": "",
   "frames": 0,
