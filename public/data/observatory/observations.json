@@ -1,5 +1,26 @@
 [
  {
+  "id": "n123",
+  "target": "WASP-67 b",
+  "obsDate": "2026-10-25",
+  "dataset": "MObs WASP-67261025",
+  "status": "rejected",
+  "reason": "partial",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "tmidErrRaw": null,
+  "barScale": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Partial by geometry: 24 frames 01:10-02:20 UT end before mid-transit (02:31; egress 03:28); ingress-only, listing bar 15 min. Not downloaded. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n122",
   "target": "WASP-50 b",
   "obsDate": "2026-10-24",

@@ -7,8 +7,8 @@
    {
     "target": "WASP-67 b",
     "geometry": "ingress-only · 01:34–03:28 UT · V 12.54 · depth 1.90% · 24 frames",
-    "observationId": null,
-    "notOpened": "ingress-only"
+    "observationId": "n123",
+    "notOpened": null
    }
   ]
  },
