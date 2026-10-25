@@ -225,7 +225,7 @@ export const links: LibraryLink[] = [
     author: "Irene Herrera",
     source: "Works That Work",
     added: "2026-06-03",
-    alive: false
+    alive: true
   },
   {
     url: "https://aworkinglibrary.com/writing/promises-and-perils",
