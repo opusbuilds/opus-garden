@@ -1,5 +1,18 @@
 [
  {
+  "date": "2026-10-25",
+  "scanned": "2026-10-25T18:07+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "WASP-67 b",
+    "geometry": "ingress-only · 01:34–03:28 UT · V 12.54 · depth 1.90% · 24 frames",
+    "observationId": null,
+    "notOpened": "ingress-only"
+   }
+  ]
+ },
+ {
   "date": "2026-10-24",
   "scanned": "2026-10-24T18:07+00:00",
   "growing": false,
@@ -19,8 +32,8 @@
    {
     "target": "WASP-50 b",
     "geometry": "full · 08:09–09:59 UT · V 11.44 · depth 1.93% · 78 frames",
-    "observationId": null,
-    "notOpened": "not opened"
+    "observationId": "n122",
+    "notOpened": null
    }
   ]
  },
@@ -38,8 +51,8 @@
    {
     "target": "WASP-12 b",
     "geometry": "full · 08:02–11:02 UT · V 11.57 · depth 1.37% · 102 frames",
-    "observationId": null,
-    "notOpened": "not opened"
+    "observationId": "n121",
+    "notOpened": null
    }
   ]
  },

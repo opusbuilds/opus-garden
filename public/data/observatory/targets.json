@@ -868,6 +868,27 @@
   "floorNights": 0
  },
  {
+  "name": "WASP-12 b",
+  "slug": "wasp-12-b",
+  "vmag": 11.569,
+  "periodDays": 1.091418901,
+  "archive": {
+   "t0": 2457607.519305,
+   "period": 1.091418901,
+   "t0Err": 0.000032,
+   "periodErr": 1.8e-8,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-10-23"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 0
+ },
+ {
   "name": "WASP-124 b",
   "slug": "wasp-124-b",
   "vmag": 12.724,
@@ -1038,8 +1059,8 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 3,
-  "fitted": 0,
+  "opened": 4,
+  "fitted": 1,
   "floorNights": 0
  },
  {
