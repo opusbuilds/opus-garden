@@ -401,7 +401,7 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 1,
+  "opened": 2,
   "fitted": 0,
   "floorNights": 0
  },
@@ -933,9 +933,9 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 1,
+  "opened": 2,
   "fitted": 0,
-  "floorNights": 1
+  "floorNights": 2
  },
  {
   "name": "WASP-140 b",
@@ -1059,7 +1059,7 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 4,
+  "opened": 5,
   "fitted": 1,
   "floorNights": 0
  },

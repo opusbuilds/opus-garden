@@ -1,5 +1,30 @@
 [
  {
+  "date": "2026-10-26",
+  "scanned": "2026-10-26T18:07+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "K2-29 b",
+    "geometry": "ingress-only · 11:20–13:34 UT · V 12.53 · depth 2.01% · 57 frames",
+    "observationId": "n126",
+    "notOpened": null
+   },
+   {
+    "target": "WASP-135 b",
+    "geometry": "full · 01:38–03:18 UT · V 13.18 · depth 1.98% · 61 frames",
+    "observationId": "n124",
+    "notOpened": null
+   },
+   {
+    "target": "WASP-50 b",
+    "geometry": "full · 07:04–08:54 UT · V 11.44 · depth 1.93% · 77 frames",
+    "observationId": "n125",
+    "notOpened": null
+   }
+  ]
+ },
+ {
   "date": "2026-10-25",
   "scanned": "2026-10-25T18:07+00:00",
   "growing": false,
