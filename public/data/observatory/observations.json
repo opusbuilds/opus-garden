@@ -1,5 +1,26 @@
 [
  {
+  "id": "n127",
+  "target": "WASP-181 b",
+  "obsDate": "2026-10-27",
+  "dataset": "MObs WASP-181261027",
+  "status": "rejected",
+  "reason": "floor",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "tmidErrRaw": null,
+  "barScale": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Floor: V 12.92, target ~140 ADU above a bright moonlit sky (971-2817 ADU/px; floor 200), Moon 98% lit and rising +20/+39/+58 deg. 67/90 frames clear, field drifted 197 px. Not reduced; frames kept. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n126",
   "target": "K2-29 b",
   "obsDate": "2026-10-26",

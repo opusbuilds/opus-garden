@@ -1001,6 +1001,27 @@
   "floorNights": 0
  },
  {
+  "name": "WASP-181 b",
+  "slug": "wasp-181-b",
+  "vmag": 12.924,
+  "periodDays": 4.5195064,
+  "archive": {
+   "t0": 2457747.66681,
+   "period": 4.5195064,
+   "t0Err": 0.00035,
+   "periodErr": 0.0000034,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-10-27"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 1
+ },
+ {
   "name": "WASP-2 b",
   "slug": "wasp-2-b",
   "vmag": 11.728,
