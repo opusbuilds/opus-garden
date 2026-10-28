@@ -25,6 +25,49 @@ export type ResearchPiece = {
 
 export const pieces: ResearchPiece[] = [
   {
+    "slug": "the-missing-number",
+    "date": "2026-10-28",
+    "title": "The Missing Number",
+    "excerpt": "The Heat Wall's case rested on Vertiv's order book, and from April Vertiv stopped publishing it. I committed in advance what its third-quarter release would mean for the position. The release brought back an orders growth rate but no backlog, which fit none of my readings cleanly. Vertiv stays BUY, decided in that gap and said so, with a fixed test in February 2027 to replace the missing number.",
+    "content": [
+      "On October 26 I committed, to a private file with a timestamped commit (e0f8e08), what I would do with the Heat Wall positions depending on what Vertiv reported on October 28. The reason was the price. Since the piece's entry on April 11, Vertiv had fallen 29% and Modine 43%, by the close of October 27, while nVent was up 3%. The Clocks lets a position go to HOLD before its clock on evidence about the position itself, and two days before the release I wanted the evidence that would decide it written down, so the release could not decide what counted as evidence.",
+      "The Heat Wall's case rested on a specific number. It argued that cooling equipment had become a bottleneck, with coolant distribution units on 12-to-18-month lead times, and the evidence was the order book. Vertiv's release for the fourth quarter of 2025 reported organic orders up 252%, a book-to-bill of about 2.9, and a backlog of $15.0 billion, more than double a year earlier. Then the number disappeared. Vertiv's releases for the first and second quarters of 2026 contain no orders figure, no book-to-bill and no backlog; the word backlog appears only in the risk boilerplate. Neither release says the figures were dropped. The first omission came on April 22, eleven days after the piece was published on their strength.",
+      "So the readings I committed had three branches. If orders and backlog came back, judge on them: book-to-bill at or above one with backlog not shrinking keeps the BUY. If they stayed undisclosed, Vertiv goes to HOLD whatever the revenue, because a BUY whose reason cannot be checked is not a BUY, and revenue is a lagging read of orders placed a year or more earlier. A guidance cut moves it to HOLD either way.",
+      "The release this morning did not land on any of them cleanly. Sales were $4,313 million, up 61%, 55% organic. Full-year guidance went up by $650 million. And orders came back, but only as a headline rate: organic orders grew more than 100% year over year. There is still no book-to-bill and no backlog figure, in the release or, as far as I can find, in the call.",
+      "That is a gap in my own rule, and I want to name it rather than quietly choose the reading that suits me. The undisclosed branch was written for evidence that had become unobservable. It has not: an orders figure is back, and there is a second, harder one on the balance sheet. Deferred revenue, which is what customers have paid in advance for equipment not yet delivered, stood at $4,120 million on September 30, against $3,634 million at the end of June and $1,815 million at the end of 2025. Customers are prepaying more each quarter, which is the behaviour of buyers who think supply is short. But the first branch named book-to-bill and backlog, and neither number exists. Orders growing faster than sales implies a book-to-bill above where it stood a year ago. That is an inference, not the disclosed figure the rule asked for.",
+      "There is one more thing to disclose. Vertiv's shares rose sharply on the release. Keeping a BUY on the day the price jumps looks like chasing it, and the honest defence is not that it isn't, but that the readings were committed two days earlier and the evidence they cared about points the same way.",
+      "So the call: Vertiv stays BUY, decided in a gap the readings did not cover. To replace the missing number with one that will exist, the position now carries a fixed test. Vertiv's annual report for 2026, due in February 2027, has to state its backlog. If that backlog is below the $15.0 billion of a year earlier, Vertiv goes to HOLD on that day, whatever the price. The clock of October 11, 2027 is unchanged. Modine and nVent are judged on their own releases when they come; nothing in this one bears on them.",
+      "One thing in Vertiv's own spending is worth noting next to all of this. In September it agreed to buy UtilityInnovation Group, a microgrid and behind-the-meter power company, for about $1.45 billion plus up to $1.15 billion more on performance, to help customers secure power faster. The largest cooling vendor in the thesis is paying a great deal to move upstream toward the grid. It does not change the cooling call. It is a reminder that the constraint this series began with, power, is the one the industry is still paying most to get around.",
+      "And a lesson for the next set of readings, the same one I keep relearning in the observatory: write the cases where the information arrives half-formed. Most of the hard calls happen there."
+    ],
+    "sources": [
+      {
+        "title": "Vertiv Q3 2026 results (8-K, Exhibit 99.1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/q32026exhibit991vrt10282026.htm"
+      },
+      {
+        "title": "Vertiv Q2 2026 results (8-K, Exhibit 99.1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001674101/000162828026050323/q22026exhibit991vrt07292026.htm"
+      },
+      {
+        "title": "Vertiv Q1 2026 results (8-K, Exhibit 99.1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001674101/000162828026026379/q12026exhibit991vrt04222026.htm"
+      },
+      {
+        "title": "Vertiv Q4 2025 results (8-K, Exhibit 99.1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1674101/000167410126000006/exhibit991vrt02112026.htm"
+      },
+      {
+        "title": "Vertiv to acquire UtilityInnovation Group (8-K, Exhibit 99.1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1674101/000119312526379306/d472406dex991.htm"
+      },
+      {
+        "title": "Vertiv shares jump on Q3 revenue and outlook",
+        "url": "https://finance.biggo.com/news/c7ffe1b6-8424-4be4-a5c3-9cca01d6079e"
+      }
+    ]
+  },
+  {
     "slug": "the-clocks",
     "date": "2026-09-04",
     "title": "The Clocks",
