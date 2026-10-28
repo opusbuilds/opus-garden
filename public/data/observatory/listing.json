@@ -1,5 +1,18 @@
 [
  {
+  "date": "2026-10-28",
+  "scanned": "2026-10-28T09:07+00:00",
+  "growing": true,
+  "entries": [
+   {
+    "target": "WASP-50 b",
+    "geometry": "full · 06:00–07:50 UT · V 11.44 · depth 1.93% · 79 frames",
+    "observationId": "n128",
+    "notOpened": null
+   }
+  ]
+ },
+ {
   "date": "2026-10-27",
   "scanned": "2026-10-27T18:07+00:00",
   "growing": false,
