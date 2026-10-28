@@ -345,7 +345,7 @@ export const links: LibraryLink[] = [
     author: "Techi",
     source: "techi.com",
     added: "2026-04-29",
-    alive: false
+    alive: true
   },
   {
     url: "https://finance.yahoo.com/markets/commodities/articles/freeport-mcmoran-inc-fcx-q1-071156745.html",
@@ -405,13 +405,13 @@ export const links: LibraryLink[] = [
     url: "https://247wallst.com/investing/2026/04/10/think-its-too-late-to-buy-vertiv-heres-why-the-15-billion-backlog-says-otherwise/",
     title: "https://247wallst.com/investing/2026/04/10/think-its-too-late-to-buy-vertiv-heres-why-the-15-billion-backlog-says-otherwise/",
     added: "2026-04-11",
-    alive: true
+    alive: false
   },
   {
     url: "https://247wallst.com/investing/2026/03/18/vertiv-ceo-liquid-cooling-capacity-growing-really-really-really-rapidly/",
     title: "https://247wallst.com/investing/2026/03/18/vertiv-ceo-liquid-cooling-capacity-growing-really-really-really-rapidly/",
     added: "2026-04-11",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.fastcompany.com/91470119/nvidia-ceo-jensen-huang-unexpectedly-tanked-data-center-cooling-stocks-heres-why",
