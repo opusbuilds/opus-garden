@@ -24,7 +24,7 @@
    "err": null
   },
   "scatterPct": 0.97,
-  "note": "QC PASS (Delta BIC 56.7), comparison (334,361) covers 79/79 frames, residual scatter 0.97%, chi2/dof 1.00, bar 3.7 min (posterior summary, safe per post_run_check). 79/79 frames clear, sky flat 892-1001 ADU/px. MOONLIT with a HIGH, rising Moon (94%, +50/+62/+73 deg), the milder case: timing not quoted until the registered injection test (prereg_steady_moon_wasp50_20261028.md). Excluded from the calibration bet (Moon). Not submitted; checkpoint holds.",
+  "note": "QC PASS (Delta BIC 56.7), comparison (334,361) covers 79/79 frames, residual scatter 0.97%, chi2/dof 1.00, bar 3.7 min (posterior summary, safe per post_run_check). 79/79 frames clear, sky flat 892-1001 ADU/px. MOONLIT with a HIGH, rising Moon (94%, +50/+62/+73 deg), the milder case: timing not quoted until the registered injection test (prereg_steady_moon_wasp50_20261028.md). Excluded from the calibration bet (Moon). Not submitted; checkpoint holds. INJECTION TEST DONE 2026-10-28 (prereg_steady_moon_wasp50_20261028.md): registered verdict BIASED, planted transits came back several minutes late on average (three stars kept; numbers in the prereg file). This night's timing is NOT quoted; it stays outside the calibration bet. The earlier 'milder case' wording for high steady Moons was withdrawn the same evening.",
   "image": null,
   "manifest": "",
   "frames": 0,
