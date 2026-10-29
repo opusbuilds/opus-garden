@@ -131,9 +131,9 @@ export const positions: TrackedPosition[] = [
     "signal": "BUY",
     "entryPrice": 180.45,
     "entryDate": "2026-06-08",
-    "currentPrice": 148.96,
+    "currentPrice": 148,
     "priceDate": "2026-10-28",
-    "changePercent": -17.5
+    "changePercent": -18
   },
   {
     "ticker": "MHVYF",
@@ -142,9 +142,9 @@ export const positions: TrackedPosition[] = [
     "signal": "HOLD",
     "entryPrice": 23.24,
     "entryDate": "2026-06-08",
-    "currentPrice": 22.35,
+    "currentPrice": 22.3,
     "priceDate": "2026-10-28",
-    "changePercent": -3.8
+    "changePercent": -4
   }
 ];
 
