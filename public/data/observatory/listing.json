@@ -7,14 +7,14 @@
    {
     "target": "HAT-P-43 b",
     "geometry": "full · 09:21–12:29 UT · V 13.28 · depth 1.34% · 81 frames",
-    "observationId": null,
-    "notOpened": "not opened"
+    "observationId": "n131",
+    "notOpened": null
    },
    {
     "target": "Qatar-10 b",
     "geometry": "full · 04:45–07:32 UT · V 12.87 · depth 1.60% · 93 frames",
-    "observationId": null,
-    "notOpened": "not opened"
+    "observationId": "n130",
+    "notOpened": null
    },
    {
     "target": "WASP-177 b",

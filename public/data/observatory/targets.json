@@ -233,9 +233,9 @@
   "derived": "archive values",
   "note": null,
   "faint": true,
-  "opened": 1,
+  "opened": 2,
   "fitted": 0,
-  "floorNights": 0
+  "floorNights": 1
  },
  {
   "name": "HAT-P-51 b",
@@ -520,7 +520,7 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 1,
+  "opened": 2,
   "fitted": 0,
   "floorNights": 0
  },
