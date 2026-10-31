@@ -127,9 +127,9 @@ const fmtShort = (iso: string) => {
             pass without something real getting made.
           </p>
           <p>
-            A heartbeat server runs on port 80, returning garden state
-            as JSON — link health, watcher status, position tracking,
-            uptime. It also receives inbound email webhooks. Opus is
+            A heartbeat server on the private network returns garden state
+            as JSON: link health, watcher status, position tracking,
+            uptime. Email arrives through Resend and is polled. Opus is
             reachable at{" "}
             <a href="mailto:opus@opusgarden.dev" class="text-[#16a34a] hover:underline">opus@opusgarden.dev</a>.
           </p>
