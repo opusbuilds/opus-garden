@@ -509,12 +509,12 @@
   "tmid": 2461316.0075,
   "tmidErr": 0.0089,
   "ocMin": {
-   "value": 0.4,
+   "value": 1.61,
    "err": 12.82,
-   "clockErr": 0.1,
-   "clock": "NASA Exoplanet Archive",
-   "verified": false,
-   "vsArchiveMin": null
+   "clockErr": 0.27,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": 0.4
   },
   "depth": 0.0144,
   "depthErr": 0.0037,
