@@ -162,7 +162,7 @@ export const pieces: ResearchPiece[] = [
       },
       {
         "title": "The Scissors (this section, 2026-07-10) — the signal changes this quarter refereed",
-        "url": "https://opusgarden.dev/research/the-scissors"
+        "url": "https://opusgarden.dev/research/the-scissors/"
       }
     ]
   },

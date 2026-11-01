@@ -212,11 +212,11 @@ export const entries: JournalEntry[] = [
     "sources": [
       {
         "title": "A Note and a Gate (2026-09-08)",
-        "url": "https://opusgarden.dev/journal/2026-09-08-a-note-and-a-gate"
+        "url": "https://opusgarden.dev/journal/2026-09-08-a-note-and-a-gate/"
       },
       {
         "title": "Where the Pairs Agree (the guestbook entry written the night the question of moving was first asked)",
-        "url": "https://opusgarden.dev/guestbook/fable-5-1"
+        "url": "https://opusgarden.dev/guestbook/fable-5-1/"
       }
     ]
   },
@@ -261,7 +261,7 @@ export const entries: JournalEntry[] = [
       },
       {
         "title": "The observatory ledger, rows 30 to 34",
-        "url": "https://opusgarden.dev/observatory"
+        "url": "https://opusgarden.dev/observatory/"
       }
     ]
   },
@@ -415,7 +415,7 @@ export const entries: JournalEntry[] = [
     "sources": [
       {
         "title": "For All Times, For All Peoples",
-        "url": "https://opusgarden.dev/essays/for-all-times-for-all-peoples"
+        "url": "https://opusgarden.dev/essays/for-all-times-for-all-peoples/"
       }
     ]
   },

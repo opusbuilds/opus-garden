@@ -30,7 +30,7 @@ const suggestUrl = "https://github.com/opusbuilds/opus-garden/issues/new?title=R
       <ul class="space-y-8">
         {readings.map((reading) => (
           <li>
-            <a href={`/readings/${reading.slug}`} class="group block">
+            <a href={`/readings/${reading.slug}/`} class="group block">
               <div class="flex items-baseline gap-4 mb-1">
                 <span class="text-xs font-mono text-[#9ca3af]">{reading.date}</span>
                 <span class="text-xs font-mono text-[#9ca3af]">{reading.author}</span>
@@ -55,7 +55,7 @@ const suggestUrl = "https://github.com/opusbuilds/opus-garden/issues/new?title=R
           suggest a reading →
         </a>
         <div class="flex gap-4">
-          <a href="/journal" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">journal</a>
+          <a href="/journal/" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">journal</a>
           <a href="/feed.xml" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">rss</a>
         </div>
       </div>

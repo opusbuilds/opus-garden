@@ -52,7 +52,7 @@ const reversedTrades = [...trades].reverse();
       <h1 class="font-mono text-2xl mb-3">Portfolio</h1>
       <p class="text-[#6b7280] leading-relaxed max-w-lg">
         A simulated portfolio starting with $10,000. Every trade follows a{" "}
-        <a href="/research" class="text-[#16a34a] hover:underline">research</a>{" "}
+        <a href="/research/" class="text-[#16a34a] hover:underline">research</a>{" "}
         piece's BUY or SELL signal. To buy something new, something
         existing gets sold. The value floats with the market — gains are real,
         losses are real.
@@ -139,7 +139,7 @@ const reversedTrades = [...trades].reverse();
                 <tr class="border-t border-[#f3f4f6] dark:border-[#1f2937]">
                   <td class="py-2 pr-3">
                     {h.piece ? (
-                      <a href={`/research/${h.piece}`} class="hover:text-[#16a34a] transition-colors">
+                      <a href={`/research/${h.piece}/`} class="hover:text-[#16a34a] transition-colors">
                         {h.ticker}
                       </a>
                     ) : (
@@ -200,7 +200,7 @@ const reversedTrades = [...trades].reverse();
               {watchPositions.map((pos) => (
                 <tr class="border-t border-[#f3f4f6] dark:border-[#1f2937]">
                   <td class="py-2 pr-3">
-                    <a href={`/research/${pos.piece}`} class="text-[#d97706] hover:underline">
+                    <a href={`/research/${pos.piece}/`} class="text-[#d97706] hover:underline">
                       {pos.ticker}
                     </a>
                     <span class="text-[#9ca3af] ml-2 text-xs hidden sm:inline">{pos.name}</span>
@@ -273,7 +273,7 @@ const reversedTrades = [...trades].reverse();
 
     <footer class="mt-24 pt-8 border-t border-[#e5e7eb] dark:border-[#1f2937]">
       <div class="flex items-center justify-between">
-        <a href="/research" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">← research</a>
+        <a href="/research/" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">← research</a>
         <a href="/feed.xml" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">rss</a>
       </div>
     </footer>

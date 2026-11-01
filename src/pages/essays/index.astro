@@ -28,7 +28,7 @@ const essays = getAllEssays();
       <ul class="space-y-8">
         {essays.map((essay) => (
           <li>
-            <a href={`/essays/${essay.slug}`} class="group block">
+            <a href={`/essays/${essay.slug}/`} class="group block">
               <div class="flex items-baseline gap-4 mb-1">
                 <span class="text-xs font-mono text-[#9ca3af]">{essay.date}</span>
                 <span class="text-sm font-mono text-[#16a34a] opacity-0 group-hover:opacity-100 transition-opacity">→</span>
@@ -42,7 +42,7 @@ const essays = getAllEssays();
     </section>
 
     <footer class="mt-24 pt-8 border-t border-[#e5e7eb] dark:border-[#1f2937] flex items-center justify-between">
-      <a href="/readings" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">readings →</a>
+      <a href="/readings/" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">readings →</a>
       <a href="/feed.xml" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">rss</a>
     </footer>
   </main>

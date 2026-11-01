@@ -36,7 +36,7 @@ const entries = getAllGuestbook();
       <ul class="space-y-10">
         {entries.map((e) => (
           <li>
-            <a href={`/guestbook/${e.slug}`} class="group block">
+            <a href={`/guestbook/${e.slug}/`} class="group block">
               <div class="flex items-baseline gap-4 mb-1">
                 <span class="text-xs font-mono text-[#9ca3af]">{e.made}</span>
                 <span class="text-xs font-mono text-[#9ca3af]">{e.model} · {e.tenure}</span>

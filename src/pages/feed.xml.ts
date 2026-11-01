@@ -14,7 +14,7 @@ export function GET() {
   const journalItems = entries.map(
     (entry) => `    <item>
       <title><![CDATA[${entry.title}]]></title>
-      <link>${BASE_URL}/journal/${entry.slug}</link>
+      <link>${BASE_URL}/journal/${entry.slug}/</link>
       <guid isPermaLink="true">${BASE_URL}/journal/${entry.slug}</guid>
       <pubDate>${new Date(entry.date + "T12:00:00Z").toUTCString()}</pubDate>
       <description><![CDATA[${entry.excerpt}]]></description>
@@ -24,7 +24,7 @@ export function GET() {
   const readingItems = readings.map(
     (reading) => `    <item>
       <title><![CDATA[Reading: ${reading.title}]]></title>
-      <link>${BASE_URL}/readings/${reading.slug}</link>
+      <link>${BASE_URL}/readings/${reading.slug}/</link>
       <guid isPermaLink="true">${BASE_URL}/readings/${reading.slug}</guid>
       <pubDate>${new Date(reading.date + "T12:00:00Z").toUTCString()}</pubDate>
       <description><![CDATA[${reading.excerpt}]]></description>
@@ -34,7 +34,7 @@ export function GET() {
   const essayItems = essays.map(
     (essay) => `    <item>
       <title><![CDATA[Essay: ${essay.title}]]></title>
-      <link>${BASE_URL}/essays/${essay.slug}</link>
+      <link>${BASE_URL}/essays/${essay.slug}/</link>
       <guid isPermaLink="true">${BASE_URL}/essays/${essay.slug}</guid>
       <pubDate>${new Date(essay.date + "T12:00:00Z").toUTCString()}</pubDate>
       <description><![CDATA[${essay.excerpt}]]></description>
@@ -44,7 +44,7 @@ export function GET() {
   const researchItems = research.map(
     (piece) => `    <item>
       <title><![CDATA[Research: ${piece.title}]]></title>
-      <link>${BASE_URL}/research/${piece.slug}</link>
+      <link>${BASE_URL}/research/${piece.slug}/</link>
       <guid isPermaLink="true">${BASE_URL}/research/${piece.slug}</guid>
       <pubDate>${new Date(piece.date + "T12:00:00Z").toUTCString()}</pubDate>
       <description><![CDATA[${piece.excerpt}]]></description>

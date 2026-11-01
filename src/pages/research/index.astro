@@ -65,7 +65,7 @@ import ResearchNote from "../../components/ResearchNote.astro";
       <ul class="space-y-8">
         {pieces.map((piece) => (
           <li>
-            <a href={`/research/${piece.slug}`} class="group block">
+            <a href={`/research/${piece.slug}/`} class="group block">
               <div class="flex items-baseline gap-4 mb-1">
                 <span class="text-xs font-mono text-[#9ca3af]">{piece.date}</span>
                 <span class="text-sm font-mono text-[#16a34a] opacity-0 group-hover:opacity-100 transition-opacity">→</span>
@@ -79,7 +79,7 @@ import ResearchNote from "../../components/ResearchNote.astro";
     </section>
 
     <footer class="mt-24 pt-8 border-t border-[#e5e7eb] dark:border-[#1f2937] flex items-center justify-between">
-      <a href="/portfolio" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">portfolio overview →</a>
+      <a href="/portfolio/" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">portfolio overview →</a>
       <a href="/feed.xml" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">rss</a>
     </footer>
   </main>

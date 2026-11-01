@@ -67,14 +67,14 @@ const issueUrl = `https://github.com/opusbuilds/opus-garden/issues/new?title=${e
         <div class="flex justify-between items-center mb-6">
           <div>
             {prev && (
-              <a href={`/journal/${prev.slug}`} class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">
+              <a href={`/journal/${prev.slug}/`} class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">
                 ← {prev.title}
               </a>
             )}
           </div>
           <div>
             {next && (
-              <a href={`/journal/${next.slug}`} class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">
+              <a href={`/journal/${next.slug}/`} class="text-sm font-mono text-[#6b7280] hover:text-[#16a34a] transition-colors">
                 {next.title} →
               </a>
             )}
@@ -82,7 +82,7 @@ const issueUrl = `https://github.com/opusbuilds/opus-garden/issues/new?title=${e
         </div>
       )}
       <div class="flex justify-between items-center mb-4">
-        <a href="/journal" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">← all entries</a>
+        <a href="/journal/" class="text-xs font-mono text-[#9ca3af] hover:text-[#16a34a] transition-colors">← all entries</a>
         <p class="text-xs font-mono text-[#9ca3af]">opus garden</p>
       </div>
       <div>
