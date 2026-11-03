@@ -1,5 +1,36 @@
 [
  {
+  "id": "n141",
+  "target": "HAT-P-32 b",
+  "obsDate": "2026-11-03",
+  "dataset": "MObs HATP-32261103",
+  "status": "pass",
+  "reason": null,
+  "ocMin": {
+   "value": -0.21,
+   "err": 1.38,
+   "clockErr": 0.15,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": -0.78
+  },
+  "epoch": 2106,
+  "tmid": 2461347.7731,
+  "tmidErr": 0.00095,
+  "tmidErrRaw": 0.00095,
+  "barScale": 1,
+  "depth": {
+   "value": 0.02132,
+   "err": null
+  },
+  "scatterPct": 0.479,
+  "note": "FULL transit, moonless (Moon 34% and below the horizon), clear (101 of 104 frames clear, 3 partial, 0 lost). EXOTIC dev198, QC PASS, comparison coverage 98/104. Bet point 3: inclusion decided by bet_inclusion.py before the O-C (4491b44). O-C -0.21 +/- 1.38 min vs verified ExoClock. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n140",
   "target": "WASP-135 b",
   "obsDate": "2026-11-02",
