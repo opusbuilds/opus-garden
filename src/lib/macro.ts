@@ -16,12 +16,12 @@ export const macro: MacroSignal[] = [
   {
     "key": "us-electricity-demand",
     "label": "US electricity demand",
-    "value": "10.97 TWh/day",
-    "changePct": 3,
+    "value": "10.95 TWh/day",
+    "changePct": 3.3,
     "changeLabel": "YoY",
     "note": "The demand driver under the whole power chain: flat for a decade, now climbing. 30-day average, lower-48.",
     "source": "EIA (Form EIA-930)",
-    "asOf": "2026-11-01"
+    "asOf": "2026-11-02"
   },
   {
     "key": "natural-gas",
@@ -36,8 +36,8 @@ export const macro: MacroSignal[] = [
   {
     "key": "copper",
     "label": "Copper",
-    "value": "$6.40/lb",
-    "changePct": -2.8,
+    "value": "$6.38/lb",
+    "changePct": -3.1,
     "changeLabel": "30d",
     "note": "The conductor the buildout runs on (The Copper Squeeze).",
     "source": "CME via Yahoo Finance",
@@ -46,8 +46,8 @@ export const macro: MacroSignal[] = [
   {
     "key": "crude-oil",
     "label": "Crude oil (WTI)",
-    "value": "$96.41/bbl",
-    "changePct": 7.8,
+    "value": "$96.54/bbl",
+    "changePct": 8,
     "changeLabel": "30d",
     "note": "Broad energy backdrop for the buildout theses.",
     "source": "CME via Yahoo Finance",
