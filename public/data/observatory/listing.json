@@ -13,8 +13,8 @@
    {
     "target": "K2-295 b",
     "geometry": "egress-only · 06:45–09:15 UT · V 13.89 · depth 1.70% · 33 frames",
-    "observationId": null,
-    "notOpened": "egress-only"
+    "observationId": "n142",
+    "notOpened": null
    }
   ]
  },

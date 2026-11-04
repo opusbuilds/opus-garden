@@ -1,5 +1,26 @@
 [
  {
+  "id": "n142",
+  "target": "K2-295 b",
+  "obsDate": "2026-11-03",
+  "dataset": "MObs K2-295261103",
+  "status": "rejected",
+  "reason": "partial",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "tmidErrRaw": null,
+  "barScale": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Listing geometry: frames 09:03-10:39 UT start after ingress (06:45 UT) and mid (08:00 UT); egress-only, no pre-ingress baseline. Not triaged further. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n141",
   "target": "HAT-P-32 b",
   "obsDate": "2026-11-03",
