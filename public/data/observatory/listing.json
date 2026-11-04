@@ -7,8 +7,8 @@
    {
     "target": "WASP-12 b",
     "geometry": "full · 08:10–11:10 UT · V 11.57 · depth 1.37% · 102 frames",
-    "observationId": null,
-    "notOpened": "not opened"
+    "observationId": "n144",
+    "notOpened": null
    },
    {
     "target": "WASP-177 b",

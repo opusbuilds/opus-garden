@@ -1,5 +1,33 @@
 [
  {
+  "id": "n144",
+  "target": "WASP-12 b",
+  "obsDate": "2026-11-04",
+  "dataset": "MObs WASP-12261104",
+  "status": "pass",
+  "reason": null,
+  "ocMin": {
+   "value": -9.93,
+   "err": 2.81,
+   "clockErr": 0.1,
+   "clock": "NASA Exoplanet Archive",
+   "verified": false,
+   "vsArchiveMin": null
+  },
+  "epoch": 3428,
+  "tmid": 2461348.8964,
+  "tmidErr": 0.00195,
+  "tmidErrRaw": 0.00195,
+  "barScale": 1,
+  "depth": null,
+  "scatterPct": 0.634,
+  "note": "FULL transit, clear (102 of 102 frames), moonless. EXOTIC dev198, QC PASS. NOT a calibration-bet point by the rule committed before the reduction: ExoClock flags WASP-12 b for timing variations (its orbit is decaying), so no straight-line clock is valid for it, and its O-C column here uses the archive ephemeris. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n143",
   "target": "WASP-177 b",
   "obsDate": "2026-11-04",
