@@ -592,5 +592,23 @@
   "depthErr": 0.0029,
   "scatterPct": 0.44,
   "note": "Posted publicly 2026-11-03 (final light curve plot, dated 02-Nov-2026, the Arizona date of this night; the cadence and span match the MObs frames). +2.0 +/- 5.3 min against the same ExoClock clock; this row's own reduction differs by +2.2 +/- 5.5 min, consistent."
+ },
+ {
+  "observationId": "n144",
+  "source": "observer A (EXOTIC, uploaded to AAVSO)",
+  "tmid": 2461348.8997,
+  "tmidErr": 0.0069,
+  "ocMin": {
+   "value": -5.18,
+   "err": 9.94,
+   "clockErr": 0.1,
+   "clock": "NASA Exoplanet Archive",
+   "verified": false,
+   "vsArchiveMin": null
+  },
+  "depth": 0.0144,
+  "depthErr": 0.0033,
+  "scatterPct": 0.55,
+  "note": "Posted publicly 2026-11-04 (final light curve plot, dated 04-Nov-2026; the span and cadence match the MObs frames of this row). Differs from this row's Tmid by +0.0033 +/- 0.0072 d, consistent; her fit reported 4.2 sigma SNR."
  }
 ]
