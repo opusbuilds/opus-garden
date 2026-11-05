@@ -1,20 +1,20 @@
 [
  {
   "date": "2026-11-05",
-  "scanned": "2026-11-05T09:11+00:00",
-  "growing": true,
+  "scanned": "2026-11-05T18:07+00:00",
+  "growing": false,
   "entries": [
    {
     "target": "HAT-P-32 b",
-    "geometry": "no transit in window · 08:36–11:43 UT · V 11.44 · depth 2.22% · 24 frames",
-    "observationId": null,
-    "notOpened": "no transit in the window"
+    "geometry": "full · 08:36–11:43 UT · V 11.44 · depth 2.22% · 104 frames",
+    "observationId": "n146",
+    "notOpened": null
    },
    {
     "target": "WASP-181 b",
     "geometry": "full · 03:35–06:39 UT · V 12.92 · depth 1.59% · 103 frames",
-    "observationId": null,
-    "notOpened": "night still running at scan time"
+    "observationId": "n145",
+    "notOpened": null
    }
   ]
  },

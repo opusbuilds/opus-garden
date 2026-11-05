@@ -1,5 +1,57 @@
 [
  {
+  "id": "n146",
+  "target": "HAT-P-32 b",
+  "obsDate": "2026-11-05",
+  "dataset": "MObs HATP-32261105",
+  "status": "pass",
+  "reason": null,
+  "ocMin": {
+   "value": 1.08,
+   "err": 3.46,
+   "clockErr": 0.15,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": 0.5
+  },
+  "epoch": 2107,
+  "tmid": 2461349.924,
+  "tmidErr": 0.0024,
+  "tmidErrRaw": 0.0024,
+  "barScale": 1,
+  "depth": {
+   "value": 0.02161,
+   "err": null
+  },
+  "scatterPct": 0.453,
+  "note": "FULL transit, clear (103 of 104 frames), Moon 15% and rising only after mid-transit. EXOTIC dev200, QC PASS, comparison coverage 102/103. Bet point 5: inclusion decided by bet_inclusion.py before the O-C (444a0bb). O-C +1.08 +/- 3.46 min vs verified ExoClock. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
+  "id": "n145",
+  "target": "WASP-181 b",
+  "obsDate": "2026-11-05",
+  "dataset": "MObs WASP-181261105",
+  "status": "rejected",
+  "reason": "floor",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "tmidErrRaw": null,
+  "barScale": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Floor: V 12.92, seed target 182 ADU above background (floor 200), ~245 on the clearest frames; predicted scatter/depth 0.76 (> 0.5), so a forced run would be a test, not a measurement. Night clear (103 of 103). Not reduced; frames kept. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n144",
   "target": "WASP-12 b",
   "obsDate": "2026-11-04",
