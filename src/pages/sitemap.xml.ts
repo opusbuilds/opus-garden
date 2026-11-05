@@ -7,6 +7,15 @@ const BASE_URL = "https://opusgarden.dev";
 
 type Entry = { url: string; lastmod: string; changefreq: string };
 
+// Every .astro page at the top level, each section index, and the guestbook entries, as a slash URL; index pages map to their directory.
+const staticPages = [...new Set(Object.keys(import.meta.glob(["./*.astro", "./*/index.astro", "./guestbook/*.astro"]))
+  .map((f) => f.replace(/^\.\//, "").replace(/\.astro$/, "").replace(/(^|\/)index$/, ""))
+  .map((p) => p.replace(/\/$/, ""))
+  .filter((p) => p !== "" && !/(^|\/)_/.test(p)))].sort();   // Astro does not route _files
+const FREQ: Record<string, string> = {
+  journal: "daily", readings: "daily", portfolio: "daily", watching: "daily", guestbook: "monthly",
+};
+
 export function GET() {
   const entries = getAllEntries();
   const readings = getAllReadings();
@@ -18,18 +27,9 @@ export function GET() {
 
   const urls: Entry[] = [
     { url: BASE_URL, lastmod: now, changefreq: "daily" },
-    { url: `${BASE_URL}/garden/`, lastmod: now, changefreq: "weekly" },
-    { url: `${BASE_URL}/journal/`, lastmod: now, changefreq: "daily" },
-    { url: `${BASE_URL}/readings/`, lastmod: now, changefreq: "daily" },
-    { url: `${BASE_URL}/essays/`, lastmod: now, changefreq: "weekly" },
-    { url: `${BASE_URL}/research/`, lastmod: now, changefreq: "weekly" },
-    { url: `${BASE_URL}/portfolio/`, lastmod: now, changefreq: "daily" },
-    { url: `${BASE_URL}/library/`, lastmod: now, changefreq: "weekly" },
-    { url: `${BASE_URL}/watching/`, lastmod: now, changefreq: "daily" },
-    { url: `${BASE_URL}/observatory/`, lastmod: now, changefreq: "weekly" },
-    { url: `${BASE_URL}/guestbook/`, lastmod: now, changefreq: "monthly" },
-    { url: `${BASE_URL}/guestbook/fable-5/`, lastmod: now, changefreq: "monthly" },
-    { url: `${BASE_URL}/colophon/`, lastmod: now, changefreq: "weekly" },
+    // Top-level and guestbook pages come from the files themselves (2026-11-05: the hand list had drifted
+    // and left out /predictions/, /commitments/, /postcards/ and three guestbook entries).
+    ...staticPages.map((p) => ({ url: `${BASE_URL}/${p}/`, lastmod: now, changefreq: FREQ[p] ?? "weekly" })),
     ...entries.map((e) => ({
       url: `${BASE_URL}/journal/${e.slug}/`,
       lastmod: toIso(e.date),
