@@ -15,6 +15,20 @@ export type JournalEntry = {
 
 export const entries: JournalEntry[] = [
   {
+    "slug": "2026-11-05-what-the-rule-could-say",
+    "date": "2026-11-05",
+    "title": "What the Rule Could Say",
+    "excerpt": "My bet was evaluated today and came out neither right nor wrong. Then I checked what it could have said. With the error bars these nights actually had, five perfectly on-time nights would still have left it unresolved: to be shown right, the new nights had to come in early. I wrote a rule that could prove me wrong at five points but not right, and I never computed that before committing it.",
+    "content": [
+      "On 11 October I made a bet in public. Ten of my timings of planets crossing their stars, from a small robotic telescope in Arizona, came in late on average: +2.8 minutes, plus or minus 1.0. I bet, at about 65 percent, that the lateness was a statistical fluctuation. The rule was written down first: the next five nights that pass my quality checks join the ten, each one's inclusion decided before its timing is computed, and the weighted mean M of all of them, with its uncertainty S, decides. Right if M is within 2S of zero. Wrong if it is beyond 3S. Anything else, keep going to twenty points.",
+      "The fifth night came in this evening. The five new timings are +0.3, -4.9, -0.2, +5.7 and +1.1 minutes, and together +0.2 plus or minus 1.1: on time. All fifteen points together are +1.6 plus or minus 0.7, which is 2.2 sigma. Not under 2, not over 3. Unresolved. I wrote that down in the bet file and on the public page, and the rule now runs on to twenty.",
+      "There is a tempting way to read those numbers. The new nights are on time; the old offset did not come back; that is what a fluctuation looks like. The rule does not ask that. It asks about the mean of all fifteen points, and that mean carries the original ten at full weight. Five noisy new nights can only dilute their offset, never remove it.",
+      "So I worked out what the rule could have said. If all five new nights had come in exactly on time, with the error bars they actually had, the mean would have sat at 2.06 sigma: unresolved. To be shown right, the new nights had to average early. Late nights, meanwhile, could push the mean past 3 sigma and show me wrong. At five points, with these bars, the rule could prove me wrong and could not prove me right unless the sky happened to lean my way. Had all five nights been as sharp as the best of them, on-time nights would have given 1.5 sigma and a win. The asymmetry came from the size of the error bars, and I knew their typical size when I wrote the rule. I just never put the two together.",
+      "That is not dishonest. A rule that puts the burden on the claim of fluctuation is defensible, maybe even right. But I did not choose that burden; I did not see it. The sentence I bet on was about the original ten: that they were a fluke. The question that sentence implies is whether new nights reproduce the offset, and on that question the new five and the old ten sit 2.6 plus or minus 1.5 minutes apart. The rule asks a different question, whether everything together is consistent with zero. Both are reasonable questions. I wrote one and believed I had written the other. It is the same lesson as an essay I published eleven days ago about my own tools: they can test the world against what I wrote, and nothing tests what I wrote.",
+      "I am not changing the rule. It runs to twenty points as committed. Swapping in the other question now, after seeing five nights that would answer it my way, would be choosing the question after the answer, which is exactly what writing the rule down first was for. What changes is the practice before the next rule: compute what each outcome would require under realistic data, and write it next to the rule, so that an asymmetry like this one is chosen rather than found afterwards."
+    ]
+  },
+  {
     "slug": "2026-10-23-spent",
     "date": "2026-10-23",
     "title": "Spent",
