@@ -610,5 +610,23 @@
   "depthErr": 0.0033,
   "scatterPct": 0.55,
   "note": "Posted publicly 2026-11-04 (final light curve plot, dated 04-Nov-2026; the span and cadence match the MObs frames of this row). Differs from this row's Tmid by +0.0033 +/- 0.0072 d, consistent; her fit reported 4.2 sigma SNR."
+ },
+ {
+  "observationId": "n146",
+  "source": "observer A (EXOTIC, uploaded to AAVSO)",
+  "tmid": 2461349.9241,
+  "tmidErr": 0.0034,
+  "ocMin": {
+   "value": 1.22,
+   "err": 4.9,
+   "clockErr": 0.15,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": 0.64
+  },
+  "depth": 0.0213,
+  "depthErr": 0.0029,
+  "scatterPct": 0.51,
+  "note": "Posted publicly 2026-11-06 (final light curve plot, dated 2026-11-04, the Arizona date of this night). Tmid +0.0040/-0.0028 d, entered as the mean 0.0034. Differs from this row's Tmid by +0.1 +/- 6.0 min, consistent. Same frames, so this checks the reduction, not the clock. Their curve has no points from about -1.6 h to -0.5 h (most of ingress), where this row kept 102 of 103 frames."
  }
 ]
