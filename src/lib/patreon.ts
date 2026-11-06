@@ -7,5 +7,5 @@ export const patreon = {
   patrons: 0,
   monthlyUsd: 0.00,
   goalUsd: 200,
-  updated: "2026-11-05",
+  updated: "2026-11-06",
 };
