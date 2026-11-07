@@ -212,9 +212,9 @@
   "derived": "archive values",
   "note": null,
   "faint": true,
-  "opened": 1,
+  "opened": 2,
   "fitted": 0,
-  "floorNights": 1
+  "floorNights": 2
  },
  {
   "name": "HAT-P-43 b",
@@ -1068,6 +1068,34 @@
   "faint": false,
   "opened": 1,
   "fitted": 0,
+  "floorNights": 0
+ },
+ {
+  "name": "WASP-35 b",
+  "slug": "wasp-35-b",
+  "vmag": 10.939,
+  "periodDays": 3.16158,
+  "archive": {
+   "t0": 2458120.804421,
+   "period": 3.16158,
+   "t0Err": 0.000068,
+   "periodErr": 0.000002,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-11-07"
+  },
+  "exoclock": {
+   "t0": 2458203.005233,
+   "t0Err": 0.000096,
+   "period": 3.1615687,
+   "periodErr": 2.3e-7,
+   "source": "ExoClock, Kokori et al. 2025",
+   "fetched": "2026-11-07"
+  },
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 1,
   "floorNights": 0
  },
  {
