@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-11-06",
+  "scanned": "2026-11-06T18:07+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "Qatar-9 b",
+    "geometry": "egress-only · 06:42–08:34 UT · V 14.02 · depth 2.22% · 74 frames",
+    "observationId": null,
+    "notOpened": "egress-only"
+   },
+   {
+    "target": "WASP-140 b",
+    "geometry": "full · 06:00–07:31 UT · V 11.12 · depth 2.14% · 64 frames",
+    "observationId": "n147",
+    "notOpened": null
+   }
+  ]
+ },
+ {
   "date": "2026-11-05",
   "scanned": "2026-11-05T18:07+00:00",
   "growing": false,

@@ -1,5 +1,36 @@
 [
  {
+  "id": "n147",
+  "target": "WASP-140 b",
+  "obsDate": "2026-11-06",
+  "dataset": "WASP-140261106",
+  "status": "pass",
+  "reason": null,
+  "ocMin": {
+   "value": -6.7,
+   "err": 3,
+   "clockErr": 0.46,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": -7.92
+  },
+  "epoch": 1254,
+  "tmid": 2461350.7763,
+  "tmidErr": 0.002058,
+  "tmidErrRaw": 0.0021,
+  "barScale": 0.98,
+  "depth": {
+   "value": 0.0196,
+   "err": null
+  },
+  "scatterPct": 0.738,
+  "note": "FULL transit window, clear through egress, then cloud: 9 of 10 post-egress frames lost (one clear post-egress frame). Moon 9%, set. EXOTIC dev200, QC PASS, comparison coverage 54/62 (partial-coverage WARN). NOT a bet point: bet_inclusion.py, committed before any O-C (6791d2a), as the prereg predicted (6378bb2). O-C -6.7 +/- 3.0 min vs ExoClock, early, outside the pre-registered 1-sigma; injection test on this night pending before any reading of it. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n146",
   "target": "HAT-P-32 b",
   "obsDate": "2026-11-05",

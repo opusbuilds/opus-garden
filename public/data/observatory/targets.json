@@ -957,12 +957,19 @@
    "source": "NASA Exoplanet Archive pscomppars",
    "fetched": "2026-10-10"
   },
-  "exoclock": null,
+  "exoclock": {
+   "t0": 2458546.856513,
+   "t0Err": 0.000069,
+   "period": 2.2359844,
+   "periodErr": 2.5e-7,
+   "source": "ExoClock, Kokori et al. 2025",
+   "fetched": "2026-11-06"
+  },
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 2,
-  "fitted": 0,
+  "opened": 3,
+  "fitted": 1,
   "floorNights": 0
  },
  {
