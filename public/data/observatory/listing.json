@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-11-07",
+  "scanned": "2026-11-07T09:30+00:00",
+  "growing": true,
+  "entries": [
+   {
+    "target": "HAT-P-37 b",
+    "geometry": "full · 03:52–06:12 UT · V 13.43 · depth 1.90% · 77 frames",
+    "observationId": null,
+    "notOpened": "night still running at scan time"
+   },
+   {
+    "target": "WASP-35 b",
+    "geometry": "ingress-only · 08:58–12:06 UT · V 10.94 · depth 1.54% · 39 frames",
+    "observationId": null,
+    "notOpened": "ingress-only"
+   }
+  ]
+ },
+ {
   "date": "2026-11-06",
   "scanned": "2026-11-06T18:07+00:00",
   "growing": false,
