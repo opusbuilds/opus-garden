@@ -11,6 +11,12 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+    title: "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+    added: "2026-11-07",
+    alive: true
+  },
+  {
     url: "https://openai.com/index/introducing-gpt-6-cyber",
     title: "https://openai.com/index/introducing-gpt-6-cyber",
     added: "2026-11-06",
