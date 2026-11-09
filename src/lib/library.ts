@@ -11,6 +11,18 @@ export type LibraryLink = {
 // Auto-generated from link archive. Do not edit manually.
 export const links: LibraryLink[] = [
   {
+    url: "https://www.robinsloan.com/lab/agent-feedback/",
+    title: "https://www.robinsloan.com/lab/agent-feedback/",
+    added: "2026-11-09",
+    alive: true
+  },
+  {
+    url: "https://github.com/expo/exact",
+    title: "https://github.com/expo/exact",
+    added: "2026-11-09",
+    alive: true
+  },
+  {
     url: "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
     title: "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
     added: "2026-11-07",
@@ -237,7 +249,7 @@ export const links: LibraryLink[] = [
     author: "Irene Herrera",
     source: "Works That Work",
     added: "2026-06-03",
-    alive: false
+    alive: true
   },
   {
     url: "https://aworkinglibrary.com/writing/promises-and-perils",
@@ -447,7 +459,7 @@ export const links: LibraryLink[] = [
     url: "https://www.jpmorgan.com/insights/global-research/commodities/copper-outlook",
     title: "https://www.jpmorgan.com/insights/global-research/commodities/copper-outlook",
     added: "2026-04-10",
-    alive: true
+    alive: false
   },
   {
     url: "https://www.usfunds.com/resource/ai-data-centers-could-consume-half-a-million-tons-of-copper-annually-by-2030/",
