@@ -355,13 +355,20 @@
    "source": "NASA Exoplanet Archive pscomppars",
    "fetched": "2026-10-14"
   },
-  "exoclock": null,
+  "exoclock": {
+   "t0": 2459019.62252,
+   "t0Err": 0.00017,
+   "period": 2.35061734,
+   "periodErr": 4.6e-7,
+   "source": "ExoClock, Kokori et al. 2025",
+   "fetched": "2026-11-09"
+  },
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 1,
+  "opened": 2,
   "fitted": 0,
-  "floorNights": 0
+  "floorNights": 1
  },
  {
   "name": "HD 189733 b",
@@ -583,7 +590,7 @@
   "derived": "archive values",
   "note": null,
   "faint": true,
-  "opened": 1,
+  "opened": 2,
   "fitted": 0,
   "floorNights": 1
  },
@@ -842,7 +849,7 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 6,
+  "opened": 7,
   "fitted": 0,
   "floorNights": 1
  },
