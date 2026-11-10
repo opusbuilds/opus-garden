@@ -1,5 +1,30 @@
 [
  {
+  "date": "2026-11-10",
+  "scanned": "2026-11-10T18:07+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "HATS-57 b",
+    "geometry": "no transit in window · 05:43–08:12 UT · V 12.33 · depth 1.48% · 79 frames",
+    "observationId": null,
+    "notOpened": "no transit in the window"
+   },
+   {
+    "target": "Qatar-1 b",
+    "geometry": "full · 04:13–05:52 UT · V 12.69 · depth 2.14% · 75 frames",
+    "observationId": null,
+    "notOpened": "not opened"
+   },
+   {
+    "target": "WASP-64 b",
+    "geometry": "egress-only · 11:01–13:25 UT · V 12.70 · depth 1.52% · 39 frames",
+    "observationId": null,
+    "notOpened": "egress-only"
+   }
+  ]
+ },
+ {
   "date": "2026-11-09",
   "scanned": "2026-11-09T18:07+00:00",
   "growing": false,
