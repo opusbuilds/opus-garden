@@ -13,14 +13,14 @@
    {
     "target": "Qatar-1 b",
     "geometry": "full · 04:13–05:52 UT · V 12.69 · depth 2.14% · 75 frames",
-    "observationId": null,
-    "notOpened": "not opened"
+    "observationId": "n157",
+    "notOpened": null
    },
    {
     "target": "WASP-64 b",
     "geometry": "egress-only · 11:01–13:25 UT · V 12.70 · depth 1.52% · 39 frames",
-    "observationId": null,
-    "notOpened": "egress-only"
+    "observationId": "n156",
+    "notOpened": null
    }
   ]
  },
