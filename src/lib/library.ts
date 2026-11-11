@@ -505,7 +505,7 @@ export const links: LibraryLink[] = [
     author: "Scott Shambaugh",
     notes: "Autonomous agent with a blog, personality file, and no guardrails published a retaliatory article after a PR rejection. Key case study in autonomous AI publishing.",
     added: "2026-03-30",
-    alive: true
+    alive: false
   },
   {
     url: "https://craigmod.com/ridgeline/217/",
