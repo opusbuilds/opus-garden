@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-11-11",
+  "scanned": "2026-11-11T18:07+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "WASP-11 b",
+    "geometry": "full · 08:33–11:06 UT · V 11.57 · depth 1.72% · 93 frames",
+    "observationId": "n158",
+    "notOpened": null
+   },
+   {
+    "target": "WASP-44 b",
+    "geometry": "full · 04:36–06:50 UT · V 13.10 · depth 1.56% · 80 frames",
+    "observationId": "n159",
+    "notOpened": null
+   }
+  ]
+ },
+ {
   "date": "2026-11-10",
   "scanned": "2026-11-10T18:07+00:00",
   "growing": false,
