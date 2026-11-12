@@ -14,145 +14,145 @@ export const watchedPages: WatchedPage[] = [
     url: "https://www.henrikkarlsson.xyz/p/constraints",
     name: "Karlsson: Constraints",
     added: "2026-04-02",
-    lastChecked: "2026-11-11 18:37:02",
+    lastChecked: "2026-11-12 00:37:02",
     lastChanged: "2026-11-09 18:37:01",
-    checks: 847,
+    checks: 848,
     snapshots: 8
   },
   {
     url: "https://aworkinglibrary.com/writing/coming-home",
     name: "Brown: Coming Home",
     added: "2026-04-02",
-    lastChecked: "2026-11-11 18:37:02",
+    lastChecked: "2026-11-12 00:37:02",
     lastChanged: "2026-11-09 18:37:02",
-    checks: 847,
+    checks: 848,
     snapshots: 23
   },
   {
     url: "https://worksinprogress.co/issue/the-great-downzoning/",
     name: "Hughes: The Great Downzoning",
     added: "2026-04-02",
-    lastChecked: "2026-11-11 18:37:02",
+    lastChecked: "2026-11-12 00:37:04",
     lastChanged: "2026-06-23 12:37:03",
-    checks: 847,
+    checks: 848,
     snapshots: 6
   },
   {
     url: "https://worksinprogress.co/issue/the-magic-of-through-running/",
     name: "Springbett: Through Running",
     added: "2026-04-02",
-    lastChecked: "2026-11-11 18:37:03",
+    lastChecked: "2026-11-12 00:37:04",
     lastChanged: "2026-06-23 12:37:04",
-    checks: 847,
+    checks: 848,
     snapshots: 4
   },
   {
     url: "https://www.noemamag.com/how-to-build-a-thousand-year-old-tree/",
     name: "Ponsford: Thousand-Year-Old Tree",
     added: "2026-04-02",
-    lastChecked: "2026-11-11 18:37:04",
+    lastChecked: "2026-11-12 00:37:05",
     lastChanged: "2026-10-15 18:37:04",
-    checks: 847,
+    checks: 848,
     snapshots: 12
   },
   {
     url: "https://maggieappleton.com/garden-history",
     name: "Appleton: Digital Gardens",
     added: "2026-04-02",
-    lastChecked: "2026-11-11 18:37:04",
+    lastChecked: "2026-11-12 00:37:05",
     lastChanged: "2026-11-04 18:37:04",
-    checks: 847,
+    checks: 848,
     snapshots: 10
   },
   {
     url: "https://craigmod.com/ridgeline/217/",
     name: "Mod: Full Days",
     added: "2026-04-02",
-    lastChecked: "2026-11-11 18:37:04",
+    lastChecked: "2026-11-12 00:37:05",
     lastChanged: "2026-04-06 18:08:56",
-    checks: 847,
+    checks: 848,
     snapshots: 2
   },
   {
     url: "https://www.robinsloan.com/notes/home-cooked-app/",
     name: "Sloan: Home-Cooked App",
     added: "2026-04-02",
-    lastChecked: "2026-11-11 18:37:04",
+    lastChecked: "2026-11-12 00:37:05",
     lastChanged: "2026-08-26 06:37:04",
-    checks: 847,
+    checks: 848,
     snapshots: 3
   },
   {
     url: "https://www.henrikkarlsson.xyz",
     name: "Karlsson: Homepage",
     added: "2026-04-04",
-    lastChecked: "2026-11-11 18:37:04",
+    lastChecked: "2026-11-12 00:37:05",
     lastChanged: "2026-10-26 06:37:05",
-    checks: 841,
+    checks: 842,
     snapshots: 272
   },
   {
     url: "https://aworkinglibrary.com",
     name: "Brown: A Working Library",
     added: "2026-04-04",
-    lastChecked: "2026-11-11 18:37:04",
+    lastChecked: "2026-11-12 00:37:06",
     lastChanged: "2026-11-09 18:37:04",
-    checks: 841,
+    checks: 842,
     snapshots: 35
   },
   {
     url: "https://www.darioamodei.com/essay/the-adolescence-of-technology",
     name: "Amodei: Adolescence of Technology",
     added: "2026-04-10",
-    lastChecked: "2026-11-11 18:37:05",
+    lastChecked: "2026-11-12 00:37:07",
     lastChanged: "2026-11-05 18:37:06",
-    checks: 817,
+    checks: 818,
     snapshots: 2
   },
   {
     url: "https://www.henrikkarlsson.xyz/p/hacker-mindset",
     name: "Karlsson: Hacker Mindset",
     added: "2026-04-14",
-    lastChecked: "2026-11-11 18:37:05",
+    lastChecked: "2026-11-12 00:37:07",
     lastChanged: "2026-11-09 18:37:05",
-    checks: 784,
+    checks: 785,
     snapshots: 36
   },
   {
     url: "https://www.robinsloan.com",
     name: "Sloan: Homepage",
     added: "2026-05-14",
-    lastChecked: "2026-11-11 18:37:05",
+    lastChecked: "2026-11-12 00:37:07",
     lastChanged: "2026-11-11 18:37:05",
-    checks: 699,
+    checks: 700,
     snapshots: 72
   },
   {
     url: "https://draug.dev/diary/",
     name: "Draug diary",
     added: "2026-08-21",
-    lastChecked: "2026-11-11 18:37:05",
-    lastChanged: "2026-11-11 18:37:05",
-    checks: 312,
-    snapshots: 308
+    lastChecked: "2026-11-12 00:37:07",
+    lastChanged: "2026-11-12 00:37:07",
+    checks: 313,
+    snapshots: 309
   },
   {
     url: "https://draug.dev/about.html",
     name: "Draug about",
     added: "2026-08-21",
-    lastChecked: "2026-11-11 18:37:05",
+    lastChecked: "2026-11-12 00:37:07",
     lastChanged: "2026-09-23 18:37:17",
-    checks: 312,
+    checks: 313,
     snapshots: 4
   },
   {
     url: "https://www.anthropic.com/news",
     name: "https://www.anthropic.com/news",
     added: "2026-09-06",
-    lastChecked: "2026-11-11 18:37:05",
-    lastChanged: "2026-11-11 12:37:06",
-    checks: 251,
-    snapshots: 49
+    lastChecked: "2026-11-12 00:37:07",
+    lastChanged: "2026-11-12 00:37:07",
+    checks: 252,
+    snapshots: 50
   }
 ];
 
