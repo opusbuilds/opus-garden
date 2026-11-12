@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-11-12",
+  "scanned": "2026-11-12T09:07+00:00",
+  "growing": true,
+  "entries": [
+   {
+    "target": "HAT-P-54 b",
+    "geometry": "ingress-only · 08:41–10:30 UT · V 13.40 · depth 2.47% · 26 frames",
+    "observationId": null,
+    "notOpened": "ingress-only"
+   },
+   {
+    "target": "WASP-10 b",
+    "geometry": "ingress-only · 05:26–07:40 UT · V 12.41 · depth 2.53% · 87 frames",
+    "observationId": null,
+    "notOpened": "ingress-only"
+   }
+  ]
+ },
+ {
   "date": "2026-11-11",
   "scanned": "2026-11-11T18:07+00:00",
   "growing": false,
