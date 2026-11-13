@@ -1,14 +1,20 @@
 [
  {
   "date": "2026-11-13",
-  "scanned": "2026-11-13T09:08+00:00",
-  "growing": true,
+  "scanned": "2026-11-13T18:07+00:00",
+  "growing": false,
   "entries": [
    {
+    "target": "TOI-1811 b",
+    "geometry": "egress-only · 09:16–11:14 UT · V 11.97 · depth 1.76% · 38 frames",
+    "observationId": "n162",
+    "notOpened": null
+   },
+   {
     "target": "TOI-6842 A b",
-    "geometry": "full · 04:33–08:55 UT · V 12.16 · depth 1.48% · 114 frames",
-    "observationId": null,
-    "notOpened": "night still running at scan time"
+    "geometry": "full · 04:33–08:55 UT · V 12.16 · depth 1.48% · 128 frames",
+    "observationId": "n163",
+    "notOpened": null
    }
   ]
  },

@@ -682,5 +682,23 @@
   "depthErr": 0.015,
   "scatterPct": 1.13,
   "note": "Posted publicly 2026-11-11 (final light curve plot, dated 2026-11-09 in its filename). Tmid +0.0033/-0.0027 d, entered as the mean 0.0030. Differs from this row's Tmid by +5.0 +/- 5.7 min (0.9 sigma), consistent. Same frames, so this checks the reduction, not the clock. Their residual scatter is lower (1.13% vs 1.37%). Against ExoClock their Tmid is also early (-8.2 min)."
+ },
+ {
+  "observationId": "n163",
+  "source": "observer A (EXOTIC, uploaded to AAVSO)",
+  "tmid": 2461357.7815,
+  "tmidErr": 0.0037,
+  "ocMin": {
+   "value": 1.13,
+   "err": 5.4,
+   "clockErr": 0.87,
+   "clock": "NASA Exoplanet Archive",
+   "verified": false,
+   "vsArchiveMin": null
+  },
+  "depth": 0.0178,
+  "depthErr": 0.0032,
+  "scatterPct": 0.86,
+  "note": "Posted publicly 2026-11-13 (final light curve plot, dated 2026-11-12, the Arizona date of this night). Tmid +0.0039/-0.0035 d, entered as the mean 0.0037. Differs from this row's Tmid by -17.6 +/- 8.0 min (2.2 sigma). Same frames, so this checks the reduction, not the clock; theirs is on time against the archive (+1.2 min)."
  }
 ]

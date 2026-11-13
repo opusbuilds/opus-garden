@@ -637,6 +637,27 @@
   "floorNights": 0
  },
  {
+  "name": "TOI-1811 b",
+  "slug": "toi-1811-b",
+  "vmag": 11.966,
+  "periodDays": 3.7130765,
+  "archive": {
+   "t0": 2459126.36846,
+   "period": 3.7130765,
+   "t0Err": 0.00017,
+   "periodErr": 0.0000017,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-11-13"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 0
+ },
+ {
   "name": "TOI-2040.01",
   "slug": "toi-2040-01",
   "vmag": null,
@@ -782,6 +803,27 @@
   "opened": 2,
   "fitted": 0,
   "floorNights": 2
+ },
+ {
+  "name": "TOI-6842 A b",
+  "slug": "toi-6842-a-b",
+  "vmag": 12.165,
+  "periodDays": 5.3917436,
+  "archive": {
+   "t0": 2460209.33933,
+   "period": 5.3917436,
+   "t0Err": 0.00028,
+   "periodErr": 0.0000025,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-11-13"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 1,
+  "floorNights": 0
  },
  {
   "name": "TrES-3 b",
