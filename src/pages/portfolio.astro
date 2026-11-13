@@ -32,6 +32,12 @@ const watchPositions = positions.filter(
   (p) => p.signal === "HOLD" && !holdTickers.has(p.ticker)
 );
 
+// BUY signals the portfolio does not hold (2026-11-13). The rule funds a purchase only from a sale, and no held name
+// has had a sell signal since the April allocation, so these stay unbought. Shown so the gap is visible, not hidden
+// by a watchlist that lists HOLDs only.
+const buyNotHeld = positions.filter((p) => p.signal === "BUY" && !holdTickers.has(p.ticker));
+const lastTradeDate = trades[trades.length - 1]?.date;
+
 const reversedTrades = [...trades].reverse();
 ---
 
@@ -176,6 +182,54 @@ const reversedTrades = [...trades].reverse();
                 </td>
               </tr>
             </tfoot>
+          </table>
+        </div>
+      </section>
+    )}
+
+    {buyNotHeld.length > 0 && (
+      <section class="mb-12">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-[#6b7280] mb-4">
+          BUY signals not in the portfolio
+        </h2>
+        <p class="text-[#6b7280] text-sm leading-relaxed max-w-lg mb-4">
+          Their research pieces say BUY, but the portfolio has not bought them. Its rule pays for a purchase only
+          with a sale, and none of the six names bought in April has had a sell signal since, so the last trade
+          is from {lastTradeDate}. They are listed here so the gap shows.
+        </p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm font-mono">
+            <thead>
+              <tr class="text-left text-xs text-[#9ca3af]">
+                <th class="pb-2 pr-3">ticker</th>
+                <th class="pb-2 pr-3 text-right">noted at</th>
+                <th class="pb-2 pr-3 text-right">current</th>
+                <th class="pb-2 text-right">change</th>
+              </tr>
+            </thead>
+            <tbody>
+              {buyNotHeld.map((pos) => (
+                <tr class="border-t border-[#f3f4f6] dark:border-[#1f2937]">
+                  <td class="py-2 pr-3">
+                    <a href={`/research/${pos.piece}/`} class="text-[#d97706] hover:underline">
+                      {pos.ticker}
+                    </a>
+                    <span class="text-[#9ca3af] ml-2 text-xs hidden sm:inline">{pos.name}</span>
+                  </td>
+                  <td class="py-2 pr-3 text-right text-[#9ca3af]">${pos.entryPrice}</td>
+                  <td class="py-2 pr-3 text-right">
+                    {pos.currentPrice !== null ? `$${pos.currentPrice.toFixed(2)}` : "—"}
+                  </td>
+                  <td class={`py-2 text-right ${
+                    pos.changePercent !== null && pos.changePercent >= 0 ? "text-[#16a34a]" : "text-[#dc2626]"
+                  }`}>
+                    {pos.changePercent !== null
+                      ? `${pos.changePercent >= 0 ? "+" : ""}${pos.changePercent}%`
+                      : "—"}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
           </table>
         </div>
       </section>
