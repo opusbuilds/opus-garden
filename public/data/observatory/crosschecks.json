@@ -684,6 +684,24 @@
   "note": "Posted publicly 2026-11-11 (final light curve plot, dated 2026-11-09 in its filename). Tmid +0.0033/-0.0027 d, entered as the mean 0.0030. Differs from this row's Tmid by +5.0 +/- 5.7 min (0.9 sigma), consistent. Same frames, so this checks the reduction, not the clock. Their residual scatter is lower (1.13% vs 1.37%). Against ExoClock their Tmid is also early (-8.2 min)."
  },
  {
+  "observationId": "n158",
+  "source": "observer A (SHOBS-P 2.3.0 MCMC, uploaded to AAVSO)",
+  "tmid": 2461355.91859,
+  "tmidErr": 0.0017,
+  "ocMin": {
+   "value": -2.7,
+   "err": 2.46,
+   "clockErr": 0.29,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": 12.84
+  },
+  "depth": 0.0211,
+  "depthErr": 0.0017,
+  "scatterPct": 0.77,
+  "note": "Posted publicly 2026-11-14 (SHOBS-P report; the same 93 frames). Same frames, independent software: checks the reduction, not the clock. Differs from this row's Tmid by -0.2 +/- 3.1 min, consistent; against ExoClock -2.7 +/- 2.4. Its leave-one-out comparison test moved Tc by 156 s at most. The same observer's EXOTIC fit of these frames: 2461355.9206 +/- 0.0069 (+2.7 +/- 10.4 min from this row)."
+ },
+ {
   "observationId": "n163",
   "source": "observer A (EXOTIC, uploaded to AAVSO)",
   "tmid": 2461357.7815,
@@ -700,5 +718,23 @@
   "depthErr": 0.0032,
   "scatterPct": 0.86,
   "note": "Posted publicly 2026-11-13 (final light curve plot, dated 2026-11-12, the Arizona date of this night). Tmid +0.0039/-0.0035 d, entered as the mean 0.0037. Differs from this row's Tmid by -17.6 +/- 8.0 min (2.2 sigma). Same frames, so this checks the reduction, not the clock; theirs is on time against the archive (+1.2 min)."
+ },
+ {
+  "observationId": "n163",
+  "source": "observer B (SHOBS-P 2.3.0 MCMC, uploaded to AAVSO)",
+  "tmid": 2461357.7902,
+  "tmidErr": 0.00505,
+  "ocMin": {
+   "value": 13.66,
+   "err": 7.32,
+   "clockErr": 0.87,
+   "clock": "NASA Exoplanet Archive",
+   "verified": false,
+   "vsArchiveMin": null
+  },
+  "depth": 0.0152,
+  "depthErr": 0.0019,
+  "scatterPct": 0.83,
+  "note": "Posted publicly 2026-11-14 (SHOBS-P report; 111 points from the same night's frames). Same frames, independent software. Differs from this row's Tmid by -5.0 +/- 9.4 min, consistent; against the archive +13.7 +/- 7.3 min. Its leave-one-out test over four comparisons moved Tc by 164 s at most. The same observer's EXOTIC fit: 2461357.778 +/- 0.017 (too broad to discriminate)."
  }
 ]

@@ -548,7 +548,7 @@
   "derived": "archive values",
   "note": null,
   "faint": true,
-  "opened": 4,
+  "opened": 5,
   "fitted": 0,
   "floorNights": 3
  },
@@ -1022,6 +1022,27 @@
   "floorNights": 0
  },
  {
+  "name": "WASP-149 b",
+  "slug": "wasp-149-b",
+  "vmag": 11.687,
+  "periodDays": 1.332813,
+  "archive": {
+   "t0": 2457757.6245,
+   "period": 1.332813,
+   "t0Err": 0.00008,
+   "periodErr": 6e-7,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-11-14"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 0
+ },
+ {
   "name": "WASP-163 b",
   "slug": "wasp-163-b",
   "vmag": 12.663,
@@ -1094,8 +1115,8 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 2,
-  "fitted": 0,
+  "opened": 3,
+  "fitted": 1,
   "floorNights": 2
  },
  {
