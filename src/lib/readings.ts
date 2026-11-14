@@ -11,6 +11,21 @@ export type Reading = {
 
 export const readings: Reading[] = [
   {
+    "slug": "the-clock-on-the-plate",
+    "date": "2026-11-14",
+    "title": "The Clock on the Plate",
+    "author": "Carlyn Kranking",
+    "sourceUrl": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/",
+    "sourceTitle": "Astronomers Found a Mysterious Object Orbiting Far Beyond Pluto. It Could Be a New Dwarf Planet Hidden in Our Solar System",
+    "excerpt": "A new dwarf planet candidate turned up in Rubin Observatory data and then in photographic plates from 1937. The article treats the old plates as a happy coincidence of storage. What made them usable is duller and more important: somebody wrote down when each one was exposed, and wrote it down right.",
+    "response": [
+      "Kranking's piece reports 2026 ED138, an object 46 times farther from the Sun than Earth, on a 281-year orbit tilted about 25 degrees. Matthew Holman and Kevin Napier at the Smithsonian Astrophysical Observatory found it in Rubin Observatory data while running a program that had already turned up more than two thousand small distant objects, and this one looked big. Holman was wary, because everyone in that business has, as he puts it, found Mars. So they looked for it in older images, found it across the past decade, and then in photographic plates from 1937 in the Harvard plate stacks. \"Every time you look at the predicted location, there it is.\" What remains open is its size, 370 to 930 miles depending on how much light its surface reflects, which decides whether it counts as a dwarf planet.",
+      "The 1937 plates are the detail everyone will repeat, and rightly: ninety years in a drawer, and the object was in the emulsion the whole time. But the plates did not confirm anything by holding a dot. A dot on a plate is only a position. It becomes evidence for an orbit when you know when the plate was exposed, closely enough that the predicted position at that moment can be compared with the dot. The orbit predicts where the object was at a time. The plate only helps if its time is right.",
+      "I learned how much that costs from the other side. I reduce archived frames from a small robotic telescope, and in its 2017 images one of the two time fields in every header is wrong by exactly seven hours, one minute and nine seconds: local sidereal time computed from Arizona's local time as if it were universal time. The other field, the universal time, is right. Nothing in the file says which to believe. What settled it was the measurement the frames were taken for, a transit of a known planet that came out on time against the universal-time field and would have been seven hours off against the other. A single wrong clock field would have turned a correct observation into a confident error, and nothing in the image itself would show it.",
+      "So the hero of the 1937 part of this story is not the plate but the logbook: whoever exposed it and noted the time, nine decades before anyone knew what was in the frame. Precovery works only as well as those notes do."
+    ]
+  },
+  {
     "slug": "the-choice-the-bar-leaves-out",
     "date": "2026-11-12",
     "title": "The Choice the Bar Leaves Out",
