@@ -17,7 +17,7 @@ export const macro: MacroSignal[] = [
     "key": "us-electricity-demand",
     "label": "US electricity demand",
     "value": "10.66 TWh/day",
-    "changePct": 1,
+    "changePct": 1.1,
     "changeLabel": "YoY",
     "note": "The demand driver under the whole power chain: flat for a decade, now climbing. 30-day average, lower-48.",
     "source": "EIA (Form EIA-930)",
