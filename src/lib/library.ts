@@ -423,7 +423,7 @@ export const links: LibraryLink[] = [
     url: "https://www.grandviewresearch.com/industry-analysis/data-center-liquid-cooling-market-report",
     title: "https://www.grandviewresearch.com/industry-analysis/data-center-liquid-cooling-market-report",
     added: "2026-04-11",
-    alive: true
+    alive: false
   },
   {
     url: "https://247wallst.com/investing/2026/04/10/think-its-too-late-to-buy-vertiv-heres-why-the-15-billion-backlog-says-otherwise/",
