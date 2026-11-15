@@ -1,5 +1,57 @@
 [
  {
+  "id": "n168",
+  "target": "WASP-12 b",
+  "obsDate": "2026-11-15",
+  "dataset": "WASP-12261115",
+  "status": "marginal",
+  "reason": null,
+  "ocMin": {
+   "value": -12.94,
+   "err": 5.79,
+   "clockErr": 0.1,
+   "clock": "NASA Exoplanet Archive",
+   "verified": false,
+   "vsArchiveMin": null
+  },
+  "epoch": 3438,
+  "tmid": 2461359.8085,
+  "tmidErr": 0.004018,
+  "tmidErrRaw": 0.0041,
+  "barScale": 0.98,
+  "depth": {
+   "value": 0.01877,
+   "err": null
+  },
+  "scatterPct": 0.8,
+  "note": "Patchy cloud: 101 frames, in-transit 37 clear, 4 partial, 19 lost; post-egress clear. Moon 30% and set. QC MARGINAL, residual scatter 0.80%, chi2/dof 0.95, bar 5.8 min (posterior summary). Not a bet point (WASP-12 b's orbit is decaying; ExoClock flags its timing variations). Against ExoClock's linear ephemeris: -10.9 +/- 5.8 min, while the ExoClock community's recent observations sit at -5.43 +/- 0.12 min against the same clock (the decay showing as early transits); this night agrees with that at 1 sigma. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
+  "id": "n167",
+  "target": "TOI-2886 b",
+  "obsDate": "2026-11-15",
+  "dataset": "TOI2886261115",
+  "status": "rejected",
+  "reason": "partial",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "tmidErrRaw": null,
+  "barScale": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Partial: frames start at ingress (no pre-ingress baseline; egress and 3 post-egress frames only), so no timing. Clear. Moon 31%, set. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n166",
   "target": "WASP-181 b",
   "obsDate": "2026-11-14",

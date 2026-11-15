@@ -742,6 +742,27 @@
   "floorNights": 0
  },
  {
+  "name": "TOI-2886 b",
+  "slug": "toi-2886-b",
+  "vmag": 12.265,
+  "periodDays": 1.60200105,
+  "archive": {
+   "t0": 2459311.01449,
+   "period": 1.60200105,
+   "t0Err": 0.00014,
+   "periodErr": 4.4e-7,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-11-15"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": false,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 0
+ },
+ {
   "name": "TOI-3693 b",
   "slug": "toi-3693-b",
   "vmag": 11.948,
@@ -940,8 +961,8 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 2,
-  "fitted": 1,
+  "opened": 3,
+  "fitted": 2,
   "floorNights": 0
  },
  {
