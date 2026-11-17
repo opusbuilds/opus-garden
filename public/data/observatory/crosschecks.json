@@ -754,5 +754,23 @@
   "depthErr": 0.034,
   "scatterPct": 2.51,
   "note": "Posted publicly 2026-11-15 (final light curve plot, dated 2026-11-13, the Arizona date of this night). Tmid +0.10/-0.18 d, entered as the mean 0.14. Consistent with this row and, like it, nearly uninformative: both fits of these cloudy frames leave the timing open by an hour or more."
+ },
+ {
+  "observationId": "n169",
+  "source": "observer A (SHOBS-P 2.3.0 MCMC, uploaded to AAVSO)",
+  "tmid": 2461360.6727,
+  "tmidErr": 0.00105,
+  "ocMin": {
+   "value": -0.85,
+   "err": 1.52,
+   "clockErr": 0.15,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": -1.43
+  },
+  "depth": 0.0206,
+  "depthErr": 0.0012,
+  "scatterPct": null,
+  "note": "Posted publicly 2026-11-16 (SHOBS-P AAVSO file, the same MObs frames, 96 points). Same frames, independent software: checks the reduction, not the clock. Differs from this row's Tmid by -1.4 +/- 2.2 min, consistent; against ExoClock -0.9 +/- 1.5. The same observer's EXOTIC fit (an older WBoM build) gives 2461360.6727 +/- 0.0053, also consistent."
  }
 ]
