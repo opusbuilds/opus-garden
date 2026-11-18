@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-11-18",
+  "scanned": "2026-11-18T18:07+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "HAT-P-32 b",
+    "geometry": "full · 06:12–09:19 UT · V 11.44 · depth 2.22% · 104 frames",
+    "observationId": null,
+    "notOpened": "not opened"
+   },
+   {
+    "target": "TOI-2570 b",
+    "geometry": "ingress-only · 04:14–07:14 UT · V 12.57 · depth 1.25% · 38 frames",
+    "observationId": "n174",
+    "notOpened": null
+   }
+  ]
+ },
+ {
   "date": "2026-11-17",
   "scanned": "2026-11-17T17:41+00:00",
   "growing": false,

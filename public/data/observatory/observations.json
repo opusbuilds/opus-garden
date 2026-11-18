@@ -1,5 +1,26 @@
 [
  {
+  "id": "n174",
+  "target": "TOI-2570 b",
+  "obsDate": "2026-11-18",
+  "dataset": "TOI2570261118",
+  "status": "rejected",
+  "reason": "cloud",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "tmidErrRaw": null,
+  "barScale": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Cloud: 21 of 22 pre-ingress and 12 of 16 in-transit frames lost; also frames end before egress (ingress only), and the seed frame was under the floor. Moon 57%, up. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n173",
   "target": "WASP-53 b",
   "obsDate": "2026-11-17",

@@ -716,7 +716,7 @@
   "derived": "Rp/Rs derived when the archive row lacks it; a/Rs by Kepler III when it lacks that",
   "note": null,
   "faint": false,
-  "opened": 6,
+  "opened": 7,
   "fitted": 0,
   "floorNights": 3
  },
