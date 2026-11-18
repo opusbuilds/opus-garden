@@ -821,9 +821,9 @@
   "derived": "archive values",
   "note": null,
   "faint": true,
-  "opened": 2,
+  "opened": 3,
   "fitted": 0,
-  "floorNights": 2
+  "floorNights": 3
  },
  {
   "name": "TOI-6842 A b",
@@ -1038,7 +1038,7 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 3,
+  "opened": 4,
   "fitted": 1,
   "floorNights": 0
  },
@@ -1279,12 +1279,19 @@
    "source": "NASA Exoplanet Archive pscomppars",
    "fetched": "2026-09-20"
   },
-  "exoclock": null,
+  "exoclock": {
+   "t0": 2457386.6591,
+   "t0Err": 0.0001,
+   "period": 3.30984276,
+   "periodErr": 2.2e-7,
+   "source": "ExoClock, Kokori et al. 2025",
+   "fetched": "2026-11-17"
+  },
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 3,
-  "fitted": 0,
+  "opened": 4,
+  "fitted": 1,
   "floorNights": 1
  },
  {

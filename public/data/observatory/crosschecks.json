@@ -113,12 +113,12 @@
   "tmid": 2461298.909,
   "tmidErr": 0.063,
   "ocMin": {
-   "value": 20.12,
-   "err": 90.84,
-   "clockErr": 4.66,
-   "clock": "NASA Exoplanet Archive",
-   "verified": false,
-   "vsArchiveMin": null
+   "value": 22.69,
+   "err": 90.72,
+   "clockErr": 0.4,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": 20.12
   },
   "depth": 0.02131,
   "depthErr": 0.00016,
@@ -131,12 +131,12 @@
   "tmid": 2461298.877,
   "tmidErr": 0.084,
   "ocMin": {
-   "value": -25.96,
-   "err": 121.05,
-   "clockErr": 4.66,
-   "clock": "NASA Exoplanet Archive",
-   "verified": false,
-   "vsArchiveMin": null
+   "value": -23.39,
+   "err": 120.96,
+   "clockErr": 0.4,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": -25.96
   },
   "depth": 0.157,
   "depthErr": 0.097,
