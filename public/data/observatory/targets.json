@@ -191,8 +191,8 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 9,
-  "fitted": 6,
+  "opened": 10,
+  "fitted": 7,
   "floorNights": 0
  },
  {
@@ -277,7 +277,7 @@
   "faint": true,
   "opened": 3,
   "fitted": 0,
-  "floorNights": 2
+  "floorNights": 3
  },
  {
   "name": "HAT-P-63 b",
@@ -912,9 +912,9 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 8,
-  "fitted": 0,
-  "floorNights": 1
+  "opened": 10,
+  "fitted": 2,
+  "floorNights": 3
  },
  {
   "name": "WASP-11 b",

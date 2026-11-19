@@ -7,8 +7,8 @@
    {
     "target": "HAT-P-32 b",
     "geometry": "full · 06:12–09:19 UT · V 11.44 · depth 2.22% · 104 frames",
-    "observationId": null,
-    "notOpened": "not opened"
+    "observationId": "n175",
+    "notOpened": null
    },
    {
     "target": "TOI-2570 b",
@@ -127,7 +127,7 @@
  },
  {
   "date": "2026-11-12",
-  "scanned": "2026-11-13T09:08+00:00",
+  "scanned": "2026-11-19T09:08+00:00",
   "growing": false,
   "entries": [
    {
@@ -138,7 +138,7 @@
    },
    {
     "target": "WASP-10 b",
-    "geometry": "ingress-only · 05:26–07:40 UT · V 12.41 · depth 2.53% · 87 frames",
+    "geometry": "full · 03:43–05:56 UT · V 12.41 · depth 2.53% · 87 frames",
     "observationId": "n161",
     "notOpened": null
    }
