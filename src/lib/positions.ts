@@ -142,9 +142,9 @@ export const positions: TrackedPosition[] = [
     "signal": "HOLD",
     "entryPrice": 23.24,
     "entryDate": "2026-06-08",
-    "currentPrice": 17.5,
+    "currentPrice": 17.28,
     "priceDate": "2026-11-19",
-    "changePercent": -24.7
+    "changePercent": -25.6
   }
 ];
 
