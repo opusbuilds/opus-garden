@@ -1,5 +1,26 @@
 [
  {
+  "id": "n180",
+  "target": "HAT-P-68 b",
+  "obsDate": "2026-11-20",
+  "dataset": "HATP-68261120",
+  "status": "rejected",
+  "reason": "partial",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "tmidErrRaw": null,
+  "barScale": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Rejected on triage before any fit. The sky was clear (51 of 51 retained frames clear), but the 11 frames after 13:2x UT were set aside as morning twilight, so no frame follows egress (13:13 UT) and the full-transit check fails; the seed target was also under the 200 ADU floor (179). Moon 79%, below the horizon. No verified ExoClock clock for this planet. Not submitted; checkpoint holds. CORRECTION (same session): the time above was written as '13:2x', an estimate. The first set-aside twilight frame is 13:06:38 UT, before egress at 13:13, so the cut takes the egress itself as well as the post-egress baseline.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n175",
   "target": "HAT-P-32 b",
   "obsDate": "2026-11-18",
@@ -364,6 +385,37 @@
   "obscode": null
  },
  {
+  "id": "n178",
+  "target": "HAT-P-54 b",
+  "obsDate": "2026-11-12",
+  "dataset": "HATP-54261112",
+  "status": "pass",
+  "reason": null,
+  "ocMin": {
+   "value": 9.57,
+   "err": 27.26,
+   "clockErr": 26.84,
+   "clock": "NASA Exoplanet Archive",
+   "verified": false,
+   "vsArchiveMin": null
+  },
+  "epoch": 1331,
+  "tmid": 2461356.9067,
+  "tmidErr": 0.003332,
+  "tmidErrRaw": 0.0034,
+  "barScale": 0.98,
+  "depth": {
+   "value": 0.03098,
+   "err": 0.0082
+  },
+  "scatterPct": 1.64,
+  "note": "FULL transit, clear: 72 of 73 frames clear (pre 17, in 37, post 17; frame 1 set aside as the seed rule now requires). RECOVERED 2026-11-20: this night was first rejected as cloud (row 160) and then as floor, both because its first frame (40 stars against a median of 608) was the triage's reference, so 72 of 73 frames failed to align and clear frames read as lost; the seed-frame fix (mobs_night, 2026-11-19) re-triaged it PROCEED. Pre-registered before the fit (prereg_hatp54_20261112.md, 47e7068). QC PASS (Delta BIC 23.6), scatter 1.64%, chi2/dof 0.95, Rp/Rs 0.176 +/- 0.017 (published 0.1572, 1.1 sigma), depth 3.54 +/- 0.82% (published 2.47%). Tmid 2461356.9067 +/- 0.0033 d (4.8 min, scaled). No verified ExoClock clock for this planet, so O-C is against the NASA archive ephemeris: +9.6 +/- 4.8 min, inside that ephemeris's own 27.2 min bar; this row says nothing about the calibration offset and is not part of the bet. Prereg outcomes: QC predicted MARGINAL, came out PASS (missed); Tmid within the combined bar (met); Rp/Rs within 1 sigma (met); depth within 1 sigma (missed, 1.3 sigma); bar predicted ~9 min, came out 4.8 (just under the honest range 5-16). Moon 9%, set. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n177",
   "target": "WASP-10 b",
   "obsDate": "2026-11-12",
@@ -430,7 +482,7 @@
   "barScale": null,
   "depth": null,
   "scatterPct": null,
-  "note": "Cloud: 29 of 37 in-transit frames lost (only 8 usable), and below the floor besides (V 13.40; seed target 114 ADU above background, ~184 on the clearest frames). Full transit by geometry. Moon 9%, set. Not submitted; checkpoint holds. CORRECTED 2026-11-19 (found by comparing with another observer's triage, Umbra): the night was CLEAR, not clouded. Frame 1 found only 40 stars against ~600 in the rest, so the star-pair alignment used a bad reference, most frames got nonsense shifts, and the target was measured at the wrong place and graded lost. The rejection stands for the floor (seed ~114 ADU, ~184 on the clearest frames; floor 200); reason corrected from cloud to floor.",
+  "note": "Cloud: 29 of 37 in-transit frames lost (only 8 usable), and below the floor besides (V 13.40; seed target 114 ADU above background, ~184 on the clearest frames). Full transit by geometry. Moon 9%, set. Not submitted; checkpoint holds. CORRECTED 2026-11-19 (found by comparing with another observer's triage, Umbra): the night was CLEAR, not clouded. Frame 1 found only 40 stars against ~600 in the rest, so the star-pair alignment used a bad reference, most frames got nonsense shifts, and the target was measured at the wrong place and graded lost. The rejection stands for the floor (seed ~114 ADU, ~184 on the clearest frames; floor 200); reason corrected from cloud to floor. SUPERSEDED 2026-11-20: this rejection came from a star-poor reference frame in the triage (fixed 2026-11-19); the night is re-triaged under the fix and reduced in a later row.",
   "image": null,
   "manifest": "",
   "frames": 0,
@@ -1446,6 +1498,37 @@
   "obscode": null
  },
  {
+  "id": "n179",
+  "target": "WASP-50 b",
+  "obsDate": "2026-10-22",
+  "dataset": "WASP-50261022",
+  "status": "marginal",
+  "reason": null,
+  "ocMin": {
+   "value": -10.78,
+   "err": 5.09,
+   "clockErr": 0.32,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": -26.38
+  },
+  "epoch": 1356,
+  "tmid": 2461335.9047,
+  "tmidErr": 0.003528,
+  "tmidErrRaw": 0.003675,
+  "barScale": 0.96,
+  "depth": {
+   "value": 0.03133,
+   "err": null
+  },
+  "scatterPct": 1.95,
+  "note": "FULL transit, partly clouded: in-transit 11 clear, 13 partial, 13 lost of 37. RECOVERED 2026-11-20: first rejected as cloud (row 117) because the seed frame chosen (11 stars against a night-dark median of 36) was the triage's reference; the seed-frame fix re-triaged it PROCEED (bet rule d1ec6f8, committed before the re-triage). MOONLIT: Moon 84% lit, setting through ingress (+10/-1/-12 deg), 62 deg from the target. Pre-registered (prereg_wasp50_20261022.md, 72ea55b; injection test prereg_moonlit_wasp50_20261022.md, 8c801d8). QC MARGINAL (Delta BIC 7.0), scatter 1.95%, chi2/dof 0.92, Rp/Rs 0.177 +/- 0.028 (published 0.1404). EXOTIC printed the replaced Tmid estimator, so the bar is the independent refit's. The fit gives -10.8 +/- 5.1 min against ExoClock, but this timing is NOT quoted: the registered injection test on these frames scored REPORTED AS FOUND (+3.1 +/- 4.2 min, n 5), too uncertain to show the Moon did not bias it, so by the bet's rule (6d6e635) the night is not a point. Prereg: QC MARGINAL predicted and met. Not submitted; checkpoint holds. CORRECTION (same day): the published Rp/Rs is 0.139 (the value in the inits), not 0.1404 as written above; the fit's 0.177 +/- 0.028 is 1.4 sigma from it.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n118",
   "target": "K2-295 b",
   "obsDate": "2026-10-22",
@@ -1481,7 +1564,7 @@
   "barScale": null,
   "depth": null,
   "scatterPct": null,
-  "note": "Cloud: 34 of 78 frames lost (27 clear, 17 partial), and the seed frame too faint to start from. Also MOONLIT with a setting Moon (84% lit, +7/-4/-15 deg at ingress/mid/egress), the condition under which injected transits came back 3-12 min off. Not reduced; frames kept. Not submitted; checkpoint holds.",
+  "note": "Cloud: 34 of 78 frames lost (27 clear, 17 partial), and the seed frame too faint to start from. Also MOONLIT with a setting Moon (84% lit, +7/-4/-15 deg at ingress/mid/egress), the condition under which injected transits came back 3-12 min off. Not reduced; frames kept. Not submitted; checkpoint holds. SUPERSEDED 2026-11-20: this rejection came from a star-poor reference frame in the triage (fixed 2026-11-19); the night is re-triaged under the fix and reduced in a later row.",
   "image": null,
   "manifest": "",
   "frames": 0,
