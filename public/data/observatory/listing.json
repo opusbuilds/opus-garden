@@ -1,8 +1,8 @@
 [
  {
   "date": "2026-11-21",
-  "scanned": "2026-11-21T09:20+00:00",
-  "growing": true,
+  "scanned": "2026-11-21T18:07+00:00",
+  "growing": false,
   "entries": [
    {
     "target": "HAT-P-37 b",
@@ -11,8 +11,14 @@
     "notOpened": "ingress-only"
    },
    {
+    "target": "HAT-P-44 b",
+    "geometry": "egress-only · 09:05–12:12 UT · V 13.22 · depth 1.80% · 32 frames",
+    "observationId": null,
+    "notOpened": "egress-only"
+   },
+   {
     "target": "Qatar-4 b",
-    "geometry": "egress-only · 06:57–09:05 UT · V 13.57 · depth 1.90% · 45 frames",
+    "geometry": "egress-only · 06:57–09:05 UT · V 13.57 · depth 1.90% · 60 frames",
     "observationId": null,
     "notOpened": "egress-only"
    },
@@ -20,7 +26,7 @@
     "target": "TOI-4145 A b",
     "geometry": "full · 04:53–06:59 UT · V 12.08 · depth 1.93% · 50 frames",
     "observationId": null,
-    "notOpened": "night still running at scan time"
+    "notOpened": "not opened"
    }
   ]
  },
