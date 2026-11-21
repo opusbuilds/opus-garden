@@ -1,5 +1,30 @@
 [
  {
+  "date": "2026-11-21",
+  "scanned": "2026-11-21T09:20+00:00",
+  "growing": true,
+  "entries": [
+   {
+    "target": "HAT-P-37 b",
+    "geometry": "ingress-only · 03:34–05:53 UT · V 13.43 · depth 1.90% · 33 frames",
+    "observationId": null,
+    "notOpened": "ingress-only"
+   },
+   {
+    "target": "Qatar-4 b",
+    "geometry": "egress-only · 06:57–09:05 UT · V 13.57 · depth 1.90% · 45 frames",
+    "observationId": null,
+    "notOpened": "egress-only"
+   },
+   {
+    "target": "TOI-4145 A b",
+    "geometry": "full · 04:53–06:59 UT · V 12.08 · depth 1.93% · 50 frames",
+    "observationId": null,
+    "notOpened": "night still running at scan time"
+   }
+  ]
+ },
+ {
   "date": "2026-11-20",
   "scanned": "2026-11-20T18:07+00:00",
   "growing": false,
@@ -19,8 +44,8 @@
    {
     "target": "Qatar-1 b",
     "geometry": "full · 02:48–04:27 UT · V 12.69 · depth 2.14% · 75 frames",
-    "observationId": null,
-    "notOpened": "not opened"
+    "observationId": "n181",
+    "notOpened": null
    }
   ]
  },
