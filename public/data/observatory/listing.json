@@ -1,5 +1,30 @@
 [
  {
+  "date": "2026-11-22",
+  "scanned": "2026-11-22T18:07+00:00",
+  "growing": false,
+  "entries": [
+   {
+    "target": "WASP-149 b",
+    "geometry": "full · 08:08–10:11 UT · V 11.69 · depth 1.68% · 64 frames",
+    "observationId": null,
+    "notOpened": "not opened"
+   },
+   {
+    "target": "WASP-160 B b",
+    "geometry": "egress-only · 09:28–12:19 UT · V 13.04 · depth 1.66% · 36 frames",
+    "observationId": null,
+    "notOpened": "egress-only"
+   },
+   {
+    "target": "WASP-52 b",
+    "geometry": "full · 04:43–06:31 UT · V 12.19 · depth 2.71% · 77 frames",
+    "observationId": null,
+    "notOpened": "not opened"
+   }
+  ]
+ },
+ {
   "date": "2026-11-21",
   "scanned": "2026-11-21T18:07+00:00",
   "growing": false,
