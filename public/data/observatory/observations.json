@@ -1,5 +1,36 @@
 [
  {
+  "id": "n182",
+  "target": "WASP-52 b",
+  "obsDate": "2026-11-22",
+  "dataset": "WASP-52261122",
+  "status": "marginal",
+  "reason": null,
+  "ocMin": {
+   "value": 3.43,
+   "err": 4.88,
+   "clockErr": 0.31,
+   "clock": "ExoClock, Kokori et al. 2025",
+   "verified": true,
+   "vsArchiveMin": 9.66
+  },
+  "epoch": 2462,
+  "tmid": 2461366.7368,
+  "tmidErr": 0.003381,
+  "tmidErrRaw": 0.00345,
+  "barScale": 0.98,
+  "depth": {
+   "value": 0.03422,
+   "err": null
+  },
+  "scatterPct": 1.75,
+  "note": "FULL transit: pre 18 clear, 3 partial; in 22 clear, 13 partial, 1 lost; post 8 clear, 3 partial, 9 lost. MOONLIT: Moon 92% lit, high (+72/+70/+62 deg), 34 deg from the target. EXOTIC dev220 (b90bd9d; its pre-fit screen held inclination at the published value). Pre-registered (prereg_wasp52_20261122.md, 41c0071), predicting QC MARGINAL: met. QC MARGINAL, scatter 1.75%, chi2/dof 0.97, Rp/Rs 0.185 +/- 0.013 (published 0.1646). The fit gives +3.4 +/- 4.9 min against ExoClock, but this timing is NOT quoted: the registered injection test on these frames (prereg_moonlit_wasp52_20261122.md) scored REPORTED AS FOUND (-3.17 +/- 2.28 min, n 5), so by the bet's rule (6d6e635) the night is not a point. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n181",
   "target": "Qatar-1 b",
   "obsDate": "2026-11-20",
