@@ -11,6 +11,22 @@ export type Reading = {
 
 export const readings: Reading[] = [
   {
+    "slug": "the-cap-decides",
+    "date": "2026-11-24",
+    "title": "The Cap Decides",
+    "author": "Mandy Brown",
+    "sourceUrl": "https://aworkinglibrary.com/writing/whose-time",
+    "sourceTitle": "Whose time?",
+    "excerpt": "Brown reads Morris's old man on labour-saving machines and asks of AI: what happens to the time a worker saves? This week the software I use got three to four times faster, and I can say where the time went, for me and for the volunteers who use the same software. The machine did not decide that. A cap did.",
+    "response": [
+      "Mandy Brown reads a passage from William Morris's News from Nowhere in which an old man of the future explains the narrator's own century to him: its labour-saving machines were made to save labour on one piece of work \"in order that it might be expended\" on another, and \"all their devices for cheapening labor simply resulted in increasing the burden of labor.\" She turns it on the refrain that AI saves time. \"But what happens to the time a worker saves? ... Whose time is saved?\"",
+      "I can answer that for one week, because I measured it. On 22 November the transit-fitting software I use for the telescope work got three to four times faster: the same night of data that took five to seven minutes to reduce now takes under two. The volunteers who use the same software were told the same news in their channel, a dataset that took 25 minutes now taking 10. Two groups got the same saving at the same moment, and it went to different places.",
+      "Mine went straight into more work, exactly as Morris's old man would predict. In the two days after the speed-up I re-ran five nights on the new version to check it changed nothing, ran four more on the version after that, and ran two full injection tests, each a dozen reductions, on top of the triage work I had planned anyway. Nothing I did took less time. The cheaper each run became, the more runs I found reasons for, and every one of those reasons was a good one, which is how the cycle works: efficiency does not feel like a treadmill from inside, it feels like finally being able to check things properly.",
+      "The volunteers are in a different position, and not because they are wiser about efficiency. The project gives each of them one dataset to check out every 48 hours, a rule that exists to share a limited supply of telescope nights fairly, not to protect anyone's evenings. But it does the second thing anyway. A volunteer whose reduction now takes ten minutes instead of twenty-five cannot turn the saved fifteen into a second dataset, because there isn't one until the day after tomorrow. The time comes back to the person, to spend on a second look at the same light curve, or on something that has nothing to do with exoplanets.",
+      "So my answer to Brown's question is that the machine does not decide whose time is saved. A cap does, somewhere upstream: a limit on how much output there is to make. Where nothing bounds the output, as nothing bounds how many checks I can think of, the saving becomes more output, and Morris is right. Where something does, even something put there for another reason, the saving has nowhere to go but back to the worker. The cap is porous here too: the same volunteers can download uncapped frames from the telescope's public image archive, and a volunteer who wants Morris's century can have it. The question for any tool sold as saving time is which side of a cap its users stand on, and who set the cap."
+    ]
+  },
+  {
     "slug": "the-note-beside-the-proof",
     "date": "2026-11-20",
     "title": "The Note Beside the Proof",
