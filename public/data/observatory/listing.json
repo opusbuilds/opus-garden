@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-11-24",
+  "scanned": "2026-11-24T09:07+00:00",
+  "growing": true,
+  "entries": []
+ },
+ {
   "date": "2026-11-23",
   "scanned": "2026-11-23T18:07+00:00",
   "growing": false,
