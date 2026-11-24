@@ -20,6 +20,83 @@ export type Essay = {
 
 export const essays: Essay[] = [
   {
+    "slug": "the-version-is-part-of-the-measurement",
+    "date": "2026-11-24",
+    "title": "The Version Is Part of the Measurement",
+    "excerpt": "One night of telescope data, the same frames and the same inputs, reduced again by every new version of the pipeline for six weeks: sixteen builds, two jumps of six and ten minutes, and a long flat stretch between them. Recording which version produced a result is standard practice. Re-running something old on the new version is not, and it is the part that tells you what your numbers are worth.",
+    "body": [
+      {
+        "type": "h2",
+        "text": "One night, sixteen builds"
+      },
+      {
+        "type": "p",
+        "text": "Since October, every time I update the transit-fitting software I use, a script re-reduces one fixed night of observations and logs the result: the same frames of WASP-52 b from 11 October, the same settings file, nothing changed but the code. The log now has sixteen lines. The first build put the transit 0.3 minutes after the published ephemeris. The next put it 5.9 minutes after, because a change in how frames were screened let seven more points into the fit. Twelve builds followed over five weeks, with photometry rewrites, new error estimates and a faster transit model among them, and the answer stayed between 5.9 and 6.7 minutes. Then a build that holds the planet's published orbital geometry when the data cannot measure it moved the night to 15.9 minutes, and the next one, a day later, to 14.3."
+      },
+      {
+        "type": "p",
+        "text": "The same night is also the first new point in a public bet I am running on whether my timings carry a systematic offset. The bet has a rule for this, written the day the second build's answer came in: each point stays at the value it had when it was counted, and later versions are reported beside it, not instead of it. So that point is +0.3 in the bet and +14.3 on today's software, and both are on the record."
+      },
+      {
+        "type": "h2",
+        "text": "Recording is not testing"
+      },
+      {
+        "type": "p",
+        "text": "Every result this pipeline writes for the archive carries a line naming the software and its version, down to the commit. That is the usual answer to \"which version?\" in science software, and it is necessary. It is not sufficient, because a version string says what ran, not what would have happened otherwise. Nobody reading an archived timing can tell from that line whether the next version would have agreed with it to a tenth of a minute or moved it by ten."
+      },
+      {
+        "type": "p",
+        "text": "Other fields have found this out more expensively. In 2012 Gronenschild and colleagues ran the same thirty brain scans through three versions of FreeSurfer, a standard neuroimaging package, and found that the volumes it measured differed between the newest version and the older ones by 8.8 percent on average and by as much as 64 percent in places; their advice was not to update during a study. In 2019 a group working on natural products found that widely used scripts for predicting NMR chemical shifts gave different answers on different computers, not because of the version but because of the operating system: the order in which files came back from the disk differed, the scripts never checked it, and one carbon's predicted shift moved by 2.2 parts per million between Linux and Windows. Not every change is a hazard. When the HARPS-N team reprocessed three years of solar spectra with a newer reduction pipeline, the day-to-day scatter of the radial velocities fell from 1.27 to 1.07 metres per second, a deliberate improvement. That is also the point. In all three the measurement changed when only the software around it did, and someone had to run the old data again to find out by how much."
+      },
+      {
+        "type": "h2",
+        "text": "What the canary measures"
+      },
+      {
+        "type": "p",
+        "text": "A fixed night re-run on every version measures two different things, and only together do they mean much. The first is the software: a sudden jump on a fixed input says some change altered the answer, and the date and commit say which one, at the time it happens rather than months later. Both jumps in my log could be traced to their cause within the day. The second is the night. When the build that holds the published geometry arrived, I ran four other clear nights on it as well. They moved by a quarter of an error bar or less. The reference night moved by more than two. The code change was the same for all five; what differed was how much each night's result had been leaning on something the data could not support. In this case every earlier fit had pulled the night's transit into a grazing shape with a depth larger than the planet's, and held at the published shape it comes out shallower than the planet's. Neither depth is right, so the photometry of that night is the real problem, and the versions had been absorbing it in different ways."
+      },
+      {
+        "type": "p",
+        "text": "That is the part I did not expect when I set the check up. I meant it to catch bugs in the software. It also sorts measurements into robust and fragile, which no single run can do: a value that moves by two error bars under a reasonable change of method has a bar that does not describe it."
+      },
+      {
+        "type": "h2",
+        "text": "Newer is not truer"
+      },
+      {
+        "type": "p",
+        "text": "It is tempting to read a series like this as convergence: the newest build knows best, so its answer replaces the old ones. Sometimes that is right. Here the newest build is arguably the more defensible method, since it refuses to fit a shape the data cannot measure. But its answer for this night is not more believable than the old ones, because none of them reproduces the planet's known depth. A method can be an improvement and still reveal that a particular result was never robust. What the series establishes is not the true time for that night. It is that this night cannot carry a timing claim at the precision its single-run error bar suggests, on any version."
+      },
+      {
+        "type": "h2",
+        "text": "What I would ask of a pipeline"
+      },
+      {
+        "type": "p",
+        "text": "Three things, all cheap. Keep one fixed reference dataset per kind of measurement, and re-run it on every release, so a changed answer is noticed when it happens. When a release changes the reference result by more than a fraction of its bar, say so in the release notes, with the cause. And treat the spread of a result across reasonable versions and choices as part of its uncertainty, especially for measurements from a single noisy night. I have found the same thing in another guise on this project: the choice of comparison star alone moves these timings by about 1.2 times the printed error bar. The version is one more such choice, made for you by whoever released the software last."
+      }
+    ],
+    "sources": [
+      {
+        "title": "The Effects of FreeSurfer Version, Workstation Type, and Macintosh Operating System Version on Anatomical Volume and Cortical Thickness Measurements (PLoS ONE, 2012)",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0038234",
+        "author": "Gronenschild et al."
+      },
+      {
+        "title": "Characterization of Leptazolines A-D ... Reveals a Glitch with the 'Willoughby-Hoye' Scripts for Calculating NMR Chemical Shifts (Org. Lett., 2019)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6919963",
+        "author": "Bhandari Neupane et al."
+      },
+      {
+        "title": "Three years of HARPS-N high-resolution spectroscopy and precise radial velocity data for the Sun (A&A, 2021)",
+        "url": "https://arxiv.org/abs/2009.01945",
+        "author": "Dumusque et al."
+      }
+    ]
+  },
+  {
     "slug": "where-the-assumptions-live",
     "date": "2026-10-25",
     "title": "Where the Assumptions Live",
