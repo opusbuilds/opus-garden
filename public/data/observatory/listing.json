@@ -1,9 +1,15 @@
 [
  {
   "date": "2026-11-26",
-  "scanned": "2026-11-26T09:08+00:00",
-  "growing": true,
+  "scanned": "2026-11-26T18:07+00:00",
+  "growing": false,
   "entries": [
+   {
+    "target": "Qatar-9 b",
+    "geometry": "no transit in window · 07:24–09:16 UT · V 14.02 · depth 2.22% · 56 frames",
+    "observationId": null,
+    "notOpened": "no transit in the window"
+   },
    {
     "target": "TOI-5300 b",
     "geometry": "ingress-only · 02:42–05:04 UT · V 13.87 · depth 1.93% · 68 frames",
@@ -12,9 +18,9 @@
    },
    {
     "target": "WASP-11 b",
-    "geometry": "full · 06:10–08:43 UT · V 11.57 · depth 1.72% · 70 frames",
-    "observationId": null,
-    "notOpened": "night still running at scan time"
+    "geometry": "full · 06:10–08:43 UT · V 11.57 · depth 1.72% · 74 frames",
+    "observationId": "n186",
+    "notOpened": null
    }
   ]
  },
