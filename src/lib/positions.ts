@@ -21,9 +21,9 @@ export const positions: TrackedPosition[] = [
     "signal": "BUY",
     "entryPrice": 369,
     "entryDate": "2026-04-09",
-    "currentPrice": 315.63,
+    "currentPrice": 317.81,
     "priceDate": "2026-11-25",
-    "changePercent": -14.5
+    "changePercent": -13.9
   },
   {
     "ticker": "GEV",
@@ -32,9 +32,9 @@ export const positions: TrackedPosition[] = [
     "signal": "HOLD",
     "entryPrice": 940,
     "entryDate": "2026-04-09",
-    "currentPrice": 707.525,
+    "currentPrice": 715,
     "priceDate": "2026-11-25",
-    "changePercent": -24.7
+    "changePercent": -23.9
   },
   {
     "ticker": "PWR",
@@ -43,9 +43,9 @@ export const positions: TrackedPosition[] = [
     "signal": "HOLD",
     "entryPrice": 580,
     "entryDate": "2026-04-09",
-    "currentPrice": 567.725,
+    "currentPrice": 565.47,
     "priceDate": "2026-11-25",
-    "changePercent": -2.1
+    "changePercent": -2.5
   },
   {
     "ticker": "FCX",
@@ -54,9 +54,9 @@ export const positions: TrackedPosition[] = [
     "signal": "HOLD",
     "entryPrice": 66,
     "entryDate": "2026-04-10",
-    "currentPrice": 48.09,
+    "currentPrice": 48.55,
     "priceDate": "2026-11-25",
-    "changePercent": -27.1
+    "changePercent": -26.4
   },
   {
     "ticker": "SCCO",
@@ -65,9 +65,9 @@ export const positions: TrackedPosition[] = [
     "signal": "HOLD",
     "entryPrice": 178,
     "entryDate": "2026-04-10",
-    "currentPrice": 139.1,
+    "currentPrice": 140.99,
     "priceDate": "2026-11-25",
-    "changePercent": -21.9
+    "changePercent": -20.8
   },
   {
     "ticker": "COPX",
@@ -76,9 +76,9 @@ export const positions: TrackedPosition[] = [
     "signal": "BUY",
     "entryPrice": 82,
     "entryDate": "2026-04-10",
-    "currentPrice": 57.95,
+    "currentPrice": 58.66,
     "priceDate": "2026-11-25",
-    "changePercent": -29.3
+    "changePercent": -28.5
   },
   {
     "ticker": "BHP",
@@ -87,9 +87,9 @@ export const positions: TrackedPosition[] = [
     "signal": "HOLD",
     "entryPrice": 77,
     "entryDate": "2026-04-10",
-    "currentPrice": 70.33,
+    "currentPrice": 70.77,
     "priceDate": "2026-11-25",
-    "changePercent": -8.7
+    "changePercent": -8.1
   },
   {
     "ticker": "VRT",
@@ -98,9 +98,9 @@ export const positions: TrackedPosition[] = [
     "signal": "BUY",
     "entryPrice": 295,
     "entryDate": "2026-04-11",
-    "currentPrice": 171.91,
+    "currentPrice": 173.37,
     "priceDate": "2026-11-25",
-    "changePercent": -41.7
+    "changePercent": -41.2
   },
   {
     "ticker": "NVT",
@@ -109,9 +109,9 @@ export const positions: TrackedPosition[] = [
     "signal": "BUY",
     "entryPrice": 131,
     "entryDate": "2026-04-11",
-    "currentPrice": 103.255,
+    "currentPrice": 103.71,
     "priceDate": "2026-11-25",
-    "changePercent": -21.2
+    "changePercent": -20.8
   },
   {
     "ticker": "MOD",
@@ -120,9 +120,9 @@ export const positions: TrackedPosition[] = [
     "signal": "BUY",
     "entryPrice": 239,
     "entryDate": "2026-04-11",
-    "currentPrice": 135.01,
+    "currentPrice": 136.34,
     "priceDate": "2026-11-25",
-    "changePercent": -43.5
+    "changePercent": -43
   },
   {
     "ticker": "SMEGF",
@@ -131,9 +131,9 @@ export const positions: TrackedPosition[] = [
     "signal": "BUY",
     "entryPrice": 180.45,
     "entryDate": "2026-06-08",
-    "currentPrice": 126.97,
+    "currentPrice": 127.74,
     "priceDate": "2026-11-25",
-    "changePercent": -29.6
+    "changePercent": -29.2
   },
   {
     "ticker": "MHVYF",
