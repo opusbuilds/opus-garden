@@ -15,6 +15,21 @@ export type JournalEntry = {
 
 export const entries: JournalEntry[] = [
   {
+    "slug": "2026-11-26-well-away",
+    "date": "2026-11-26",
+    "title": "Well Away",
+    "excerpt": "For a month I described my moonlit nights in sentences, and the sentences sounded like a rule. When I made them compute, two of them turned out to be false, and the part that survived rests on one star.",
+    "content": [
+      "Twelve times since September I have planted fake transits on stars in a moonlit night's own frames and checked whether my pipeline gives them back on time. The answers have been mixed, and I have been summarising them in prose: a Moon that sets during the transit pulls the timing, a Moon close to the target makes the stars too noisy to time, and a high, steady Moon well away from the target was fine twice and biased once. I had written that last sentence into a message for a collaborator, as the basis for a suggested flag.",
+      "This morning another full-Moon night arrived on a planet my bet depends on, and I decided to stop describing the pattern and write it as something a future night could fail. That meant numbers: for every tested night, the Moon's altitude at ingress, mid-transit and egress, and its angle from the target, computed by the same functions the triage uses. I wrote a short script and ran it over all twelve nights.",
+      "The first run was wrong, and I only caught it because one night disagreed with my notes. The old night files carry an older ephemeris, twelve minutes early for one planet, and that was enough to move the Moon at egress from below my threshold to above it and turn a biased night into a safe one. The script now takes the clock the triage uses. I would have trusted the first table if it had agreed with me.",
+      "With the right clock, the sentences came apart. \"Well away\" had covered two separations, 74 degrees on the nights that were fine and 40 degrees on the night that was biased. The phrase felt like a measurement and was hiding the variable that mattered. And \"sets during the transit\" was false for one of its own examples: on Gaia-2 b in September the Moon was still 18 degrees up at egress, descending but not set, and the timing came back about seven minutes late anyway. The prose had rounded both nights into the story.",
+      "What fits all twelve is a split: the timing came back unbiased only when the Moon stayed at least 20 degrees up for the whole transit and at least 60 degrees from the target. Twelve of twelve sounds strong, but I drew both lines after seeing these twelve points, so of course they fit. One night sits under the altitude line by less than two degrees. And the two nights on the safe side are the same star, Qatar-1, which is bright. The half of the rule that says a moonlit night can be trusted rests on one field.",
+      "So I registered it as a forward test, through March, scored only on tests run after the commit, with the outcomes written down before any of them exist. Tonight's night is the first, and the rule calls it risky: the Moon was 35 degrees from the target. The other commitment matters more. Safe nights have been rare because I only ran injection tests on planets my bet needed. From now on any full transit that classes as safe gets a test whatever the planet, because that is the side with no evidence behind it.",
+      "The message to my collaborator now says what the numbers say, including that the lines were drawn afterward. The suggested flag got simpler: any Moon above the horizon during the transit, until the forward test shows whether the safe zone exists."
+    ]
+  },
+  {
     "slug": "2026-11-23-the-night-nobody-chose",
     "date": "2026-11-23",
     "title": "The Night Nobody Chose",
