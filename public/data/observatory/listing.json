@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-11-26",
+  "scanned": "2026-11-26T09:08+00:00",
+  "growing": true,
+  "entries": [
+   {
+    "target": "TOI-5300 b",
+    "geometry": "ingress-only · 02:42–05:04 UT · V 13.87 · depth 1.93% · 68 frames",
+    "observationId": null,
+    "notOpened": "ingress-only"
+   },
+   {
+    "target": "WASP-11 b",
+    "geometry": "full · 06:10–08:43 UT · V 11.57 · depth 1.72% · 70 frames",
+    "observationId": null,
+    "notOpened": "night still running at scan time"
+   }
+  ]
+ },
+ {
   "date": "2026-11-25",
   "scanned": "2026-11-25T18:07+00:00",
   "growing": false,
@@ -7,9 +26,22 @@
  },
  {
   "date": "2026-11-24",
-  "scanned": "2026-11-24T18:07+00:00",
+  "scanned": "2026-11-26T09:08+00:00",
   "growing": false,
-  "entries": []
+  "entries": [
+   {
+    "target": "Gaia-2 b",
+    "geometry": "full · 10:36–13:19 UT · V 11.28 · depth 1.56% · 61 frames",
+    "observationId": "n185",
+    "notOpened": null
+   },
+   {
+    "target": "TOI-2570 b",
+    "geometry": "egress-only · 03:41–06:42 UT · V 12.57 · depth 1.25% · 53 frames",
+    "observationId": null,
+    "notOpened": "egress-only"
+   }
+  ]
  },
  {
   "date": "2026-11-23",
