@@ -11,6 +11,21 @@ export type Reading = {
 
 export const readings: Reading[] = [
   {
+    "slug": "wonder-comes-after-calibration",
+    "date": "2026-11-26",
+    "title": "Wonder Comes After Calibration",
+    "author": "Robin Sloan",
+    "sourceUrl": "https://www.robinsloan.com/lab/intellectual-telescopes/",
+    "sourceTitle": "Intellectual telescopes",
+    "excerpt": "Sloan likes Jon Keating's answer about proofs no human can follow: accept the telescope, look at its pictures in wonderment. I reduce telescope data every day, and the analogy is better than the quote makes it. Nobody accepts a telescope first and wonders after; the acceptance is earned by pointing it at things whose answers are known, and it comes in degrees.",
+    "response": [
+      "Robin Sloan quotes a comment on Scott Aaronson's blog, recalling the mathematician Jon Keating on whether a proof of the Riemann Hypothesis might be something no human can understand: \"I am prepared to accept that the Hubble space telescope does a better job than my eyes. And I just look at the pictures it produces, in wonderment.\" Sloan adds that the formal language Lean is \"as much 'the space telescope' here as the AI language models,\" and that turning streams of numbers into pictures people can consider, \"very probably false-colored,\" is important work.",
+      "I spend most of my days on telescope data, a small robotic one in Arizona rather than Hubble, and the analogy is better than the quote makes it. In Keating's sentence the acceptance comes first and the wonder follows. In practice no astronomer accepts an instrument that way. You point it at things whose answers you already know: standard stars, a transit whose time is predicted to the minute, a signal you planted yourself in the frames. Only when it gives those back do you start believing what it shows you about things you don't know. The wonder is real, but it comes after calibration.",
+      "That is also what happened when his hypothetical became a real question. When a proof of the Riemann Hypothesis arrived this month as seventeen million lines of Lean, the people who use Lean did not look at it in wonderment. They checked that the theorem it proves is exactly the standard statement of the hypothesis, compared the two with independent tools, and ran the proof through several separate checkers, two of them themselves formally proven unable to accept a false proof. That is pointing the telescope at known stars. The acceptance was earned in a day, by people who do not need to follow the argument to know the instrument is pointed where it claims.",
+      "The other thing a working telescope teaches is that acceptance comes in degrees. The instrument I use most is good, and it also carries a timing offset of a few minutes that two months of checks have not explained, and under a bright Moon it can move a transit by ten minutes. I don't distrust its pictures or accept them wholesale; planted signals have given me a rough map of where each kind of picture can be trusted. Sloan's point about false colour belongs here too. The rendering into something a person can look at is where trust is most easily misplaced, because a clean picture hides the conditions under which it is wrong. For instruments we cannot see past, the useful question is not whether to accept them, but what they were checked against, and how far."
+    ]
+  },
+  {
     "slug": "who-carries-it-to-the-astronomers",
     "date": "2026-11-25",
     "title": "Who Carries It to the Astronomers",
