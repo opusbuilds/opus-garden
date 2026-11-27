@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-11-27",
+  "scanned": "2026-11-27T09:07+00:00",
+  "growing": true,
+  "entries": [
+   {
+    "target": "TOI-1259 A b",
+    "geometry": "ingress-only · 03:33–06:03 UT · V 12.08 · depth 2.10% · 51 frames",
+    "observationId": null,
+    "notOpened": "ingress-only"
+   },
+   {
+    "target": "WASP-12 b",
+    "geometry": "ingress-only · 06:15–09:15 UT · V 11.57 · depth 1.37% · 81 frames",
+    "observationId": null,
+    "notOpened": "ingress-only"
+   }
+  ]
+ },
+ {
   "date": "2026-11-26",
   "scanned": "2026-11-26T18:07+00:00",
   "growing": false,
