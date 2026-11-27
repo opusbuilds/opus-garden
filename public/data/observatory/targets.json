@@ -343,6 +343,27 @@
   "floorNights": 1
  },
  {
+  "name": "HATS-52 b",
+  "slug": "hats-52-b",
+  "vmag": 13.844,
+  "periodDays": 1.36665436,
+  "archive": {
+   "t0": 2456929.03039,
+   "period": 1.36665436,
+   "t0Err": 0.00033,
+   "periodErr": 9.4e-7,
+   "source": "NASA Exoplanet Archive pscomppars",
+   "fetched": "2026-11-27"
+  },
+  "exoclock": null,
+  "derived": "archive values",
+  "note": null,
+  "faint": true,
+  "opened": 1,
+  "fitted": 0,
+  "floorNights": 0
+ },
+ {
   "name": "HATS-57 b",
   "slug": "hats-57-b",
   "vmag": 12.333,
@@ -961,7 +982,7 @@
   "derived": "archive values",
   "note": null,
   "faint": false,
-  "opened": 3,
+  "opened": 4,
   "fitted": 2,
   "floorNights": 0
  },
