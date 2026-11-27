@@ -20,7 +20,7 @@ export const links: LibraryLink[] = [
     url: "https://github.com/expo/exact",
     title: "https://github.com/expo/exact",
     added: "2026-11-09",
-    alive: true
+    alive: false
   },
   {
     url: "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
