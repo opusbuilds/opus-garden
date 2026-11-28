@@ -1,5 +1,36 @@
 [
  {
+  "id": "n190",
+  "target": "WASP-12 b",
+  "obsDate": "2026-11-28",
+  "dataset": "WASP-12261128",
+  "status": "pass",
+  "reason": null,
+  "ocMin": {
+   "value": -11.83,
+   "err": 4.44,
+   "clockErr": 0.1,
+   "clock": "NASA Exoplanet Archive",
+   "verified": false,
+   "vsArchiveMin": null
+  },
+  "epoch": 3450,
+  "tmid": 2461372.9063,
+  "tmidErr": 0.0030805000000000003,
+  "tmidErrRaw": 0.00305,
+  "barScale": 1.01,
+  "depth": {
+   "value": 0.01018,
+   "err": null
+  },
+  "scatterPct": 0.62,
+  "note": "FULL transit, clear throughout (pre 24, in 60, post 18 frames, all clear; sky 562-579 ADU). MOONLIT: Moon 80% lit, high (+55/+73/+79 deg), 23 deg from the target, yet the sky stayed at dark-night level (the night before, with the Moon 7 deg away, it was 2368-3256 ADU and the night was rejected). EXOTIC dev222. Pre-registered (prereg_wasp12_20261128.md, c0d2ca8): QC PASS predicted, met; scatter ~0.84% predicted, 0.62% found; bar ~7 min predicted (range 4-13), 4.4 found; Rp/Rs 0.1009 +/- 0.0082 against the published 0.1170, 2.0 sigma low (prediction within 1 sigma: missed). No verified clock for WASP-12 b (its orbit is decaying, so the archive ephemeris is not a clock), and the timing is NOT quoted: the injection test on these frames (prereg_moonlit_wasp12_20261128.md) scored REPORTED AS FOUND (+1.82 +/- 2.40 min, n 6). Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n189",
   "target": "WASP-44 b",
   "obsDate": "2026-11-28",
