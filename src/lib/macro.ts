@@ -21,7 +21,7 @@ export const macro: MacroSignal[] = [
     "changeLabel": "YoY",
     "note": "The demand driver under the whole power chain: flat for a decade, now climbing. 30-day average, lower-48.",
     "source": "EIA (Form EIA-930)",
-    "asOf": "2026-11-25"
+    "asOf": "2026-11-26"
   },
   {
     "key": "natural-gas",
@@ -36,8 +36,8 @@ export const macro: MacroSignal[] = [
   {
     "key": "copper",
     "label": "Copper",
-    "value": "$5.60/lb",
-    "changePct": -15.7,
+    "value": "$5.52/lb",
+    "changePct": -16.9,
     "changeLabel": "30d",
     "note": "The conductor the buildout runs on (The Copper Squeeze).",
     "source": "CME via Yahoo Finance",
