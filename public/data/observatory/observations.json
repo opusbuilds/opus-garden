@@ -1,5 +1,26 @@
 [
  {
+  "id": "n189",
+  "target": "WASP-44 b",
+  "obsDate": "2026-11-28",
+  "dataset": "WASP-44261128",
+  "status": "rejected",
+  "reason": "floor",
+  "ocMin": null,
+  "epoch": null,
+  "tmid": null,
+  "tmidErr": null,
+  "tmidErrRaw": null,
+  "barScale": null,
+  "depth": null,
+  "scatterPct": null,
+  "note": "Rejected on triage before any fit. Full transit (86 frames 02:57-07:12 UT, 51 min pre, 71 post), mostly clear (in transit 34 clear, 9 partial, 2 lost), but the seed target sat 131 ADU above background (floor 200; ~223 on the clearest frames) and the predicted scatter/depth is 0.90 (V 13.1), so forcing it would be a test, not a measurement. Moon 82% lit, rising through the transit (-0/+12/+25 deg), 118 deg away. No verified clock for this planet. Not submitted; checkpoint holds.",
+  "image": null,
+  "manifest": "",
+  "frames": 0,
+  "obscode": null
+ },
+ {
   "id": "n188",
   "target": "HATS-52 b",
   "obsDate": "2026-11-27",
